@@ -42,6 +42,25 @@ html {
   --btn-hover: rgba(153, 153, 153, 0.1);
 }
 
+/* main container */
+
+.main-container {
+  max-width: 66rem;
+  margin: auto;
+}
+
+/* containers */
+
+.container-sm {
+  max-width: 28rem;
+}
+.container-md {
+  max-width: 44rem;
+}
+.container-lg {
+  max-width: 62rem;
+}
+
 /* image border radius*/
 
 .border-rd-4p {
@@ -523,4 +542,10 @@ html {
 .sub-title {
   display: flex;
   align-items: center;
+}
+
+/* hide all */
+
+.hide {
+  display: none;
 }

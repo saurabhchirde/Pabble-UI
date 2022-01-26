@@ -19,12 +19,14 @@
   background-color: var(--success-bg);
   color: var(--success-text);
 }
+
 .alert-info,
 .alert-des-info,
 .alert-info-btn {
   background-color: var(--info-bg);
   color: var(--info-text);
 }
+
 .alert-warning,
 .alert-des-warning,
 .alert-warning-btn {
