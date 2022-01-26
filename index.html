@@ -5,7 +5,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./components.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Indo UI | Documentation</title>
   </head>
-  <body></body>
+  <body>
+    <div id="alert" class="mg-1-all pd-1-all">
+      <h1 class="mg-point8-tb">Alert</h1>
+      <p>
+        An alert displays a short, important message in a way that attracts the
+        user's attention without interrupting the user's task.
+      </p>
+      <h2 id="basic-alert" class="mg-2-top mg-point6-bot title-lg">
+        Basic alerts
+      </h2>
+      <p>
+        The alert offers four severity levels that set a distinctive icon and
+        color.
+      </p>
+      <!-- alert without close -->
+      <div class="cont-shadow pd-point6-all mg-point8-tb">
+        <div
+          class="alert-success mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+        >
+          <i class="fas fa-check-circle mg-point6-rt"></i>
+          <span class="p-md">Success alert.</span>
+        </div>
+        <div
+          class="alert-info mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+        >
+          <i class="fas fa-info-circle mg-point6-rt"></i>
+          <span class="p-md">Info alert.</span>
+        </div>
+        <div
+          class="alert-warning mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+        >
+          <i class="fas fa-exclamation-triangle mg-point6-rt"></i>
+          <span class="p-md">Warning alert.</span>
+        </div>
+        <div
+          class="alert-error mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+        >
+          <i class="fas fa-exclamation-circle mg-point6-rt"></i>
+          <span class="p-md">Error alert.</span>
+        </div>
+      </div>
+      <div id="descriptive-alert">
+        <h2 class="mg-2-top title-lg">Descriptive alerts</h2>
+        <p class="mg-point6-top">
+          The alert offers four severity levels that set a distinctive icon and
+          color.
+        </p>
+        <div class="cont-shadow pd-point6-all mg-point8-tb">
+          <div
+            class="alert-des-success mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+          >
+            <i class="fas fa-check-circle mg-point6-rt"></i>
+            <div>
+              <p>Success</p>
+              <p class="p-md">
+                This is a success alert -<button
+                  class="btn secondary-text-btn-sm"
+                >
+                  check it out!
+                </button>
+              </p>
+            </div>
+          </div>
+          <div
+            class="alert-des-info mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+          >
+            <i class="fas fa-info-circle mg-point6-rt"></i>
+            <div>
+              <p>Info</p>
+              <p class="p-md">
+                This is a info alert -<button class="btn secondary-text-btn-sm">
+                  check it out!
+                </button>
+              </p>
+            </div>
+          </div>
+          <div
+            class="alert-des-warning mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+          >
+            <i class="fas fa-exclamation-triangle mg-point6-rt"></i>
+            <div>
+              <p>Warning</p>
+              <p class="p-md">
+                This is a warning alert -<button
+                  class="btn secondary-text-btn-sm"
+                >
+                  check it out!
+                </button>
+              </p>
+            </div>
+          </div>
+          <div
+            class="alert-des-error mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+          >
+            <i class="fas fa-exclamation-circle mg-point6-rt"></i>
+            <div class="alert-w-btn-text">
+              <p>Error</p>
+              <p class="p-md">
+                This is a error alert -<button
+                  class="btn secondary-text-btn-sm"
+                >
+                  check it out!
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="alert-with-cta">
+        <h2 class="mg-2-top title-lg">Alert with actions</h2>
+        <p class="mg-point6-tb">
+          An alert can have an action, such as a close or undo button. It is
+          rendered after the message, at the end of the alert.
+        </p>
+        <p class="mg-point6-tb">
+          If on 'Click' callback is provided and no action prop is set, a close
+          icon is displayed. <br />The action prop can be used to provide an
+          alternative action, for example using a Button or IconButton.
+        </p>
+        <div class="cont-shadow pd-point6-all mg-point8-tb">
+          <div
+            class="alert-success-btn mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+          >
+            <div class="alert-text">
+              <i class="fas fa-check-circle mg-point6-rt"></i>
+              <span class="p-md">Success alert.</span>
+            </div>
+            <div class="alert-close">
+              <i class="fas fa-times-circle"></i>
+            </div>
+          </div>
+          <div
+            class="alert-success-btn mg-1-all pd-point6-all pd-point8-lt border-rd-4p"
+          >
+            <div class="alert-text">
+              <i class="fas fa-check-circle mg-point6-rt"></i>
+              <span class="p-md">Success alert.</span>
+            </div>
+            <div class="alert-close">
+              <button class="btn secondary-text-btn-sm">UNDO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <script src="./index.js"></script>
+    <script src="./components/alerts/alert.js"></script>
+  </body>
 </html>
