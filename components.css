@@ -2,6 +2,7 @@
 
 @import "./components/alerts/alert.css";
 @import "./components/buttons/button.css";
+@import "./components/avatar/avatar.css";
 
 * {
   margin: 0;
@@ -694,14 +695,65 @@ html {
 
 /* font weight */
 
-.f-wt-3{
+.f-wt-3 {
   font-weight: 300;
 }
 
-.f-wt-4{
+.f-wt-4 {
   font-weight: 400;
 }
 
-.f-wt-5{
+.f-wt-5 {
   font-weight: 500;
+}
+
+/* image */
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-round {
+  border-radius: 50%;
+}
+
+/* component container */
+
+.component-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* flex align item */
+
+.flex-align-center{
+  align-items: center;
+}
+
+.flex-align-stretch{
+  align-items: stretch;
+}
+
+.flex-align-baseline{
+  align-items: baseline;
+}
+
+/* flex justify content */
+
+.flex-justify-center{
+  justify-content: center;
+}
+
+.flex-justify-space-around{
+  justify-content: space-around;
+}
+
+.flex-justify-space-evenly{
+  justify-content: space-evenly;
+}
+
+.flex-justify-space-between{
+  justify-content: space-between;
 }
