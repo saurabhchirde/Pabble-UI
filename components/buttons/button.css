@@ -1,0 +1,122 @@
+.btn {
+    padding: 0.5rem 0.8rem;
+    margin: 0.4rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.primary-btn,
+.primary-btn-sm,
+.primary-btn-lg,
+.primary-cart-btn,
+.primary-cart-btn-sm,
+.primary-cart-btn-lg {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+
+.primary-text-btn,
+.primary-text-btn-sm,
+.secondary-text-btn-sm {
+    background: none;
+    color: var(--primary-color);
+}
+
+.primary-outlined-btn,
+.primary-outlined-btn-sm,
+.primary-outlined-btn-lg,
+.primary-cart-outlined-btn,
+.primary-cart-outlined-btn-sm,
+.primary-cart-outlined-btn-lg {
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+    outline: 1px solid var(--primary-color);
+}
+
+.secondary-btn {
+    color: var(--text-lighter);
+    background-color: var(--faint-gray);
+    pointer-events: none;
+}
+
+.secondary-outlined-btn,
+.secondary-outlined-btn-sm,
+.secondary-outlined-btn-lg {
+    outline: 1px solid var(--text-light);
+    color: var(--text-light);
+    background-color: var(--primary-bg);
+}
+
+.secondary-text-btn,
+.secondary-text-btn-sm,
+.secondary-text-btn-lg {
+    background: none;
+    color: var(--text-light);
+    padding: 0.5rem 0.4rem;
+}
+
+.primary-btn-sm,
+.primary-outlined-btn-sm,
+.primary-cart-btn-sm,
+.primary-cart-outlined-btn-sm,
+.primary-text-btn-sm,
+.secondary-text-btn-sm {
+    font-size: 0.8rem;
+}
+
+.primary-btn-lg,
+.primary-outlined-btn-lg,
+.primary-cart-btn-lg,
+.primary-cart-outlined-btn-lg,
+.primary-cart-btn-lg,
+.primary-text-btn-lg,
+.secondary-text-btn-lg {
+    font-size: 1.2rem;
+}
+
+.primary-btn:hover,
+.primary-btn-sm:hover,
+.primary-btn-lg:hover,
+.primary-cart-btn:hover,
+.primary-cart-btn-sm:hover,
+.primary-cart-btn-lg:hover {
+    background-color: var(--primary-dark-color);
+}
+
+.primary-outlined-btn:hover,
+.primary-outlined-btn-sm:hover,
+.primary-outlined-btn-lg:hover,
+.primary-cart-outlined-btn:hover,
+.primary-cart-outlined-btn-sm:hover,
+.primary-cart-outlined-btn-lg:hover {
+    background-color: var(--faint-gray);
+    color: var(--primary-dark-color);
+    outline: 1px solid var(--primary-dark-color);
+}
+
+.secondary-text-btn:hover,
+.secondary-text-btn-sm:hover,
+.secondary-text-btn-lg:hover {
+    color: var(--primary-color);
+}
+
+.floating,.icon-btns {
+    display: flex;
+    align-items: center;
+}
+
+.floating-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px var(--text-lighter);
+}
