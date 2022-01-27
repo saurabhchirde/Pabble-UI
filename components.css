@@ -31,18 +31,18 @@ html {
   --text-dark: #333;
 
   --success-bg: #e8fcf1;
-  --success-text: #027e38;
+  --success-text: #0ab253;
 
   --info-bg: #e6f7ff;
-  --info-text: #446fcb;
+  --info-text: #87adff;
 
   --warning-bg: #fefbe6;
-  --warning-text: hsl(40, 84%, 40%);
+  --warning-text: #edad30;
 
   --error-bg: #fef2f1;
-  --error-text: #ca3535;
+  --error-text: #d84949;
 
-  --btn-hover: rgba(153, 153, 153, 0.2);
+  --btn-hover: rgba(153, 153, 153, 0.1);
 }
 
 /* main container */
@@ -668,7 +668,7 @@ html {
 
 /* icon size */
 
-.icon-xsm {
+.icon-xm {
   font-size: 0.6rem;
 }
 
@@ -690,18 +690,4 @@ html {
 
 .icon-xxl {
   font-size: 1.6rem;
-}
-
-/* font weight */
-
-.f-wt-3{
-  font-weight: 300;
-}
-
-.f-wt-4{
-  font-weight: 400;
-}
-
-.f-wt-5{
-  font-weight: 500;
 }
