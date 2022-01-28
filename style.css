@@ -15,13 +15,13 @@ body {
     grid-template-areas:
         "navHead navHead navHead"
         "nav body body"
-        "nav body body";
+        "... body body"; 
 }
 
 /* nav bar */
 
 .navHead {
-    position: sticky;
+    position: relative;
     top: 0;
     padding: 1rem;
     z-index: 1;
@@ -38,6 +38,11 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    overflow-y: scroll;
+}
+
+.nav::-webkit-scrollbar{
+    display: none;
 }
 
 nav .title-lg {
