@@ -20,6 +20,10 @@ body {
 
 /* nav bar */
 
+.logo{
+    color: var(--primary-color);
+}
+
 .navHead {
     position: relative;
     top: 0;
