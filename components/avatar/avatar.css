@@ -1,0 +1,49 @@
+.avatar-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.avatar-square,
+.avatar-round,
+.avatar-text {
+    display: flex;
+    align-items: flex-end;
+}
+
+.avatar {
+    border: 2px solid white;
+    color: var(--text-white);
+}
+
+.avatar-lg {
+    width: 10rem;
+    height: 10rem;
+    font-size: 3rem;
+}
+
+.avatar-md {
+    width: 6.25rem;
+    height: 6.25rem;
+    font-size: 2rem;
+}
+
+.avatar-sm {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+.avatar-xsm {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+}
+
+.avatar-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
