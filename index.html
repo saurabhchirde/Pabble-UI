@@ -6,16 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./components.css" />
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <title>Indo UI | Documentation</title>
 </head>
 
 <body>
-  <div class="main-container">
+
+  <!-- nav horizontal bar -->
+  <div class="navHead cont-shadow">
+    <div class="logo title-xxl mg-2-lt">IndoUI</div>
+  </div>
+
+  <!-- nav verticle bar -->
+  <nav class="nav mg-2-lr mg-1-top">
+    <h1 class="title-lg pd-point8-lt">Components</h1>
+
+    <a href="#alert">
+      <button class="btn secondary-text-btn-lg">
+        Alerts</button>
+    </a>
+    <a href="#buttons"><button class="btn secondary-text-btn-lg">
+        Buttons</button>
+    </a>
+    <a href="#avatar">
+      <button class="btn secondary-text-btn-lg">
+        Avatar</button>
+    </a>
+    <a href="#badge">
+      <button class="btn secondary-text-btn-lg">
+        Badge</button>
+    </a>
+  </nav>
+
+  <!-- body -->
+
+  <div class="main-container main">
 
     <!-- alerts -->
-    <div id="alert" class="mg-1-all pd-1-all">
+    <div id="alert" class="pd-1-lr pd-1-bot">
       <h1 class="mg-point8-tb">Alert</h1>
       <p>
         An alert displays a short, important message in a way that attracts
@@ -31,7 +61,7 @@
 
       <!-- alert without close -->
 
-      <div class="container-lg-lt cont-shadow pd-point6-all mg-point8-tb">
+      <div class="container-lg cont-shadow pd-point6-all mg-point8-tb">
 
         <div class="alert-success">
           <i class="fas fa-check-circle alert-icon"></i>
@@ -173,57 +203,64 @@
 
     <!-- buttons -->
 
-    <div id="buttons" class="mg-1-all pd-1-all">
+    <div id="buttons" class="pd-1-lr pd-1-bot">
       <h1 class="mg-point8-tb">Buttons</h1>
       <p>Buttons allow users to take actions, and make choices, with a single tap.
       </p>
       <h2 class="mg-1-tb">Primary :</h2>
 
-      <div class="component-container">
-        Solid:
-        <button class="btn primary-btn">Primary</button>
-        <button class="btn secondary-btn">Secondary</button>
-        <button class="btn disabled-btn" disabled="disabled">Disabled</button><br>
-
-        <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/UoSptKVsg9RtTarDIDlN"
-          style="width: 43rem; height: 170px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe><br />
+      <div class="cont-shadow component-container pd-1-all">
+        <div class="container-lg ">
+          Solid:
+          <button class="btn primary-btn">Primary</button>
+          <button class="btn secondary-btn">Secondary</button>
+          <button class="btn disabled-btn" disabled="disabled">Disabled</button>
+        </div>
       </div>
 
-      <div class="component-container">
-        Outlined:
-        <button class="btn primary-outlined-btn">
-          Primary</button>
-        <button class="btn secondary-outlined-btn">
-          Secondary
-        </button><br />
+      <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/UoSptKVsg9RtTarDIDlN"
+        style="width: 43rem; height: 180px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe><br />
 
-        <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/C54B3afbIY1whuzJdJie"
-          style="width: 43rem; height: 133px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe><br />
+      <div class="cont-shadow component-container pd-1-all">
+        <div class="container-lg">
+          Outlined:
+          <button class="btn primary-outlined-btn">
+            Primary</button>
+          <button class="btn secondary-outlined-btn">
+            Secondary
+          </button>
+        </div>
       </div>
+
+      <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/C54B3afbIY1whuzJdJie"
+        style="width: 43rem; height: 140px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe><br />
 
       <h2 class="mg-1-tb">Link :</h2>
-      <div class="component-container">
-        <a href=""><button class="btn primary-text-btn">
-            Primary Text
-          </button></a>
+      <div class="cont-shadow component-container pd-1-all">
+        <div class="container-lg">
+          <a href=""><button class="btn primary-text-btn">
+              Primary Text
+            </button></a>
 
-        <a href=""><button class="btn secondary-text-btn">
-            Secondary Text
-          </button></a><br />
+          <a href=""><button class="btn secondary-text-btn">
+              Secondary Text
+            </button></a>
 
-        <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/EbvyhH0yifYk1k6ZW7LG"
-          style="width: 43rem; height: 210px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe><br />
+        </div>
       </div>
 
+      <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/EbvyhH0yifYk1k6ZW7LG"
+        style="width: 43rem; height: 220px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe><br />
+
       <h2 class="mg-1-tb">Icon Buttons:</h2>
-      <div class="component-container">
-        <div class="icon-btns">
+      <div class="cont-shadow component-container pd-1-all">
+        <div class="icon-btns container-lg ">
 
           <button class="btn primary-text-btn icon-lg">
             <i class="fas fa-shopping-cart"></i></button>
@@ -235,16 +272,16 @@
             <i class="fas fa-history"></i></button>
 
         </div><br />
-
-        <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/badjHcMfrtml92bj2fiL"
-          style="width: 43rem; height: 200px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe><br />
       </div>
 
+      <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/badjHcMfrtml92bj2fiL"
+        style="width: 43rem; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe><br />
+
       <h2 class="mg-1-tb">Icon Buttons with label:</h2>
-      <div class="component-container">
-        <div class="icon-btns">
+      <div class="cont-shadow component-container pd-1-all">
+        <div class="icon-btns container-lg ">
 
           <button class="btn primary-cart-btn">
             <i class="fas fa-shopping-cart"></i>&nbsp; Add to cart</button>
@@ -256,16 +293,16 @@
             <i class="fas fa-trash"></i>&nbsp; Delete</button>
 
         </div><br />
-
-        <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/XZpSeoloVxWzTJgM9ymE"
-          style="width: 43rem; height: 220px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe><br />
       </div>
 
+      <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/XZpSeoloVxWzTJgM9ymE"
+        style="width: 43rem; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe><br />
+
       <h2 class="mg-1-tb">Floating :</h2>
-      <div class="component-container">
-        <div class="floating">
+      <div class="cont-shadow component-container pd-1-all">
+        <div class="floating container-lg">
 
           <button class="btn primary-btn floating-btn icon-sm">
             <i class="fas fa-shopping-cart"></i></button>
@@ -277,19 +314,19 @@
             <i class="fas fa-location-arrow"></i></button>
 
         </div><br />
-
-        <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/WuooPlDVDFb3Gqq02K0I"
-          style="width: 43rem; height: 220px; border:0; transform: scale(1); overflow:hidden;"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe><br />
       </div>
+
+      <iframe class="container-lg mg-1-tb" src="https://carbon.now.sh/embed/WuooPlDVDFb3Gqq02K0I"
+        style="width: 43rem; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe><br />
 
     </div>
     <hr />
 
     <!-- avatar -->
 
-    <div id="avatar" class="mg-1-all pd-1-all">
+    <div id="avatar" class="pd-1-lr pd-1-bot">
       <h1 class="mg-point8-tb">Avatar</h1>
       <p>
         Avatars can be used to represent people or objects. It supports images or letters.
@@ -298,53 +335,31 @@
       <!-- avatar as images -->
       <h2 class="mg-1-tb">Image Avatar</h2>
 
-      <div class="component-container">
-        <!-- avatar square -->
-        <div class="avatar-square mg-1-tb mg-2-lr">
-          <div class="avatar avatar-lg"><img loading="lazy" src="components/images/avatar.jpeg" class="img-responsive"
-              alt="">
-          </div>
-          <div class="avatar avatar-md"><img loading="lazy" src="components/images/avatar.jpeg" class="img-responsive"
-              alt="">
-          </div>
-          <div class="avatar avatar-sm"><img loading="lazy" src="components/images/avatar.jpeg" class="img-responsive"
-              alt="">
-          </div>
-          <div class="avatar avatar-xsm"><img loading="lazy" src="components/images/avatar.jpeg" class="img-responsive"
-              alt="">
-          </div>
-        </div>
-        <!-- avatar round -->
+      <div class="cont-shadow component-container pd-1-all mg-1-bot">
         <div class="avatar-round mg-1-tb mg-2-lr">
-          <div class="avatar avatar-lg"><img loading="lazy" src="components/images/avatar.jpeg"
+          <div class="avatar avatar-lg"><img loading="lazy" src="components/images/avatar1.jpeg"
               class="img-responsive img-round" alt="">
           </div>
-          <div class="avatar avatar-md"><img loading="lazy" src="components/images/avatar.jpeg"
+          <div class="avatar avatar-md"><img loading="lazy" src="components/images/avatar2.jpeg"
               class="img-responsive img-round" alt="">
           </div>
           <div class="avatar avatar-sm"><img loading="lazy" src="components/images/avatar.jpeg"
               class="img-responsive img-round" alt="">
           </div>
-          <div class="avatar avatar-xsm"><img loading="lazy" src="components/images/avatar.jpeg"
+          <div class="avatar avatar-xsm"><img loading="lazy" src="components/images/avatar1.jpeg"
               class="img-responsive img-round" alt="">
           </div>
-        </div>
+        </div><br>
       </div>
+
+      <iframe src="https://carbon.now.sh/embed/8UXw3nRuCxCp43VTYrDS"
+        style="width: 43rem; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
       <!-- Avatar as text -->
       <h2 class="mg-1-tb">Text Avatar</h2>
-      <div class="component-container">
-        <!-- avatar square -->
-        <div class="avatar-square mg-1-tb mg-2-lr">
-          <div class="avatar avatar-lg avatar-text" role="img">IN
-          </div>
-          <div class="avatar avatar-md avatar-text" role="img">IN
-          </div>
-          <div class="avatar avatar-sm avatar-text" role="img">IN
-          </div>
-          <div class="avatar avatar-xsm avatar-text" role="img">IN
-          </div>
-        </div>
-        <!-- avatar round -->
+      <div class="cont-shadow component-container pd-1-all mg-1-bot">
         <div class="avatar-round mg-1-tb mg-2-lr">
           <div class="avatar avatar-lg avatar-text img-round">IN
           </div>
@@ -356,9 +371,161 @@
           </div>
         </div>
       </div>
+
+      <iframe src="https://carbon.now.sh/embed/wcfYmGa4vakaUe5dDaJr"
+        style="width: 43rem; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
     </div>
+    <hr>
+
+    <!-- badge -->
+
+    <div id="badge" class="pd-1-lr pd-1-bot">
+      <h1 class="mg-point8-tb">Badge</h1>
+      <p>
+        Badges are used to display a notification count or status information.
+      </p>
+
+      <!-- badge on image -->
+      <h2 class="mg-1-tb">Status Badge</h2>
+
+      <div class="cont-shadow component-container pd-1-all mg-1-bot">
+        <div class="avatar-round mg-1-tb mg-2-lr">
+          <div class="badge-container">
+            <div class="avatar avatar-lg"><img loading="lazy" src="components/images/avatar2.jpeg"
+                class="img-responsive img-round" alt="">
+            </div>
+            <span class="status-badge status-offline"></span>
+          </div>
+          <div class="badge-container">
+            <div class="avatar avatar-md avatar-text img-round">IN
+            </div>
+            <span class="status-badge status-online"></span>
+          </div>
+          <div class="badge-container">
+            <div class="avatar avatar-sm"><img loading="lazy" src="components/images/avatar.jpeg"
+                class="img-responsive img-round" alt="">
+            </div>
+            <span class="status-badge status-away"></span>
+          </div>
+          <div class="badge-container">
+            <div class="avatar avatar-xsm"><img loading="lazy" src="components/images/avatar1.jpeg"
+                class="img-responsive img-round" alt="">
+            </div>
+            <span class="status-badge status-offline"></span>
+          </div>
+        </div>
+      </div>
+
+      <iframe src="https://carbon.now.sh/embed/6l634OAy9N7tkDY9U3CS"
+        style="width: 43rem; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <!-- Badge on text -->
+
+      <h2 class="mg-1-tb">Text Badge</h2>
+
+      <div class="cont-shadow component-container flex-dir-column flex-align-start pd-1-all mg-1-bot">
+
+        <div class="badge-container">
+          <h1 class="badge-text">Heading h1 with badge <span class="badge-on-text badge-round">2</span></h1>
+        </div>
+        <div class="badge-container">
+          <h2 class="badge-text">Heading h2 with badge <span class="badge-on-text badge-round">2</span></h2>
+        </div>
+        <div class="badge-container">
+          <h3 class="badge-text">Heading h3 with badge <span class="badge-on-text badge-square">2</span></h3>
+        </div>
+        <div class="badge-container">
+          <h4 class="badge-text">Heading h4 with badge <span class="badge-on-text badge-square">2</span></h4>
+        </div>
+      </div>
+
+      <iframe src="https://carbon.now.sh/embed/WQ5fZmjmhTEher3i7OMh"
+        style="width: 43rem; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <!-- Badge on icon -->
+
+      <h2 class="mg-1-tb">Icon Badge</h2>
+
+      <div class="cont-shadow component-container pd-1-all mg-1-bot">
+
+        <div class="badge-container">
+          <button class="btn secondary-text-btn icon-lg">
+            <i class="fas fa-shopping-cart"><span class="badge-on-icon">2</span></i></button>
+        </div>
+        <div class="badge-container">
+          <button class="btn secondary-text-btn icon-lg">
+            <i class="fas fa-envelope"><span class="badge-on-icon">12</span></i></button>
+        </div>
+        <div class="badge-container">
+          <button class="btn secondary-text-btn icon-lg">
+            <i class="fas fa-envelope"><span class="badge-on-icon">25+</span></i></button>
+        </div>
+        <div class="badge-container">
+          <button class="btn secondary-text-btn icon-lg">
+            <i class="fas fa-envelope"><span class="badge-on-icon">215+</span></i></button>
+        </div>
+      </div>
+
+      <iframe src="https://carbon.now.sh/embed/akMmpPPUtn4KGf2bAZ8r"
+        style="width: 43rem; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <!--Button with toggle Badge -->
+
+      <h2 class="mg-1-tb">Toggle Badge Button</h2>
+      <div class="cont-shadow component-container pd-1-all mg-1-bot">
+        <div class="badge-container">
+          <button class="btn primary-outlined-btn">Hide<span class="badge-on-btn ">7</span></button>
+        </div>
+
+        <div class="badge-container">
+          <button class="btn secondary-btn">Hide<span class="badge-on-btn ">2</span></button>
+        </div>
+      </div>
+
+      <iframe src="https://carbon.now.sh/embed/Df43GHC5gQAt5jGwjFvV"
+        style="width: 43rem; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+
+
+
+      <!--
+        <div>
+            <p>Text with large badge<span class="lg-badge">1</span></p>
+          </div>
+          <div>
+            <p>
+              Button with badge on the left <div class="btn-badge-cont"><button>Action</button><span
+                  class="btn-badge">8</span></div>
+            </p>
+          </div>
+          <div>
+            <p>
+              Button toggles badge visibility <div class="btn-toggle-cont"><button class="btn-hide">Hide</button><span
+                  class="btn-toggle-badge">7</span></div>
+            </p>
+          </div>
+          <div>
+            <p>Icon with badge<div><i class="fas fa-home"></i><span class="icon-badge">7</span></div>
+            </p>
+          </div> -->
+
+
+    </div>
+    <hr>
 
   </div>
+
   <script src="./index.js"></script>
   <script src="./components/alerts/alert.js"></script>
 </body>
