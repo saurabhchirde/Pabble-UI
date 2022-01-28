@@ -26,6 +26,7 @@
 .primary-text-btn-sm,
 .primary-text-btn-lg{
     background: none;
+    border: none;
     color: var(--primary-color);
 }
 
