@@ -5,11 +5,11 @@
     flex-wrap: wrap;
 }
 
-.avatar-square,
 .avatar-round,
 .avatar-text {
     display: flex;
     align-items: flex-end;
+    column-gap: 2rem;
 }
 
 .avatar {
@@ -41,9 +41,13 @@
     font-size: 0.8rem;
 }
 
+.avatar-round div {
+    border-radius: 50%;
+}
+
 .avatar-text {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--primary-color);
 }

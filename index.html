@@ -15,54 +15,61 @@
 <body>
 
   <!-- nav horizontal bar -->
-  <div class="nav-header cont-shadow">
+  <div class="nav-header">
     <a href="/">
       <div class="logo title-xxl mg-2-lt">IndoUI</div>
     </a>
-    <a href="/">
-      <div class="nav-header-text title-lg mg-2-rt">Documentation</div>
-    </a>
+    <div class="nav-header-right-side mg-2-rt">
+      <a href="/">
+        <div class="nav-header-text title-lg mg-1-rt">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
   </div>
 
   <!-- nav verticle bar -->
   <nav class="nav pd-2-lr nav-container mg-1-top">
+    <h1 class="title-lg pd-point8-lt">About</h1>
+    <h1 class="title-lg pd-point8-lt">Getting Started</h1>
+    <h1 class="title-lg pd-point8-lt">Color</h1>
     <h1 class="title-lg pd-point8-lt">Components</h1>
-
-    <a href="#alert">
-      <button class="btn secondary-text-btn-lg">
-        Alerts</button>
-    </a>
-    <a href="#buttons"><button class="btn secondary-text-btn-lg">
-        Buttons</button>
-    </a>
-    <a href="#avatar">
-      <button class="btn secondary-text-btn-lg">
-        Avatar</button>
-    </a>
-    <a href="#badge">
-      <button class="btn secondary-text-btn-lg">
-        Badge</button>
-    </a>
-    <a href="#cards">
-      <button class="btn secondary-text-btn-lg">
-        Cards</button>
-    </a>
-    <a href="#image">
-      <button class="btn secondary-text-btn-lg">
-        Image</button>
-    </a>
-    <a href="#input">
-      <button class="btn secondary-text-btn-lg">
-        Input</button>
-    </a>
-    <a href="#rating">
-      <button class="btn secondary-text-btn-lg">
-        Ratings</button>
-    </a>
-    <a href="#toast">
-      <button class="btn secondary-text-btn-lg">
-        Toast/Snackbar</button>
-    </a>
+    <div class="nav-items mg-1-lt">
+      <a href="#alert">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Alerts</button>
+      </a>
+      <a href="#buttons"><button class="btn secondary-text-btn dark-text-btn">
+          Buttons</button>
+      </a>
+      <a href="#avatar">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Avatar</button>
+      </a>
+      <a href="#badge">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Badge</button>
+      </a>
+      <a href="#cards">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Cards</button>
+      </a>
+      <a href="#image">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Image</button>
+      </a>
+      <a href="#input">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Input</button>
+      </a>
+      <a href="#rating">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Ratings</button>
+      </a>
+      <a href="#toast">
+        <button class="btn secondary-text-btn dark-text-btn">
+          Toast/Snackbar</button>
+      </a>
+    </div>
   </nav>
 
   <!-- body -->
@@ -76,8 +83,8 @@
         An alert displays a short, important message in a way that attracts
         the user's attention without interrupting the user's task.
       </p>
-      <div class="container-lg">
-        <h2 id="basic-alert" class="mg-2-top mg-1-bot title-lg font-wt-5">
+      <div id="basic-alert" class="container-lg">
+        <h2 class="mg-2-top mg-1-bot title-lg font-wt-5">
           Basic alerts
         </h2>
         <p>
@@ -87,7 +94,7 @@
 
         <!-- alert without close -->
 
-        <div class="cont-shadow pd-point6-all mg-point8-tb">
+        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
 
           <div class="alert-success">
             <i class="fas fa-check-circle alert-icon"></i>
@@ -118,13 +125,13 @@
       </div>
       <!--descriptive alert without close -->
 
-      <div id="descriptive-alert container-lg">
+      <div id="descriptive-alert" class="container-lg">
         <h2 class="mg-2-top mg-1-bot title-lg font-wt-5">Descriptive alerts</h2>
         <p class="mg-point6-top">
           The alert offers four severity levels that set a distinctive icon
           and color.
         </p>
-        <div class="cont-shadow pd-point6-all mg-point8-tb">
+        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
 
           <div class="alert-des-success">
             <i class="fas fa-check-circle alert-icon"></i>
@@ -179,7 +186,7 @@
 
       <!-- alert with cta -->
 
-      <div id="alert-with-cta container-lg">
+      <div id="alert-with-cta" class="container-lg">
         <div class="alert-cta-demo sub-title mg-2-top mg-point6-bot">
           <h2 class="mg-2-top mg-1-bot title-lg font-wt-5">Alert with actions</h2>
           <button class="btn primary-outlined-btn-sm">Demo</button>
@@ -195,7 +202,7 @@
           IconButton.
         </p>
 
-        <div class="cont-shadow pd-point6-all mg-point8-tb">
+        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
 
           <div class="alert-success-btn">
             <div class="alert-text">
