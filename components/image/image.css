@@ -16,3 +16,8 @@ iframe {
     transform: scale(1);
     overflow: hidden;
 }
+
+.solid-btn,
+.outlined-btn {
+    height: 12rem;
+}

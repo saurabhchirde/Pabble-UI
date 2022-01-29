@@ -13,7 +13,7 @@ body {
     position: relative;
     display: grid;
     grid-template-areas:
-        "navHead navHead navHead"
+        "nav-header nav-header nav-header"
         "nav body body"
         "... body body";
 }
@@ -24,8 +24,8 @@ body {
     color: var(--primary-color);
 }
 
-.navHead {
-    grid-area: navHead;
+.nav-header {
+    grid-area: nav-header;
     position: sticky;
     top: 0;
     padding: 1rem;
@@ -33,10 +33,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--primary-color);
-    font-weight: bold;
+    font-weight: 500;
     background-color: var(--primary-bg);
     box-shadow: 0 0 8px var(--medium-blue-gray);
+}
+
+.nav-header-text {
+    color: var(--text-light);
 }
 
 /* vertical nav bar */
@@ -58,8 +61,8 @@ nav {
 }
 
 nav .title-lg {
-    font-weight: 500;
-    color: var(--text-dark);
+    font-weight: 400;
+    color: var(--text-lighter);
     margin-bottom: 1rem;
 }
 
