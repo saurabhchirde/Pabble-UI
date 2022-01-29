@@ -1,0 +1,25 @@
+/* icon size */
+
+.icon-xsm {
+    font-size: 0.6rem;
+}
+
+.icon-sm {
+    font-size: 0.8rem;
+}
+
+.icon-md {
+    font-size: 1rem;
+}
+
+.icon-lg {
+    font-size: 1.2rem;
+}
+
+.icon-xl {
+    font-size: 1.4rem;
+}
+
+.icon-xxl {
+    font-size: 1.6rem;
+}

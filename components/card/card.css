@@ -1,0 +1,25 @@
+/* img size */
+
+.card-img-xsm {
+    width: 10rem;
+}
+
+.card-img-sm {
+    width: 15rem;
+}
+
+.card-img-md {
+    width: 18rem;
+}
+
+.card-img-lg {
+    width: 21rem;
+}
+
+.card-img-xl {
+    width: 25rem;
+}
+
+.card-img-xxl {
+    width: 30rem;
+}

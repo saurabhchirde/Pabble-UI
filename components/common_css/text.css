@@ -1,0 +1,63 @@
+/* title h1 */
+
+.title-sm {
+    font-size: 0.8rem;
+}
+
+.title-md {
+    font-size: 1rem;
+}
+
+.title-lg {
+    font-size: 1.2rem;
+}
+
+.title-xl {
+    font-size: 1.4rem;
+}
+
+.title-xxl {
+    font-size: 1.6rem;
+}
+
+/* Paragraph text */
+
+.p-sm {
+    font-size: 0.6rem;
+}
+
+.p-md {
+    font-size: 0.8rem;
+}
+
+.p-lg {
+    font-size: 1rem;
+}
+
+.p-xl {
+    font-size: 1.2rem;
+}
+
+.p-xxl {
+    font-size: 1.4rem;
+}
+
+/* text link */
+
+a {
+    text-decoration: none;
+}
+
+/* font weight */
+
+.font-wt-3 {
+    font-weight: 300;
+}
+
+.font-wt-4 {
+    font-weight: 400;
+}
+
+.font-wt-5 {
+    font-weight: 500;
+}
