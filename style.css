@@ -111,6 +111,7 @@ nav h1 {
 #alert,
 #buttons,
 #avatar,
-#badge {
+#badge,
+#cards {
     scroll-margin-block: 4.5rem;
 }

@@ -1,3 +1,17 @@
+/* display flex row */
+
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* display flex column */
+
+.display-flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
 /* flex column */
 
 .flex-dir-column {

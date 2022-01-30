@@ -1,4 +1,8 @@
-/* title h1 */
+/* title */
+
+.title-xsm {
+    font-size: 0.6rem;
+}
 
 .title-sm {
     font-size: 0.8rem;
@@ -17,6 +21,86 @@
 }
 
 .title-xxl {
+    font-size: 1.6rem;
+}
+
+/*  title with font weight */
+
+.title-xsm-wt-3,
+.title-sm-wt-3,
+.title-md-wt-3,
+.title-lg-wt-3,
+.title-xl-wt-3,
+.title-xxl-wt-3 {
+    font-weight: 300;
+}
+
+.title-xsm-wt-4,
+.title-sm-wt-4,
+.title-md-wt-4,
+.title-lg-wt-4,
+.title-xl-wt-4,
+.title-xxl-wt-4 {
+    font-weight: 400;
+}
+
+.title-xsm-wt-5,
+.title-sm-wt-5,
+.title-md-wt-5,
+.title-lg-wt-5,
+.title-xl-wt-5,
+.title-xxl-wt-5 {
+    font-weight: 500;
+}
+
+.title-xsm-wt-bold,
+.title-sm-wt-bold,
+.title-md-wt-bold,
+.title-lg-wt-bold,
+.title-xl-wt-bold,
+.title-xxl-wt-bold {
+    font-weight: bold;
+}
+
+.title-xsm-wt-3,
+.title-xsm-wt-4,
+.title-xsm-wt-5,
+.title-xsm-wt-bold{
+    font-size: 0.6rem;
+}
+
+.title-sm-wt-3,
+.title-sm-wt-4,
+.title-sm-wt-5,
+.title-sm-wt-bold{
+    font-size: 0.8rem;
+}
+
+.title-md-wt-3,
+.title-md-wt-4,
+.title-md-wt-5,
+.title-md-wt-bold{
+    font-size: 1rem;
+}
+
+.title-lg-wt-3,
+.title-lg-wt-4,
+.title-lg-wt-5,
+.title-lg-wt-bold{
+    font-size: 1.2rem;
+}
+
+.title-xl-wt-3,
+.title-xl-wt-4,
+.title-xl-wt-5,
+.title-xl-wt-bold{
+    font-size: 1.4rem;
+}
+
+.title-xxl-wt-3,
+.title-xxl-wt-4,
+.title-xxl-wt-5,
+.title-xxl-wt-bold{
     font-size: 1.6rem;
 }
 
