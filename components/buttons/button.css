@@ -10,55 +10,68 @@
     text-decoration: none;
 }
 
-.primary-btn,
-.primary-outlined-btn,
-.primary-text-btn,
-.primary-cart-btn,
-.primary-cart-outlined-btn,
-.secondary-btn,
-.secondary-text-btn,
-.secondary-outlined-btn,
-.disabled-btn{
+.primary-btn-md,
+.primary-outlined-btn-md,
+.primary-text-btn-md,
+.label-icon-btn-md,
+.label-icon-outlined-btn-md,
+.secondary-btn-md,
+.secondary-text-btn-md,
+.secondary-outlined-btn-md,
+.disabled-btn-md,
+.floating-btn-md{
     padding: 0.5rem 0.8rem;
 }
 
 
-.primary-btn,
+.primary-btn-md,
 .primary-btn-xsm,
 .primary-btn-sm,
 .primary-btn-lg,
-.primary-cart-btn,
-.primary-cart-btn-xsm,
-.primary-cart-btn-sm,
-.primary-cart-btn-lg {
+.label-icon-btn-md,
+.label-icon-btn-xsm,
+.label-icon-btn-sm,
+.label-icon-btn-lg,
+.floating-btn-xsm,
+.floating-btn-sm,
+.floating-btn-md,
+.floating-btn-lg,
+.floating-btn-xl,
+.floating-btn-xxl {
     background-color: var(--primary-color);
     color: var(--text-white);
 }
 
 
-.primary-text-btn,
+.primary-text-btn-md,
 .primary-text-btn-xsm,
 .primary-text-btn-sm,
-.primary-text-btn-lg {
+.primary-text-btn-lg,
+.icon-btn-xsm,
+.icon-btn-sm,
+.icon-btn-md,
+.icon-btn-lg,
+.icon-btn-xl,
+.icon-btn-xxl {
     background: none;
     border: none;
     color: var(--primary-color);
 }
 
-.primary-outlined-btn,
+.primary-outlined-btn-md,
 .primary-outlined-btn-xsm,
 .primary-outlined-btn-sm,
 .primary-outlined-btn-lg,
-.primary-cart-outlined-btn,
-.primary-cart-outlined-btn-xsm,
-.primary-cart-outlined-btn-sm,
-.primary-cart-outlined-btn-lg {
+.label-icon-outlined-btn-md,
+.label-icon-outlined-btn-xsm,
+.label-icon-outlined-btn-sm,
+.label-icon-outlined-btn-lg {
     color: var(--primary-color);
     background-color: var(--primary-bg);
     outline: 1px solid var(--primary-color);
 }
 
-.secondary-btn,
+.secondary-btn-md,
 .secondary-btn-xsm,
 .secondary-btn-sm,
 .secondary-btn-lg {
@@ -66,7 +79,7 @@
     background-color: var(--faint-gray);
 }
 
-.disabled-btn,
+.disabled-btn-md,
 .disabled-btn-xsm,
 .disabled-btn-sm,
 .disabled-btn-lg {
@@ -75,7 +88,7 @@
     pointer-events: none;
 }
 
-.secondary-outlined-btn,
+.secondary-outlined-btn-md,
 .secondary-outlined-btn-xsm,
 .secondary-outlined-btn-sm,
 .secondary-outlined-btn-lg {
@@ -84,10 +97,16 @@
     background-color: var(--primary-bg);
 }
 
-.secondary-text-btn,
+.secondary-text-btn-md,
 .secondary-text-btn-xsm,
 .secondary-text-btn-sm,
-.secondary-text-btn-lg {
+.secondary-text-btn-lg,
+.badge-icon-btn-xsm,
+.badge-icon-btn-sm,
+.badge-icon-btn-md,
+.badge-icon-btn-lg,
+.badge-icon-btn-xl,
+.badge-icon-btn-xxl {
     background: none;
     color: var(--text-light);
     padding: 0.3rem 0.4rem;
@@ -95,20 +114,20 @@
 
 .primary-btn-sm,
 .primary-outlined-btn-sm,
-.primary-cart-btn-sm,
-.primary-cart-outlined-btn-sm,
+.label-icon-btn-sm,
+.label-icon-outlined-btn-sm,
 .primary-text-btn-sm,
 .secondary-text-btn-sm,
 .secondary-btn-sm,
-.disabled-btn-sm {
+.disabled-btn-sm{
     font-size: 0.8rem;
     padding: 0.3rem 0.4rem;
 }
 
 .primary-btn-xsm,
 .primary-outlined-btn-xsm,
-.primary-cart-btn-xsm,
-.primary-cart-outlined-btn-xsm,
+.label-icon-btn-xsm,
+.label-icon-outlined-btn-xsm,
 .primary-text-btn-xsm,
 .secondary-text-btn-xsm,
 .secondary-btn-xsm,
@@ -120,69 +139,89 @@
 
 .primary-btn-lg,
 .primary-outlined-btn-lg,
-.primary-cart-btn-lg,
-.primary-cart-outlined-btn-lg,
-.primary-cart-btn-lg,
+.label-icon-btn-lg,
+.label-icon-outlined-btn-lg,
+.label-icon-btn-lg,
 .primary-text-btn-lg,
 .secondary-text-btn-lg,
 .secondary-btn-lg,
-.disabled-btn-lg {
+.disabled-btn-lg{
     font-size: 1.2rem;
     padding: 0.5rem 0.8rem;
 }
 
-.primary-btn:hover,
+.primary-btn-md:hover,
 .primary-btn-sm:hover,
 .primary-btn-xsm:hover,
 .primary-btn-lg:hover,
-.primary-cart-btn:hover,
-.primary-cart-btn-sm:hover,
-.primary-cart-btn-xsm:hover,
-.primary-cart-btn-lg:hover {
+.label-icon-btn-md:hover,
+.label-icon-btn-sm:hover,
+.label-icon-btn-xsm:hover,
+.label-icon-btn-lg:hover,
+.floating-btn-xsm:hover,
+.floating-btn-sm:hover,
+.floating-btn-md:hover,
+.floating-btn-lg:hover,
+.floating-btn-xl:hover,
+.floating-btn-xxl:hover {
     background-color: var(--primary-dark-color);
 }
 
-.primary-text-btn:hover,
+.primary-text-btn-md:hover,
 .primary-text-btn-sm:hover,
 .primary-text-btn-xsm:hover,
-.primary-text-btn-lg:hover {
+.primary-text-btn-lg:hover,
+.icon-btn-xsm:hover,
+.icon-btn-sm:hover,
+.icon-btn-md:hover,
+.icon-btn-lg:hover,
+.icon-btn-xl:hover,
+.icon-btn-xxl:hover {
     color: var(--primary-dark-color);
 }
 
-.primary-outlined-btn:hover,
+.primary-outlined-btn-md:hover,
 .primary-outlined-btn-sm:hover,
 .primary-outlined-btn-xsm:hover,
-.primary-outlined-btn-lg:hover,
-.primary-cart-outlined-btn:hover,
-.primary-cart-outlined-btn-sm:hover,
-.primary-cart-outlined-btn-xsm:hover,
-.primary-cart-outlined-btn-lg:hover {
+.primary-outlined-btn-lg-md:hover,
+.label-icon-outlined-btn-md:hover,
+.label-icon-outlined-btn-sm:hover,
+.label-icon-outlined-btn-xsm:hover,
+.label-icon-outlined-btn-lg:hover {
     background-color: var(--faint-gray);
     color: var(--primary-dark-color);
     outline: 1px solid var(--primary-dark-color);
 }
 
-.secondary-btn:hover,
+.secondary-btn-md:hover,
 .secondary-btn-xsm:hover,
 .secondary-btn-sm:hover,
 .secondary-btn-lg:hover,
-.secondary-text-btn:hover,
+.secondary-text-btn-md:hover,
 .secondary-text-btn-xsm:hover,
 .secondary-text-btn-sm:hover,
 .secondary-text-btn-lg:hover,
-.secondary-outlined-btn:hover,
+.badge-icon-btn-xsm:hover,
+.badge-icon-btn-sm:hover,
+.badge-icon-btn-md:hover,
+.badge-icon-btn-lg:hover,
+.badge-icon-btn-xl:hover,
+.badge-icon-btn-xxl:hover,
+.secondary-outlined-btn-md:hover,
 .secondary-outlined-btn-xsm:hover,
 .secondary-outlined-btn-sm:hover,
 .secondary-outlined-btn-lg:hover {
     color: var(--primary-color);
 }
 
-.secondary-outlined-btn:hover,
+.secondary-outlined-btn-md:hover,
 .secondary-outlined-btn-xsm:hover,
 .secondary-outlined-btn-sm:hover,
 .secondary-outlined-btn-lg:hover {
     outline: 1px solid var(--primary-color);
 }
+
+/* floating btn */
 
 .floating,
 .icon-btns {
@@ -190,11 +229,119 @@
     align-items: center;
 }
 
-.floating-btn {
+.floating-btn-xsm,
+.floating-btn-sm,
+.floating-btn-md,
+.floating-btn-lg,
+.floating-btn-xl,
+.floating-btn-xxl{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
     border-radius: 50%;
     box-shadow: 0 5px 10px var(--text-lighter);
+}
+
+.floating-btn-xsm{
+    font-size: 0.6rem;
+}
+
+.floating-btn-sm{
+    font-size: 0.8rem;
+}
+
+.floating-btn-md{
+    font-size: 1rem;
+}
+
+.floating-btn-lg{
+    font-size: 1.2rem;
+}
+
+.floating-btn-xl{
+    font-size: 1.4rem;
+}
+
+.floating-btn-xxl{
+    font-size: 1.6rem
+}
+
+/* icon btn */
+
+.icon-btn-xsm,
+.icon-btn-sm,
+.icon-btn-md,
+.icon-btn-lg,
+.icon-btn-xl,
+.icon-btn-xxl{   
+    background: none;
+    border: none;
+    color: var(--primary-color);
+}
+
+/*.badge-icon-btn-xsm,
+.badge-icon-btn-sm,
+.badge-icon-btn-md,
+.badge-icon-btn-lg,
+.badge-icon-btn-xl,
+.badge-icon-btn-xxl{
+    /* background: none;
+    border: none;
+    color: var(--primary-color); 
+}*/
+
+.icon-btn-xsm{
+    font-size: 0.8rem;
+    padding: 0.2rem 0.3rem;
+}
+
+.icon-btn-sm{
+    font-size: 1rem;
+    padding: 0.3rem 0.4rem;
+}
+
+.icon-btn-md{
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.icon-btn-lg{
+    font-size: 1.4rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.icon-btn-xl{
+    font-size: 1.6rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.icon-btn-xxl{
+    font-size: 1.8rem;
+    padding: 0.5rem 0.8rem;
+}
+
+/* secondary icon btn */
+
+.badge-icon-btn-xsm{
+    font-size: 0.8rem;
+}
+
+.badge-icon-btn-sm{
+    font-size: 1rem;
+}
+
+.badge-icon-btn-md{
+    font-size: 1.2rem;
+}
+.badge-icon-btn-lg{
+    font-size: 1.4rem;
+}
+
+.badge-icon-btn-xl{
+    font-size: 1.6rem;
+}
+
+.badge-icon-btn-xxl{
+    font-size: 1.8rem;
 }

@@ -13,28 +13,32 @@
     border: 2px solid white;
 }
 
-.badge-container .avatar-lg~.status-badge {
+.badge-container .avatar-lg-round~.status-badge,
+.text-avatar-lg-round~.status-badge {
     right: 1.8em;
-    bottom: 0.8em;
+    bottom: 0.4em;
     height: 1.6rem;
     min-width: 1.6rem;
 }
 
-.badge-container .avatar-md~.status-badge {
+.badge-container .text-avatar-md-round~.status-badge,
+.avatar-md-round~.status-badge {
     right: 1em;
-    bottom: 0.6em;
+    bottom: 0.8em;
 }
 
-.badge-container .avatar-sm~.status-badge {
+.badge-container .avatar-sm-round~.status-badge,
+.text-avatar-sm-round~.status-badge {
     right: 0.5em;
-    bottom: 0.6em;
+    bottom: 0.2em;
     height: 1rem;
     min-width: 1rem;
 }
 
-.badge-container .avatar-xsm~.status-badge {
-    right: 0.5em;
-    bottom: 0.6em;
+.badge-container .avatar-xsm-round~.status-badge,
+.text-avatar-xsm-round~.status-badge {
+    right: 0.3em;
+    bottom: 0.3em;
     height: 0.7rem;
     min-width: 0.7rem;
 }
@@ -85,7 +89,7 @@
 }
 
 .badge-on-icon {
-    font-size: 0.8em;
+    font-size: 0.65em;
     top: 0.2em;
     right: 0.4em;
     padding: 0.2em 0.3em;
@@ -99,44 +103,44 @@
     border-radius: 50%;
 }
 
-.badge-on-card{        
+.badge-on-card {
     position: absolute;
     height: 1.6rem;
-    min-width: 2.7rem;        
+    min-width: 2.7rem;
     display: flex;
     align-items: center;
 }
 
-.top-left{
+.top-left {
     left: 0;
     top: 0;
     border-radius: 0 0 10px 0;
 }
 
-.top-right{
+.top-right {
     right: 0;
     top: 0;
     border-radius: 0 0 0 10px;
 }
 
-.badge-on-card h2{
+.badge-on-card h2 {
     font-size: 0.8rem;
     padding: 0.5em;
     font-weight: 500;
 }
 
-.card-light .badge-on-card{
+.card-light .badge-on-card {
     background-color: var(--primary-color);
 }
 
-.card-light .badge-on-card h2{
+.card-light .badge-on-card h2 {
     color: var(--text-white);
 }
 
-.card-dark .badge-on-card{
+.card-dark .badge-on-card {
     background-color: var(--primary-bg);
 }
 
-.card-dark .badge-on-card h2{
+.card-dark .badge-on-card h2 {
     color: var(--primary-color);
 }
