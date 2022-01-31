@@ -97,11 +97,11 @@
 }
 
 .text-overlay .card-title {
-    margin: -2.7rem 0 1.5rem;
+    margin: -2.9rem 0 1.3rem;
 }
 
 .text-overlay p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .overlay-text-white h1 {
@@ -112,22 +112,37 @@
     color: var(--text-dark);
 }
 
-.card-dark{
+.card-dark {
     background-color: var(--text-dark);
     color: var(--faint-gray);
 }
 
-.card-light{
+.card-dark .card-price {
+    color: var(--text-red-light);
+}
+
+.card-light {
     background-color: var(--primary-bg);
     color: var(--text-dark);
 }
 
-.card-dark p{
+.card-light .card-price {
+    color: var(--text-red-dark);
+}
+
+
+.card-dark p {
     color: var(--text-lighter);
 }
 
-.card-light p{
+.card-light p {
     color: var(--text-light);
 }
 
-.card-text-only{row-gap: 1rem;}
+.card-text-only {
+    row-gap: 1rem;
+}
+
+.card-shadow{
+    box-shadow: 0 10px 15px var(--text-light);
+}

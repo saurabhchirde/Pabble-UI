@@ -40,6 +40,9 @@ html {
     --text-lighter: rgb(175, 175, 175);
     --text-light: #777;
     --text-dark: #333;
+    --text-red-dark:#ca3535;
+    --text-red-light:#fea8a8;
+
 
     --success-bg: #e8fcf1;
     --success-text: #027e38;

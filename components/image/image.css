@@ -15,9 +15,5 @@ iframe {
     border: 0;
     transform: scale(1);
     overflow: hidden;
-}
-
-.solid-btn,
-.outlined-btn {
-    height: 12rem;
+    margin: 1rem 0;
 }
