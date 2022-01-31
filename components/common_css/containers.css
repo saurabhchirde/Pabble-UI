@@ -1,0 +1,47 @@
+/* main container */
+
+.main-container {
+    max-width: 66rem;
+}
+
+/* nav containers */
+
+.nav-container {
+    width: 14rem;
+}
+
+.nav-container-sm {
+    width: 10rem;
+}
+
+/* other containers */
+
+.container-sm {
+    min-width: 10rem;
+    max-width: 28rem;
+}
+
+.container-md {
+    min-width: 20rem;
+    max-width: 44rem;
+}
+
+.container-lg {
+    min-width: 27rem;
+    max-width: 62rem;
+}
+
+/* component container */
+
+.component-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+}
+
+/* container shadow */
+
+.cont-shadow {
+    box-shadow: 0 0 10px var(--btn-hover);
+}

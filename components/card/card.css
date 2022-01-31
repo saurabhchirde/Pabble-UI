@@ -1,0 +1,148 @@
+.card-img-container {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.5rem;
+}
+
+.card-vertical,
+.card-text-only {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 0 15px var(--btn-hover);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-vertical img {
+    max-width: 95%;
+}
+
+.card-horizontal {
+    position: relative;
+    display: flex;
+    width: 26rem;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 0 15px var(--btn-hover);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-horizontal img {
+    max-width: 95%;
+    margin: auto 0.6rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text,
+.overlay-text-white,
+.overlay-text-dark {
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem auto 0.4rem 0.4rem;
+}
+
+.card-title {
+    font-size: 0.8rem;
+    margin: 0.2rem 0;
+    font-weight: 500;
+}
+
+.card-price {
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+    font-weight: 500;
+    color: var(--error-text);
+}
+
+.card-nav {
+    margin: 0.5rem auto 0.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-to-cart {
+    width: 6rem;
+}
+
+.card-nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.text-overlay .card-title {
+    margin: -2.9rem 0 1.3rem;
+}
+
+.text-overlay p {
+    font-size: 0.8rem;
+}
+
+.overlay-text-white h1 {
+    color: var(--text-white);
+}
+
+.overlay-text-dark h1 {
+    color: var(--text-dark);
+}
+
+.card-dark {
+    background-color: var(--text-dark);
+    color: var(--faint-gray);
+}
+
+.card-dark .card-price {
+    color: var(--text-red-light);
+}
+
+.card-light {
+    background-color: var(--primary-bg);
+    color: var(--text-dark);
+}
+
+.card-light .card-price {
+    color: var(--text-red-dark);
+}
+
+
+.card-dark p {
+    color: var(--text-lighter);
+}
+
+.card-light p {
+    color: var(--text-light);
+}
+
+.card-text-only {
+    row-gap: 1rem;
+}
+
+.card-shadow{
+    box-shadow: 0 10px 15px var(--text-light);
+}
