@@ -66,6 +66,14 @@
     margin-top: 2rem;
 }
 
+.mg-3-top {
+    margin-top: 3rem;
+}
+
+.mg-4-top {
+    margin-top: 4rem;
+}
+
 /* margin bottom */
 
 .mg-point6-bot {
@@ -98,6 +106,14 @@
 
 .mg-2-bot {
     margin-bottom: 2rem;
+}
+
+.mg-3-bot {
+    margin-bottom: 3rem;
+}
+
+.mg-4-bot {
+    margin-bottom: 4rem;
 }
 
 /* margin left */
@@ -207,6 +223,16 @@
 .mg-2-tb {
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+.mg-3-tb {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mg-4-tb {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 /* margin left-right */

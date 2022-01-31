@@ -280,17 +280,6 @@
     color: var(--primary-color);
 }
 
-/*.badge-icon-btn-xsm,
-.badge-icon-btn-sm,
-.badge-icon-btn-md,
-.badge-icon-btn-lg,
-.badge-icon-btn-xl,
-.badge-icon-btn-xxl{
-    /* background: none;
-    border: none;
-    color: var(--primary-color); 
-}*/
-
 .icon-btn-xsm{
     font-size: 0.8rem;
     padding: 0.2rem 0.3rem;

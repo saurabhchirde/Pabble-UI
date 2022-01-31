@@ -108,10 +108,13 @@ nav h1 {
     grid-area: body;
 }
 
-#alert,
+#alert{
+    scroll-margin-block: 6rem;
+}
+
 #buttons,
 #avatar,
 #badge,
 #cards {
-    scroll-margin-block: 4.5rem;
+    scroll-margin-block: 3rem;
 }
