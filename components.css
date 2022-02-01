@@ -14,6 +14,7 @@
 @import "./components/common_css/flex.css";
 @import "./components/common_css/text.css";
 @import "./components/common_css/icons.css";
+@import "./components/common_css/code-snippet-primejs/codesnippet.css";
 
 * {
     margin: 0;
