@@ -11,13 +11,13 @@
 }
 
 .primary-btn-md,
-.primary-outlined-btn-md,
+.primary-outline-btn-md,
 .primary-text-btn-md,
 .label-icon-btn-md,
-.label-icon-outlined-btn-md,
+.label-icon-outline-btn-md,
 .secondary-btn-md,
 .secondary-text-btn-md,
-.secondary-outlined-btn-md,
+.secondary-outline-btn-md,
 .disabled-btn-md,
 .floating-btn-md{
     padding: 0.5rem 0.8rem;
@@ -58,14 +58,14 @@
     color: var(--primary-color);
 }
 
-.primary-outlined-btn-md,
-.primary-outlined-btn-xsm,
-.primary-outlined-btn-sm,
-.primary-outlined-btn-lg,
-.label-icon-outlined-btn-md,
-.label-icon-outlined-btn-xsm,
-.label-icon-outlined-btn-sm,
-.label-icon-outlined-btn-lg {
+.primary-outline-btn-md,
+.primary-outline-btn-xsm,
+.primary-outline-btn-sm,
+.primary-outline-btn-lg,
+.label-icon-outline-btn-md,
+.label-icon-outline-btn-xsm,
+.label-icon-outline-btn-sm,
+.label-icon-outline-btn-lg {
     color: var(--primary-color);
     background-color: var(--primary-bg);
     outline: 1px solid var(--primary-color);
@@ -88,10 +88,10 @@
     pointer-events: none;
 }
 
-.secondary-outlined-btn-md,
-.secondary-outlined-btn-xsm,
-.secondary-outlined-btn-sm,
-.secondary-outlined-btn-lg {
+.secondary-outline-btn-md,
+.secondary-outline-btn-xsm,
+.secondary-outline-btn-sm,
+.secondary-outline-btn-lg {
     outline: 1px solid var(--text-light);
     color: var(--text-light);
     background-color: var(--primary-bg);
@@ -113,9 +113,9 @@
 }
 
 .primary-btn-sm,
-.primary-outlined-btn-sm,
+.primary-outline-btn-sm,
 .label-icon-btn-sm,
-.label-icon-outlined-btn-sm,
+.label-icon-outline-btn-sm,
 .primary-text-btn-sm,
 .secondary-text-btn-sm,
 .secondary-btn-sm,
@@ -125,9 +125,9 @@
 }
 
 .primary-btn-xsm,
-.primary-outlined-btn-xsm,
+.primary-outline-btn-xsm,
 .label-icon-btn-xsm,
-.label-icon-outlined-btn-xsm,
+.label-icon-outline-btn-xsm,
 .primary-text-btn-xsm,
 .secondary-text-btn-xsm,
 .secondary-btn-xsm,
@@ -138,9 +138,9 @@
 }
 
 .primary-btn-lg,
-.primary-outlined-btn-lg,
+.primary-outline-btn-lg,
 .label-icon-btn-lg,
-.label-icon-outlined-btn-lg,
+.label-icon-outline-btn-lg,
 .label-icon-btn-lg,
 .primary-text-btn-lg,
 .secondary-text-btn-lg,
@@ -180,14 +180,14 @@
     color: var(--primary-dark-color);
 }
 
-.primary-outlined-btn-md:hover,
-.primary-outlined-btn-sm:hover,
-.primary-outlined-btn-xsm:hover,
-.primary-outlined-btn-lg-md:hover,
-.label-icon-outlined-btn-md:hover,
-.label-icon-outlined-btn-sm:hover,
-.label-icon-outlined-btn-xsm:hover,
-.label-icon-outlined-btn-lg:hover {
+.primary-outline-btn-md:hover,
+.primary-outline-btn-sm:hover,
+.primary-outline-btn-xsm:hover,
+.primary-outline-btn-lg-md:hover,
+.label-icon-outline-btn-md:hover,
+.label-icon-outline-btn-sm:hover,
+.label-icon-outline-btn-xsm:hover,
+.label-icon-outline-btn-lg:hover {
     background-color: var(--faint-gray);
     color: var(--primary-dark-color);
     outline: 1px solid var(--primary-dark-color);
@@ -207,17 +207,17 @@
 .badge-icon-btn-lg:hover,
 .badge-icon-btn-xl:hover,
 .badge-icon-btn-xxl:hover,
-.secondary-outlined-btn-md:hover,
-.secondary-outlined-btn-xsm:hover,
-.secondary-outlined-btn-sm:hover,
-.secondary-outlined-btn-lg:hover {
+.secondary-outline-btn-md:hover,
+.secondary-outline-btn-xsm:hover,
+.secondary-outline-btn-sm:hover,
+.secondary-outline-btn-lg:hover {
     color: var(--primary-color);
 }
 
-.secondary-outlined-btn-md:hover,
-.secondary-outlined-btn-xsm:hover,
-.secondary-outlined-btn-sm:hover,
-.secondary-outlined-btn-lg:hover {
+.secondary-outline-btn-md:hover,
+.secondary-outline-btn-xsm:hover,
+.secondary-outline-btn-sm:hover,
+.secondary-outline-btn-lg:hover {
     outline: 1px solid var(--primary-color);
 }
 
