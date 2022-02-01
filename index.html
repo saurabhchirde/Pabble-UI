@@ -1225,6 +1225,174 @@
 
     </section>
     <hr>
+
+    <!-- input field -->
+
+    <section id="input" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Input-Fields</h1>
+      <p>
+        Inputs are used to take information from the user to authenticate or save their information to the server.
+      </p>
+
+      <!-- Labelled Input -->
+
+      <div class="container-lg mg-3-bot">
+        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (without placeholder)</h2>
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-2-bot title-md-wt-bold">Outlined </p>
+
+          <div class="display-flex-row flex-wrap">
+
+            <!-- outlined email field -->
+            <div class="outlined-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" autofocus />
+              </label>
+            </div>
+
+            <!-- outlined password field -->
+            <div class="outlined-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value="asdfghj" />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outlined number field -->
+            <div class="outlined-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520outlined%2520email%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522outlined-email-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520name%253D%2522email%2522%2520required%2520autocomplete%253D%2522email%2522%2520autofocus%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520outlined%2520password%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522outlined-password-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520autocomplete%253D%2522current-password%2522%2520%250A%2509%2509%2509%2509%2509required%2520value%253D%2522...%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520wrong%2520password%252C%2520try%2520again%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520outlined%2520number%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522outlined-number-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522number%2522%253ENumber%253Cinput%2520type%253D%2522number%2522%2520name%253D%2522number%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <!-- no outlined/standard -->
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-1-bot title-md-wt-bold">No outline</p>
+
+          <div class="display-flex-row flex-wrap">
+
+            <!-- no-outline email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" autofocus />
+              </label>
+            </div>
+
+            <!-- no-outline password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" value="asdfghj" />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" required />
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520no-outline%2520email%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522no-outline-email-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520name%253D%2522email%2522%2520required%2520autocomplete%253D%2522email%2522%2520autofocus%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520no-outline%2520password%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522no-outline-password-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520autocomplete%253D%2522current-password%2522%2520value%253D%2522...%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520wrong%2520password%252C%2520try%2520again%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520no-outline%2520number%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522no-outline-number-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522number%2522%253ENumber%253Cinput%2520type%253D%2522number%2522%2520name%253D%2522number%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </div>
+
+      <!-- Label with placeholder Input -->
+
+      <div class="container-lg mg-3-bot">
+        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (with placeholder)</h2>
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+          <p class="mg-2-bot title-md-wt-bold">Outlined </p>
+
+          <div class="display-flex-row flex-wrap">
+
+          <!-- outlined email field -->
+          <div class="outlined-email-input">
+            <label for="email">Email *
+              <input type="email" name="email" required placeholder="enter email" autocomplete="email" autofocus />
+            </label>
+          </div>
+
+          <!-- outlined password field -->
+          <div class="outlined-password-input">
+            <label for="password">Password *
+              <input type="password" name="password" required placeholder="enter password"
+                autocomplete="current-password" value="asdfghj" />
+              wrong password, try again
+            </label>
+          </div>
+
+          <!-- outlined number field -->
+          <div class="outlined-number-input">
+            <label for="number">Number
+              <input type="number" name="number" required placeholder="total quantity" />
+            </label>
+          </div>
+          </div>
+
+        </div>
+
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520outlined%2520email%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522outlined-email-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520name%253D%2522email%2522%2520required%2520placeholder%253D%2522enter%2520email%2522%2520%250A%2509%2509%2509%2509autocomplete%253D%2522email%2522%2520autofocus%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520outlined%2520password%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522outlined-password-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520required%2520placeholder%253D%2522enter%2520password%2522%2520%2509%2509%2509%2509%2509%2509%2509%2509%2509autocomplete%253D%2522current-password%2522%2520value%253D%2522...%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520wrong%2520password%252C%2520try%2520again%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520outlined%2520number%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522outlined-number-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522number%2522%253ENumber%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522number%2522%2520name%253D%2522number%2522%2520required%2520placeholder%253D%2522total%2520quantity%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <!-- no outlined/standard with place holder-->
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-1-bot title-md-wt-bold">No outline</p>
+
+          <div class="display-flex-row flex-wrap">
+
+            <!-- no-outline email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" autofocus placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- no-outline password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" value="asdfghj"
+                  placeholder="enter email" />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" required placeholder="enter email" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520no-outline%2520email%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522no-outline-email-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520name%253D%2522email%2522%2520required%2520autocomplete%253D%2522email%2522%2520%250A%2509%2509%2509%2509%2509autofocus%2520placeholder%253D%2522enter%2520email%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520no-outline%2520password%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522no-outline-password-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%2520*%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520autocomplete%253D%2522current-password%2522%2520value%253D%2522...%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509placeholder%253D%2522enter%2520email%2522%2520%252F%253Ewrong%2520password%252C%2520try%2520again%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520no-outline%2520number%2520field%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522no-outline-number-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522number%2522%253ENumber%253Cinput%2520type%253D%2522number%2522%2520name%253D%2522number%2522%2520required%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509placeholder%253D%2522enter%2520email%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </div>
+
+    </section>
+    <hr>
   </div>
 
   <script src="./index.js"></script>

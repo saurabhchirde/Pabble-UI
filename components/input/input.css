@@ -1,0 +1,65 @@
+.outlined-email-input,
+.outlined-password-input,
+.outlined-number-input,
+.no-outline-email-input,
+.no-outline-password-input,
+.no-outline-number-input{
+    max-width: 15.4rem;
+    margin: 0.5rem 0.6rem;
+}
+
+.outlined-email-input label,
+.outlined-password-input label,
+.outlined-number-input label,
+.no-outline-email-input label,
+.no-outline-password-input label,
+.no-outline-number-input label{
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    font-weight: 400;    
+    margin-bottom: 2rem;
+}
+
+.outlined-password-input label,
+.outlined-password-input input,
+.no-outline-password-input label,
+.no-outline-password-input input{
+    
+    border-color: var(--error-text);
+    color: var(--error-text);
+}
+
+.wrong-password label,
+.wrong-password input{
+    border-color: var(--error-text);
+    color: var(--error-text);
+}
+
+.outlined-email-input input,
+.outlined-password-input input,
+.outlined-number-input input,
+.no-outline-email-input input,
+.no-outline-password-input input,
+.no-outline-number-input input{
+    width: 100%;
+    margin: 0.4rem auto 0.4rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 4px;    
+    border: 1px solid var(--dark-blue-gray);
+}
+
+.no-outline-email-input input,
+.no-outline-password-input input,
+.no-outline-number-input input{
+   border: hidden;
+   border-radius: 0;
+   border-bottom-style:inset;
+   background: none;
+}
+
+.no-outline-email-input input:focus,
+.no-outline-password-input input:focus,
+.no-outline-number-input input:focus{
+    outline: none;
+}
