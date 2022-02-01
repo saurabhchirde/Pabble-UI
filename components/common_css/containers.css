@@ -17,17 +17,14 @@
 /* other containers */
 
 .container-sm {
-    min-width: 10rem;
     max-width: 28rem;
 }
 
 .container-md {
-    min-width: 20rem;
     max-width: 44rem;
 }
 
 .container-lg {
-    min-width: 27rem;
     max-width: 62rem;
 }
 

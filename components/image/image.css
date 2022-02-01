@@ -1,6 +1,7 @@
 .img-responsive {
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 /* carbon code */
@@ -13,12 +14,6 @@ iframe {
     overflow: hidden;
     margin: 1rem 0;
 }
-
-/* span */
-
-/* .img-sizes-container {
-
-} */
 
 .img-sizes-container div {
     width: 50%;

@@ -115,6 +115,8 @@ nav h1 {
 #buttons,
 #avatar,
 #badge,
-#cards {
+#cards,
+#image,
+#input {
     scroll-margin-block: 3rem;
 }
