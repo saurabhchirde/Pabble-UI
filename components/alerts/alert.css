@@ -12,8 +12,22 @@
 .alert-error-btn {
   max-width: 25rem;
   border-radius: 4px;
-  margin: 1rem;
+  margin: 0.6rem;
   padding: 0.6rem 0.6rem 0.6rem 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.alert-success,
+.alert-success-btn,
+.alert-info,
+.alert-info-btn,
+.alert-warning,
+.alert-warning-btn,
+.alert-error,
+.alert-error-btn{
+  min-width: 18rem;
+  height: auto;
 }
 
 .alert-success,
@@ -50,16 +64,25 @@
 .alert-des-error {
   display: flex;
   align-items: baseline;
+  min-width: 17rem;
+  height: auto;
 }
 
-.alert-success-btn {
+.alert-success-btn,
+.alert-info-btn,
+.alert-warning-btn,
+.alert-error-btn {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  height: 2.6rem;
 }
 
-.alert-text {
-  align-self: center;
+.alert-success-btn .alert-text,
+.alert-info-btn .alert-text,
+.alert-warning-btn .alert-text,
+.alert-error-btn .alert-text{
+  display: flex;
 }
 
 .alert-close,

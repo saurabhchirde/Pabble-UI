@@ -109,7 +109,6 @@
 .badge-icon-btn-xxl {
     background: none;
     color: var(--text-light);
-    padding: 0.3rem 0.4rem;
 }
 
 .primary-btn-sm,
@@ -223,24 +222,22 @@
 
 /* floating btn */
 
-.floating,
-.icon-btns {
-    display: flex;
-    align-items: center;
-}
-
 .floating-btn-xsm,
 .floating-btn-sm,
 .floating-btn-md,
 .floating-btn-lg,
 .floating-btn-xl,
 .floating-btn-xxl{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     padding: 1rem;
     border-radius: 50%;
-    box-shadow: 0 5px 10px var(--text-lighter);
+    box-shadow: 2px 2px 3px var(--text-lighter);
 }
 
 .floating-btn-xsm{

@@ -1,5 +1,6 @@
 .badge-container {
     position: relative;
+    display: flex;
     width: fit-content;
     padding: 0.5rem;
 }
@@ -8,6 +9,7 @@
     position: absolute;
     height: 1.2rem;
     min-width: 1.2rem;
+    z-index: 0;
     padding: 2px;
     border-radius: 50%;
     border: 2px solid white;
@@ -71,6 +73,7 @@
     min-height: 1.3em;
     min-width: 1.3em;
     font-weight: 400;
+    z-index: 0;
 }
 
 .badge-on-text {

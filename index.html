@@ -15,62 +15,58 @@
 <body>
 
   <!-- nav horizontal bar -->
+  <div class="hamburger"><i class="fas fa-bars"></i></div>
+
   <div class="nav-header">
     <a href="/">
-      <div class="logo title-xxl mg-2-lt">IndoUI</div>
+      <div class="logo">IndoUI</div>
     </a>
-    <div class="nav-header-right-side mg-2-rt">
+    <div class="nav-header-right-side">
       <a href="/">
-        <div class="nav-header-text title-lg-wt-4 mg-1-rt">Documentation</div>
+        <div class="nav-header-text">Documentation</div>
       </a>
       <div class="toggler "><i class="fas fa-moon"></i></div>
     </div>
   </div>
 
   <!-- nav verticle bar -->
-  <nav class="nav pd-2-lr nav-container mg-1-top">
-    <h1 class="title-lg-wt-3 pd-point8-lt">About</h1>
-    <h1 class="title-lg-wt-3 pd-point8-lt">Getting Started</h1>
-    <h1 class="title-lg-wt-3 pd-point8-lt">Color</h1>
-    <h1 class="title-lg-wt-3 pd-point8-lt">Components</h1>
+  <nav class="nav pd-2-lr mg-1-top">
+    <h1 class="nav-category pd-point8-lt">About</h1>
+    <h1 class="nav-category pd-point8-lt">Getting Started</h1>
+    <h1 class="nav-category pd-point8-lt">Color</h1>
+    <h1 class="nav-category pd-point8-lt nav-category-active">Components</h1>
     <div class="nav-items mg-1-lt">
       <a href="#alert">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Alerts</button>
+        <h2 class="nav-alert nav-btn">Alerts</h2>
       </a>
-      <a href="#buttons"><button class="btn secondary-text-btn-md dark-text-btn">
-          Buttons</button>
+      <a href="#buttons">
+        <h2 class="nav-button nav-btn">Buttons</h2>
       </a>
       <a href="#avatar">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Avatar</button>
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
       </a>
       <a href="#badge">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Badge</button>
+        <h2 class="nav-badge nav-btn">Badge</h2>
       </a>
       <a href="#cards">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Cards</button>
+        <h2 class="nav-card nav-btn">Cards</h2>
       </a>
       <a href="#image">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Image</button>
+        <h2 class="nav-img nav-btn">Image</h2>
       </a>
       <a href="#input">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Input</button>
-      </a>
-      <a href="#rating">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Ratings</button>
-      </a>
-      <a href="#toast">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Toast/Snackbar</button>
+        <h2 class="nav-input nav-btn">Input</h2>
       </a>
     </div>
+    <div class="nav-close-btn">
+      <i class="far fa-times-circle"></i>
+    </div>
   </nav>
+
+  <!-- floating up btn -->
+  <a href="#"><button class="btn floating-btn-md">
+    <i class="fas fa-shopping-cart"></i></button>
+  </a>
 
   <!-- body -->
 
@@ -78,23 +74,21 @@
 
     <!-- alerts -->
     <section id="alert" class="pd-1-lr pd-2-bot mg-3-top">
-      <h1 id="basic-alert" class="mg-point8-tb">Alert</h1>
+      <h1 class="mg-point8-tb">Alert</h1>
       <p>
         An alert displays a short, important message in a way that attracts
         the user's attention without interrupting the user's task.
       </p>
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">
-        Basic alerts
-      </h2>
+      <h2 id="basic-alert" class="mg-2-top mg-1-bot title-lg-wt-5">Basic alerts</h2>
       <p>
         The alert offers four severity levels that set a distinctive icon and
         color.
       </p>
-      <div class="container-lg mg-3-bot">
+      <div class="mg-3-bot">
 
         <!-- alert without close -->
 
-        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
+        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert -->
           <div class="alert-success">
@@ -155,14 +149,14 @@
       </div>
       <!--descriptive alert without close -->
 
-      <h2 id="descriptive-alert" class="mg-2-top mg-1-bot title-lg-wt-5">Descriptive alerts</h2>
+      <h2 id="descriptive-alert" class="mg-2-topdiv-1-bot title-lg-wt-5">Descriptive alerts</h2>
       <p class="mg-point6-top">
         The alert offers four severity levels that set a distinctive icon
         and color.
       </p>
-      <div class="container-lg mg-3-bot">
+      <div class="mg-3-bot">
 
-        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
+        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert -->
           <div class="alert-des-success">
@@ -297,8 +291,8 @@
         icon button.
       </p>
 
-      <div class="container-lg mg-3-bot">
-        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
+      <div class="mg-3-bot">
+        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert with dismiss button -->
           <div class="alert-success-btn">
@@ -316,6 +310,17 @@
             <div class="alert-text">
               <i class="fas fa-check-circle alert-icon"></i>
               <span class="p-md">Success alert.</span>
+            </div>
+            <div class="undo">
+              <button class="btn secondary-text-btn-sm">UNDO</button>
+            </div>
+          </div>
+
+          <!-- error alert with undo button -->
+          <div class="alert-error-btn">
+            <div class="alert-text">
+              <i class="fas fa-exclamation-circle alert-icon"></i>
+              <span class="p-md">Wrong input!</span>
             </div>
             <div class="undo">
               <button class="btn secondary-text-btn-sm">UNDO</button>
@@ -347,6 +352,17 @@
                 &lt;button class=&quot;btn secondary-text-btn-sm&quot;&gt;UNDO&lt;/button&gt;
               &lt;/div&gt;
             &lt;/div&gt;
+  
+             &lt;!-- error alert with undo button --&gt;
+             &lt;div class=&quot;alert-error-btn&quot;&gt;
+              &lt;div class=&quot;alert-text&quot;&gt;
+                &lt;i class=&quot;fas fa-exclamation-circle alert-icon&quot;&gt;&lt;/i&gt;
+                &lt;span class=&quot;p-md&quot;&gt;Wrong input!&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;undo&quot;&gt;
+                &lt;button class=&quot;btn secondary-text-btn-sm&quot;&gt;UNDO&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
           </code>
         </pre>
 
@@ -361,12 +377,14 @@
       <h1 class="mg-point8-tb">Buttons</h1>
       <p>Buttons allow users to take actions, and make choices, with a single tap.
       </p>
-      <h2 id="primary-btn" class="mg-2-top mg-1-bot title-lg-wt-5">Primary</h2>
+      <!--  -->
 
-      <div class="container-lg mg-3-bot">
-        <div class="cont-shadow component-container pd-1-all">
+      <h2 id="primary-btn" class="mg-2-top mg-1-bot title-lg-wt-5"></h2>
 
-          Solid:
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Solid Buttons</p>
+        <div class="cont-shadow button-container pd-1-all">
+
           <!-- primary button -->
           <button class="btn primary-btn-md">Primary</button>
 
@@ -392,10 +410,11 @@
           </code>
         </pre>
       </div>
-      <div class="container-lg mg-3-bot">
-        <div class="cont-shadow component-container pd-1-all">
 
-          Outline:
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Outlined Buttons</p>
+        <div class="cont-shadow button-container pd-1-all">
+
           <!-- primary outline button -->
           <button class="btn primary-outline-btn-md">Primary</button>
 
@@ -416,10 +435,10 @@
 
       </div>
 
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Link</h2>
-      <div class="container-lg mg-3-bot">
-        <div class="cont-shadow component-container pd-1-all">
 
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Link/Text Buttons</p>
+        <div class="cont-shadow button-container pd-1-all">
           <!-- primary outline button -->
           <a href=""><button class="btn primary-text-btn-md">Primary Text</button></a>
 
@@ -440,24 +459,22 @@
 
       </div>
 
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons</h2>
-      <div class="container-lg mg-3-bot">
-        <div class="cont-shadow component-container pd-1-all">
-          <div class="icon-btns">
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon Buttons</p>
+        <div class="cont-shadow button-container pd-1-all">
 
-            <!-- cart icon button -->
-            <button class="btn icon-btn-md">
-              <i class="fas fa-shopping-cart"></i></button>
+          <!-- cart icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-shopping-cart"></i></button>
 
-            <!-- trash icon button -->
-            <button class="btn icon-btn-md">
-              <i class="fas fa-trash"></i></button>
+          <!-- trash icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-trash"></i></button>
 
-            <!-- history icon button -->
-            <button class="btn icon-btn-md">
-              <i class="fas fa-history"></i></button>
+          <!-- history icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-history"></i></button>
 
-          </div><br />
         </div>
 
         <pre class="code-background">
@@ -478,24 +495,23 @@
 
       </div>
 
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons with label</h2>
-      <div class="container-lg mg-3-bot">
-        <div class="cont-shadow component-container pd-1-all">
-          <div class="icon-btns">
 
-            <!-- labelled cart icon button -->
-            <button class="btn label-icon-btn-md">
-              <i class="fas fa-shopping-cart"></i>&nbsp; Add to cart</button>
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon with Label Buttons</p>
+        <div class="cont-shadow button-container pd-1-all">
 
-            <!-- labelled save icon button -->
-            <button class="btn label-icon-btn-md">
-              <i class="fas fa-save"></i>&nbsp; Save</button>
+          <!-- labelled cart icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-shopping-cart"></i>&nbsp; Add to cart</button>
 
-            <!-- labelled trash icon button -->
-            <button class="btn label-icon-outline-btn-md">
-              <i class="fas fa-trash"></i>&nbsp; Delete</button>
+          <!-- labelled save icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-save"></i>&nbsp; Save</button>
 
-          </div><br />
+          <!-- labelled trash icon button -->
+          <button class="btn label-icon-outline-btn-md">
+            <i class="fas fa-trash"></i>&nbsp; Delete</button>
+
         </div>
 
         <pre class="code-background">
@@ -517,24 +533,25 @@
 
       </div>
 
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Floating</h2>
-      <div class="container-lg">
-        <div class="cont-shadow component-container pd-1-all">
-          <div class="floating">
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Floating Buttons</p>
+        <div class="cont-shadow button-container pd-1-all">
 
-            <!-- floating cart icon button -->
-            <button class="btn floating-btn-sm">
+          <!-- floating cart icon button -->
+            <a href=""><button class="btn floating-btn-sm">
               <i class="fas fa-shopping-cart"></i></button>
+            </a>
 
-            <!-- floating plus icon button -->
-            <button class="btn floating-btn-sm">
+          <!-- floating plus icon button -->
+            <a href=""><button class="btn floating-btn-sm">
               <i class="fas fa-plus"></i></button>
+            </a>
 
-            <!-- floating location icon button -->
-            <button class="btn floating-btn-sm">
+          <!-- floating location icon button -->
+            <a href=""><button class="btn floating-btn-sm">
               <i class="fas fa-location-arrow"></i></button>
+            </a>
 
-          </div><br />
         </div>
 
         <pre class="code-background">
@@ -568,10 +585,10 @@
 
       <h2 id="img-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Image Avatar</h2>
       
-      <div class="container-lg">
+      <div class="">
 
-        <div class="cont-shadow component-container pd-1-all mg-2-bot">
-          <div class="avatar-round mg-1-tb mg-2-lr">
+        <div class="cont-shadow pd-1-tb mg-2-bot">
+          <div class="avatar-container mg-1-tb mg-1-lr">
 
             <!-- round round large size image avatar -->
             <div class="avatar avatar-lg-round">
@@ -633,10 +650,10 @@
       <!-- Avatar as text -->
 
       <h2 id="text-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Text Avatar</h2>
-      <div class="container-lg">
+      <div class="">
 
-        <div class="cont-shadow component-container pd-1-all mg-1-bot">
-          <div class="avatar-round mg-1-tb mg-2-lr">
+        <div class="cont-shadow pd-1-tb mg-1-bot">
+          <div class="avatar-container mg-1-tb mg-2-lr">
 
             <!-- round large size letter avatar -->
             <div class="avatar text-avatar-lg-round">IN</div>
@@ -684,10 +701,10 @@
       <!-- badge on image -->
 
       <h2 id="status-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Status Badge</h2>
-      <div class="container-lg">
+      <div class="">
 
-        <div class="cont-shadow component-container pd-1-all mg-2-bot">
-          <div class="avatar-round mg-1-tb mg-2-lr">
+        <div class="cont-shadow pd-1-tb mg-2-bot">
+          <div class="avatar-container mg-1-tb mg-2-lr">
 
             <!-- round large size avatar image with offline-status badge -->
             <div class="badge-container">
@@ -762,9 +779,9 @@
       <!-- Badge on text -->
 
       <h2 id="text-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Text Badge</h2>
-      <div class="container-lg mg-3-bot">
+      <div class=" mg-3-bot">
 
-        <div class="cont-shadow component-container flex-dir-column flex-align-start pd-1-all mg-1-bot">
+        <div class="cont-shadow flex-dir-column flex-align-start pd-1-all mg-1-bot">
 
           <!-- round badge on h1 sized text -->
           <div class="badge-container">
@@ -822,13 +839,12 @@
 
       </div>
 
-
       <!-- Badge on icon -->
 
       <h2 id="icon-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Icon Badge</h2>
-      <div class="container-lg mg-3-bot">
+      <div class="mg-3-bot">
 
-        <div class="cont-shadow component-container pd-1-all mg-1-bot">
+        <div class="icon-container cont-shadow pd-1-all mg-1-bot">
 
           <!-- badge on cart icon -->
           <div class="badge-container">
@@ -897,8 +913,8 @@
       <!--Button with toggle Badge -->
 
       <h2 id="badge-on-btn" class="mg-2-top mg-1-bot title-lg-wt-5">Toggle Badge Button</h2>
-      <div class="container-lg">
-        <div class="cont-shadow component-container pd-1-all mg-1-bot">
+      <div class="">
+        <div class="cont-shadow icon-container pd-1-all mg-1-bot">
 
           <!-- badge on outline button -->
           <div class="badge-container">
@@ -1058,8 +1074,6 @@
               </pre>
 
           </div>
-
-
 
           <!-- horizontal card -->
 
@@ -1578,9 +1592,9 @@
       <p>By adding <strong>'badge-on-card'</strong> and a position <strong>'top-left'</strong> or
         <strong>'top-right'</strong>, we can easily add a badge to any card type.</p>
 
-      <div class="container-lg mg-1-bot">
+      <div class="container-lg mg-1-tb">
 
-        <div class="component-container pd-1-all">
+        <div class="component-container">
 
           <!-- vertical light card -->
           <div class="card-vertical card-light">
@@ -1719,37 +1733,37 @@
       </div>
 
       <!-- card with shadow -->
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>    
-        <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
-     
-          <!-- vertical card -->
-          <div class="container-lg component-container">
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
+      <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
 
-            <div class="display-flex-row mg-1-tb">
-              <!-- vertical light card -->
-              <div class="card-vertical card-light card-shadow">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
-                  </div>
+      <!-- vertical card -->
+      <div class="container-lg component-container">
+
+        <div class="display-flex-row mg-1-tb">
+          <!-- vertical light card -->
+          <div class="card-vertical card-light card-shadow">
+            <div class="card-img-container">
+              <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <pre class="code-background">
+          <pre class="code-background">
                 <code class="language-html">
                   &lt;!-- vertical light card --&gt;
                   &lt;div class=&quot;card-vertical card-light card-shadow&quot;&gt;
@@ -1776,8 +1790,8 @@
                 </code>
               </pre>
 
-            </div>
-          </div>
+        </div>
+      </div>
 
     </section>
     <hr>
@@ -2418,7 +2432,7 @@
   </div>
 
   <script src="./index.js"></script>
-  <script src="./components/alerts/alert.js"></script>
+  <!-- <script src="./components/alerts/alert.js"></script> -->
   <script src="./components/common_css/code-snippet-primejs/prime.js"></script>
 </body>
 

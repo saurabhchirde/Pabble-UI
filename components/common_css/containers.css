@@ -48,3 +48,20 @@
 .cont-shadow {
     box-shadow: 0 0 10px var(--btn-hover);
 }
+
+/* button container */
+
+.alert-container,
+.avatar-container,
+.button-container,
+.icon-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.alert-container,
+.avatar-container {
+    justify-content: space-around;
+}
