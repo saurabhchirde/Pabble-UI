@@ -18,14 +18,20 @@
 
 .container-sm {
     max-width: 28rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-md {
     max-width: 44rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-lg {
     max-width: 62rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* component container */

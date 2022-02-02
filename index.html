@@ -78,19 +78,19 @@
 
     <!-- alerts -->
     <section id="alert" class="pd-1-lr pd-2-bot mg-3-top">
-      <h1 class="mg-point8-tb">Alert</h1>
+      <h1 id="basic-alert" class="mg-point8-tb">Alert</h1>
       <p>
         An alert displays a short, important message in a way that attracts
         the user's attention without interrupting the user's task.
       </p>
-      <div id="basic-alert" class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">
-          Basic alerts
-        </h2>
-        <p>
-          The alert offers four severity levels that set a distinctive icon and
-          color.
-        </p>
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">
+        Basic alerts
+      </h2>
+      <p>
+        The alert offers four severity levels that set a distinctive icon and
+        color.
+      </p>
+      <div class="container-lg mg-3-bot">
 
         <!-- alert without close -->
 
@@ -155,12 +155,13 @@
       </div>
       <!--descriptive alert without close -->
 
-      <div id="descriptive-alert" class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Descriptive alerts</h2>
-        <p class="mg-point6-top">
-          The alert offers four severity levels that set a distinctive icon
-          and color.
-        </p>
+      <h2 id="descriptive-alert" class="mg-2-top mg-1-bot title-lg-wt-5">Descriptive alerts</h2>
+      <p class="mg-point6-top">
+        The alert offers four severity levels that set a distinctive icon
+        and color.
+      </p>
+      <div class="container-lg mg-3-bot">
+
         <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert -->
@@ -281,22 +282,22 @@
 
       <!-- alert with cta -->
 
-      <div id="alert-with-cta" class="container-lg mg-3-bot">
-        <div class="alert-cta-demo sub-title mg-2-top mg-1-bot mg-point6-bot">
-          <h2 class=" title-lg-wt-5">Alert with actions</h2>
-          <button class="btn primary-outline-btn-sm">Demo</button>
-        </div>
-        <p class="mg-point6-tb">
-          An alert can have action, such as a close or undo button. It is
-          rendered after the message, at the end of the alert.
-        </p>
-        <p class="mg-point6-tb">
-          If on 'Click' callback is provided and no action prop is set, a
-          close icon is displayed. <br />The action prop can be used to
-          provide an alternative action, for example using a button or
-          icon button.
-        </p>
+      <div class="alert-cta-demo sub-title mg-2-top mg-1-bot mg-point6-bot">
+        <h2 id="alert-with-cta" class="mg-1-top mg-1-bot title-lg-wt-5">Alert with actions</h2>
+        <button class="btn primary-outline-btn-sm">Demo</button>
+      </div>
+      <p class="mg-point6-tb">
+        An alert can have action, such as a close or undo button. It is
+        rendered after the message, at the end of the alert.
+      </p>
+      <p class="mg-point6-tb">
+        If on 'Click' callback is provided and no action prop is set, a
+        close icon is displayed. <br />The action prop can be used to
+        provide an alternative action, for example using a button or
+        icon button.
+      </p>
 
+      <div class="container-lg mg-3-bot">
         <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert with dismiss button -->
@@ -348,7 +349,7 @@
             &lt;/div&gt;
           </code>
         </pre>
-       
+
       </div>
 
     </section>
@@ -360,22 +361,21 @@
       <h1 class="mg-point8-tb">Buttons</h1>
       <p>Buttons allow users to take actions, and make choices, with a single tap.
       </p>
+      <h2 id="primary-btn" class="mg-2-top mg-1-bot title-lg-wt-5">Primary</h2>
+
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Primary</h2>
-
         <div class="cont-shadow component-container pd-1-all">
-          <div class="container-lg ">
-            Solid:
-            <!-- primary button -->
-            <button class="btn primary-btn-md">Primary</button>
 
-            <!-- secondary button -->
-            <button class="btn secondary-btn-md">Secondary</button>
+          Solid:
+          <!-- primary button -->
+          <button class="btn primary-btn-md">Primary</button>
 
-            <!-- disabled button -->
-            <button class="btn disabled-btn-md" disabled="disabled">Disabled</button>
+          <!-- secondary button -->
+          <button class="btn secondary-btn-md">Secondary</button>
 
-          </div>
+          <!-- disabled button -->
+          <button class="btn disabled-btn-md" disabled="disabled">Disabled</button>
+
         </div>
 
         <pre class="code-background">
@@ -391,7 +391,8 @@
 
           </code>
         </pre>
-        
+      </div>
+      <div class="container-lg mg-3-bot">
         <div class="cont-shadow component-container pd-1-all">
 
           Outline:
@@ -412,11 +413,11 @@
             &lt;button class=&quot;btn secondary-outline-btn-md&quot;&gt;Secondary&lt;/button&gt;  
           </code>
         </pre>
-       
+
       </div>
 
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Link</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Link</h2>
         <div class="cont-shadow component-container pd-1-all">
 
           <!-- primary outline button -->
@@ -436,13 +437,13 @@
             &lt;a href=&quot;&quot;&gt;&lt;button class=&quot;btn secondary-text-btn-md&quot;&gt;Secondary Text&lt;/button&gt;&lt;/a&gt;  
           </code>
         </pre>
-      
+
       </div>
 
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons</h2>
         <div class="cont-shadow component-container pd-1-all">
-          <div class="icon-btns  ">
+          <div class="icon-btns">
 
             <!-- cart icon button -->
             <button class="btn icon-btn-md">
@@ -475,10 +476,10 @@
           </code>
         </pre>
 
-        </div>
+      </div>
 
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons with label</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons with label</h2>
         <div class="cont-shadow component-container pd-1-all">
           <div class="icon-btns">
 
@@ -513,11 +514,11 @@
 
           </code>
         </pre>
-      
+
       </div>
 
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Floating</h2>
       <div class="container-lg">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Floating</h2>
         <div class="cont-shadow component-container pd-1-all">
           <div class="floating">
 
@@ -552,7 +553,6 @@
           </code>
      
       </div>
-
     </section>
     <hr />
 
@@ -566,8 +566,9 @@
 
       <!-- avatar as images -->
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Image Avatar</h2>
+      <h2 id="img-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Image Avatar</h2>
+      
+      <div class="container-lg">
 
         <div class="cont-shadow component-container pd-1-all mg-2-bot">
           <div class="avatar-round mg-1-tb mg-2-lr">
@@ -596,9 +597,8 @@
                 class="img-responsive" />
             </div>
 
-          </div><br>
-        </div>
-        <p>In below code, give your image location in 'src'.</p>
+          </div>
+        </div><br>
 
         <pre class="code-background">
           <code class="language-html">
@@ -628,11 +628,13 @@
           </code>
         </pre>
       </div>
+      <p class=" mg-3-bot">In above code, give your image location in 'src'.</p>
 
       <!-- Avatar as text -->
 
+      <h2 id="text-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Text Avatar</h2>
       <div class="container-lg">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Avatar</h2>
+
         <div class="cont-shadow component-container pd-1-all mg-1-bot">
           <div class="avatar-round mg-1-tb mg-2-lr">
 
@@ -681,8 +683,8 @@
 
       <!-- badge on image -->
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Status Badge</h2>
+      <h2 id="status-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Status Badge</h2>
+      <div class="container-lg">
 
         <div class="cont-shadow component-container pd-1-all mg-2-bot">
           <div class="avatar-round mg-1-tb mg-2-lr">
@@ -719,7 +721,6 @@
 
           </div>
         </div>
-        <p>In below code, give your image location in 'src'.</p>
 
         <pre class="code-background">
           <code class="language-html">
@@ -754,13 +755,14 @@
             &lt;/div&gt;
           </code>
         </pre>
-      
+
       </div>
+      <p class="mg-3-bot">In above code, give your image location in 'src'.</p>
 
       <!-- Badge on text -->
 
+      <h2 id="text-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Text Badge</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Badge</h2>
 
         <div class="cont-shadow component-container flex-dir-column flex-align-start pd-1-all mg-1-bot">
 
@@ -816,15 +818,15 @@
                 &lt;span class=&quot;badge-on-text badge-square&quot;&gt;2&lt;/span&gt;&lt;/h4&gt;
             &lt;/div&gt;
           </code>
-        </pre>     
+        </pre>
 
       </div>
 
 
       <!-- Badge on icon -->
 
+      <h2 id="icon-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Icon Badge</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Badge</h2>
 
         <div class="cont-shadow component-container pd-1-all mg-1-bot">
 
@@ -889,13 +891,13 @@
             &lt;/div&gt;
           </code>
         </pre>
-     
+
       </div>
 
       <!--Button with toggle Badge -->
 
+      <h2 id="badge-on-btn" class="mg-2-top mg-1-bot title-lg-wt-5">Toggle Badge Button</h2>
       <div class="container-lg">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Toggle Badge Button</h2>
         <div class="cont-shadow component-container pd-1-all mg-1-bot">
 
           <!-- badge on outline button -->
@@ -927,7 +929,7 @@
             &lt;/div&gt;
           </code>
         </pre>
-    
+
       </div>
     </section>
     <hr>
@@ -941,39 +943,37 @@
       </p>
 
       <!-- without dismiss -->
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card without dismiss</h2>
-
-        <div class="component-container pd-1-all">
+      <h2 id="card-wo-dismiss" class="mg-2-top mg-1-bot title-lg-wt-5">Card without dismiss</h2>
+      <div class="mg-3-bot">
+        <h3 class="title-md-wt-bold ">Vertical Light Card</h3>
+        <div class="pd-1-all">
           <!-- vertical card -->
-          <div class="display-flex-row flex-wrap">
-            <h3 class="title-md-wt-bold ">Vertical Light Card</h3>
 
-            <div class="display-flex-row mg-3-bot mg-1-top">
-              <!-- vertical light card -->
-              <div class="card-vertical card-light">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
+          <div class="container-lg component-container display-flex-row mg-3-bot mg-1-top">
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background" style="display: none;">
                 <code class="language-html">
                   &lt;!-- vertical light card --&gt;
                   &lt;div class=&quot;card-vertical card-light&quot;&gt;
@@ -999,38 +999,38 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-            
-            </div>
 
-            <h3 class="title-md-wt-bold">Vertical Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
-            <div class="display-flex-row mg-3-bot mg-1-top">
+          </div>
 
-              <!-- vertical dark card -->
-              <div class="card-vertical card-dark">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+          <div class="container-lg component-container display-flex-row mg-3-bot mg-1-top">
+
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background" style="display: none;">
                 <code class="language-html">
                   &lt;!-- vertical dark card --&gt;
                   &lt;div class=&quot;card-vertical card-dark&quot;&gt;
@@ -1056,42 +1056,41 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-            
-            </div>
 
           </div>
 
-          <!-- horizontal card -->
-          <div class="display-flex-row flex-wrap ">
 
-            <h3 class="title-md-wt-bold">Horizontal Light Card</h3>
-            <div class="mg-3-bot mg-1-top">
-              <!-- horizontal light card -->
-              <div class="card-horizontal card-light">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+
+          <!-- horizontal card -->
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card</h3>
+          <div class="container-lg component-container mg-3-bot mg-1-top">
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
                 </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background">
                 <code class="language-html">
                   &lt;!-- horizontal light card --&gt;
                   &lt;div class=&quot;card-horizontal card-light&quot;&gt;
@@ -1119,40 +1118,40 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-            
-            </div>
 
-            <h3 class="title-md-wt-bold">Horizontal Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
+          </div>
 
-            <div class="mg-1-bot mg-1-top">
-              <!-- horizontal dark card -->
-              <div class="card-horizontal card-dark">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="container-lg mg-1-bot mg-1-top">
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
                 </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background">
                 <code class="language-html">
                   &lt;!-- horizontal dark card --&gt;
                   &lt;div class=&quot;card-horizontal card-dark&quot;&gt;
@@ -1180,8 +1179,6 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-           
-            </div>
 
           </div>
 
@@ -1189,41 +1186,39 @@
       </div>
 
       <!-- with dismiss -->
-      <div class="container-lg mg-3-bot">
+      <div class="mg-3-bot">
         <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Dismiss</h2>
 
-        <div class="component-container pd-1-all mg-1-bot">
-
+        <div class=" pd-1-all mg-1-bot">
           <!-- Vertical -->
-          <div class="display-flex-row flex-wrap ">
 
-            <h3 class="title-md-wt-bold">Vertical Light Card</h3>
-            <div class="display-flex-row mg-3-bot mg-1-top">
-              <!-- vertical light card -->
-              <div class="card-vertical card-light">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
+          <h3 class="title-md-wt-bold">Vertical Light Card</h3>
+          <div class="container-lg component-container display-flex-row mg-3-bot mg-1-top">
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background" style="display: none;">
                 <code class="language-html">
                   &lt;!-- vertical light card --&gt;
                   &lt;div class=&quot;card-vertical card-light&quot;&gt;
@@ -1250,39 +1245,39 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-         
-            </div>
 
-            <h3 class="title-md-wt-bold">Vertical Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
+          </div>
 
-            <div class="display-flex-row mg-3-bot mg-1-top">
-              <!-- vertical dark card -->
-              <div class="card-vertical card-dark">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="container-lg display-flex-row mg-3-bot mg-1-top">
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background" style="display: none;">
                 <code class="language-html">
                   &lt;!-- vertical dark card --&gt;
                   &lt;div class=&quot;card-vertical card-dark&quot;&gt;
@@ -1309,43 +1304,40 @@
                   &lt;/div&gt;
                 </code>
               </pre>
- 
-            </div>
 
           </div>
 
           <!-- Horizontal -->
-          <div class="display-flex-row flex-wrap">
-            <h3 class="title-md-wt-bold">Horizontal Light Card </h3>
-            <div class="mg-3-bot mg-1-top">
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card </h3>
+          <div class="container-lg component-container mg-3-bot mg-1-top">
 
-              <!-- horizontal light card -->
-              <div class="card-horizontal card-light">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
                 </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background">
                 <code class="language-html">
                   &lt;!-- horizontal light card --&gt;
                   &lt;div class=&quot;card-horizontal card-light&quot;&gt;
@@ -1374,41 +1366,42 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-        
-            </div>
 
-            <h3 class="title-md-wt-bold">Horizontal Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
+          </div>
 
-            <div class="mg-1-bot mg-1-top">
-              <!-- horizontal dark card -->
-              <div class="card-horizontal card-dark">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="container-lg component-container mg-1-bot mg-1-top">
+
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
                 </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <pre class="code-background">
+            <pre class="code-background">
                 <code class="language-html">
                   &lt;!-- horizontal dark card --&gt;
                   &lt;div class=&quot;card-horizontal card-dark&quot;&gt;
@@ -1437,8 +1430,6 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-        
-            </div>
 
           </div>
 
@@ -1447,12 +1438,12 @@
       </div>
 
       <!-- with text overlay -->
-      <div class="container-lg mg-4-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
-        <p>For light cards we use <strong>'card-light'</strong> and for dark cards use <strong>'card-dark'</strong>.
-          The remaining code will be the same.</p>
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
+      <p>For light cards we use <strong>'card-light'</strong> and for dark cards use <strong>'card-dark'</strong>.
+        The remaining code will be the same.</p>
 
-        <div class="component-container mg-1-top">
+      <div class="container-lg mg-4-bot">
+        <div class=" component-container mg-1-top">
 
           <!-- Vertical text overlay light card -->
           <div class="card-vertical text-overlay card-light">
@@ -1526,16 +1517,15 @@
               &lt;/div&gt;
             &lt;/div&gt;
           </code>
-        </pre>  
+        </pre>
 
       </div>
 
       <!-- text only card -->
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Only - Light Card & Dark Card</h2>
+      <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+        <strong>'card-dark'</strong> in the code.</p>
       <div class="container-lg mg-4-bot">
-
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Only - Light Card & Dark Card</h2>
-        <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-          <strong>'card-dark'</strong> in the code.</p>
 
         <div class="component-container mg-1-top">
 
@@ -1580,46 +1570,46 @@
             &lt;/div&gt;
           </code>
         </pre>
- 
+
       </div>
 
       <!-- card with badge -->
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Badge</h2>
-        <p>By adding <strong>'badge-on-card'</strong> and a position <strong>'top-left'</strong> or
-          <strong>'top-right'</strong>, we can easily add a badge to any card type.</p>
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Badge</h2>
+      <p>By adding <strong>'badge-on-card'</strong> and a position <strong>'top-left'</strong> or
+        <strong>'top-right'</strong>, we can easily add a badge to any card type.</p>
+
+      <div class="container-lg mg-1-bot">
 
         <div class="component-container pd-1-all">
-          <!-- vertical card -->
 
-          <div class="display-flex-row mg-3-bot mg-1-top">
-            <!-- vertical light card -->
-            <div class="card-vertical card-light">
-              <div class="badge-on-card top-left">
-                <h2>New Arrival</h2>
-              </div>
-              <div class="card-img-container">
-                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-              </div>
-              <div class="card-text">
-                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                  Shoot Camera (Black) with 8X Optical Zoom</h1>
-                <h2 class="card-price">10,999/-</h2>
-              </div>
-              <div class="card-nav">
-                <div class="card-cta-btn">
-                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                  <div class="card-nav-icon">
-                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                    </button>
-                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                    </button>
-                  </div>
+          <!-- vertical light card -->
+          <div class="card-vertical card-light">
+            <div class="badge-on-card top-left">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <pre class="code-background">
+        <pre class="code-background" style="display: none;">
               <code class="language-html">
                 &lt;!-- vertical light card --&gt;
             &lt;div class=&quot;card-vertical card-light&quot;&gt;
@@ -1648,96 +1638,92 @@
             &lt;/div&gt;
               </code>
             </pre>
-   
-          </div>
 
-          <div class="display-flex-col">
-            <h3 class="title-md-wt-bold">Card examples with Badge: </h3>
+      </div>
 
-            <div class="component-container display-flex-row">
+      <h3 class="title-md-wt-bold">Card examples with Badge: </h3>
+      <div class="container-lg mg-3-bot">
+        <div class="component-container display-flex-row">
 
-              <!-- Vertical dark card -->
-              <div class="card-vertical card-dark">
-                <div class="badge-on-card top-right">
-                  <h2>New Arrival</h2>
-                </div>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- horizontal dark card -->
-              <div class="card-horizontal card-light">
-                <div class="badge-on-card top-left">
-                  <h2>Best Selling</h2>
-                </div>
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Vertical text overlay dark card -->
-              <div class="card-vertical text-overlay card-dark">
-                <div class="badge-on-card top-right">
-                  <h2>15% OFF</h2>
-                </div>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="overlay-text-white">
-                  <h1 class="card-title title-md">Canon EOS 1500D</h1>
-                  <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+          <!-- Vertical dark card -->
+          <div class="card-vertical card-dark">
+            <div class="badge-on-card top-right">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
                 </div>
               </div>
             </div>
-
           </div>
+
+          <!-- horizontal dark card -->
+          <div class="card-horizontal card-light">
+            <div class="badge-on-card top-left">
+              <h2>Best Selling</h2>
+            </div>
+            <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                  (Black) with EF S18-55 is II Lens</h1>
+                <h2 class="card-price">35,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay dark card -->
+          <div class="card-vertical text-overlay card-dark">
+            <div class="badge-on-card top-right">
+              <h2>15% OFF</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
         </div>
+
       </div>
 
       <!-- card with shadow -->
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
-
-        <div class="component-container pd-1-all">
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>    
+        <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
+     
           <!-- vertical card -->
-          <div class="display-flex-row flex-wrap">
-            <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
+          <div class="container-lg component-container">
 
             <div class="display-flex-row mg-1-tb">
               <!-- vertical light card -->
@@ -1789,11 +1775,9 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-     
+
             </div>
           </div>
-        </div>
-      </div>
 
     </section>
     <hr>
@@ -1809,119 +1793,118 @@
 
       <!-- Images -->
 
-      <div class="container-lg mg-1-bot">
+      <!-- square image -->
 
-        <!-- square image -->
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Square Images</h2>
-        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Square Images</h2>
+      <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
-          <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
-          <div class="img-sizes-container display-flex-row flex-wrap">
-            <div class="display-flex-col img-sizes-detail">
-              <div class="display-flex-row">
-                <span>'img-xsm-square'</span>
-                <span> 32px X 32px</span>
-              </div>
-              <div class="display-flex-row">
-                <span>'img-sm-square'</span> <span> 48px X 48px</span>
-              </div>
-              <div class="display-flex-row">
-                <span>'img-md-square'</span><span> 100px X 100px</span></div>
-              <div class="display-flex-row">
-                <span>'img-lg-square'</span><span> 160px X 160px</span></div>
-              <div class="display-flex-row">
-                <span>'img-xl-square'</span><span> 256px X 256px</span></div>
-              <div class="display-flex-row">
-                <span>'img-xxl-square'</span><span> 416px X 416px</span></div>
-              <div class="display-flex-row">
-                <span>'img-xxxl-square'</span><span> 672px X 672px</span></div>
+        <div class="img-sizes-container container-lg flex-justify-space-around">
+          <div class="display-flex-col img-sizes-detail mg-1-tb">
+
+            <div class="display-flex-row">
+              <span>'img-xsm-square'</span>:<span> 32px X 32px</span>
             </div>
-            <div class="display-flex-col-center">
-
-              <!-- square image -->
-              <img src="./components/assets/images/img1.jpeg" alt="image" class="img-lg-square">
-
-              <br>
-              <p>example of <strong>'img-lg-square'</strong> : 160px X 160px</p>
+            <div class="display-flex-row">
+              <span>'img-sm-square'</span>:<span> 48px X 48px</span>
             </div>
+            <div class="display-flex-row">
+              <span>'img-md-square'</span>:<span> 100px X 100px</span></div>
+            <div class="display-flex-row">
+              <span>'img-lg-square'</span>:<span> 160px X 160px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xl-square'</span>:<span> 256px X 256px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxl-square'</span>:<span> 416px X 416px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxxl-square'</span>:<span> 672px X 672px</span></div>
+          </div>
+
+          <div class="display-flex-col-center mg-1-tb">
+
+            <!-- square image -->
+            <img src="./components/assets/images/img1.jpeg" alt="image" class="img-lg-square">
+
+            <br>
+            <p>example of <strong>'img-lg-square'</strong> : 160px X 160px</p>
           </div>
         </div>
+      </div>
 
-        <p>In below code, give your image location in 'src'.</p>
+      <p>In below code, give your image location in 'src'.</p>
 
-        <pre class="code-background">
-          <code class="language-html">
-            &lt;!-- square image --&gt;
-            &lt;img src=&quot;./components/assets/images/img1.jpeg&quot; alt=&quot;image&quot; class=&quot;img-lg-square&quot;&gt;
-          </code>
-        </pre>
-     
-        <!-- round image -->
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Round Images</h2>
-        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+      <pre class="code-background">
+        <code class="language-html">
+          &lt;!-- square image --&gt;
+          &lt;img src=&quot;./components/assets/images/img1.jpeg&quot; alt=&quot;image&quot; class=&quot;img-lg-square&quot;&gt;
+        </code>
+      </pre>
 
-          <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
-          <div class="img-sizes-container display-flex-row flex-wrap">
-            <div class="display-flex-col img-sizes-detail">
-              <div class="display-flex-row">
-                <span>'img-xsm-round'</span><span> 32px X 32px</span>
-              </div>
-              <div class="display-flex-row">
-                <span>'img-sm-round'</span><span> 48px X 48px</span>
-              </div>
-              <div class="display-flex-row">
-                <span>'img-md-round'</span><span> 100px X 100px</span></div>
-              <div class="display-flex-row">
-                <span>'img-lg-round'</span><span> 160px X 160px</span></div>
-              <div class="display-flex-row">
-                <span>'img-xl-round'</span><span> 256px X 256px</span></div>
-              <div class="display-flex-row">
-                <span>'img-xxl-round'</span><span> 416px X 416px</span></div>
-              <div class="display-flex-row">
-                <span>'img-xxxl-round'</span><span> 672px X 672px</span></div>
+      <!-- round image -->
+
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Round Images</h2>
+      <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+        <div class="img-sizes-container container-lg flex-justify-space-around">
+          <div class="display-flex-col img-sizes-detail mg-1-tb">
+            <div class="display-flex-row">
+              <span>'img-xsm-round'</span>:<span> 32px X 32px</span>
             </div>
-            <div class="display-flex-col-center">
-
-              <!-- round image -->
-              <img src="./components/assets/images/img1.jpeg" alt="image" class="img-lg-round">
-
-              <br>
-              <p>example of <strong>'img-lg-round'</strong> : 160px X 160px</p>
+            <div class="display-flex-row">
+              <span>'img-sm-round'</span>:<span> 48px X 48px</span>
             </div>
+            <div class="display-flex-row">
+              <span>'img-md-round'</span>:<span> 100px X 100px</span></div>
+            <div class="display-flex-row">
+              <span>'img-lg-round'</span>:<span> 160px X 160px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xl-round'</span>:<span> 256px X 256px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxl-round'</span>:<span> 416px X 416px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxxl-round'</span>:<span> 672px X 672px</span></div>
+          </div>
+          <div class="display-flex-col-center mg-1-tb">
+
+            <!-- round image -->
+            <img src="./components/assets/images/img1.jpeg" alt="image" class="img-lg-round">
+
+            <br>
+            <p>example of <strong>'img-lg-round'</strong> : 160px X 160px</p>
           </div>
         </div>
+      </div>
 
-        <p>In below code, give your image location in 'src'.</p>
+      <p>In below code, give your image location in 'src'.</p>
 
-        <pre class="code-background">
+      <pre class="code-background">
           <code class="language-html">
             &lt;!-- round image --&gt;
             &lt;img src=&quot;./components/assets/images/img1.jpeg&quot; alt=&quot;image&quot; class=&quot;img-lg-round&quot;&gt;
           </code>
         </pre>
-     
-        <!-- full width image -->
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Full Width Image</h2>
-        <p class="mg-2-bot title-md-wt-5">Full width image is the one that expands to cover the container it is present
-          in.<br /><br />
-          <span class="title-md-wt-bold"> Note : Resize the browser window, to see the responsive property.</span></p>
-        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
-          <!-- responsive image -->
-          <img src="./components/assets/images/img1.jpeg" alt="image" class="img-responsive" />
+      <!-- full width image -->
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Full Width Image</h2>
+      <p class="mg-2-bot title-md-wt-5">Full width image is the one that expands to cover the container it is present
+        in.<br /><br />
+        <span class="title-md-wt-bold"> Note : Resize the browser window, to see the responsive property.</span></p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
-        </div>
+        <!-- responsive image -->
+        <img src="./components/assets/images/img1.jpeg" alt="image" class="img-responsive" />
 
-        <p>In below code, give your image location in 'src'.</p>
+      </div>
 
-        <pre class="code-background">
+      <p>In below code, give your image location in 'src'.</p>
+
+      <pre class="code-background">
           <code class="language-html">
             &lt;!-- responsive image --&gt;
             &lt;img src=&quot;./components/assets/images/img1.jpeg&quot; alt=&quot;image&quot; class=&quot;img-responsive&quot; /&gt;
           </code>
         </pre>
-   
-      </div>
 
     </section>
     <hr>
@@ -1936,13 +1919,13 @@
 
       <!-- Labelled Input -->
 
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (without placeholder)</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (without placeholder)</h2>
         <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
           <p class="mg-2-bot title-md-wt-bold">Outline </p>
 
-          <div class="display-flex-row flex-wrap">
+          <div class=" display-flex-row flex-wrap">
 
             <!-- outline input text field -->
             <div class="outline-text-input">
@@ -2055,8 +2038,10 @@
             &lt;/div&gt;
           </code>
         </pre>
-   
-        <!-- no outline/standard -->
+      </div>
+
+      <!-- no outline/standard -->
+      <div class="container-lg mg-3-bot">
         <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
           <p class="mg-2-bot title-md-wt-bold">No outline</p>
@@ -2173,13 +2158,13 @@
             &lt;/div&gt;
           </code>
         </pre>
-    
+
       </div>
 
       <!-- Label with placeholder Input -->
 
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (with placeholder)</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (with placeholder)</h2>
         <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
           <p class="mg-2-bot title-md-wt-bold">Outline </p>
 
@@ -2299,9 +2284,11 @@
             &lt;/div&gt;
           </code>
         </pre>
-    
+      </div>
 
-        <!-- no outline/standard with place holder-->
+      <!-- no outline/standard with place holder-->
+
+      <div class="container-lg mg-3-bot">
         <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
           <p class="mg-2-bot title-md-wt-bold">No outline</p>
@@ -2423,7 +2410,7 @@
             &lt;/div&gt;
           </code>
         </pre>
-    
+
       </div>
 
     </section>
