@@ -140,10 +140,6 @@ nav h2 {
     color: var(--primary-color);
 }
 
-.nav-category-active{
-    /* color: var(--faint-gray); */
-}
-
 .nav-close-btn {
     display: none;
 }
