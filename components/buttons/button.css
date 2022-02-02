@@ -37,7 +37,8 @@
 .floating-btn-md,
 .floating-btn-lg,
 .floating-btn-xl,
-.floating-btn-xxl {
+.floating-btn-xxl,
+.flating-btn-sm {
     background-color: var(--primary-color);
     color: var(--text-white);
 }
@@ -162,7 +163,8 @@
 .floating-btn-md:hover,
 .floating-btn-lg:hover,
 .floating-btn-xl:hover,
-.floating-btn-xxl:hover {
+.floating-btn-xxl:hover,
+.flating-btn-sm:hover {
     background-color: var(--primary-dark-color);
 }
 
@@ -264,6 +266,20 @@
     font-size: 1.6rem
 }
 
+.flating-btn-sm{
+    font-size: 0.8rem;
+    /* position: fixed; */
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px var(--text-lighter);
+}
+
 /* icon btn */
 
 .icon-btn-xsm,
@@ -331,3 +347,4 @@
 .badge-icon-btn-xxl{
     font-size: 1.8rem;
 }
+

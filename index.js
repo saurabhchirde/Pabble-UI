@@ -73,3 +73,16 @@ document.querySelector(".nav-input").addEventListener("click", () => {
     navBtn[5].classList.remove("nav-active");
     navBtn[6].classList.add("nav-active");
 })
+
+// media query
+
+// const mediaQueryMobile = window.matchMedia('(max-width: 700px)');
+// const mediaQueryDesktop = window.matchMedia('(min-width: 700px)');
+
+// if (mediaQueryMobile.matches) {
+//     document.querySelector("nav").classList.toggle("hide");
+// }
+
+// if (mediaQueryDesktop.matches) {
+//     document.querySelector("nav").classList.remove("hide");
+// }
