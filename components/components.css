@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
-@import "./components/alerts/alert.css";
-@import "./components/buttons/button.css";
-@import "./components/avatar/avatar.css";
-@import "./components/badge/badge.css";
-@import "./components/image/image.css";
-@import "./components/card/card.css";
-@import "./components/input/input.css";
+@import "./alerts/alert.css";
+@import "./buttons/button.css";
+@import "./avatar/avatar.css";
+@import "./badge/badge.css";
+@import "./image/image.css";
+@import "./card/card.css";
+@import "./input/input.css";
 
-@import "./components/common_css/containers.css";
-@import "./components/common_css/margins.css";
-@import "./components/common_css/paddings.css";
-@import "./components/common_css/flex.css";
-@import "./components/common_css/text.css";
-@import "./components/common_css/icons.css";
+@import "/Documentation/utilities/containers.css";
+@import "/Documentation/utilities/margins.css";
+@import "/Documentation/utilities/paddings.css";
+@import "/Documentation/utilities/flex.css";
+@import "/Documentation/utilities/text.css";
+@import "/Documentation/utilities/icons.css";
 
 * {
     margin: 0;
@@ -44,16 +44,12 @@ html {
     --text-red-dark:#ca3535;
     --text-red-light:#fea8a8;
 
-
     --success-bg: #e8fcf1;
     --success-text: #027e38;
-
     --info-bg: #e6f7ff;
-    --info-text: #446fcb;
-
+    --info-text: #0444cc;
     --warning-bg: #fefbe6;
-    --warning-text: hsl(40, 84%, 40%);
-
+    --warning-text: #956506;
     --error-bg: #fef2f1;
     --error-text: #ca3535;
 
@@ -62,26 +58,8 @@ html {
     --ham-menu-bg: rgba(19, 19, 19, 0.95);
 }
 
-.border-round-4p {
-    border-radius: 4px;
-}
-
-/* sub title */
-
-.sub-title,
-.navHead {
-    display: flex;
-    align-items: center;
-}
-
 /* hide all */
 
 .hide {
     display: none;
-}
-
-/* btn text black */
-
-.dark-text-btn{
-    color: var(--text-dark);
 }

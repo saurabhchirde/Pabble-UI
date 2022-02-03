@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Components/components.css" />
+  <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Indo UI | Documentation</title>
+</head>
+
+<body>
+
+  <!-- nav horizontal bar -->
+  <div class="nav-header-mobile hide">
+
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>    
+      <a href="/">
+        <div class="logo">IndoUI</div>
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+       <a href="/">
+         <div class="nav-header-text">Documentation</div>
+       </a>
+       <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+    
+  </div>
+
+
+  <div class="nav-header nav-header-desktop hide">
+    <a href="/">
+      <div class="logo">IndoUI</div>
+    </a>
+    <div class="nav-header-right-side">
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+  </div>
+
+  <!-- nav verticle bar -->
+  <nav class="nav">
+    <a href="/docs.html"><h1 class="nav-category pd-point8-lt">Getting Started</h1></a>
+    <hr class="nav-break-line">
+    <a href="./about.html"><h1 class="nav-category pd-point8-lt">About</h1></a>
+    <a href="./color.html"><h1 class="nav-category pd-point8-lt">Color</h1></a>
+    <a href="./typography.html"><h1 class="nav-category pd-point8-lt">Typography</h1></a>
+    <hr class="nav-break-line">
+    <a href="./components-overview.html"><h1 class="nav-category pd-point8-lt 
+      nav-category-active">Component Overview</h1></a>
+    <hr class="nav-break-line">
+    <div class="nav-items">
+      <a href="./alert.html">
+        <h2 class="nav-alert nav-btn">Alerts</h2>
+      </a>
+      <a href="./buttons.html">
+        <h2 class="nav-button nav-btn">Buttons</h2>
+      </a>
+      <a href="./avatar.html">
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
+      </a>
+      <a href="./badge.html">
+        <h2 class="nav-badge nav-btn">Badge</h2>
+      </a>
+      <a href="./cards.html">
+        <h2 class="nav-card nav-btn">Cards</h2>
+      </a>
+      <a href="./image.html">
+        <h2 class="nav-img nav-btn">Image</h2>
+      </a>
+      <a href="./input.html">
+        <h2 class="nav-input nav-btn">Input</h2>
+      </a>
+    </div>
+    <div class="nav-close-btn">
+      <i class="far fa-times-circle"></i>
+    </div>
+  </nav>
+
+  <div class="right-side-nav">
+    <h1>Contents</h1>
+      <a href="#">
+        <h2 class="nav-alert nav-btn">Alerts</h2>
+      </a>    
+      <a href="#">
+        <h2 class="nav-button nav-btn">Buttons</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-badge nav-btn">Badge</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-card nav-btn">Cards</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-img nav-btn">Image</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-input nav-btn">Input</h2>
+      </a>
+  </div>
+
+  <!-- floating up btn -->
+  <a href="#"><button class="btn floating-btn-md">
+      <i class="fas fa-arrow-up"></i></button>
+  </a>
+
+  <!-- body -->
+
+  <div class="main-container main ">
+
+    <!-- input field -->
+
+    <section id="input" class="pd-1-lr pd-2-tb mg-1-bot">
+      <h1 class="mg-point8-tb">Input-Fields</h1>
+      <p>
+        Inputs are used to take information from the user to authenticate or save their information to the server.
+      </p>
+
+      <!-- Labelled Input -->
+
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (without placeholder)</h2>
+      <div class="mg-3-bot">
+        <div class="cont-shadow pd-1-all mg-2-bot mg-1-top">
+
+          <p class="mg-1-tb mg-1-lt title-md-wt-bold">Outline </p>
+
+          <div class=" flex-row flex-wrap">
+
+            <!-- outline input text field -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
+            </div>
+
+            <!-- outline input email field -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- outline input password field -->
+            <div class="outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- outline input date field -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadd9cb783be0015bbaf56" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <!-- no outline/standard -->
+      <div class="mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-1-tb mg-1-lt title-md-wt-bold">No outline</p>
+
+          <div class="flex-row flex-wrap">
+
+            <!-- no-outline input text field -->
+            <div class="no-outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
+            </div>
+
+            <!-- no-outline input email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- no-outline input password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline input number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- no-outline input date field -->
+            <div class="no-outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- no-outline input month field -->
+            <div class="no-outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- no-outline input file field -->
+            <div class="no-outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- no-outline input telephone field -->
+            <div class="no-outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fade46b783be0015bbaf58" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- Label with placeholder Input -->
+
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (with placeholder)</h2>
+      <div class=" mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+          <p class="mg-1-tb mg-1-lt title-md-wt-bold">Outline </p>
+
+          <div class="flex-row flex-wrap">
+
+            <!-- outline input text field -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              </label>
+            </div>
+
+            <!-- outline input email field -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- outline input password field -->
+            <div class="outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                  required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              </label>
+            </div>
+
+            <!-- outline input date field -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                  placeholder="enter phone number" />
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadeb5b783be0015bbaf5a" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <!-- no outline/standard with place holder-->
+
+      <div class="mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-1-tb mg-1-lt title-md-wt-bold">No outline</p>
+
+          <div class="flex-row flex-wrap">
+
+            <!-- no-outline input text field -->
+            <div class="no-outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              </label>
+            </div>
+
+            <!-- no-outline input email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- no-outline input password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                  required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline input number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              </label>
+            </div>
+
+            <!-- no-outline input date field -->
+            <div class="no-outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- no-outline input month field -->
+            <div class="no-outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- no-outline input file field -->
+            <div class="no-outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- no-outline input telephone field -->
+            <div class="no-outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                  placeholder="enter phone number" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadef3b783be0015bbaf5b" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+    </section>
+    <hr>
+  </div>
+
+  <script src="/Documentation/docpage-js/docs.js"></script>
+</body>
+
+</html>

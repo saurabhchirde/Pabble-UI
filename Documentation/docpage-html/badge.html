@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Components/components.css" />
+  <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Indo UI | Documentation</title>
+</head>
+
+<body>
+
+  <!-- nav horizontal bar -->
+  <div class="nav-header-mobile hide">
+
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>    
+      <a href="/">
+        <div class="logo">IndoUI</div>
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+       <a href="/">
+         <div class="nav-header-text">Documentation</div>
+       </a>
+       <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+    
+  </div>
+
+
+  <div class="nav-header nav-header-desktop hide">
+    <a href="/">
+      <div class="logo">IndoUI</div>
+    </a>
+    <div class="nav-header-right-side">
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+  </div>
+
+  <!-- nav verticle bar -->
+  <nav class="nav">
+    <a href="/docs.html"><h1 class="nav-category pd-point8-lt">Getting Started</h1></a>
+    <hr class="nav-break-line">
+    <a href="./about.html"><h1 class="nav-category pd-point8-lt">About</h1></a>
+    <a href="./color.html"><h1 class="nav-category pd-point8-lt">Color</h1></a>
+    <a href="./typography.html"><h1 class="nav-category pd-point8-lt">Typography</h1></a>
+    <hr class="nav-break-line">
+    <a href="./components-overview.html"><h1 class="nav-category pd-point8-lt 
+      nav-category-active">Component Overview</h1></a>
+    <hr class="nav-break-line">
+    <div class="nav-items">
+      <a href="./alert.html">
+        <h2 class="nav-alert nav-btn">Alerts</h2>
+      </a>
+      <a href="./buttons.html">
+        <h2 class="nav-button nav-btn">Buttons</h2>
+      </a>
+      <a href="./avatar.html">
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
+      </a>
+      <a href="./badge.html">
+        <h2 class="nav-badge nav-btn">Badge</h2>
+      </a>
+      <a href="./cards.html">
+        <h2 class="nav-card nav-btn">Cards</h2>
+      </a>
+      <a href="./image.html">
+        <h2 class="nav-img nav-btn">Image</h2>
+      </a>
+      <a href="./input.html">
+        <h2 class="nav-input nav-btn">Input</h2>
+      </a>
+    </div>
+    <div class="nav-close-btn">
+      <i class="far fa-times-circle"></i>
+    </div>
+  </nav>
+
+  <div class="right-side-nav">
+    <h1>Contents</h1>
+      <a href="#">
+        <h2 class="nav-alert nav-btn">Alerts</h2>
+      </a>    
+      <a href="#">
+        <h2 class="nav-button nav-btn">Buttons</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-badge nav-btn">Badge</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-card nav-btn">Cards</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-img nav-btn">Image</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-input nav-btn">Input</h2>
+      </a>
+  </div>
+
+  <!-- floating up btn -->
+  <a href="#"><button class="btn floating-btn-md">
+      <i class="fas fa-arrow-up"></i></button>
+  </a>
+
+  <!-- body -->
+
+  <div class="main-container main ">
+
+    <!-- badge -->
+
+    <section id="badge" class="pd-1-lr pd-2-tb mg-1-bot">
+      <h1 class="mg-point8-tb">Badge</h1>
+      <p>
+        Badges are used to display a notification count or status information.
+      </p>
+
+      <!-- badge on image -->
+
+      <h2 id="status-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Status Badge</h2>
+      <div class="">
+
+        <div class="cont-shadow pd-1-tb mg-2-bot">
+          <div class="avatar-container mg-1-tb mg-2-lr">
+
+            <!-- round large size avatar image with offline-status badge -->
+            <div class="badge-container">
+              <div class="avatar avatar-lg-round"><img loading="lazy" src="/Documentation/docpage-assets/avatar/avatar2.jpeg"
+                  alt="avatar-image" class="img-responsive" />
+              </div>
+              <span class="status-badge status-offline"></span>
+            </div>
+
+            <!-- round medium size avatar letter with online badge -->
+            <div class="badge-container">
+              <div class="avatar text-avatar-md-round">IN</div>
+              <span class="status-badge status-online"></span>
+            </div>
+
+            <!-- round small size avatar image with away-status badge -->
+            <div class="badge-container">
+              <div class="avatar avatar-sm-round"><img loading="lazy" src="/Documentation/docpage-assets/avatar/avatar.jpeg"
+                  alt="avatar-image" class="img-responsive" />
+              </div>
+              <span class="status-badge status-away"></span>
+            </div>
+
+            <!-- round extra-small size avatar image with offline badge -->
+            <div class="badge-container">
+              <div class="avatar avatar-xsm-round"><img loading="lazy" src="/Documentation/docpage-assets/avatar/avatar1.jpeg"
+                  alt="avatar-image" class="img-responsive" />
+              </div>
+              <span class="status-badge status-offline"></span>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad3cfb783be0015bbaf3f"
+          style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+      </div>
+
+
+      <!-- Badge on text -->
+
+      <h2 id="text-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Text Badge</h2>
+      <div class=" mg-3-bot">
+
+        <div class="cont-shadow flex-dir-column flex-align-start pd-1-all mg-1-bot">
+
+          <!-- round badge on h1 sized text -->
+          <div class="badge-container">
+            <h1 class="badge-text">Heading h1 with badge
+              <span class="badge-on-text badge-round">2</span></h1>
+          </div>
+
+          <!-- round badge on h2 sized text -->
+          <div class="badge-container">
+            <h2 class="badge-text">Heading h2 with badge
+              <span class="badge-on-text badge-round">2</span></h2>
+          </div>
+
+          <!-- square badge on h3 sized text -->
+          <div class="badge-container">
+            <h3 class="badge-text">Heading h3 with badge
+              <span class="badge-on-text badge-square">2</span></h3>
+          </div>
+
+          <!-- square badge on h4 sized text -->
+          <div class="badge-container">
+            <h4 class="badge-text">Heading h4 with badge
+              <span class="badge-on-text badge-square">2</span></h4>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad40ab783be0015bbaf40" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- Badge on icon -->
+
+      <h2 id="icon-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Icon Badge</h2>
+      <div class="mg-3-bot">
+
+        <div class="icon-container cont-shadow pd-1-all mg-1-bot">
+
+          <!-- badge on cart icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-shopping-cart"><span class="badge-on-icon">2</span></i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope"><span class="badge-on-icon">12</span></i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope"><span class="badge-on-icon">25+</span></i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope"><span class="badge-on-icon">215+</span></i>
+            </button>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad444b783be0015bbaf42" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!--Button with toggle Badge -->
+
+      <h2 id="badge-on-btn" class="mg-2-top mg-1-bot title-lg-wt-5">Toggle Badge Button</h2>
+      <div class="">
+        <div class="cont-shadow icon-container pd-1-all mg-1-bot">
+
+          <!-- badge on outline button -->
+          <div class="badge-container">
+            <button class="btn primary-outline-btn-md">Hide<span class="badge-on-btn ">7</span>
+            </button>
+          </div>
+
+          <!-- badge on secondary solid button -->
+          <div class="badge-container">
+            <button class="btn secondary-btn-md">Hide<span class="badge-on-btn ">2</span>
+            </button>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad4b4b783be0015bbaf44" style="width: 100%; height: 210px;"
+          frameborder="0"></iframe>
+
+      </div>
+    </section>
+    <hr>
+
+  </div>
+
+  <script src="/Documentation/docpage-js/docs.js"></script>
+</body>
+
+</html>
