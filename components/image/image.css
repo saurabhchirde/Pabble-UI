@@ -1,19 +1,96 @@
 .img-responsive {
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
+.img-sizes-container ~div {
+    width: 50%;
+}
+
+.img-sizes-detail div{
+    padding:0.5rem 1rem;
+    margin: 0.2rem;
+    border: 1px solid var(--medium-blue-gray);
+}
+
+.img-sizes-detail div span{
+    padding:0rem 1rem;    
+    justify-content: space-between;
+}
+
+/* image sizes */
+
+.img-xsm-square,
+.img-xsm-round {
+    width: 2rem;
+    height: 2rem;
+}
+
+.img-sm-square,
+.img-sm-round {
+    width: 3rem;
+    height: 3rem;
+}
+
+.img-md-square,
+.img-md-round {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.img-lg-square,
+.img-lg-round {
+    width: 10rem;
+    height: 10rem;
+    
+}
+
+.img-xl-square,
+.img-xl-round {
+    width: 16rem;
+    height: 16rem;
+}
+
+.img-xxl-square,
+.img-xxl-round {
+    width: 26rem;
+    height: 26rem;
+}
+
+.img-xxxl-round,
+.img-xxxl-square {
+    width: 42rem;
+    height: 42rem;
+}
+
+/* img shape */
+
+.img-xsm-square,
+.img-sm-square,
+.img-md-square,
+.img-lg-square,
+.img-xl-square,
+.img-xxl-square,
+.img-xxxl-square,
+.img-xsm-round,
+.img-sm-round,
+.img-md-round,
+.img-lg-round,
+.img-xl-round,
+.img-xxl-round,
+.img-xxxl-round,
+.img-round{
+    object-fit: cover;
+}
+
+.img-xsm-round,
+.img-sm-round,
+.img-md-round,
+.img-lg-round,
+.img-xl-round,
+.img-xxl-round,
+.img-xxxl-round,
 .img-round {
     border-radius: 50%;
-}
-
-/* carbon code */
-
-iframe {
-    width: 100%;
-    height: 16rem;
-    border: 0;
-    transform: scale(1);
-    overflow: hidden;
-    margin: 1rem 0;
 }

@@ -6,6 +6,7 @@
 @import "./components/badge/badge.css";
 @import "./components/image/image.css";
 @import "./components/card/card.css";
+@import "./components/input/input.css";
 
 @import "./components/common_css/containers.css";
 @import "./components/common_css/margins.css";
@@ -57,6 +58,8 @@ html {
     --error-text: #ca3535;
 
     --btn-hover: rgba(153, 153, 153, 0.2);
+    --nav-btn-hover: rgba(174, 174, 174, 0.1);
+    --ham-menu-bg: rgba(19, 19, 19, 0.95);
 }
 
 .border-round-4p {

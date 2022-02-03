@@ -11,13 +11,13 @@
 }
 
 .primary-btn-md,
-.primary-outlined-btn-md,
+.primary-outline-btn-md,
 .primary-text-btn-md,
 .label-icon-btn-md,
-.label-icon-outlined-btn-md,
+.label-icon-outline-btn-md,
 .secondary-btn-md,
 .secondary-text-btn-md,
-.secondary-outlined-btn-md,
+.secondary-outline-btn-md,
 .disabled-btn-md,
 .floating-btn-md{
     padding: 0.5rem 0.8rem;
@@ -37,7 +37,8 @@
 .floating-btn-md,
 .floating-btn-lg,
 .floating-btn-xl,
-.floating-btn-xxl {
+.floating-btn-xxl,
+.flating-btn-sm {
     background-color: var(--primary-color);
     color: var(--text-white);
 }
@@ -58,14 +59,14 @@
     color: var(--primary-color);
 }
 
-.primary-outlined-btn-md,
-.primary-outlined-btn-xsm,
-.primary-outlined-btn-sm,
-.primary-outlined-btn-lg,
-.label-icon-outlined-btn-md,
-.label-icon-outlined-btn-xsm,
-.label-icon-outlined-btn-sm,
-.label-icon-outlined-btn-lg {
+.primary-outline-btn-md,
+.primary-outline-btn-xsm,
+.primary-outline-btn-sm,
+.primary-outline-btn-lg,
+.label-icon-outline-btn-md,
+.label-icon-outline-btn-xsm,
+.label-icon-outline-btn-sm,
+.label-icon-outline-btn-lg {
     color: var(--primary-color);
     background-color: var(--primary-bg);
     outline: 1px solid var(--primary-color);
@@ -88,10 +89,10 @@
     pointer-events: none;
 }
 
-.secondary-outlined-btn-md,
-.secondary-outlined-btn-xsm,
-.secondary-outlined-btn-sm,
-.secondary-outlined-btn-lg {
+.secondary-outline-btn-md,
+.secondary-outline-btn-xsm,
+.secondary-outline-btn-sm,
+.secondary-outline-btn-lg {
     outline: 1px solid var(--text-light);
     color: var(--text-light);
     background-color: var(--primary-bg);
@@ -109,13 +110,12 @@
 .badge-icon-btn-xxl {
     background: none;
     color: var(--text-light);
-    padding: 0.3rem 0.4rem;
 }
 
 .primary-btn-sm,
-.primary-outlined-btn-sm,
+.primary-outline-btn-sm,
 .label-icon-btn-sm,
-.label-icon-outlined-btn-sm,
+.label-icon-outline-btn-sm,
 .primary-text-btn-sm,
 .secondary-text-btn-sm,
 .secondary-btn-sm,
@@ -125,9 +125,9 @@
 }
 
 .primary-btn-xsm,
-.primary-outlined-btn-xsm,
+.primary-outline-btn-xsm,
 .label-icon-btn-xsm,
-.label-icon-outlined-btn-xsm,
+.label-icon-outline-btn-xsm,
 .primary-text-btn-xsm,
 .secondary-text-btn-xsm,
 .secondary-btn-xsm,
@@ -138,9 +138,9 @@
 }
 
 .primary-btn-lg,
-.primary-outlined-btn-lg,
+.primary-outline-btn-lg,
 .label-icon-btn-lg,
-.label-icon-outlined-btn-lg,
+.label-icon-outline-btn-lg,
 .label-icon-btn-lg,
 .primary-text-btn-lg,
 .secondary-text-btn-lg,
@@ -163,7 +163,8 @@
 .floating-btn-md:hover,
 .floating-btn-lg:hover,
 .floating-btn-xl:hover,
-.floating-btn-xxl:hover {
+.floating-btn-xxl:hover,
+.flating-btn-sm:hover {
     background-color: var(--primary-dark-color);
 }
 
@@ -180,14 +181,14 @@
     color: var(--primary-dark-color);
 }
 
-.primary-outlined-btn-md:hover,
-.primary-outlined-btn-sm:hover,
-.primary-outlined-btn-xsm:hover,
-.primary-outlined-btn-lg-md:hover,
-.label-icon-outlined-btn-md:hover,
-.label-icon-outlined-btn-sm:hover,
-.label-icon-outlined-btn-xsm:hover,
-.label-icon-outlined-btn-lg:hover {
+.primary-outline-btn-md:hover,
+.primary-outline-btn-sm:hover,
+.primary-outline-btn-xsm:hover,
+.primary-outline-btn-lg-md:hover,
+.label-icon-outline-btn-md:hover,
+.label-icon-outline-btn-sm:hover,
+.label-icon-outline-btn-xsm:hover,
+.label-icon-outline-btn-lg:hover {
     background-color: var(--faint-gray);
     color: var(--primary-dark-color);
     outline: 1px solid var(--primary-dark-color);
@@ -207,27 +208,21 @@
 .badge-icon-btn-lg:hover,
 .badge-icon-btn-xl:hover,
 .badge-icon-btn-xxl:hover,
-.secondary-outlined-btn-md:hover,
-.secondary-outlined-btn-xsm:hover,
-.secondary-outlined-btn-sm:hover,
-.secondary-outlined-btn-lg:hover {
+.secondary-outline-btn-md:hover,
+.secondary-outline-btn-xsm:hover,
+.secondary-outline-btn-sm:hover,
+.secondary-outline-btn-lg:hover {
     color: var(--primary-color);
 }
 
-.secondary-outlined-btn-md:hover,
-.secondary-outlined-btn-xsm:hover,
-.secondary-outlined-btn-sm:hover,
-.secondary-outlined-btn-lg:hover {
+.secondary-outline-btn-md:hover,
+.secondary-outline-btn-xsm:hover,
+.secondary-outline-btn-sm:hover,
+.secondary-outline-btn-lg:hover {
     outline: 1px solid var(--primary-color);
 }
 
 /* floating btn */
-
-.floating,
-.icon-btns {
-    display: flex;
-    align-items: center;
-}
 
 .floating-btn-xsm,
 .floating-btn-sm,
@@ -235,12 +230,16 @@
 .floating-btn-lg,
 .floating-btn-xl,
 .floating-btn-xxl{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     padding: 1rem;
     border-radius: 50%;
-    box-shadow: 0 5px 10px var(--text-lighter);
+    box-shadow: 2px 2px 3px var(--text-lighter);
 }
 
 .floating-btn-xsm{
@@ -265,6 +264,20 @@
 
 .floating-btn-xxl{
     font-size: 1.6rem
+}
+
+.flating-btn-sm{
+    font-size: 0.8rem;
+    /* position: fixed; */
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px var(--text-lighter);
 }
 
 /* icon btn */
@@ -334,3 +347,4 @@
 .badge-icon-btn-xxl{
     font-size: 1.8rem;
 }
+

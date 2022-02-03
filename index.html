@@ -15,62 +15,74 @@
 <body>
 
   <!-- nav horizontal bar -->
-  <div class="nav-header">
-    <a href="/">
-      <div class="logo title-xxl mg-2-lt">IndoUI</div>
-    </a>
-    <div class="nav-header-right-side mg-2-rt">
+  <div class="nav-header-mobile hide">
+
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>    
       <a href="/">
-        <div class="nav-header-text title-lg-wt-4 mg-1-rt">Documentation</div>
+        <div class="logo">IndoUI</div>
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+       <a href="/">
+         <div class="nav-header-text">Documentation</div>
+       </a>
+       <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+    
+  </div>
+
+
+  <div class="nav-header nav-header-desktop hide">
+    <a href="/">
+      <div class="logo">IndoUI</div>
+    </a>
+    <div class="nav-header-right-side">
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
       </a>
       <div class="toggler "><i class="fas fa-moon"></i></div>
     </div>
   </div>
 
   <!-- nav verticle bar -->
-  <nav class="nav pd-2-lr nav-container mg-1-top">
-    <h1 class="title-lg-wt-3 pd-point8-lt">About</h1>
-    <h1 class="title-lg-wt-3 pd-point8-lt">Getting Started</h1>
-    <h1 class="title-lg-wt-3 pd-point8-lt">Color</h1>
-    <h1 class="title-lg-wt-3 pd-point8-lt">Components</h1>
+  <nav class="nav pd-2-lr mg-1-top">
+    <h1 class="nav-category pd-point8-lt">About</h1>
+    <h1 class="nav-category pd-point8-lt">Getting Started</h1>
+    <h1 class="nav-category pd-point8-lt">Color</h1>
+    <h1 class="nav-category pd-point8-lt nav-category-active">Components</h1>
     <div class="nav-items mg-1-lt">
       <a href="#alert">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Alerts</button>
+        <h2 class="nav-alert nav-btn">Alerts</h2>
       </a>
-      <a href="#buttons"><button class="btn secondary-text-btn-md dark-text-btn">
-          Buttons</button>
+      <a href="#buttons">
+        <h2 class="nav-button nav-btn">Buttons</h2>
       </a>
       <a href="#avatar">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Avatar</button>
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
       </a>
       <a href="#badge">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Badge</button>
+        <h2 class="nav-badge nav-btn">Badge</h2>
       </a>
       <a href="#cards">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Cards</button>
+        <h2 class="nav-card nav-btn">Cards</h2>
       </a>
       <a href="#image">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Image</button>
+        <h2 class="nav-img nav-btn">Image</h2>
       </a>
       <a href="#input">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Input</button>
-      </a>
-      <a href="#rating">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Ratings</button>
-      </a>
-      <a href="#toast">
-        <button class="btn secondary-text-btn-md dark-text-btn">
-          Toast/Snackbar</button>
+        <h2 class="nav-input nav-btn">Input</h2>
       </a>
     </div>
+    <div class="nav-close-btn">
+      <i class="far fa-times-circle"></i>
+    </div>
   </nav>
+
+  <!-- floating up btn -->
+  <a href="#"><button class="btn floating-btn-md">
+      <i class="fas fa-arrow-up"></i></button>
+  </a>
 
   <!-- body -->
 
@@ -83,18 +95,16 @@
         An alert displays a short, important message in a way that attracts
         the user's attention without interrupting the user's task.
       </p>
-      <div id="basic-alert" class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">
-          Basic alerts
-        </h2>
-        <p>
-          The alert offers four severity levels that set a distinctive icon and
-          color.
-        </p>
+      <h2 id="basic-alert" class="mg-2-top mg-1-bot title-lg-wt-5">Basic alerts</h2>
+      <p>
+        The alert offers four severity levels that set a distinctive icon and
+        color.
+      </p>
+      <div class="mg-3-bot">
 
         <!-- alert without close -->
 
-        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
+        <div class="cont-shadow component-container pd-point6-all mg-2-bot mg-1-top border-round-4p">
 
           <!-- success alert -->
           <div class="alert-success">
@@ -122,21 +132,20 @@
 
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2520%2520%253C%21--%2520success%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-md%2522%253ESuccess%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520info%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-md%2522%253EInfo%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520warning%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-md%2522%253EWarning%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520error%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-md%2522%253EError%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fac802b783be0015bbaf27" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
 
       </div>
       <!--descriptive alert without close -->
 
-      <div id="descriptive-alert" class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Descriptive alerts</h2>
-        <p class="mg-point6-top">
-          The alert offers four severity levels that set a distinctive icon
-          and color.
-        </p>
-        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
+      <h2 id="descriptive-alert" class="mg-2-topdiv-1-bot title-lg-wt-5">Descriptive alerts</h2>
+      <p class="mg-point6-top">
+        The alert offers four severity levels that set a distinctive icon
+        and color.
+      </p>
+      <div class="mg-3-bot">
+
+        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert -->
           <div class="alert-des-success">
@@ -192,32 +201,31 @@
           </div>
 
         </div>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520success%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESuccess%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522p-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520success%2520alert%2520-%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520check%2520it%2520out%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520info%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EInfo%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522p-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520info%2520alert%2520-%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2522%253Echeck%2520it%2520out%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520warning%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EWarning%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522p-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520warning%2520alert%2520-%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2522%253Echeck%2520it%2520out%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520error%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-w-btn-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EError%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522p-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520error%2520alert%2520-%2520%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520check%2520it%2520out%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-      </div>
 
+        <iframe src="https://www.thiscodeworks.com/embed/61facee5b783be0015bbaf30" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
 
       <!-- alert with cta -->
 
-      <div id="alert-with-cta" class="container-lg mg-3-bot">
-        <div class="alert-cta-demo sub-title mg-2-top mg-1-bot mg-point6-bot">
-          <h2 class=" title-lg-wt-5">Alert with actions</h2>
-          <button class="btn primary-outlined-btn-sm">Demo</button>
-        </div>
-        <p class="mg-point6-tb">
-          An alert can have action, such as a close or undo button. It is
-          rendered after the message, at the end of the alert.
-        </p>
-        <p class="mg-point6-tb">
-          If on 'Click' callback is provided and no action prop is set, a
-          close icon is displayed. <br />The action prop can be used to
-          provide an alternative action, for example using a button or
-          icon button.
-        </p>
+      <div class="alert-cta-demo sub-title mg-2-top mg-1-bot mg-point6-bot">
+        <h2 id="alert-with-cta" class="mg-1-top mg-1-bot title-lg-wt-5">Alert with actions</h2>
+        <button class="btn primary-outline-btn-sm">Demo</button>
+      </div>
+      <p class="mg-point6-tb">
+        An alert can have action, such as a close or undo button. It is
+        rendered after the message, at the end of the alert.
+      </p>
+      <p class="mg-point6-tb">
+        If on 'Click' callback is provided and no action prop is set, a
+        close icon is displayed. <br />The action prop can be used to
+        provide an alternative action, for example using a button or
+        icon button.
+      </p>
 
-        <div class="cont-shadow pd-point6-all mg-point8-tb border-round-4p">
+      <div class="mg-3-bot">
+        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert with dismiss button -->
           <div class="alert-success-btn">
@@ -241,12 +249,21 @@
             </div>
           </div>
 
+          <!-- error alert with undo button -->
+          <div class="alert-error-btn">
+            <div class="alert-text">
+              <i class="fas fa-exclamation-circle alert-icon"></i>
+              <span class="p-md">Wrong input!</span>
+            </div>
+            <div class="undo">
+              <button class="btn secondary-text-btn-sm">UNDO</button>
+            </div>
+          </div>
+
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520success%2520alert%2520with%2520dismiss%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-success-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-md%2522%253ESuccess%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520success%2520alert%2520with%2520undo%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-success-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520alert-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522p-md%2522%253ESuccess%2520alert.%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522undo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61facf67b783be0015bbaf31" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
 
       </div>
 
@@ -259,147 +276,133 @@
       <h1 class="mg-point8-tb">Buttons</h1>
       <p>Buttons allow users to take actions, and make choices, with a single tap.
       </p>
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Primary</h2>
+      <!--  -->
 
-        <div class="cont-shadow component-container pd-1-all">
-          <div class="container-lg ">
-            Solid:
-            <!-- primary button -->
-            <button class="btn primary-btn-md">Primary</button>
+      <h2 id="primary-btn" class="mg-2-top mg-1-bot title-lg-wt-5"></h2>
 
-            <!-- secondary button -->
-            <button class="btn secondary-btn-md">Secondary</button>
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Solid Buttons</p>
+        <div class="cont-shadow button-container pd-1-all mg-1-bot">
 
-            <!-- disabled button -->
-            <button class="btn disabled-btn-md" disabled="disabled">Disabled</button>
+          <!-- primary button -->
+          <button class="btn primary-btn-md">Primary</button>
 
-          </div>
-        </div>
+          <!-- secondary button -->
+          <button class="btn secondary-btn-md">Secondary</button>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253C%21--%2520primary%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-md%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520secondary%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn-md%2522%253ESecondary%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520disabled%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520disabled-btn-md%2522%2520disabled%253D%2522disabled%2522%253EDisabled%253C%252Fbutton%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-
-        <div class="cont-shadow component-container pd-1-all">
-
-          Outlined:
-          <!-- primary outlined button -->
-          <button class="btn primary-outlined-btn-md">Primary</button>
-
-          <!-- secondary outlined button -->
-          <button class="btn secondary-outlined-btn-md">Secondary</button>
+          <!-- disabled button -->
+          <button class="btn disabled-btn-md" disabled="disabled">Disabled</button>
 
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520primary%2520outlined%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-outlined-btn-md%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520secondary%2520outlined%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-outlined-btn-md%2522%253ESecondary%253C%252Fbutton%253E%250A"
-          style="height: 180px" sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61facf9eb783be0015bbaf32" style="width: 100%; height: 140px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Outlined Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- primary outline button -->
+          <button class="btn primary-outline-btn-md">Primary</button>
+
+          <!-- secondary outline button -->
+          <button class="btn secondary-outline-btn-md">Secondary</button>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61facfe8b783be0015bbaf33" style="width: 100%; height: 100px;"
+          frameborder="0"></iframe>
 
       </div>
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Link</h2>
-        <div class="cont-shadow component-container pd-1-all">
 
-          <!-- primary outlined button -->
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Link/Text Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- primary outline button -->
           <a href=""><button class="btn primary-text-btn-md">Primary Text</button></a>
 
-          <!-- secondary outlined button -->
+          <!-- secondary outline button -->
           <a href=""><button class="btn secondary-text-btn-md">Secondary Text</button></a>
 
-        </div><br />
-
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520primary%2520outlined%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-md%2522%253EPrimary%2520Text%253C%252Fbutton%253E%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520secondary%2520outlined%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-md%2522%253ESecondary%2520Text%253C%252Fbutton%253E%253C%252Fa%253E%250A"
-          style="height: 180px" sandbox="allow-scripts allow-same-origin">
-        </iframe>
-
-      </div>
-
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons</h2>
-        <div class="cont-shadow component-container pd-1-all">
-          <div class="icon-btns  ">
-
-            <!-- cart icon button -->
-            <button class="btn icon-btn-md">
-              <i class="fas fa-shopping-cart"></i></button>
-
-            <!-- trash icon button -->
-            <button class="btn icon-btn-md">
-              <i class="fas fa-trash"></i></button>
-
-            <!-- history icon button -->
-            <button class="btn icon-btn-md">
-              <i class="fas fa-history"></i></button>
-
-          </div><br />
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520cart%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520icon-btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520trash%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520icon-btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520history%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520icon-btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-history%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad036b783be0015bbaf35" style="width: 100%; height: 100px;"
+          frameborder="0"></iframe>
 
       </div>
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Buttons with label</h2>
-        <div class="cont-shadow component-container pd-1-all">
-          <div class="icon-btns">
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
 
-            <!-- labelled cart icon button -->
-            <button class="btn label-icon-btn-md">
-              <i class="fas fa-shopping-cart"></i>&nbsp; Add to cart</button>
+          <!-- cart icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-shopping-cart"></i></button>
 
-            <!-- labelled save icon button -->
-            <button class="btn label-icon-btn-md">
-              <i class="fas fa-save"></i>&nbsp; Save</button>
+          <!-- trash icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-trash"></i></button>
 
-            <!-- labelled trash icon button -->
-            <button class="btn label-icon-outlined-btn-md">
-              <i class="fas fa-trash"></i>&nbsp; Delete</button>
+          <!-- history icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-history"></i></button>
 
-          </div><br />
         </div>
-
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520labelled%2520cart%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520label-icon-btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2526nbsp%253B%2520Add%2520to%2520cart%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520labelled%2520save%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520label-icon-btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-save%2522%253E%253C%252Fi%253E%2526nbsp%253B%2520Save%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520labelled%2520trash%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520label-icon-outlined-btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2522%253E%253C%252Fi%253E%2526nbsp%253B%2520Delete%253C%252Fbutton%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad06fb783be0015bbaf36" style="width: 100%; height: 120px;"
+          frameborder="0"></iframe>
 
       </div>
 
-      <div class="container-lg">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Floating</h2>
-        <div class="cont-shadow component-container pd-1-all">
-          <div class="floating">
 
-            <!-- floating cart icon button -->
-            <button class="btn floating-btn-sm">
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon with Label Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- labelled cart icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-shopping-cart"></i>&nbsp; Add to cart</button>
+
+          <!-- labelled save icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-save"></i>&nbsp; Save</button>
+
+          <!-- labelled trash icon button -->
+          <button class="btn label-icon-outline-btn-md">
+            <i class="fas fa-trash"></i>&nbsp; Delete</button>
+
+        </div>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad09bb783be0015bbaf37" style="width: 100%; height:120px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Floating Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- floating cart icon button -->
+          <a href=""><button class="btn flating-btn-sm">
               <i class="fas fa-shopping-cart"></i></button>
+          </a>
 
-            <!-- floating plus icon button -->
-            <button class="btn floating-btn-sm">
+          <!-- floating plus icon button -->
+          <a href=""><button class="btn flating-btn-sm">
               <i class="fas fa-plus"></i></button>
+          </a>
 
-            <!-- floating location icon button -->
-            <button class="btn floating-btn-sm">
+          <!-- floating location icon button -->
+          <a href=""><button class="btn flating-btn-sm">
               <i class="fas fa-location-arrow"></i></button>
+          </a>
 
-          </div><br />
         </div>
-
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520floating%2520cart%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520floating-btn-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520floating%2520plus%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520floating-btn-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520floating%2520location%2520icon%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520floating-btn-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-location-arrow%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad0ceb783be0015bbaf38" style="width: 100%; height: 150px;"
+          frameborder="0"></iframe>
 
       </div>
-
     </section>
     <hr />
 
@@ -413,11 +416,12 @@
 
       <!-- avatar as images -->
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Image Avatar</h2>
+      <h2 id="img-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Image Avatar</h2>
 
-        <div class="cont-shadow component-container pd-1-all mg-2-bot">
-          <div class="avatar-round mg-1-tb mg-2-lr">
+      <div class="">
+
+        <div class="cont-shadow pd-1-tb mg-2-bot">
+          <div class="avatar-container mg-1-tb mg-1-lr">
 
             <!-- round round large size image avatar -->
             <div class="avatar avatar-lg-round">
@@ -443,22 +447,21 @@
                 class="img-responsive" />
             </div>
 
-          </div><br>
+          </div>
         </div>
-        <p>In below code, give your image location in 'src'.</p>
-        <iframe class="mg-1-top"
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520round%2520large%2520size%2520image%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522...%2522%2520alt%253D%2522avatar-image%2522%2520class%253D%2522img-responsive%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520medium%2520size%2520image%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-md-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522...%2522%2520alt%253D%2522avatar-image%2522%2520class%253D%2522img-responsive%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520small%2520size%2520image%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522...%2522%2520alt%253D%2522avatar-image%2522%2520class%253D%2522img-responsive%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520extra-small%2520size%2520image%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xsm-round%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522...%2522%2520alt%253D%2522avatar-image%2522%2520class%253D%2522img-responsive%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
 
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe class="mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad104b783be0015bbaf39"
+          style="width: 100%; height: 300px;" frameborder="0"></iframe>
       </div>
 
       <!-- Avatar as text -->
 
-      <div class="container-lg">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Avatar</h2>
-        <div class="cont-shadow component-container pd-1-all mg-1-bot">
-          <div class="avatar-round mg-1-tb mg-2-lr">
+      <h2 id="text-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Text Avatar</h2>
+      <div class="">
+
+        <div class="cont-shadow pd-1-tb mg-1-bot">
+          <div class="avatar-container mg-1-tb mg-2-lr">
 
             <!-- round large size letter avatar -->
             <div class="avatar text-avatar-lg-round">IN</div>
@@ -475,11 +478,8 @@
           </div>
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520large%2520size%2520letter%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520text-avatar-lg-round%2522%253EIN%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520medium%2520size%2520letter%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520text-avatar-md-round%2522%253EIN%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520small%2520size%2520letter%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520text-avatar-sm-round%2522%253EIN%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520extra-small%2520size%2520letter%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520text-avatar-xsm-round%2522%253EIN%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
-
+        <iframe src="https://www.thiscodeworks.com/embed/61fad370b783be0015bbaf3e" style="width: 100%; height: 170px;"
+          frameborder="0"></iframe>
       </div>
 
     </section>
@@ -495,11 +495,11 @@
 
       <!-- badge on image -->
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Status Badge</h2>
+      <h2 id="status-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Status Badge</h2>
+      <div class="">
 
-        <div class="cont-shadow component-container pd-1-all mg-2-bot">
-          <div class="avatar-round mg-1-tb mg-2-lr">
+        <div class="cont-shadow pd-1-tb mg-2-bot">
+          <div class="avatar-container mg-1-tb mg-2-lr">
 
             <!-- round large size avatar image with offline-status badge -->
             <div class="badge-container">
@@ -533,20 +533,20 @@
 
           </div>
         </div>
-        <p>In below code, give your image location in 'src'.</p>
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520large%2520size%2520avatar%2520image%2520with%2520offline-status%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-lg-round%2522%253E%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522...%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-image%2522%2520class%253D%2522img-responsive%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520medium%2520size%2520avatar%2520letter%2520with%2520online%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520text-avatar-md-round%2522%253EIN%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520small%2520size%2520avatar%2520image%2520with%2520away-status%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-sm-round%2522%253E%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522...%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-image%2522%2520class%253D%2522img-responsive%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-away%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520extra-small%2520size%2520avatar%2520image%2520with%2520offline%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-xsm-round%2522%253E%253Cimg%2520loading%253D%2522lazy%2522%2520src%253D%2522...%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-image%2522%2520class%253D%2522img-responsive%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522status-badge%2520status-offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad3cfb783be0015bbaf3f"
+          style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
       </div>
 
+
       <!-- Badge on text -->
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Badge</h2>
+      <h2 id="text-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Text Badge</h2>
+      <div class=" mg-3-bot">
 
-        <div class="cont-shadow component-container flex-dir-column flex-align-start pd-1-all mg-1-bot">
+        <div class="cont-shadow flex-dir-column flex-align-start pd-1-all mg-1-bot">
 
           <!-- round badge on h1 sized text -->
           <div class="badge-container">
@@ -574,20 +574,17 @@
 
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520badge%2520on%2520h1%2520sized%2520text%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522badge-text%2522%253EHeading%2520h1%2520with%2520badge%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-on-text%2520badge-round%2522%253E2%253C%252Fspan%253E%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520round%2520badge%2520on%2520h2%2520sized%2520text%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522badge-text%2522%253EHeading%2520h2%2520with%2520badge%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-on-text%2520badge-round%2522%253E2%253C%252Fspan%253E%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520square%2520badge%2520on%2520h3%2520sized%2520text%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522badge-text%2522%253EHeading%2520h3%2520with%2520badge%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-on-text%2520badge-square%2522%253E2%253C%252Fspan%253E%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520square%2520badge%2520on%2520h4%2520sized%2520text%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522badge-text%2522%253EHeading%2520h4%2520with%2520badge%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-on-text%2520badge-square%2522%253E2%253C%252Fspan%253E%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad40ab783be0015bbaf40" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
 
       </div>
 
-
       <!-- Badge on icon -->
 
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Icon Badge</h2>
+      <h2 id="icon-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Icon Badge</h2>
+      <div class="mg-3-bot">
 
-        <div class="cont-shadow component-container pd-1-all mg-1-bot">
+        <div class="icon-container cont-shadow pd-1-all mg-1-bot">
 
           <!-- badge on cart icon -->
           <div class="badge-container">
@@ -619,22 +616,20 @@
 
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2509%2509%2520%2520%253C%21--%2520badge%2520on%2520cart%2520icon%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520badge-icon-btn-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253Cspan%2520class%253D%2522badge-on-icon%2522%253E2%253C%252Fspan%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520badge%2520on%2520envelope%252Fmail%2520icon%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520badge-icon-btn-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253Cspan%2520class%253D%2522badge-on-icon%2522%253E12%253C%252Fspan%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520badge%2520on%2520envelope%252Fmail%2520icon%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520badge-icon-btn-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253Cspan%2520class%253D%2522badge-on-icon%2522%253E25%252B%253C%252Fspan%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520badge%2520on%2520envelope%252Fmail%2520icon%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520badge-icon-btn-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253Cspan%2520class%253D%2522badge-on-icon%2522%253E215%252B%253C%252Fspan%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad444b783be0015bbaf42" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
 
       </div>
 
       <!--Button with toggle Badge -->
 
-      <div class="container-lg">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Toggle Badge Button</h2>
-        <div class="cont-shadow component-container pd-1-all mg-1-bot">
+      <h2 id="badge-on-btn" class="mg-2-top mg-1-bot title-lg-wt-5">Toggle Badge Button</h2>
+      <div class="">
+        <div class="cont-shadow icon-container pd-1-all mg-1-bot">
 
-          <!-- badge on outlined button -->
+          <!-- badge on outline button -->
           <div class="badge-container">
-            <button class="btn primary-outlined-btn-md">Hide<span class="badge-on-btn ">7</span>
+            <button class="btn primary-outline-btn-md">Hide<span class="badge-on-btn ">7</span>
             </button>
           </div>
 
@@ -646,10 +641,8 @@
 
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520badge%2520on%2520outlined%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-outlined-btn%2522%253EHide%253Cspan%2520class%253D%2522badge-on-btn%2520%2522%253E7%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520badge%2520on%2520secondary%2520solid%2520button%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-btn%2522%253EHide%253Cspan%2520class%253D%2522badge-on-btn%2520%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad4b4b783be0015bbaf44" style="width: 100%; height: 210px;"
+          frameborder="0"></iframe>
 
       </div>
     </section>
@@ -664,322 +657,309 @@
       </p>
 
       <!-- without dismiss -->
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card without dismiss</h2>
-
-        <div class="component-container pd-1-all">
+      <h2 id="card-wo-dismiss" class="mg-2-top mg-1-bot title-lg-wt-5">Card without dismiss</h2>
+      <div class="mg-3-bot">
+        <h3 class="title-md-wt-bold ">Vertical Light Card</h3>
+        <div class="pd-1-all">
           <!-- vertical card -->
-          <div class="display-flex-row flex-wrap">
-            <h3 class="title-md-wt-bold ">Vertical Light Card</h3>
 
-            <div class="display-flex-row mg-3-bot mg-1-top">
-              <!-- vertical light card -->
-              <div class="card-vertical card-light">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
+          <div class="component-container display-flex-row mg-1-bot mg-1-top">
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
                   </div>
                 </div>
               </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=720&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520vertical%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F71bCLcUXhJL._AC_UY218_.png%2522%2520%2509%2509%2509%2509%2509alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ESony%2520DSC%2520W830%2520Cyber-Shot%252020.1%2520MP%2520%2509%2509%2509%2509%2509Point%2520and%2520Shoot%2520Camera%2520%28Black%29%2520with%25208X%2520Optical%2520Zoom%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E10%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                style="width: 720px; height: auto" sandbox="allow-scripts allow-same-origin">
-              </iframe>
-            </div>
-
-            <h3 class="title-md-wt-bold">Vertical Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
-            <div class="display-flex-row mg-3-bot mg-1-top">
-
-              <!-- vertical dark card -->
-              <div class="card-vertical card-dark">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=720&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520vertical%2520dark%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520card-dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F71bCLcUXhJL._AC_UY218_.png%2522%2520%2509%2509%2509%2509%2509alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ESony%2520DSC%2520W830%2520Cyber-Shot%252020.1%2520%250A%2509%2509%2509%2509%2509MP%2520Point%2520and%2520Shoot%2520Camera%2520%28Black%29%2520with%25208X%2520Optical%2520Zoom%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E10%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                style="width: 720px; height: auto" sandbox="allow-scripts allow-same-origin">
-              </iframe>
             </div>
 
           </div>
 
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad794b783be0015bbaf45"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+          <div class="component-container display-flex-row mg-1-bot mg-1-top">
+
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad824b783be0015bbaf47"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
           <!-- horizontal card -->
-          <div class="display-flex-row flex-wrap ">
 
-            <h3 class="title-md-wt-bold">Horizontal Light Card</h3>
-            <div class="mg-3-bot mg-1-top">
-              <!-- horizontal light card -->
-              <div class="card-horizontal card-light">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card</h3>
+          <div class="component-container mg-1-bot mg-1-top">
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
                 </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520horizontal%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F914hFeTU2-L._AC_UY218_.png%2522%2520alt%253D%2522product-image%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%28Black%29%2520with%2520EF%2520S18-55%2520is%2520II%2520Lens%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E35%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-to-cart%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                style="width: 950px" sandbox="allow-scripts allow-same-origin">
-              </iframe>
-            </div>
-
-            <h3 class="title-md-wt-bold">Horizontal Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
-
-            <div class="mg-1-bot mg-1-top">
-              <!-- horizontal dark card -->
-              <div class="card-horizontal card-dark">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520horizontal%2520dark%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2520card-dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F914hFeTU2-L._AC_UY218_.png%2522%2520alt%253D%2522product-image%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%28Black%29%2520with%2520EF%2520S18-55%2520is%2520II%2520Lens%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E35%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-to-cart%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                style="width: 950px;" sandbox="allow-scripts allow-same-origin">
-              </iframe>
             </div>
 
           </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad899b783be0015bbaf48"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe src="https://www.thiscodeworks.com/embed/61fad93ab783be0015bbaf49" style="width: 100%; height:300px;"
+            frameborder="0"></iframe>
 
         </div>
       </div>
 
       <!-- with dismiss -->
-      <div class="container-lg mg-3-bot">
+      <div class="mg-3-bot">
         <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Dismiss</h2>
 
-        <div class="component-container pd-1-all mg-1-bot">
-
+        <div class=" pd-1-all mg-1-bot">
           <!-- Vertical -->
-          <div class="display-flex-row flex-wrap ">
 
-            <h3 class="title-md-wt-bold">Vertical Light Card</h3>
-            <div class="display-flex-row mg-3-bot mg-1-top">
-              <!-- vertical light card -->
-              <div class="card-vertical card-light">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
+          <h3 class="title-md-wt-bold">Vertical Light Card</h3>
+          <div class=" component-container display-flex-row mg-1-bot mg-1-top">
+
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
                   </div>
                 </div>
               </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=720&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520vertical%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2520card-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F71bCLcUXhJL._AC_UY218_.png%2522%2520%2509%2509%2509%2509%2509alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ESony%2520DSC%2520W830%2520Cyber-Shot%252020.1%2520%250A%2509%2509%2509%2509%2509MP%2520Point%2520and%2520Shoot%2520Camera%2520%28Black%29%2520with%25208X%2520Optical%2520Zoom%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E10%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-to-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                style="width: 720px; height: auto" sandbox="allow-scripts allow-same-origin">
-              </iframe>
-            </div>
-
-            <h3 class="title-md-wt-bold">Vertical Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
-
-            <div class="display-flex-row mg-3-bot mg-1-top">
-              <!-- vertical dark card -->
-              <div class="card-vertical card-dark">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=720&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520vertical%2520dark%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520card-dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2520card-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F71bCLcUXhJL._AC_UY218_.png%2522%2520%2509%2509%2509%2509%2509alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ESony%2520DSC%2520W830%2520Cyber-Shot%252020.1%250A%2509%2509%2509%2509%2509MP%2520Point%2520and%2520Shoot%2520Camera%2520%28Black%29%2520with%25208X%2520Optical%2520Zoom%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E10%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-to-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                style="width: 720px; height: auto" sandbox="allow-scripts allow-same-origin">
-              </iframe>
             </div>
 
           </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad99fb783be0015bbaf4a"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fada03b783be0015bbaf4b"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
           <!-- Horizontal -->
-          <div class="display-flex-row flex-wrap">
-            <h3 class="title-md-wt-bold">Horizontal Light Card </h3>
-            <div class="mg-3-bot mg-1-top">
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card </h3>
+          <div class="component-container mg-1-bot mg-1-top">
 
-              <!-- horizontal light card -->
-              <div class="card-horizontal card-light">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
                 </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520horizontal%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2520card-close%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F914hFeTU2-L._AC_UY218_.png%2522%2520alt%253D%2522product-image%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%28Black%29%2520with%2520EF%2520S18-55%2520is%2520II%2520Lens%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E35%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-to-cart%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-                style="width: 950px;" sandbox="allow-scripts allow-same-origin">
-              </iframe>
-            </div>
-
-            <h3 class="title-md-wt-bold">Horizontal Dark Card: </h3>
-            <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-              <strong>'card-dark'</strong> in the code.</p>
-
-            <div class="mg-1-bot mg-1-top">
-              <!-- horizontal dark card -->
-              <div class="card-horizontal card-dark">
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520horizontal%2520dark%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal%2520card-dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520secondary-text-btn-sm%2520card-close%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F914hFeTU2-L._AC_UY218_.png%2522%2520alt%253D%2522product-image%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%28Black%29%2520with%2520EF%2520S18-55%2520is%2520II%2520Lens%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E35%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-to-cart%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-                style="width: 950px;" sandbox="allow-scripts allow-same-origin">
-              </iframe>
             </div>
 
           </div>
 
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fada79b783be0015bbaf4c"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe src="https://www.thiscodeworks.com/embed/61fadacab783be0015bbaf4d" style="width: 100%; height: 300px;"
+            frameborder="0"></iframe>
         </div>
 
       </div>
 
       <!-- with text overlay -->
-      <div class="container-lg mg-4-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
-        <p>For light cards we use <strong>'card-light'</strong> and for dark cards use <strong>'card-dark'</strong>.
-          The remaining code will be the same.</p>
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
+      <p>For light cards we use <strong>'card-light'</strong> and for dark cards use <strong>'card-dark'</strong>.
+        The remaining code will be the same.</p>
 
-        <div class="component-container mg-1-top">
+      <div class="mg-4-bot">
+        <div class=" component-container mg-1-top">
 
           <!-- Vertical text overlay light card -->
           <div class="card-vertical text-overlay card-light">
@@ -1017,19 +997,17 @@
 
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Vertical%2520text%2520overlay%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520text-overlay%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fm.media-amazon.com%252Fimages%252FI%252F31Xl4l53DFL._AC_UY355_QL65_.jpg%2522%2520%250A%2509%2509%2509%2509%2509alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text-dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-md%2522%253EPhotography%2520Backdrop%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EPolyester%2520Wrinkle%2520Resistant%2520Photography%2520Backdrop%2520Background%2520Cloth%2520for%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Photo%2520Shoot%2520Portrait%2520Video%2520Shooting%2520%288x12%2520ft%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Vertical%2520text%2520overlay%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520text-overlay%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F914hFeTU2-L._AC_UY218_.png%2522%2520alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text-white%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-md%2522%253ECanon%2520EOS%25201500D%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%28Black%29%2520with%2520EF%2520S18-55%2520is%2520II%2520Lens%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Vertical%2520text%2520overlay%2520dark%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520text-overlay%2520card-dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F914hFeTU2-L._AC_UY218_.png%2522%2520alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522overlay-text-white%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-md%2522%253ECanon%2520EOS%25201500D%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%28Black%29%2520with%2520EF%2520S18-55%2520is%2520II%2520Lens%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe src="https://www.thiscodeworks.com/embed/61fadb5eb783be0015bbaf4e" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
 
       </div>
 
       <!-- text only card -->
-      <div class="container-lg mg-4-bot">
-
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Only - Light Card & Dark Card</h2>
-        <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
-          <strong>'card-dark'</strong> in the code.</p>
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Only - Light Card & Dark Card</h2>
+      <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+        <strong>'card-dark'</strong> in the code.</p>
+      <div class="mg-4-bot">
 
         <div class="component-container mg-1-top">
 
@@ -1053,39 +1031,101 @@
 
         </div>
 
-        <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=950&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Vertical%2520text%2520only%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-only%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522title-lg-wt-bold%2522%253ECanon%2520EOS%25201500D%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522title-md-wt-5%2522%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%28Black%29%2520with%2520EF%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520S18-55%2520is%2520II%2520Lens%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522p-lg%2522%253EEF-S%2520mount%2520compatible%2520with%2520all%2520EF%2520and%2520EF-S%2520lenses%2520%28crop-sensor%2520mount%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520versatile%2520and%2520compact%252C%2520especially%2520when%2520used%2520with%2520EF-S%2520lenses%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Vertical%2520text%2520only%2520dark%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-only%2520card-dark%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522title-lg-wt-bold%2522%253ECanon%2520EOS%25201500D%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522title-md-wt-5%2522%253ECanon%2520EOS%25201500D%252024.1%2520Digital%2520SLR%2520Camera%2520%28Black%29%2520with%2520EF%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520S18-55%2520is%2520II%2520Lens%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522p-lg%2522%253EEF-S%2520mount%2520compatible%2520with%2520all%2520EF%2520and%2520EF-S%2520lenses%2520%28crop-sensor%2520mount%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520versatile%2520and%2520compact%252C%2520especially%2520when%2520used%2520with%2520EF-S%2520lenses%29%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-          sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <iframe src="https://www.thiscodeworks.com/embed/61fadba3b783be0015bbaf4f" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
 
       </div>
 
       <!-- card with badge -->
-      <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Badge</h2>
-        <p>By adding <strong>'badge-on-card'</strong> and a position <strong>'top-left'</strong> or
-          <strong>'top-right'</strong>, we can easily add a badge to any card type.</p>
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Badge</h2>
+      <p>By adding <strong>'badge-on-card'</strong> and a position <strong>'top-left'</strong> or
+        <strong>'top-right'</strong>, we can easily add a badge to any card type.</p>
 
-        <div class="component-container pd-1-all">
-          <!-- vertical card -->
+      <div class=" mg-1-tb">
 
-          <div class="display-flex-row mg-3-bot mg-1-top">
-            <!-- vertical light card -->
-            <div class="card-vertical card-light">
-              <div class="badge-on-card top-left">
-                <h2>New Arrival</h2>
+        <div class="component-container">
+
+          <!-- vertical light card -->
+          <div class="card-vertical card-light">
+            <div class="badge-on-card top-left">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
               </div>
-              <div class="card-img-container">
-                <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+          </div>
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe src="https://www.thiscodeworks.com/embed/61fadbf2b783be0015bbaf50" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <h3 class="title-md-wt-bold">Card examples with Badge: </h3>
+      <div class="mg-3-bot">
+        <div class="component-container display-flex-row">
+
+          <!-- Vertical dark card -->
+          <div class="card-vertical card-dark">
+            <div class="badge-on-card top-right">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <!-- horizontal dark card -->
+          <div class="card-horizontal card-light">
+            <div class="badge-on-card top-left">
+              <h2>Best Selling</h2>
+            </div>
+            <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-body">
               <div class="card-text">
-                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                  Shoot Camera (Black) with 8X Optical Zoom</h1>
-                <h2 class="card-price">10,999/-</h2>
+                <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                  (Black) with EF S18-55 is II Lens</h1>
+                <h2 class="card-price">35,999/-</h2>
               </div>
               <div class="card-nav">
                 <div class="card-cta-btn">
-                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
                   <div class="card-nav-icon">
                     <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
                     </button>
@@ -1095,132 +1135,464 @@
                 </div>
               </div>
             </div>
-
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=720&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520vertical%2520light%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-vertical%2520card-light%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-on-card%2520top-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ENew%2520Arrival%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F71bCLcUXhJL._AC_UY218_.png%2522%2520%2509%2509%2509%2509%2509alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ESony%2520DSC%2520W830%2520Cyber-Shot%252020.1%2520MP%2520%2509%2509%2509%2509%2509Point%2520and%2520Shoot%2520Camera%2520%28Black%29%2520with%25208X%2520Optical%2520Zoom%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E10%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-cart%2522%253EAdd%2520to%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-              style="width: 720px; height: auto" sandbox="allow-scripts allow-same-origin">
-            </iframe>
           </div>
 
-          <div class="display-flex-col">
-            <h3 class="title-md-wt-bold">Card examples with Badge: </h3>
+          <!-- Vertical text overlay dark card -->
+          <div class="card-vertical text-overlay card-dark">
+            <div class="badge-on-card top-right">
+              <h2>15% OFF</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
 
-            <div class="component-container display-flex-row">
+        </div>
 
-              <!-- Vertical dark card -->
-              <div class="card-vertical card-dark">
-                <div class="badge-on-card top-right">
-                  <h2>New Arrival</h2>
-                </div>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      </div>
 
-              <!-- horizontal dark card -->
-              <div class="card-horizontal card-light">
-                <div class="badge-on-card top-left">
-                  <h2>Best Selling</h2>
-                </div>
-                <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-body">
-                  <div class="card-text">
-                    <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
-                      (Black) with EF S18-55 is II Lens</h1>
-                    <h2 class="card-price">35,999/-</h2>
-                  </div>
-                  <div class="card-nav">
-                    <div class="card-cta-btn">
-                      <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
-                      <div class="card-nav-icon">
-                        <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <!-- card with shadow -->
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
+      <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
 
-              <!-- Vertical text overlay dark card -->
-              <div class="card-vertical text-overlay card-dark">
-                <div class="badge-on-card top-right">
-                  <h2>15% OFF</h2>
-                </div>
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="overlay-text-white">
-                  <h1 class="card-title title-md">Canon EOS 1500D</h1>
-                  <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
-                </div>
+      <!-- vertical card -->
+
+      <div class="component-container mg-1-tb">
+
+        <!-- vertical light card -->
+        <div class="card-vertical card-light card-shadow">
+          <div class="card-img-container">
+            <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
               </div>
             </div>
+          </div>
+        </div>
 
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+      <iframe src="https://www.thiscodeworks.com/embed/61fadc89b783be0015bbaf51" style="width: 100%; height: 300px;"
+        frameborder="0"></iframe>
+    </section>
+    <hr>
+
+    <!-- image -->
+
+    <section id="image" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Responsive Image</h1>
+      <p>
+        Responsive Image Components are used to dsiplay Images on different size screen. It will take width of the
+        container they are placed in.
+      </p>
+
+      <!-- Images -->
+
+      <!-- square image -->
+
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Square Images</h2>
+      <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+        <div class="img-sizes-container container-lg flex-justify-space-around">
+          <div class="display-flex-col img-sizes-detail mg-1-tb">
+
+            <div class="display-flex-row">
+              <span>'img-xsm-square'</span>:<span> 32px X 32px</span>
+            </div>
+            <div class="display-flex-row">
+              <span>'img-sm-square'</span>:<span> 48px X 48px</span>
+            </div>
+            <div class="display-flex-row">
+              <span>'img-md-square'</span>:<span> 100px X 100px</span></div>
+            <div class="display-flex-row">
+              <span>'img-lg-square'</span>:<span> 160px X 160px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xl-square'</span>:<span> 256px X 256px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxl-square'</span>:<span> 416px X 416px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxxl-square'</span>:<span> 672px X 672px</span></div>
+          </div>
+
+          <div class="display-flex-col-center mg-1-tb">
+
+            <!-- square image -->
+            <img src="./components/assets/images/img1.jpeg" alt="image" class="img-lg-square">
+
+            <br>
+            <p>example of <strong>'img-lg-square'</strong> : 100px X 160px</p>
+          </div>
+        </div>
+      </div>
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+      <iframe src="https://www.thiscodeworks.com/embed/61fadccab783be0015bbaf52" style="width: 100%; height: 60px;"
+        frameborder="0"></iframe>
+
+      <!-- round image -->
+
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Round Images</h2>
+      <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+        <div class="img-sizes-container container-lg flex-justify-space-around">
+          <div class="display-flex-col img-sizes-detail mg-1-tb">
+            <div class="display-flex-row">
+              <span>'img-xsm-round'</span>:<span> 32px X 32px</span>
+            </div>
+            <div class="display-flex-row">
+              <span>'img-sm-round'</span>:<span> 48px X 48px</span>
+            </div>
+            <div class="display-flex-row">
+              <span>'img-md-round'</span>:<span> 100px X 100px</span></div>
+            <div class="display-flex-row">
+              <span>'img-lg-round'</span>:<span> 160px X 160px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xl-round'</span>:<span> 256px X 256px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxl-round'</span>:<span> 416px X 416px</span></div>
+            <div class="display-flex-row">
+              <span>'img-xxxl-round'</span>:<span> 672px X 672px</span></div>
+          </div>
+          <div class="display-flex-col-center mg-1-tb">
+
+            <!-- round image -->
+            <img src="./components/assets/images/img1.jpeg" alt="image" class="img-lg-round">
+
+            <br>
+            <p>example of <strong>'img-lg-round'</strong> : 160px X 160px</p>
           </div>
         </div>
       </div>
 
-      <!-- card with shadow -->
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+      <iframe src="https://www.thiscodeworks.com/embed/61fadd00b783be0015bbaf54" style="width: 100%; height: 60px;"
+        frameborder="0"></iframe>
+
+      <!-- full width image -->
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Full Width Image</h2>
+      <p class="mg-2-bot title-md-wt-5">Full width image is the one that expands to cover the container it is present
+        in.<br /><br />
+        <span class="title-md-wt-bold"> Note : Resize the browser window, to see the responsive property.</span></p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+        <!-- responsive image -->
+        <img src="./components/assets/images/img1.jpeg" alt="image" class="img-responsive" />
+
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+      <iframe src="https://www.thiscodeworks.com/embed/61fadd33b783be0015bbaf55" style="width: 100%; height: 60px;"
+        frameborder="0"></iframe>
+
+    </section>
+    <hr>
+
+    <!-- input field -->
+
+    <section id="input" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Input-Fields</h1>
+      <p>
+        Inputs are used to take information from the user to authenticate or save their information to the server.
+      </p>
+
+      <!-- Labelled Input -->
+
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (without placeholder)</h2>
       <div class="container-lg mg-3-bot">
-        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
-        <div class="component-container pd-1-all">
-          <!-- vertical card -->
-          <div class="display-flex-row flex-wrap">
-            <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
+          <p class="mg-2-bot title-md-wt-bold">Outline </p>
 
-            <div class="display-flex-row mg-1-tb">
-              <!-- vertical light card -->
-              <div class="card-vertical card-light card-shadow">
-                <div class="card-img-container">
-                  <img src="./components/assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
-                </div>
-                <div class="card-text">
-                  <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
-                    Shoot Camera (Black) with 8X Optical Zoom</h1>
-                  <h2 class="card-price">10,999/-</h2>
-                </div>
-                <div class="card-nav">
-                  <div class="card-cta-btn">
-                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                    <div class="card-nav-icon">
-                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
-                      </button>
-                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class=" display-flex-row flex-wrap">
 
-              <iframe
-                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=720&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%253Cdiv%2520class%253D%2522card-vertical%2520card-light%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-img-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fcomponents%252Fassets%252Fcards%252F71bCLcUXhJL._AC_UY218_.png%2522%2520%2509%2509%2509%2509%2509%2509alt%253D%2522product-image%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520class%253D%2522card-title%2520title-sm%2522%253ESony%2520DSC%2520W830%2520Cyber-Shot%2520%250A%2509%2509%2509%250920.1%2520MP%2520Point%2520and%2520Shoot%2520Camera%2520%28Black%29%2520with%25208X%2520Optical%2520Zoom%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522card-price%2522%253E10%252C999%252F-%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-cta-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-btn-sm%2520add-cart%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-nav-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520primary-text-btn-sm%2520icon-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2509%2509%253C%252Fdiv%253E%250A"
-                style="width: 720px; height: auto" sandbox="allow-scripts allow-same-origin">
-              </iframe>
+            <!-- outline input text field -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
             </div>
+
+            <!-- outline input email field -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- outline input password field -->
+            <div class="outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- outline input date field -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadd9cb783be0015bbaf56" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <!-- no outline/standard -->
+      <div class="container-lg mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-2-bot title-md-wt-bold">No outline</p>
+
+          <div class="display-flex-row flex-wrap">
+
+            <!-- no-outline input text field -->
+            <div class="no-outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
+            </div>
+
+            <!-- no-outline input email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- no-outline input password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline input number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- no-outline input date field -->
+            <div class="no-outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- no-outline input month field -->
+            <div class="no-outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- no-outline input file field -->
+            <div class="no-outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- no-outline input telephone field -->
+            <div class="no-outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+
           </div>
         </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fade46b783be0015bbaf58" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- Label with placeholder Input -->
+
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (with placeholder)</h2>
+      <div class="container-lg mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+          <p class="mg-2-bot title-md-wt-bold">Outline </p>
+
+          <div class="display-flex-row flex-wrap">
+
+            <!-- outline input text field -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              </label>
+            </div>
+
+            <!-- outline input email field -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- outline input password field -->
+            <div class="outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                  required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              </label>
+            </div>
+
+            <!-- outline input date field -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                  placeholder="enter phone number" />
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadeb5b783be0015bbaf5a" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <!-- no outline/standard with place holder-->
+
+      <div class="container-lg mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-2-bot title-md-wt-bold">No outline</p>
+
+          <div class="display-flex-row flex-wrap">
+
+            <!-- no-outline input text field -->
+            <div class="no-outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              </label>
+            </div>
+
+            <!-- no-outline input email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- no-outline input password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                  required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline input number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              </label>
+            </div>
+
+            <!-- no-outline input date field -->
+            <div class="no-outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- no-outline input month field -->
+            <div class="no-outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- no-outline input file field -->
+            <div class="no-outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- no-outline input telephone field -->
+            <div class="no-outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                  placeholder="enter phone number" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadef3b783be0015bbaf5b" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
       </div>
 
     </section>
@@ -1228,7 +1600,6 @@
   </div>
 
   <script src="./index.js"></script>
-  <script src="./components/alerts/alert.js"></script>
 </body>
 
 </html>

@@ -17,18 +17,21 @@
 /* other containers */
 
 .container-sm {
-    min-width: 10rem;
     max-width: 28rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-md {
-    min-width: 20rem;
     max-width: 44rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-lg {
-    min-width: 27rem;
     max-width: 62rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* component container */
@@ -44,4 +47,21 @@
 
 .cont-shadow {
     box-shadow: 0 0 10px var(--btn-hover);
+}
+
+/* button container */
+
+.alert-container,
+.avatar-container,
+.button-container,
+.icon-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.alert-container,
+.avatar-container {
+    justify-content: space-around;
 }

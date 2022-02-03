@@ -2,7 +2,24 @@
 
 .display-flex-row{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.display-flex-row-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.display-flex-col-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
 }
 
 .flex-wrap{
