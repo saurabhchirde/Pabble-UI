@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./components.css" />
   <link rel="stylesheet" href="./style.css">
-  <link href="https://{{cdn}}/prismjs@v1.x/themes/prism.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <title>Indo UI | Documentation</title>
@@ -16,9 +15,25 @@
 <body>
 
   <!-- nav horizontal bar -->
-  <div class="hamburger"><i class="fas fa-bars"></i></div>
+  <div class="nav-header-mobile hide">
 
-  <div class="nav-header">
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>    
+      <a href="/">
+        <div class="logo">IndoUI</div>
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+       <a href="/">
+         <div class="nav-header-text">Documentation</div>
+       </a>
+       <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+    
+  </div>
+
+
+  <div class="nav-header nav-header-desktop hide">
     <a href="/">
       <div class="logo">IndoUI</div>
     </a>
@@ -66,7 +81,7 @@
 
   <!-- floating up btn -->
   <a href="#"><button class="btn floating-btn-md">
-    <i class="fas fa-arrow-up"></i></button>
+      <i class="fas fa-arrow-up"></i></button>
   </a>
 
   <!-- body -->
@@ -89,7 +104,7 @@
 
         <!-- alert without close -->
 
-        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
+        <div class="cont-shadow component-container pd-point6-all mg-2-bot mg-1-top border-round-4p">
 
           <!-- success alert -->
           <div class="alert-success">
@@ -267,7 +282,7 @@
 
       <div class="mg-3-bot">
         <p class="mg-2-rt mg-1-bot title-md-wt-bold">Solid Buttons</p>
-        <div class="cont-shadow button-container pd-1-all">
+        <div class="cont-shadow button-container pd-1-all mg-1-bot">
 
           <!-- primary button -->
           <button class="btn primary-btn-md">Primary</button>
@@ -286,7 +301,7 @@
 
       <div class="mg-3-bot">
         <p class="mg-2-rt mg-1-bot title-md-wt-bold">Outlined Buttons</p>
-        <div class="cont-shadow button-container pd-1-all">
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
 
           <!-- primary outline button -->
           <button class="btn primary-outline-btn-md">Primary</button>
@@ -296,7 +311,7 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61facfe8b783be0015bbaf33" style="width: 100%; height: 110px;"
+        <iframe src="https://www.thiscodeworks.com/embed/61facfe8b783be0015bbaf33" style="width: 100%; height: 100px;"
           frameborder="0"></iframe>
 
       </div>
@@ -304,7 +319,7 @@
 
       <div class="mg-3-bot">
         <p class="mg-2-rt mg-1-bot title-md-wt-bold">Link/Text Buttons</p>
-        <div class="cont-shadow button-container pd-1-all">
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
 
           <!-- primary outline button -->
           <a href=""><button class="btn primary-text-btn-md">Primary Text</button></a>
@@ -312,7 +327,7 @@
           <!-- secondary outline button -->
           <a href=""><button class="btn secondary-text-btn-md">Secondary Text</button></a>
 
-        </div><br />
+        </div>
 
         <iframe src="https://www.thiscodeworks.com/embed/61fad036b783be0015bbaf35" style="width: 100%; height: 100px;"
           frameborder="0"></iframe>
@@ -321,7 +336,7 @@
 
       <div class="mg-3-bot">
         <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon Buttons</p>
-        <div class="cont-shadow button-container pd-1-all">
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
 
           <!-- cart icon button -->
           <button class="btn icon-btn-md">
@@ -344,7 +359,7 @@
 
       <div class="mg-3-bot">
         <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon with Label Buttons</p>
-        <div class="cont-shadow button-container pd-1-all">
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
 
           <!-- labelled cart icon button -->
           <button class="btn label-icon-btn-md">
@@ -366,7 +381,7 @@
 
       <div class="mg-3-bot">
         <p class="mg-2-rt mg-1-bot title-md-wt-bold">Floating Buttons</p>
-        <div class="cont-shadow button-container pd-1-all">
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
 
           <!-- floating cart icon button -->
           <a href=""><button class="btn flating-btn-sm">
@@ -384,7 +399,7 @@
           </a>
 
         </div>
-        <iframe src="https://www.thiscodeworks.com/embed/61fad0ceb783be0015bbaf38" style="width: 100%; height: 120px;"
+        <iframe src="https://www.thiscodeworks.com/embed/61fad0ceb783be0015bbaf38" style="width: 100%; height: 150px;"
           frameborder="0"></iframe>
 
       </div>
@@ -433,12 +448,12 @@
             </div>
 
           </div>
-        </div><br>
+        </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fad104b783be0015bbaf39" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe class="mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad104b783be0015bbaf39"
+          style="width: 100%; height: 300px;" frameborder="0"></iframe>
       </div>
-      <p class=" mg-3-bot">In above code, give your image location in 'src'.</p>
 
       <!-- Avatar as text -->
 
@@ -519,11 +534,12 @@
           </div>
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fad3cfb783be0015bbaf3f" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad3cfb783be0015bbaf3f"
+          style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
       </div>
-      <p class="mg-3-bot">In above code, give your image location in 'src'.</p>
+
 
       <!-- Badge on text -->
 
@@ -647,7 +663,7 @@
         <div class="pd-1-all">
           <!-- vertical card -->
 
-          <div class="component-container display-flex-row mg-3-bot mg-1-top">
+          <div class="component-container display-flex-row mg-1-bot mg-1-top">
             <!-- vertical light card -->
             <div class="card-vertical card-light">
               <div class="card-img-container">
@@ -673,13 +689,14 @@
 
           </div>
 
-          <iframe src="https://www.thiscodeworks.com/embed/61fad794b783be0015bbaf45" style="width: 100%; height: 300px;"
-            frameborder="0"></iframe>
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad794b783be0015bbaf45"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
           <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
           <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
             <strong>'card-dark'</strong> in the code.</p>
-          <div class="component-container display-flex-row mg-3-bot mg-1-top">
+          <div class="component-container display-flex-row mg-1-bot mg-1-top">
 
             <!-- vertical dark card -->
             <div class="card-vertical card-dark">
@@ -706,12 +723,13 @@
 
           </div>
 
-          <iframe src="https://www.thiscodeworks.com/embed/61fad824b783be0015bbaf47" style="width: 100%; height: 300px;"
-            frameborder="0"></iframe>
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad824b783be0015bbaf47"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
           <!-- horizontal card -->
 
           <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card</h3>
-          <div class="component-container mg-3-bot mg-1-top">
+          <div class="component-container mg-1-bot mg-1-top">
             <!-- horizontal light card -->
             <div class="card-horizontal card-light">
               <div class="card-img-container">
@@ -739,8 +757,9 @@
 
           </div>
 
-          <iframe src="https://www.thiscodeworks.com/embed/61fad899b783be0015bbaf48" style="width: 100%; height: 300px;"
-            frameborder="0"></iframe>
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad899b783be0015bbaf48"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
           <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
           <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
@@ -773,6 +792,8 @@
             </div>
 
           </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
           <iframe src="https://www.thiscodeworks.com/embed/61fad93ab783be0015bbaf49" style="width: 100%; height:300px;"
             frameborder="0"></iframe>
 
@@ -787,7 +808,7 @@
           <!-- Vertical -->
 
           <h3 class="title-md-wt-bold">Vertical Light Card</h3>
-          <div class=" component-container display-flex-row mg-3-bot mg-1-top">
+          <div class=" component-container display-flex-row mg-1-bot mg-1-top">
 
             <!-- vertical light card -->
             <div class="card-vertical card-light">
@@ -815,14 +836,15 @@
 
           </div>
 
-          <iframe src="https://www.thiscodeworks.com/embed/61fad99fb783be0015bbaf4a" style="width: 100%; height: 300px;"
-            frameborder="0"></iframe>
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad99fb783be0015bbaf4a"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
           <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
           <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
             <strong>'card-dark'</strong> in the code.</p>
 
-          <div class="component-container mg-3-bot mg-1-top">
+          <div class="component-container mg-1-bot mg-1-top">
 
             <!-- vertical dark card -->
             <div class="card-vertical card-dark">
@@ -850,12 +872,13 @@
 
           </div>
 
-          <iframe src="https://www.thiscodeworks.com/embed/61fada03b783be0015bbaf4b" style="width: 100%; height: 300px;"
-            frameborder="0"></iframe>
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fada03b783be0015bbaf4b"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
           <!-- Horizontal -->
           <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card </h3>
-          <div class="component-container mg-3-bot mg-1-top">
+          <div class="component-container mg-1-bot mg-1-top">
 
             <!-- horizontal light card -->
             <div class="card-horizontal card-light">
@@ -884,8 +907,10 @@
             </div>
 
           </div>
-          <iframe src="https://www.thiscodeworks.com/embed/61fada79b783be0015bbaf4c" style="width: 100%; height: 300px;"
-            frameborder="0"></iframe>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fada79b783be0015bbaf4c"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
 
           <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
           <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
@@ -921,6 +946,7 @@
 
           </div>
 
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
           <iframe src="https://www.thiscodeworks.com/embed/61fadacab783be0015bbaf4d" style="width: 100%; height: 300px;"
             frameborder="0"></iframe>
         </div>
@@ -971,6 +997,7 @@
 
         </div>
 
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
         <iframe src="https://www.thiscodeworks.com/embed/61fadb5eb783be0015bbaf4e" style="width: 100%; height: 300px;"
           frameborder="0"></iframe>
 
@@ -1045,6 +1072,7 @@
           </div>
         </div>
 
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
         <iframe src="https://www.thiscodeworks.com/embed/61fadbf2b783be0015bbaf50" style="width: 100%; height: 300px;"
           frameborder="0"></iframe>
 
@@ -1159,6 +1187,9 @@
         </div>
 
       </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
       <iframe src="https://www.thiscodeworks.com/embed/61fadc89b783be0015bbaf51" style="width: 100%; height: 300px;"
         frameborder="0"></iframe>
     </section>
@@ -1177,7 +1208,7 @@
 
       <!-- square image -->
 
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Square Images</h2>
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Square Images</h2>
       <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
       <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
@@ -1208,19 +1239,18 @@
             <img src="./components/assets/images/img1.jpeg" alt="image" class="img-lg-square">
 
             <br>
-            <p>example of <strong>'img-lg-square'</strong> : 160px X 160px</p>
+            <p>example of <strong>'img-lg-square'</strong> : 100px X 160px</p>
           </div>
         </div>
       </div>
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
 
-      <p>In below code, give your image location in 'src'.</p>
-
-      <iframe src="https://www.thiscodeworks.com/embed/61fadccab783be0015bbaf52" style="width: 100%; height: 100px;"
+      <iframe src="https://www.thiscodeworks.com/embed/61fadccab783be0015bbaf52" style="width: 100%; height: 60px;"
         frameborder="0"></iframe>
 
       <!-- round image -->
 
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Round Images</h2>
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Round Images</h2>
       <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
       <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
 
@@ -1254,12 +1284,12 @@
         </div>
       </div>
 
-      <p>In below code, give your image location in 'src'.</p>
-      <iframe src="https://www.thiscodeworks.com/embed/61fadd00b783be0015bbaf54" style="width: 100%; height: 100px;"
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+      <iframe src="https://www.thiscodeworks.com/embed/61fadd00b783be0015bbaf54" style="width: 100%; height: 60px;"
         frameborder="0"></iframe>
 
       <!-- full width image -->
-      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Full Width Image</h2>
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Full Width Image</h2>
       <p class="mg-2-bot title-md-wt-5">Full width image is the one that expands to cover the container it is present
         in.<br /><br />
         <span class="title-md-wt-bold"> Note : Resize the browser window, to see the responsive property.</span></p>
@@ -1270,8 +1300,8 @@
 
       </div>
 
-      <p>In below code, give your image location in 'src'.</p>
-      <iframe src="https://www.thiscodeworks.com/embed/61fadd33b783be0015bbaf55" style="width: 100%; height: 100px;"
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+      <iframe src="https://www.thiscodeworks.com/embed/61fadd33b783be0015bbaf55" style="width: 100%; height: 60px;"
         frameborder="0"></iframe>
 
     </section>

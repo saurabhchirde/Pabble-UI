@@ -1,11 +1,11 @@
 // hamburger menu
-document.querySelector(".hamburger").addEventListener("click", () => {
-    document.querySelector("nav").classList.toggle("hide");
-})
+// document.querySelector(".hamburger").addEventListener("click", () => {
+//     document.querySelector("nav").classList.toggle("hide");
+// })
 
-document.querySelector(".nav-close-btn").addEventListener("click", () => {
-    document.querySelector("nav").classList.toggle("hide");
-})
+// document.querySelector(".nav-close-btn").addEventListener("click", () => {
+//     document.querySelector("nav").classList.toggle("hide");
+// })
 
 const navBtn = document.querySelectorAll(".nav-btn");
 
