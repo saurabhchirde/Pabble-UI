@@ -38,7 +38,7 @@ html {
     --dark-blue-gray: #92a9bd;
 
     --text-white: #fff;
-    --text-lighter: rgb(175, 175, 175);
+    --text-lighter: #afafaf;
     --text-light: #777;
     --text-dark: #333;
     --text-red-dark:#ca3535;
@@ -53,7 +53,7 @@ html {
     --error-bg: #fef2f1;
     --error-text: #ca3535;
 
-    --btn-hover: rgba(153, 153, 153, 0.2);
+    --btn-hover: #99999933;
     --nav-btn-hover: rgba(174, 174, 174, 0.1);
     --ham-menu-bg: rgba(19, 19, 19, 0.95);
 }

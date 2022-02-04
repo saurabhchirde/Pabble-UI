@@ -132,14 +132,6 @@ nav .nav-items {
     display: none;
 }
 
-/* nav h1{
-    font-weight: 400;
-    color: var(--text-light);
-    margin-bottom: 0.4rem;
-    cursor: pointer;
-    font-size: 1rem;
-} */
-
 nav h1,
 nav h2 {
     font-size: 1rem;
@@ -209,20 +201,45 @@ nav h1:hover,
 
 .main {
     grid-area: body;
+    margin-right: 0;
+    margin-left: 0;
+   max-width: 100%;
 }
 
-/* #alert {
-    scroll-margin-block: 6rem;
-}
+/* components */
 
+#alert,
 #buttons,
-#avatar,
 #badge,
 #cards,
+#avatar,
+#input,
 #image,
-#input {
-    scroll-margin-block: 3rem;
-} */
+#about,
+#color,
+#typography,
+#comp-overview{
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* color */
+
+
+
+/* responsive query */
+
+@media screen and (min-width:1620px) {
+    .main{
+        width: 70rem;
+    }
+}
+
+@media screen and (min-width:1420px) {
+    .main{
+        width: 55rem;
+    }
+}
 
 @media screen and (max-width:700px) {
     body {
