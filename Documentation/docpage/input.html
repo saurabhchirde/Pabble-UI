@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/Components/components.css" />
   <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <title>Indo UI | Documentation</title>
@@ -194,8 +195,59 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fadd9cb783be0015bbaf56" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- outline input text field without placeholder -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
+            </div>
+
+            <!-- outline input email field without placeholder -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- outline input password field without placeholder -->
+            <div class="outline-password-input wrong-password">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" 
+                required value="..." />wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field without placeholder -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- outline input date field without placeholder -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field without placeholder -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field without placeholder -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field without placeholder -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+        </script>
       </div>
 
       <!-- no outline/standard -->
@@ -261,8 +313,59 @@
           </div>
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fade46b783be0015bbaf58" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- no-outline input text field without placeholder -->
+            <div class="no-outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
+            </div>
+
+            <!-- no-outline input email field without placeholder -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- no-outline input password field without placeholder -->
+            <div class="no-outline-password-input wrong-password">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" 
+                required value="..." />wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline input number field without placeholder -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- no-outline input date field without placeholder -->
+            <div class="no-outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- no-outline input month field without placeholder -->
+            <div class="no-outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- no-outline input file field without placeholder -->
+            <div class="no-outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- no-outline input telephone field without placeholder -->
+            <div class="no-outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+        </script>
 
       </div>
 
@@ -332,8 +435,65 @@
           </div>
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fadeb5b783be0015bbaf5a" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- outline input text field with placeholder -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" 
+                placeholder="enter name" />
+              </label>
+            </div>
+
+            <!-- outline input email field with placeholder -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" 
+                placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- outline input password field with placeholder -->
+            <div class="outline-password-input wrong-password">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" 
+                placeholder="enter password"
+                  required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field with placeholder -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" 
+                placeholder="enter quantity" />
+              </label>
+            </div>
+
+            <!-- outline input date field with placeholder -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field with placeholder -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field with placeholder -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field with placeholder -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                  placeholder="enter phone number" />
+              </label>
+            </div>
+        </script>
       </div>
 
       <!-- no outline/standard with place holderwith placeholder -->
@@ -403,16 +563,72 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fadef3b783be0015bbaf5b" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- no-outline input text field with placeholder -->
+          <div class="no-outline-text-input">
+            <label for="text">Name
+              <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+            </label>
+          </div>
+
+          <!-- no-outline input email field with placeholder -->
+          <div class="no-outline-email-input">
+            <label for="email">Email *
+              <input type="email" name="email" required autocomplete="email" 
+              placeholder="enter email" />
+            </label>
+          </div>
+
+          <!-- no-outline input password field with placeholder -->
+          <div class="no-outline-password-input wrong-password">
+            <label for="password">Password *
+              <input type="password" name="password" autocomplete="current-password" 
+              placeholder="enter password"
+                required value="..." />
+              wrong password, try again
+            </label>
+          </div>
+
+          <!-- no-outline input number field with placeholder -->
+          <div class="no-outline-number-input">
+            <label for="number">Number<input type="number" name="number" 
+              placeholder="enter quantity" />
+            </label>
+          </div>
+
+          <!-- no-outline input date field with placeholder -->
+          <div class="no-outline-date-input">
+            <label for="date">Date<input type="date" name="date" />
+            </label>
+          </div>
+
+          <!-- no-outline input month field with placeholder -->
+          <div class="no-outline-month-input">
+            <label for="month">Month<input type="month" name="month" />
+            </label>
+          </div>
+
+          <!-- no-outline input file field with placeholder -->
+          <div class="no-outline-file-input">
+            <label for="file">File<input type="file" name="file" />
+            </label>
+          </div>
+
+          <!-- no-outline input telephone field with placeholder -->
+          <div class="no-outline-tel-input">
+            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                placeholder="enter phone number" />
+            </label>
+          </div>
+        </script>
 
       </div>
 
     </section>
-    <hr>
   </div>
 
   <script src="/Documentation/docpage-js/docs.js"></script>
+  <script src="/Documentation/utilities/prismjs/prism.js"></script>
 </body>
 
 </html>

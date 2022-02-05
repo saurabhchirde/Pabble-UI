@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/Components/components.css" />
   <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <title>Indo UI | Documentation</title>
@@ -159,8 +160,41 @@
         </div>
 
         <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
-        <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad3cfb783be0015bbaf3f"
-          style="width: 100%; height: 300px;" frameborder="0"></iframe>
+      
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- round large size avatar image with offline-status badge -->
+          <div class="badge-container">
+            <div class="avatar avatar-lg-round">
+              <img loading="lazy" src="..." alt="avatar-image" 
+              class="img-responsive" />
+            </div>
+            <span class="status-badge status-offline"></span>
+          </div>
+
+          <!-- round medium size avatar letter with online badge -->
+          <div class="badge-container">
+            <div class="avatar text-avatar-md-round">IN</div>
+            <span class="status-badge status-online"></span>
+          </div>
+
+          <!-- round small size avatar image with away-status badge -->
+          <div class="badge-container">
+            <div class="avatar avatar-sm-round">
+              <img loading="lazy" src="..." alt="avatar-image" 
+              class="img-responsive" />
+            </div>
+            <span class="status-badge status-away"></span>
+          </div>
+
+          <!-- round extra-small size avatar image with offline badge -->
+          <div class="badge-container">
+            <div class="avatar avatar-xsm-round">
+              <img loading="lazy" src="..." alt="avatar-image" 
+              class="img-responsive" />
+            </div>
+            <span class="status-badge status-offline"></span>
+          </div>
+        </script>
 
       </div>
 
@@ -198,8 +232,31 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fad40ab783be0015bbaf40" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- round badge on h1 sized text -->
+          <div class="badge-container">
+            <h1 class="badge-text">Heading h1 with badge
+              <span class="badge-on-text badge-round">2</span></h1>
+          </div>
+
+          <!-- round badge on h2 sized text -->
+          <div class="badge-container">
+            <h2 class="badge-text">Heading h2 with badge
+              <span class="badge-on-text badge-round">2</span></h2>
+          </div>
+
+          <!-- square badge on h3 sized text -->
+          <div class="badge-container">
+            <h3 class="badge-text">Heading h3 with badge
+              <span class="badge-on-text badge-square">2</span></h3>
+          </div>
+
+          <!-- square badge on h4 sized text -->
+          <div class="badge-container">
+            <h4 class="badge-text">Heading h4 with badge
+              <span class="badge-on-text badge-square">2</span></h4>
+          </div>
+        </script>
 
       </div>
 
@@ -240,8 +297,43 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fad444b783be0015bbaf42" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- badge on cart icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-shopping-cart">
+                <span class="badge-on-icon">2</span>
+              </i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope">
+                <span class="badge-on-icon">12</span>
+              </i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope">
+                <span class="badge-on-icon">25+</span>
+              </i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope">
+                <span class="badge-on-icon">215+</span>
+              </i>
+            </button>
+          </div>
+        </script>
 
       </div>
 
@@ -265,16 +357,29 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fad4b4b783be0015bbaf44" style="width: 100%; height: 210px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- badge on outline button -->
+          <div class="badge-container">
+            <button class="btn primary-outline-btn-md">Hide
+              <span class="badge-on-btn ">7</span>
+            </button>
+          </div>
+
+          <!-- badge on secondary solid button -->
+          <div class="badge-container">
+            <button class="btn secondary-btn-md">Hide
+              <span class="badge-on-btn ">2</span>
+            </button>
+          </div>
+        </script>
 
       </div>
     </section>
-    <hr>
 
   </div>
 
   <script src="/Documentation/docpage-js/docs.js"></script>
+  <script src="/Documentation/utilities/prismjs/prism.js"></script>
 </body>
 
 </html>

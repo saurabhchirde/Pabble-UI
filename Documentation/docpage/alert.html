@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/Components/components.css" />
   <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <title>Indo UI | Documentation</title>
@@ -150,8 +151,31 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61fac802b783be0015bbaf27" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- success alert -->
+          <div class="alert-success">
+            <i class="fas fa-check-circle alert-icon"></i>
+            <span class="p-md">Success alert.</span>
+          </div>
+
+          <!-- info alert -->
+          <div class="alert-info">
+            <i class="fas fa-info-circle alert-icon"></i>
+            <span class="p-md">Info alert.</span>
+          </div>
+
+          <!-- warning alert -->
+          <div class="alert-warning">
+            <i class="fas fa-exclamation-triangle alert-icon"></i>
+            <span class="p-md">Warning alert.</span>
+          </div>
+
+          <!-- error alert -->
+          <div class="alert-error">
+            <i class="fas fa-exclamation-circle alert-icon"></i>
+            <span class="p-md">Error alert.</span>
+          </div>
+        </script>
 
       </div>
       <!--descriptive alert without close -->
@@ -220,8 +244,69 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61facee5b783be0015bbaf30" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+       <script type="text/plain" class="language-html snippet-container">
+        <!-- success alert -->
+        <div class="alert-des-success">
+          <i class="fas fa-check-circle alert-icon"></i>
+          <div>
+            <p>Success</p>
+            <p class="p-md">
+              This is a success alert -
+              <a href="">
+                <button class="btn secondary-text-btn-sm">
+                  check it out!
+                </button>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- info alert -->
+        <div class="alert-des-info">
+          <i class="fas fa-info-circle alert-icon"></i>
+          <div>
+            <p>Info</p>
+            <p class="p-md">
+              This is a info alert -
+              <a href="">
+                <button class="btn secondary-text-btn-sm">
+                  check it out!
+                </button>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- warning alert -->
+        <div class="alert-des-warning">
+          <i class="fas fa-exclamation-triangle alert-icon"></i>
+          <div>
+            <p>Warning</p>
+            <p class="p-md">
+              This is a warning alert -
+              <a href="">
+                <button class="btn secondary-text-btn-sm">
+                  check it out!
+                </button>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- error alert -->
+        <div class="alert-des-error">
+          <i class="fas fa-exclamation-circle alert-icon"></i>
+          <div class="alert-w-btn-text">
+            <p>Error</p>
+            <p class="p-md">
+              This is a error alert - 
+              <button class="btn secondary-text-btn-sm">
+                check it out!
+              </button>
+            </p>
+          </div>
+        </div>
+       </script>
 
       </div>
 
@@ -280,17 +365,53 @@
 
         </div>
 
-        <iframe src="https://www.thiscodeworks.com/embed/61facf67b783be0015bbaf31" style="width: 100%; height: 300px;"
-          frameborder="0"></iframe>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- success alert with dismiss button -->
+          <div class="alert-success-btn">
+            <div class="alert-text">
+              <i class="fas fa-check-circle alert-icon"></i>
+              <span class="p-md">Success alert.</span>
+            </div>
+            <div class="alert-close">
+              <i class="fas fa-times-circle"></i>
+            </div>
+          </div>
+
+          <!-- success alert with undo button -->
+          <div class="alert-success-btn">
+            <div class="alert-text">
+              <i class="fas fa-check-circle alert-icon"></i>
+              <span class="p-md">Success alert.</span>
+            </div>
+            <div class="undo">
+              <button class="btn secondary-text-btn-sm">
+                UNDO
+              </button>
+            </div>
+          </div>
+
+          <!-- error alert with undo button -->
+          <div class="alert-error-btn">
+            <div class="alert-text">
+              <i class="fas fa-exclamation-circle alert-icon"></i>
+              <span class="p-md">Wrong input!</span>
+            </div>
+            <div class="undo">
+              <button class="btn secondary-text-btn-sm">
+                UNDO
+              </button>
+            </div>
+          </div>
+        </script>
 
       </div>
 
     </section>
-    <hr />
 
   </div>
 
   <script src="/Documentation/docpage-js/docs.js"></script>
+  <script src="/Documentation/utilities/prismjs/prism.js"></script>
 </body>
 
 </html>

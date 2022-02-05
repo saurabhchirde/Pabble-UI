@@ -59,3 +59,9 @@
 .avatar-container {
     justify-content: space-around;
 }
+
+/* snippet container */
+
+.snippet-container{
+    height: 15rem;
+}
