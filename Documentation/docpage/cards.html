@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Components/components.css" />
+  <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Indo UI | Documentation</title>
+</head>
+
+<body>
+
+  <!-- nav horizontal bar -->
+  <div class="nav-header-mobile hide">
+
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+      <a href="/">
+        <div class="logo">IndoUI</div>
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+
+  </div>
+
+
+  <div class="nav-header nav-header-desktop hide">
+    <a href="/">
+      <div class="logo">IndoUI</div>
+    </a>
+    <div class="nav-header-right-side">
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+  </div>
+
+  <!-- nav verticle bar -->
+  <nav class="nav">
+    <a href="/docs.html">
+      <h1 class="nav-category pd-point8-lt">Getting Started</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="./about.html">
+      <h1 class="nav-category pd-point8-lt">About</h1>
+    </a>
+    <a href="./color.html">
+      <h1 class="nav-category pd-point8-lt">Color</h1>
+    </a>
+    <a href="./typography.html">
+      <h1 class="nav-category pd-point8-lt">Typography</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="./components-overview.html">
+      <h1 class="nav-category pd-point8-lt 
+      nav-category-active">Component Overview</h1>
+    </a>
+    <hr class="nav-break-line">
+    <div class="nav-items">
+      <a href="./alert.html">
+        <h2 class="nav-alert nav-btn">Alerts</h2>
+      </a>
+      <a href="./buttons.html">
+        <h2 class="nav-button nav-btn">Buttons</h2>
+      </a>
+      <a href="./avatar.html">
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
+      </a>
+      <a href="./badge.html">
+        <h2 class="nav-badge nav-btn">Badge</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-card nav-btn">Cards</h2>
+      </a>
+      <a href="./image.html">
+        <h2 class="nav-img nav-btn">Image</h2>
+      </a>
+      <a href="./input.html">
+        <h2 class="nav-input nav-btn">Input</h2>
+      </a>
+    </div>
+    <div class="nav-close-btn">
+      <i class="far fa-times-circle"></i>
+    </div>
+  </nav>
+
+  <div class="right-side-nav">
+    <h1>Contents</h1>
+    <a href="#card-wo-dismiss">
+      <h2>Card Without dismiss</h2>
+    </a>
+    <ul>
+      <a href="#card-wo-dismiss-vr-lt">
+        <li>Vertical Light</li>
+      </a>
+      <a href="#card-wo-dismiss-vr-dk">
+        <li>Vertical Dark</li>
+      </a>
+      <a href="#card-wo-dismiss-hr-lt">
+        <li>Horizontal Light</li>
+      </a>
+      <a href="#card-wo-dismiss-hr-dk">
+        <li>Horizontal Dark</li>
+      </a>
+    </ul>
+    <a href="#card-w-dismiss">
+      <h2>Card With Dismiss</h2>
+    </a>
+    <ul>
+      <a href="#card-w-dismiss-vr-lt">
+        <li>Vertical Light</li>
+      </a>
+      <a href="#card-w-dismiss-vr-dk">
+        <li>Vertical Dark</li>
+      </a>
+      <a href="#card-w-dismiss-hr-lt">
+        <li>Horizontal Light</li>
+      </a>
+      <a href="#card-w-dismiss-hr-dk">
+        <li>Horizontal Dark</li>
+      </a>
+    </ul>
+    <a href="#card-w-text-overlay">
+      <h2>Cards With Text Overlay</h2>
+    </a>
+    <a href="#text-only-card">
+      <h2>Text Only Card</h2>
+    </a>
+    <a href="#card-w-badge">
+      <h2>Card With Badge</h2>
+    </a>
+    <ul>
+      <a href="#badge-card-examples">
+        <li>Card Examples With Badge</li>
+      </a>
+    </ul>
+    <a href="#card-w-shadow">
+      <h2>Card With Shadow</h2>
+    </a>
+  </div>
+
+  <!-- floating up btn -->
+  <a href="#"><button class="btn floating-btn-md">
+      <i class="fas fa-arrow-up"></i></button>
+  </a>
+
+  <!-- body -->
+
+  <div class="main ">
+
+    <!-- cards -->
+
+    <section id="cards">
+      <h1 class="mg-point8-tb">Cards</h1>
+      <p>
+        cards are used to display content and action on a particular topic. .
+      </p>
+
+      <!-- without dismiss -->
+      <h2 id="card-wo-dismiss" class="mg-2-top mg-1-bot title-lg-wt-5">Card without dismiss</h2>
+      <div class="mg-3-bot">
+        
+        <div class="pd-1-all">
+          <!-- vertical card -->
+          <h3 id="card-wo-dismiss-vr-lt" class="title-md-wt-bold ">Vertical Light Card</h3>
+          <div class="component-container flex-row mg-1-bot mg-1-top">
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+
+          <h3 id="card-wo-dismiss-vr-dk" class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+          <div class="component-container flex-row mg-1-bot mg-1-top">
+
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+         
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+          <!-- horizontal card -->
+
+          <h3 id="card-wo-dismiss-hr-lt" class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card</h3>
+          <div class="component-container mg-1-bot mg-1-top">
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+         
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+
+          <h3 id="card-wo-dismiss-hr-dk" class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+         
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+
+        </div>
+      </div>
+
+      <!-- with dismiss -->
+      <div class="mg-3-bot">
+        <h2 id="card-w-dismiss" class="mg-2-top mg-1-bot title-lg-wt-5">Card with Dismiss</h2>
+
+        <div class=" pd-1-all mg-1-bot">
+          <!-- Vertical -->
+
+          <h3 id="card-w-dismiss-vr-lt" class="title-md-wt-bold">Vertical Light Card</h3>
+          <div class=" component-container flex-row mg-1-bot mg-1-top">
+
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+         
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times">
+              </i></button>
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+
+          <h3 id="card-w-dismiss-vr-dk" class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+         
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times">
+              </i></button>
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+
+          <!-- Horizontal -->
+          <h3 id="card-w-dismiss-hr-lt" class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card </h3>
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+         
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times">
+              </i></button>
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+
+          <h3 id="card-w-dismiss-hr-dk" class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+         
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times">
+              </i></button>
+              <div class="card-img-container">
+                <img src="..." alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md">
+                        <i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </script>
+        </div>
+
+      </div>
+
+      <!-- with text overlay -->
+      <h2 id="card-w-text-overlay" class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
+      <p>For light cards we use <strong>'card-light'</strong> and for dark cards use <strong>'card-dark'</strong>.
+        The remaining code will be the same.</p>
+
+      <div class="mg-4-bot">
+        <div class=" component-container mg-1-top">
+
+          <!-- Vertical text overlay light card -->
+          <div class="card-vertical text-overlay card-light">
+            <div class="card-img-container">
+              <img src="https://m.media-amazon.com/images/I/31Xl4l53DFL._AC_UY355_QL65_.jpg" alt="product-image" />
+            </div>
+            <div class="overlay-text-dark">
+              <h1 class="card-title title-md">Photography Backdrop</h1>
+              <p>Polyester Wrinkle Resistant Photography Backdrop Background Cloth for
+                Photo Shoot Portrait Video Shooting (8x12 ft)</p>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay light card -->
+          <div class="card-vertical text-overlay card-light">
+            <div class="card-img-container">
+              <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay dark card -->
+          <div class="card-vertical text-overlay card-dark">
+            <div class="card-img-container">
+              <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+       
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- Vertical text overlay light card -->
+          <div class="card-vertical text-overlay card-light">
+            <div class="card-img-container">
+              <img src="..." alt="product-image" />
+            </div>
+            <div class="overlay-text-dark">
+              <h1 class="card-title title-md">Photography Backdrop</h1>
+              <p>Polyester Wrinkle Resistant Photography Backdrop Background Cloth for
+                Photo Shoot Portrait Video Shooting (8x12 ft)</p>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay light card -->
+          <div class="card-vertical text-overlay card-light">
+            <div class="card-img-container">
+              <img src="..." alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay dark card -->
+          <div class="card-vertical text-overlay card-dark">
+            <div class="card-img-container">
+              <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" 
+              alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+        </script>
+
+      </div>
+
+      <!-- text only card -->
+      <h2 id="text-only-card" class="mg-2-top mg-1-bot title-lg-wt-5">Text Only Card</h2>
+      <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+        <strong>'card-dark'</strong> in the code.</p>
+      <div class="mg-4-bot">
+
+        <div class="component-container mg-1-top">
+
+          <!-- Vertical text only light card -->
+          <div class="card-text-only card-light">
+            <h1 class="title-lg-wt-bold">Canon EOS 1500D</h1>
+            <h2 class="title-md-wt-5">Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF
+              S18-55 is II Lens</h2>
+            <p class="p-lg">EF-S mount compatible with all EF and EF-S lenses (crop-sensor mount
+              versatile and compact, especially when used with EF-S lenses)</p>
+          </div>
+
+          <!-- Vertical text only dark card -->
+          <div class="card-text-only card-dark">
+            <h1 class="title-lg-wt-bold">Canon EOS 1500D</h1>
+            <h2 class="title-md-wt-5">Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF
+              S18-55 is II Lens</h2>
+            <p class="p-lg">EF-S mount compatible with all EF and EF-S lenses (crop-sensor mount
+              versatile and compact, especially when used with EF-S lenses)</p>
+          </div>
+
+        </div>
+
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- Vertical text only light card -->
+          <div class="card-text-only card-light">
+            <h1 class="title-lg-wt-bold">Canon EOS 1500D</h1>
+            <h2 class="title-md-wt-5">Canon EOS 1500D 24.1 Digital SLR Camera (Black) with 
+              EF S18-55 is II Lens</h2>
+            <p class="p-lg">EF-S mount compatible with all EF and EF-S lenses (crop-sensor 
+              mount versatile and compact, especially when used with EF-S lenses)</p>
+          </div>
+
+          <!-- Vertical text only dark card -->
+          <div class="card-text-only card-dark">
+            <h1 class="title-lg-wt-bold">Canon EOS 1500D</h1>
+            <h2 class="title-md-wt-5">Canon EOS 1500D 24.1 Digital SLR Camera (Black) with
+               EF S18-55 is II Lens</h2>
+            <p class="p-lg">EF-S mount compatible with all EF and EF-S lenses (crop-sensor
+               mount versatile and compact, especially when used with EF-S lenses)</p>
+          </div>
+        </script>
+
+      </div>
+
+      <!-- card with badge -->
+      <h2 id="card-w-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Card with Badge</h2>
+      <p>By adding <strong>'badge-on-card'</strong> and a position <strong>'top-left'</strong> or
+        <strong>'top-right'</strong>, we can easily add a badge to any card type.</p>
+
+      <div class=" mg-1-tb">
+
+        <div class="component-container">
+
+          <!-- vertical light card -->
+          <div class="card-vertical card-light">
+            <div class="badge-on-card top-left">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+       
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- vertical light card -->
+          <div class="card-vertical card-light">
+            <div class="badge-on-card top-left">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="..." />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart">
+                  </i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt">
+                  </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </script>
+
+      </div>
+
+      <h3 id="badge-card-examples" class="title-md-wt-bold">Card examples with Badge: </h3>
+      <div class="mg-3-bot">
+        <div class="component-container flex-row">
+
+          <!-- Vertical dark card -->
+          <div class="card-vertical card-dark">
+            <div class="badge-on-card top-right">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- horizontal dark card -->
+          <div class="card-horizontal card-light">
+            <div class="badge-on-card top-left">
+              <h2>Best Selling</h2>
+            </div>
+            <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+            <div class="card-img-container">
+              <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                  (Black) with EF S18-55 is II Lens</h1>
+                <h2 class="card-price">35,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay dark card -->
+          <div class="card-vertical text-overlay card-dark">
+            <div class="badge-on-card top-right">
+              <h2>15% OFF</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- card with shadow -->
+      <h2 id="card-w-shadow" class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
+      <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
+
+      <!-- vertical card -->
+
+      <div class="component-container mg-1-tb">
+
+        <!-- vertical light card -->
+        <div class="card-vertical card-light card-shadow">
+          <div class="card-img-container">
+            <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+      <script type="text/plain" class="language-html snippet-container">
+        <!-- vertical light card -->
+        <div class="card-vertical card-light card-shadow">
+          <div class="card-img-container">
+            <img src="..." alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+    </section>
+
+  </div>
+
+  <script src="/Documentation/docpage-js/docs.js"></script>
+  <script src="/Documentation/utilities/prismjs/prism.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./components.css" />
+  <link rel="stylesheet" href="./Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Indo UI | Documentation</title>
+</head>
+
+<body>
+
+  <!-- nav horizontal bar -->
+  <div class="nav-header-mobile hide">
+
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>    
+      <a href="/">
+        <div class="logo">IndoUI</div>
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+       <a href="/">
+         <div class="nav-header-text">Documentation</div>
+       </a>
+       <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+    
+  </div>
+
+
+  <div class="nav-header nav-header-desktop hide">
+    <a href="/">
+      <div class="logo">IndoUI</div>
+    </a>
+    <div class="nav-header-right-side">
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+  </div>
+
+  <!-- nav verticle bar -->
+  <nav class="nav pd-2-lr mg-1-top">
+    <h1 class="nav-category pd-point8-lt">About</h1>
+    <h1 class="nav-category pd-point8-lt">Getting Started</h1>
+    <h1 class="nav-category pd-point8-lt">Color</h1>
+    <h1 class="nav-category pd-point8-lt nav-category-active">Components</h1>
+    <div class="nav-items mg-1-lt">
+      <a href="#alert">
+        <h2 class="nav-alert nav-btn">Alerts</h2>
+      </a>
+      <a href="#buttons">
+        <h2 class="nav-button nav-btn">Buttons</h2>
+      </a>
+      <a href="#avatar">
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
+      </a>
+      <a href="#badge">
+        <h2 class="nav-badge nav-btn">Badge</h2>
+      </a>
+      <a href="#cards">
+        <h2 class="nav-card nav-btn">Cards</h2>
+      </a>
+      <a href="#image">
+        <h2 class="nav-img nav-btn">Image</h2>
+      </a>
+      <a href="#input">
+        <h2 class="nav-input nav-btn">Input</h2>
+      </a>
+    </div>
+    <div class="nav-close-btn">
+      <i class="far fa-times-circle"></i>
+    </div>
+  </nav>
+
+  <!-- floating up btn -->
+  <a href="#"><button class="btn floating-btn-md">
+      <i class="fas fa-arrow-up"></i></button>
+  </a>
+
+  <!-- body -->
+
+  <div class="main-container main ">
+
+    <!-- alerts -->
+    <section id="alert" class="pd-1-lr pd-2-bot mg-3-top">
+      <h1 class="mg-point8-tb">Alert</h1>
+      <p>
+        An alert displays a short, important message in a way that attracts
+        the user's attention without interrupting the user's task.
+      </p>
+      <h2 id="basic-alert" class="mg-2-top mg-1-bot title-lg-wt-5">Basic alerts</h2>
+      <p>
+        The alert offers four severity levels that set a distinctive icon and
+        color.
+      </p>
+      <div class="mg-3-bot">
+
+        <!-- alert without close -->
+
+        <div class="cont-shadow component-container pd-point6-all mg-2-bot mg-1-top border-round-4p">
+
+          <!-- success alert -->
+          <div class="alert-success">
+            <i class="fas fa-check-circle alert-icon"></i>
+            <span class="p-md">Success alert.</span>
+          </div>
+
+          <!-- info alert -->
+          <div class="alert-info">
+            <i class="fas fa-info-circle alert-icon"></i>
+            <span class="p-md">Info alert.</span>
+          </div>
+
+          <!-- warning alert -->
+          <div class="alert-warning">
+            <i class="fas fa-exclamation-triangle alert-icon"></i>
+            <span class="p-md">Warning alert.</span>
+          </div>
+
+          <!-- error alert -->
+          <div class="alert-error">
+            <i class="fas fa-exclamation-circle alert-icon"></i>
+            <span class="p-md">Error alert.</span>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fac802b783be0015bbaf27" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+      <!--descriptive alert without close -->
+
+      <h2 id="descriptive-alert" class="mg-2-topdiv-1-bot title-lg-wt-5">Descriptive alerts</h2>
+      <p class="mg-point6-top">
+        The alert offers four severity levels that set a distinctive icon
+        and color.
+      </p>
+      <div class="mg-3-bot">
+
+        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
+
+          <!-- success alert -->
+          <div class="alert-des-success">
+            <i class="fas fa-check-circle alert-icon"></i>
+            <div>
+              <p>Success</p>
+              <p class="p-md">
+                This is a success alert -
+                <a href=""><button class="btn secondary-text-btn-sm">
+                    check it out!
+                  </button></a>
+              </p>
+            </div>
+          </div>
+
+          <!-- info alert -->
+          <div class="alert-des-info">
+            <i class="fas fa-info-circle alert-icon"></i>
+            <div>
+              <p>Info</p>
+              <p class="p-md">
+                This is a info alert -
+                <a href=""><button class="btn secondary-text-btn-sm">check it out!
+                  </button></a>
+              </p>
+            </div>
+          </div>
+
+          <!-- warning alert -->
+          <div class="alert-des-warning">
+            <i class="fas fa-exclamation-triangle alert-icon"></i>
+            <div>
+              <p>Warning</p>
+              <p class="p-md">
+                This is a warning alert -
+                <a href=""><button class="btn secondary-text-btn-sm">check it out!
+                  </button></a>
+              </p>
+            </div>
+          </div>
+
+          <!-- error alert -->
+          <div class="alert-des-error">
+            <i class="fas fa-exclamation-circle alert-icon"></i>
+            <div class="alert-w-btn-text">
+              <p>Error</p>
+              <p class="p-md">
+                This is a error alert - <button class="btn secondary-text-btn-sm">
+                  check it out!
+                </button>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61facee5b783be0015bbaf30" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- alert with cta -->
+
+      <div class="alert-cta-demo sub-title mg-2-top mg-1-bot mg-point6-bot">
+        <h2 id="alert-with-cta" class="mg-1-top mg-1-bot title-lg-wt-5">Alert with actions</h2>
+        <button class="btn primary-outline-btn-sm">Demo</button>
+      </div>
+      <p class="mg-point6-tb">
+        An alert can have action, such as a close or undo button. It is
+        rendered after the message, at the end of the alert.
+      </p>
+      <p class="mg-point6-tb">
+        If on 'Click' callback is provided and no action prop is set, a
+        close icon is displayed. <br />The action prop can be used to
+        provide an alternative action, for example using a button or
+        icon button.
+      </p>
+
+      <div class="mg-3-bot">
+        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
+
+          <!-- success alert with dismiss button -->
+          <div class="alert-success-btn">
+            <div class="alert-text">
+              <i class="fas fa-check-circle alert-icon"></i>
+              <span class="p-md">Success alert.</span>
+            </div>
+            <div class="alert-close">
+              <i class="fas fa-times-circle"></i>
+            </div>
+          </div>
+
+          <!-- success alert with undo button -->
+          <div class="alert-success-btn">
+            <div class="alert-text">
+              <i class="fas fa-check-circle alert-icon"></i>
+              <span class="p-md">Success alert.</span>
+            </div>
+            <div class="undo">
+              <button class="btn secondary-text-btn-sm">UNDO</button>
+            </div>
+          </div>
+
+          <!-- error alert with undo button -->
+          <div class="alert-error-btn">
+            <div class="alert-text">
+              <i class="fas fa-exclamation-circle alert-icon"></i>
+              <span class="p-md">Wrong input!</span>
+            </div>
+            <div class="undo">
+              <button class="btn secondary-text-btn-sm">UNDO</button>
+            </div>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61facf67b783be0015bbaf31" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+    </section>
+    <hr />
+
+    <!-- buttons -->
+
+    <section id="buttons" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Buttons</h1>
+      <p>Buttons allow users to take actions, and make choices, with a single tap.
+      </p>
+      <!--  -->
+
+      <h2 id="primary-btn" class="mg-2-top mg-1-bot title-lg-wt-5"></h2>
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Solid Buttons</p>
+        <div class="cont-shadow button-container pd-1-all mg-1-bot">
+
+          <!-- primary button -->
+          <button class="btn primary-btn-md">Primary</button>
+
+          <!-- secondary button -->
+          <button class="btn secondary-btn-md">Secondary</button>
+
+          <!-- disabled button -->
+          <button class="btn disabled-btn-md" disabled="disabled">Disabled</button>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61facf9eb783be0015bbaf32" style="width: 100%; height: 140px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Outlined Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- primary outline button -->
+          <button class="btn primary-outline-btn-md">Primary</button>
+
+          <!-- secondary outline button -->
+          <button class="btn secondary-outline-btn-md">Secondary</button>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61facfe8b783be0015bbaf33" style="width: 100%; height: 100px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Link/Text Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- primary outline button -->
+          <a href=""><button class="btn primary-text-btn-md">Primary Text</button></a>
+
+          <!-- secondary outline button -->
+          <a href=""><button class="btn secondary-text-btn-md">Secondary Text</button></a>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad036b783be0015bbaf35" style="width: 100%; height: 100px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- cart icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-shopping-cart"></i></button>
+
+          <!-- trash icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-trash"></i></button>
+
+          <!-- history icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-history"></i></button>
+
+        </div>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad06fb783be0015bbaf36" style="width: 100%; height: 120px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Icon with Label Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- labelled cart icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-shopping-cart"></i>&nbsp; Add to cart</button>
+
+          <!-- labelled save icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-save"></i>&nbsp; Save</button>
+
+          <!-- labelled trash icon button -->
+          <button class="btn label-icon-outline-btn-md">
+            <i class="fas fa-trash"></i>&nbsp; Delete</button>
+
+        </div>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad09bb783be0015bbaf37" style="width: 100%; height:120px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <div class="mg-3-bot">
+        <p class="mg-2-rt mg-1-bot title-md-wt-bold">Floating Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- floating cart icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-shopping-cart"></i></button>
+          </a>
+
+          <!-- floating plus icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-plus"></i></button>
+          </a>
+
+          <!-- floating location icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-location-arrow"></i></button>
+          </a>
+
+        </div>
+        <iframe src="https://www.thiscodeworks.com/embed/61fad0ceb783be0015bbaf38" style="width: 100%; height: 150px;"
+          frameborder="0"></iframe>
+
+      </div>
+    </section>
+    <hr />
+
+    <!-- avatar -->
+
+    <section id="avatar" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Avatar</h1>
+      <p>
+        Avatars can be used to represent people or objects. It supports images or letters.
+      </p>
+
+      <!-- avatar as images -->
+
+      <h2 id="img-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Image Avatar</h2>
+
+      <div class="">
+
+        <div class="cont-shadow pd-1-tb mg-2-bot">
+          <div class="avatar-container mg-1-tb mg-1-lr">
+
+            <!-- round round large size image avatar -->
+            <div class="avatar avatar-lg-round">
+              <img loading="lazy" src="./Documentation/docpage-assets/avatar/avatar1.jpeg" alt="avatar-image"
+                class="img-responsive" />
+            </div>
+
+            <!-- round medium size image avatar -->
+            <div class="avatar avatar-md-round">
+              <img loading="lazy" src="./Documentation/docpage-assets/avatar/avatar2.jpeg" alt="avatar-image"
+                class="img-responsive" />
+            </div>
+
+            <!-- round small size image avatar -->
+            <div class="avatar avatar-sm-round">
+              <img loading="lazy" src="./Documentation/docpage-assets/avatar/avatar.jpeg" alt="avatar-image"
+                class="img-responsive" />
+            </div>
+
+            <!-- round extra-small size image avatar -->
+            <div class="avatar avatar-xsm-round">
+              <img loading="lazy" src="./Documentation/docpage-assets/avatar/avatar1.jpeg" alt="avatar-image"
+                class="img-responsive" />
+            </div>
+
+          </div>
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe class="mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad104b783be0015bbaf39"
+          style="width: 100%; height: 300px;" frameborder="0"></iframe>
+      </div>
+
+      <!-- Avatar as text -->
+
+      <h2 id="text-avatar" class="mg-2-top mg-1-bot title-lg-wt-5">Text Avatar</h2>
+      <div class="">
+
+        <div class="cont-shadow pd-1-tb mg-1-bot">
+          <div class="avatar-container mg-1-tb mg-2-lr">
+
+            <!-- round large size letter avatar -->
+            <div class="avatar text-avatar-lg-round">IN</div>
+
+            <!-- round medium size letter avatar -->
+            <div class="avatar text-avatar-md-round">IN</div>
+
+            <!-- round small size letter avatar -->
+            <div class="avatar text-avatar-sm-round">IN</div>
+
+            <!-- round extra-small size letter avatar -->
+            <div class="avatar text-avatar-xsm-round">IN</div>
+
+          </div>
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad370b783be0015bbaf3e" style="width: 100%; height: 170px;"
+          frameborder="0"></iframe>
+      </div>
+
+    </section>
+    <hr>
+
+    <!-- badge -->
+
+    <section id="badge" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Badge</h1>
+      <p>
+        Badges are used to display a notification count or status information.
+      </p>
+
+      <!-- badge on image -->
+
+      <h2 id="status-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Status Badge</h2>
+      <div class="">
+
+        <div class="cont-shadow pd-1-tb mg-2-bot">
+          <div class="avatar-container mg-1-tb mg-2-lr">
+
+            <!-- round large size avatar image with offline-status badge -->
+            <div class="badge-container">
+              <div class="avatar avatar-lg-round"><img loading="lazy" src="./Documentation/docpage-assets/avatar/avatar2.jpeg"
+                  alt="avatar-image" class="img-responsive" />
+              </div>
+              <span class="status-badge status-offline"></span>
+            </div>
+
+            <!-- round medium size avatar letter with online badge -->
+            <div class="badge-container">
+              <div class="avatar text-avatar-md-round">IN</div>
+              <span class="status-badge status-online"></span>
+            </div>
+
+            <!-- round small size avatar image with away-status badge -->
+            <div class="badge-container">
+              <div class="avatar avatar-sm-round"><img loading="lazy" src="./Documentation/docpage-assets/avatar/avatar.jpeg"
+                  alt="avatar-image" class="img-responsive" />
+              </div>
+              <span class="status-badge status-away"></span>
+            </div>
+
+            <!-- round extra-small size avatar image with offline badge -->
+            <div class="badge-container">
+              <div class="avatar avatar-xsm-round"><img loading="lazy" src="./Documentation/docpage-assets/avatar/avatar1.jpeg"
+                  alt="avatar-image" class="img-responsive" />
+              </div>
+              <span class="status-badge status-offline"></span>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad3cfb783be0015bbaf3f"
+          style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+      </div>
+
+
+      <!-- Badge on text -->
+
+      <h2 id="text-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Text Badge</h2>
+      <div class=" mg-3-bot">
+
+        <div class="cont-shadow flex-dir-column flex-align-start pd-1-all mg-1-bot">
+
+          <!-- round badge on h1 sized text -->
+          <div class="badge-container">
+            <h1 class="badge-text">Heading h1 with badge
+              <span class="badge-on-text badge-round">2</span></h1>
+          </div>
+
+          <!-- round badge on h2 sized text -->
+          <div class="badge-container">
+            <h2 class="badge-text">Heading h2 with badge
+              <span class="badge-on-text badge-round">2</span></h2>
+          </div>
+
+          <!-- square badge on h3 sized text -->
+          <div class="badge-container">
+            <h3 class="badge-text">Heading h3 with badge
+              <span class="badge-on-text badge-square">2</span></h3>
+          </div>
+
+          <!-- square badge on h4 sized text -->
+          <div class="badge-container">
+            <h4 class="badge-text">Heading h4 with badge
+              <span class="badge-on-text badge-square">2</span></h4>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad40ab783be0015bbaf40" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- Badge on icon -->
+
+      <h2 id="icon-badge" class="mg-2-top mg-1-bot title-lg-wt-5">Icon Badge</h2>
+      <div class="mg-3-bot">
+
+        <div class="icon-container cont-shadow pd-1-all mg-1-bot">
+
+          <!-- badge on cart icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-shopping-cart"><span class="badge-on-icon">2</span></i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope"><span class="badge-on-icon">12</span></i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope"><span class="badge-on-icon">25+</span></i>
+            </button>
+          </div>
+
+          <!-- badge on envelope/mail icon -->
+          <div class="badge-container">
+            <button class="btn badge-icon-btn-lg">
+              <i class="fas fa-envelope"><span class="badge-on-icon">215+</span></i>
+            </button>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad444b783be0015bbaf42" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!--Button with toggle Badge -->
+
+      <h2 id="badge-on-btn" class="mg-2-top mg-1-bot title-lg-wt-5">Toggle Badge Button</h2>
+      <div class="">
+        <div class="cont-shadow icon-container pd-1-all mg-1-bot">
+
+          <!-- badge on outline button -->
+          <div class="badge-container">
+            <button class="btn primary-outline-btn-md">Hide<span class="badge-on-btn ">7</span>
+            </button>
+          </div>
+
+          <!-- badge on secondary solid button -->
+          <div class="badge-container">
+            <button class="btn secondary-btn-md">Hide<span class="badge-on-btn ">2</span>
+            </button>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fad4b4b783be0015bbaf44" style="width: 100%; height: 210px;"
+          frameborder="0"></iframe>
+
+      </div>
+    </section>
+    <hr>
+
+    <!-- cards -->
+
+    <section id="cards" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Cards</h1>
+      <p>
+        cards are used to display content and action on a particular topic. .
+      </p>
+
+      <!-- without dismiss -->
+      <h2 id="card-wo-dismiss" class="mg-2-top mg-1-bot title-lg-wt-5">Card without dismiss</h2>
+      <div class="mg-3-bot">
+        <h3 class="title-md-wt-bold ">Vertical Light Card</h3>
+        <div class="pd-1-all">
+          <!-- vertical card -->
+
+          <div class="component-container flex-row mg-1-bot mg-1-top">
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-2-bot" src="https://www.thiscodeworks.com/embed/61fad794b783be0015bbaf45"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+          <div class="component-container flex-row mg-1-bot mg-1-top">
+
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad824b783be0015bbaf47"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+          <!-- horizontal card -->
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card</h3>
+          <div class="component-container mg-1-bot mg-1-top">
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad899b783be0015bbaf48"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe src="https://www.thiscodeworks.com/embed/61fad93ab783be0015bbaf49" style="width: 100%; height:300px;"
+            frameborder="0"></iframe>
+
+        </div>
+      </div>
+
+      <!-- with dismiss -->
+      <div class="mg-3-bot">
+        <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Dismiss</h2>
+
+        <div class=" pd-1-all mg-1-bot">
+          <!-- Vertical -->
+
+          <h3 class="title-md-wt-bold">Vertical Light Card</h3>
+          <div class=" component-container flex-row mg-1-bot mg-1-top">
+
+            <!-- vertical light card -->
+            <div class="card-vertical card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fad99fb783be0015bbaf4a"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Vertical Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- vertical dark card -->
+            <div class="card-vertical card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-text">
+                <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                  Shoot Camera (Black) with 8X Optical Zoom</h1>
+                <h2 class="card-price">10,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fada03b783be0015bbaf4b"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <!-- Horizontal -->
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Light Card </h3>
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-light">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe class=" mg-1-bot" src="https://www.thiscodeworks.com/embed/61fada79b783be0015bbaf4c"
+            style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+          <h3 class="mg-2-top mg-1-bot title-md-wt-bold">Horizontal Dark Card: </h3>
+          <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+            <strong>'card-dark'</strong> in the code.</p>
+
+          <div class="component-container mg-1-bot mg-1-top">
+
+            <!-- horizontal dark card -->
+            <div class="card-horizontal card-dark">
+              <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+              <div class="card-img-container">
+                <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                    (Black) with EF S18-55 is II Lens</h1>
+                  <h2 class="card-price">35,999/-</h2>
+                </div>
+                <div class="card-nav">
+                  <div class="card-cta-btn">
+                    <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                    <div class="card-nav-icon">
+                      <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                      </button>
+                      <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+          <iframe src="https://www.thiscodeworks.com/embed/61fadacab783be0015bbaf4d" style="width: 100%; height: 300px;"
+            frameborder="0"></iframe>
+        </div>
+
+      </div>
+
+      <!-- with text overlay -->
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
+      <p>For light cards we use <strong>'card-light'</strong> and for dark cards use <strong>'card-dark'</strong>.
+        The remaining code will be the same.</p>
+
+      <div class="mg-4-bot">
+        <div class=" component-container mg-1-top">
+
+          <!-- Vertical text overlay light card -->
+          <div class="card-vertical text-overlay card-light">
+            <div class="card-img-container">
+              <img src="https://m.media-amazon.com/images/I/31Xl4l53DFL._AC_UY355_QL65_.jpg" alt="product-image" />
+            </div>
+            <div class="overlay-text-dark">
+              <h1 class="card-title title-md">Photography Backdrop</h1>
+              <p>Polyester Wrinkle Resistant Photography Backdrop Background Cloth for
+                Photo Shoot Portrait Video Shooting (8x12 ft)</p>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay light card -->
+          <div class="card-vertical text-overlay card-light">
+            <div class="card-img-container">
+              <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay dark card -->
+          <div class="card-vertical text-overlay card-dark">
+            <div class="card-img-container">
+              <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe src="https://www.thiscodeworks.com/embed/61fadb5eb783be0015bbaf4e" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- text only card -->
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Text Only - Light Card & Dark Card</h2>
+      <p>&nbsp; To convert a light card to a dark card, only replace <strong>'card-light'</strong> by
+        <strong>'card-dark'</strong> in the code.</p>
+      <div class="mg-4-bot">
+
+        <div class="component-container mg-1-top">
+
+          <!-- Vertical text only light card -->
+          <div class="card-text-only card-light">
+            <h1 class="title-lg-wt-bold">Canon EOS 1500D</h1>
+            <h2 class="title-md-wt-5">Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF
+              S18-55 is II Lens</h2>
+            <p class="p-lg">EF-S mount compatible with all EF and EF-S lenses (crop-sensor mount
+              versatile and compact, especially when used with EF-S lenses)</p>
+          </div>
+
+          <!-- Vertical text only dark card -->
+          <div class="card-text-only card-dark">
+            <h1 class="title-lg-wt-bold">Canon EOS 1500D</h1>
+            <h2 class="title-md-wt-5">Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF
+              S18-55 is II Lens</h2>
+            <p class="p-lg">EF-S mount compatible with all EF and EF-S lenses (crop-sensor mount
+              versatile and compact, especially when used with EF-S lenses)</p>
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadba3b783be0015bbaf4f" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- card with badge -->
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Badge</h2>
+      <p>By adding <strong>'badge-on-card'</strong> and a position <strong>'top-left'</strong> or
+        <strong>'top-right'</strong>, we can easily add a badge to any card type.</p>
+
+      <div class=" mg-1-tb">
+
+        <div class="component-container">
+
+          <!-- vertical light card -->
+          <div class="card-vertical card-light">
+            <div class="badge-on-card top-left">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+        <iframe src="https://www.thiscodeworks.com/embed/61fadbf2b783be0015bbaf50" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <h3 class="title-md-wt-bold">Card examples with Badge: </h3>
+      <div class="mg-3-bot">
+        <div class="component-container flex-row">
+
+          <!-- Vertical dark card -->
+          <div class="card-vertical card-dark">
+            <div class="badge-on-card top-right">
+              <h2>New Arrival</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-text">
+              <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                Shoot Camera (Black) with 8X Optical Zoom</h1>
+              <h2 class="card-price">10,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <div class="card-cta-btn">
+                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                <div class="card-nav-icon">
+                  <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- horizontal dark card -->
+          <div class="card-horizontal card-light">
+            <div class="badge-on-card top-left">
+              <h2>Best Selling</h2>
+            </div>
+            <button class="btn secondary-text-btn-sm card-close"><i class="fas fa-times"></i></button>
+            <div class="card-img-container">
+              <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                  (Black) with EF S18-55 is II Lens</h1>
+                <h2 class="card-price">35,999/-</h2>
+              </div>
+              <div class="card-nav">
+                <div class="card-cta-btn">
+                  <button class="btn primary-btn-sm add-to-cart">Add to Cart</button>
+                  <div class="card-nav-icon">
+                    <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical text overlay dark card -->
+          <div class="card-vertical text-overlay card-dark">
+            <div class="badge-on-card top-right">
+              <h2>15% OFF</h2>
+            </div>
+            <div class="card-img-container">
+              <img src="./Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+            </div>
+            <div class="overlay-text-white">
+              <h1 class="card-title title-md">Canon EOS 1500D</h1>
+              <p>Canon EOS 1500D 24.1 Digital SLR Camera (Black) with EF S18-55 is II Lens</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- card with shadow -->
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
+      <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
+
+      <!-- vertical card -->
+
+      <div class="component-container mg-1-tb">
+
+        <!-- vertical light card -->
+        <div class="card-vertical card-light card-shadow">
+          <div class="card-img-container">
+            <img src="./Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+      <iframe src="https://www.thiscodeworks.com/embed/61fadc89b783be0015bbaf51" style="width: 100%; height: 300px;"
+        frameborder="0"></iframe>
+    </section>
+    <hr>
+
+    <!-- image -->
+
+    <section id="image" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Responsive Image</h1>
+      <p>
+        Responsive Image Components are used to dsiplay Images on different size screen. It will take width of the
+        container they are placed in.
+      </p>
+
+      <!-- Images -->
+
+      <!-- square image -->
+
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Square Images</h2>
+      <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+        <div class="img-sizes-container container-lg flex-justify-space-around">
+          <div class="flex-col img-sizes-detail mg-1-tb">
+
+            <div class="flex-row">
+              <span>'img-xsm-square'</span>:<span> 32px X 32px</span>
+            </div>
+            <div class="flex-row">
+              <span>'img-sm-square'</span>:<span> 48px X 48px</span>
+            </div>
+            <div class="flex-row">
+              <span>'img-md-square'</span>:<span> 100px X 100px</span></div>
+            <div class="flex-row">
+              <span>'img-lg-square'</span>:<span> 160px X 160px</span></div>
+            <div class="flex-row">
+              <span>'img-xl-square'</span>:<span> 256px X 256px</span></div>
+            <div class="flex-row">
+              <span>'img-xxl-square'</span>:<span> 416px X 416px</span></div>
+            <div class="flex-row">
+              <span>'img-xxxl-square'</span>:<span> 672px X 672px</span></div>
+          </div>
+
+          <div class="flex-col-center mg-1-tb">
+
+            <!-- square image -->
+            <img src="./Documentation/docpage-assets/images/img1.jpeg" alt="image" class="img-lg-square">
+
+            <br>
+            <p>example of <strong>'img-lg-square'</strong> : 100px X 160px</p>
+          </div>
+        </div>
+      </div>
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+      <iframe src="https://www.thiscodeworks.com/embed/61fadccab783be0015bbaf52" style="width: 100%; height: 60px;"
+        frameborder="0"></iframe>
+
+      <!-- round image -->
+
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Round Images</h2>
+      <p class="mg-2-bot title-md-wt-bold">You can change image size using pre-defined classes given below</p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+        <div class="img-sizes-container container-lg flex-justify-space-around">
+          <div class="flex-col img-sizes-detail mg-1-tb">
+            <div class="flex-row">
+              <span>'img-xsm-round'</span>:<span> 32px X 32px</span>
+            </div>
+            <div class="flex-row">
+              <span>'img-sm-round'</span>:<span> 48px X 48px</span>
+            </div>
+            <div class="flex-row">
+              <span>'img-md-round'</span>:<span> 100px X 100px</span></div>
+            <div class="flex-row">
+              <span>'img-lg-round'</span>:<span> 160px X 160px</span></div>
+            <div class="flex-row">
+              <span>'img-xl-round'</span>:<span> 256px X 256px</span></div>
+            <div class="flex-row">
+              <span>'img-xxl-round'</span>:<span> 416px X 416px</span></div>
+            <div class="flex-row">
+              <span>'img-xxxl-round'</span>:<span> 672px X 672px</span></div>
+          </div>
+          <div class="flex-col-center mg-1-tb">
+
+            <!-- round image -->
+            <img src="./Documentation/docpage-assets/images/img1.jpeg" alt="image" class="img-lg-round">
+
+            <br>
+            <p>example of <strong>'img-lg-round'</strong> : 160px X 160px</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+      <iframe src="https://www.thiscodeworks.com/embed/61fadd00b783be0015bbaf54" style="width: 100%; height: 60px;"
+        frameborder="0"></iframe>
+
+      <!-- full width image -->
+      <h2 class="mg-4-top mg-1-bot title-lg-wt-5">Full Width Image</h2>
+      <p class="mg-2-bot title-md-wt-5">Full width image is the one that expands to cover the container it is present
+        in.<br /><br />
+        <span class="title-md-wt-bold"> Note : Resize the browser window, to see the responsive property.</span></p>
+      <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+        <!-- responsive image -->
+        <img src="./Documentation/docpage-assets/images/img1.jpeg" alt="image" class="img-responsive" />
+
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+      <iframe src="https://www.thiscodeworks.com/embed/61fadd33b783be0015bbaf55" style="width: 100%; height: 60px;"
+        frameborder="0"></iframe>
+
+    </section>
+    <hr>
+
+    <!-- input field -->
+
+    <section id="input" class="pd-1-lr pd-2-tb mg-3-tb">
+      <h1 class="mg-point8-tb">Input-Fields</h1>
+      <p>
+        Inputs are used to take information from the user to authenticate or save their information to the server.
+      </p>
+
+      <!-- Labelled Input -->
+
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (without placeholder)</h2>
+      <div class="container-lg mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-2-bot title-md-wt-bold">Outline </p>
+
+          <div class=" flex-row flex-wrap">
+
+            <!-- outline input text field -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
+            </div>
+
+            <!-- outline input email field -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- outline input password field -->
+            <div class="outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- outline input date field -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadd9cb783be0015bbaf56" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <!-- no outline/standard -->
+      <div class="container-lg mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-2-bot title-md-wt-bold">No outline</p>
+
+          <div class="flex-row flex-wrap">
+
+            <!-- no-outline input text field -->
+            <div class="no-outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" />
+              </label>
+            </div>
+
+            <!-- no-outline input email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- no-outline input password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline input number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" />
+              </label>
+            </div>
+
+            <!-- no-outline input date field -->
+            <div class="no-outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- no-outline input month field -->
+            <div class="no-outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- no-outline input file field -->
+            <div class="no-outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- no-outline input telephone field -->
+            <div class="no-outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fade46b783be0015bbaf58" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+      <!-- Label with placeholder Input -->
+
+      <h2 class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (with placeholder)</h2>
+      <div class="container-lg mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+          <p class="mg-2-bot title-md-wt-bold">Outline </p>
+
+          <div class="flex-row flex-wrap">
+
+            <!-- outline input text field -->
+            <div class="outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              </label>
+            </div>
+
+            <!-- outline input email field -->
+            <div class="outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- outline input password field -->
+            <div class="outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                  required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- outline input number field -->
+            <div class="outline-number-input">
+              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              </label>
+            </div>
+
+            <!-- outline input date field -->
+            <div class="outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- outline input month field -->
+            <div class="outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- outline input file field -->
+            <div class="outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- outline input telephone field -->
+            <div class="outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                  placeholder="enter phone number" />
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadeb5b783be0015bbaf5a" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+      </div>
+
+      <!-- no outline/standard with place holder-->
+
+      <div class="container-lg mg-3-bot">
+        <div class="cont-shadow pd-2-all mg-2-bot mg-1-top">
+
+          <p class="mg-2-bot title-md-wt-bold">No outline</p>
+
+          <div class="flex-row flex-wrap">
+
+            <!-- no-outline input text field -->
+            <div class="no-outline-text-input">
+              <label for="text">Name
+                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              </label>
+            </div>
+
+            <!-- no-outline input email field -->
+            <div class="no-outline-email-input">
+              <label for="email">Email *
+                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              </label>
+            </div>
+
+            <!-- no-outline input password field -->
+            <div class="no-outline-password-input">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                  required value="..." />
+                wrong password, try again
+              </label>
+            </div>
+
+            <!-- no-outline input number field -->
+            <div class="no-outline-number-input">
+              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              </label>
+            </div>
+
+            <!-- no-outline input date field -->
+            <div class="no-outline-date-input">
+              <label for="date">Date<input type="date" name="date" />
+              </label>
+            </div>
+
+            <!-- no-outline input month field -->
+            <div class="no-outline-month-input">
+              <label for="month">Month<input type="month" name="month" />
+              </label>
+            </div>
+
+            <!-- no-outline input file field -->
+            <div class="no-outline-file-input">
+              <label for="file">File<input type="file" name="file" />
+              </label>
+            </div>
+
+            <!-- no-outline input telephone field -->
+            <div class="no-outline-tel-input">
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                  placeholder="enter phone number" />
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <iframe src="https://www.thiscodeworks.com/embed/61fadef3b783be0015bbaf5b" style="width: 100%; height: 300px;"
+          frameborder="0"></iframe>
+
+      </div>
+
+    </section>
+    <hr>
+  </div>
+
+  <script src="./Documentation/docpage-js/docs.js"></script>
+</body>
+
+</html>

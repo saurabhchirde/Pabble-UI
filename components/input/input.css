@@ -16,7 +16,7 @@
 .no-outline-time-input,
 .no-outline-file-input,
 .no-outline-tel-input{
-    width: 18rem;
+    width: 14.5rem;
     margin: 0.5rem 0.6rem;
 }
 
@@ -42,15 +42,6 @@
     color: var(--text-dark);
     font-weight: 400;    
     margin-bottom: 2rem;
-}
-
-.outline-password-input label,
-.outline-password-input input,
-.no-outline-password-input label,
-.no-outline-password-input input{
-    
-    border-color: var(--error-text);
-    color: var(--error-text);
 }
 
 .wrong-password label,
@@ -95,8 +86,8 @@
 .no-outline-file-input input,
 .no-outline-tel-input input{
    border: hidden;
-   border-radius: 0;
-   border-bottom-style:inset;
+   border-radius: 0;   
+   border-bottom: 1px solid var(--dark-blue-gray);
    background: none;
 }
 
