@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Components/components.css" />
+  <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Indo UI | Documentation</title>
+</head>
+
+<body>
+
+  <!-- nav horizontal bar -->
+  <div class="nav-header-mobile hide">
+
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>    
+      <a href="/">
+        <div class="logo">IndoUI</div>
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+       <a href="/">
+         <div class="nav-header-text">Documentation</div>
+       </a>
+       <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+    
+  </div>
+
+
+  <div class="nav-header nav-header-desktop hide">
+    <a href="/">
+      <div class="logo">IndoUI</div>
+    </a>
+    <div class="nav-header-right-side">
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
+    </div>
+  </div>
+
+  <!-- nav verticle bar -->
+  <nav class="nav">
+    <a href="/docs.html"><h1 class="nav-category pd-point8-lt">Getting Started</h1></a>
+    <hr class="nav-break-line">
+    <a href="./about.html"><h1 class="nav-category pd-point8-lt">About</h1></a>
+    <a href="./color.html"><h1 class="nav-category pd-point8-lt">Color</h1></a>
+    <a href="./typography.html"><h1 class="nav-category pd-point8-lt">Typography</h1></a>
+    <hr class="nav-break-line">
+    <a href="./components-overview.html"><h1 class="nav-category pd-point8-lt 
+      nav-category-active">Component Overview</h1></a>
+    <hr class="nav-break-line">
+    <div class="nav-items">
+      <a href="./alert.html">
+        <h2 class="nav-alert nav-btn">Alerts</h2>
+      </a>
+      <a href="#">
+        <h2 class="nav-button nav-btn">Buttons</h2>
+      </a>
+      <a href="./avatar.html">
+        <h2 class="nav-avatar nav-btn">Avatar</h2>
+      </a>
+      <a href="./badge.html">
+        <h2 class="nav-badge nav-btn">Badge</h2>
+      </a>
+      <a href="./cards.html">
+        <h2 class="nav-card nav-btn">Cards</h2>
+      </a>
+      <a href="./image.html">
+        <h2 class="nav-img nav-btn">Image</h2>
+      </a>
+      <a href="./input.html">
+        <h2 class="nav-input nav-btn">Input</h2>
+      </a>
+    </div>
+    <div class="nav-close-btn">
+      <i class="far fa-times-circle"></i>
+    </div>
+  </nav>
+
+  <div class="right-side-nav">
+    <h1>Contents</h1>
+      <a href="#primary-btn">
+        <h2>Solid Button</h2>
+      </a>    
+      <a href="#outlined-btn">
+        <h2>Outlined Button</h2>
+      </a>
+      <a href="#link-btn">
+        <h2>Link/Text Button</h2>
+      </a>
+      <a href="#icon-btn">
+        <h2>Icon Button</h2>
+      </a>
+      <a href="#icon-w-label-btn">
+        <h2>Icon with Label Button</h2>
+      </a>
+      <a href="#floating-btn">
+        <h2>Floating Button</h2>
+      </a>
+  </div>
+ 
+  <!-- floating up btn -->
+ <a href="#"><button class="btn floating-btn-md">
+      <i class="fas fa-arrow-up"></i></button>
+  </a> 
+
+  <!-- body -->
+
+  <div class="main">
+
+    <!-- buttons -->
+
+    <section id="buttons">
+      <h1 class="mg-point8-tb">Buttons</h1>
+      <p>Buttons allow users to take actions, and make choices, with a single tap.
+      </p>   
+
+      <div class="mg-3-bot">
+        <p id="primary-btn" class="mg-1-bot mg-2-top title-md-wt-bold">Solid Buttons</p>
+        <div class="cont-shadow button-container pd-1-all mg-1-bot">
+
+          <!-- primary button -->
+          <button class="btn primary-btn-md">Primary</button>
+
+          <!-- secondary button -->
+          <button class="btn secondary-btn-md">Secondary</button>
+
+          <!-- disabled button -->
+          <button class="btn disabled-btn-md" disabled="disabled">Disabled</button>
+
+        </div>
+
+        <script type="text/plain" class="language-html">
+          <!-- primary button -->
+          <button class="btn primary-btn-md">Primary</button>
+
+          <!-- secondary button -->
+          <button class="btn secondary-btn-md">Secondary</button>
+
+          <!-- disabled button -->
+          <button class="btn disabled-btn-md" disabled="disabled">
+            Disabled
+          </button>
+        </script>
+      </div>
+
+      <div class="mg-3-bot">
+        <p id="outlined-btn" class="mg-1-bot title-md-wt-bold">Outlined Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- primary outline button -->
+          <button class="btn primary-outline-btn-md">Primary</button>
+
+          <!-- secondary outline button -->
+          <button class="btn secondary-outline-btn-md">Secondary</button>
+
+        </div>
+
+        <script type="text/plain" class="language-html">
+          <!-- primary outline button -->
+          <button class="btn primary-outline-btn-md">Primary</button>
+
+          <!-- secondary outline button -->
+          <button class="btn secondary-outline-btn-md">Secondary</button>
+        </script>
+
+      </div>
+
+
+      <div class="mg-3-bot">
+        <p id="link-btn" class="mg-1-bot title-md-wt-bold">Link/Text Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- primary outline button -->
+          <a href=""><button class="btn primary-text-btn-md">Primary Text</button></a>
+
+          <!-- secondary outline button -->
+          <a href=""><button class="btn secondary-text-btn-md">Secondary Text</button></a>
+
+        </div>
+
+        <script type="text/plain" class="language-html">
+          <!-- primary outline button -->
+          <a href=""><button class="btn primary-text-btn-md">
+            Primary Text</button>
+          </a>
+
+          <!-- secondary outline button -->
+          <a href=""><button class="btn secondary-text-btn-md">
+            Secondary Text</button>
+          </a>
+        </script>
+
+      </div>
+
+      <div class="mg-3-bot">
+        <p id="icon-btn" class="mg-1-bot title-md-wt-bold">Icon Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- cart icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-shopping-cart"></i></button>
+
+          <!-- trash icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-trash"></i></button>
+
+          <!-- history icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-history"></i></button>
+
+        </div>
+       
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- cart icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+
+          <!-- trash icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-trash"></i>
+          </button>
+
+          <!-- history icon button -->
+          <button class="btn icon-btn-md">
+            <i class="fas fa-history"></i>
+          </button>
+        </script>
+
+      </div>
+
+
+      <div class="mg-3-bot">
+        <p id="icon-w-label-btn" class="mg-1-bot title-md-wt-bold">Icon with Label Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- labelled cart icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-shopping-cart"></i>&nbsp; Add to cart</button>
+
+          <!-- labelled save icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-save"></i>&nbsp; Save</button>
+
+          <!-- labelled trash icon button -->
+          <button class="btn label-icon-outline-btn-md">
+            <i class="fas fa-trash"></i>&nbsp; Delete</button>
+
+        </div>
+       
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- labelled cart icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-shopping-cart"></i>&nbsp; 
+            Add to cart
+          </button>
+
+          <!-- labelled save icon button -->
+          <button class="btn label-icon-btn-md">
+            <i class="fas fa-save"></i>&nbsp; 
+            Save
+          </button>
+
+          <!-- labelled trash icon button -->
+          <button class="btn label-icon-outline-btn-md">
+            <i class="fas fa-trash"></i>&nbsp; 
+            Delete
+          </button>
+        </script>
+
+      </div>
+
+      <div class="mg-3-bot">
+        <p id="floating-btn" class="mg-1-bot title-md-wt-bold">Floating Buttons</p>
+        <div class="cont-shadow button-container pd-1-all  mg-1-bot">
+
+          <!-- floating cart icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-shopping-cart"></i></button>
+          </a>
+
+          <!-- floating plus icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-plus"></i></button>
+          </a>
+
+          <!-- floating location icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-location-arrow"></i></button>
+          </a>
+
+        </div>
+       
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- floating cart icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-shopping-cart"></i></button>
+          </a>
+
+          <!-- floating plus icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-plus"></i></button>
+          </a>
+
+          <!-- floating location icon button -->
+          <a href=""><button class="btn flating-btn-sm">
+              <i class="fas fa-location-arrow"></i></button>
+          </a>
+        </script>
+
+      </div>
+      
+    </section>
+
+  </div> 
+
+  <script src="/Documentation/docpage-js/docs.js"></script>
+  <script src="/Documentation/utilities/prismjs/prism.js"></script>
+</body>
+
+</html>

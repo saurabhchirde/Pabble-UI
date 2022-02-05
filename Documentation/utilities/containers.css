@@ -1,9 +1,3 @@
-/* main container */
-
-.main-container {
-    max-width: 66rem;
-}
-
 /* nav containers */
 
 .nav-container {
@@ -64,4 +58,10 @@
 .alert-container,
 .avatar-container {
     justify-content: space-around;
+}
+
+/* snippet container */
+
+.snippet-container{
+    height: 15rem;
 }
