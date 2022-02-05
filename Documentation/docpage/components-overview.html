@@ -132,11 +132,10 @@
     <section id="comp-overview">
       <h1 class="mg-point8-tb">Component Overview</h1>
       <p>
-        We at IndoUI provides plenty of UI components to enrich your web applications, and we will improve components
-        experience consistently.
+        We at IndoUI provides plenty of UI components to enrich your web applications.
       </p>
 
-      <div class="mg-3-tb flex-row flex-wrap flex-justify-space-around">
+      <div class="comp-overview mg-3-tb flex-row flex-wrap flex-justify-space-around">
 
         <a href="./alert.html">
           <div class="overview-container">
@@ -144,14 +143,14 @@
             <hr class="break-line">
             <div class="overview-item-alert">
               <!-- success alert -->
-              <div class="alert-success">
+              <div class="overview-alert">
                 <i class="fas fa-check-circle alert-icon"></i>
-                <span class="p-md">Success alert.</span>
+                <span class="p-md">Success.</span>
               </div>
               <!-- error alert -->
-              <div class="alert-error">
+              <div class="overview-alert">
                 <i class="fas fa-exclamation-circle alert-icon"></i>
-                <span class="p-md">Error alert.</span>
+                <span class="p-md">Error.</span>
               </div>
             </div>
           </div>
@@ -161,25 +160,19 @@
           <div class="overview-container">
             <h2>Buttons</h2>
             <hr class="break-line">
-            <div class="overview-item">
+            <div class="overview-item-btn">
               <!-- solid btn -->
               <button class="btn primary-btn-sm">
                 Solid
               </button>
+              <!-- cart icon button -->
+              <button class="icon-btn-sm">
+                <i class="fas fa-shopping-cart"></i></button>
               <!-- outline btn -->
               <button class="btn primary-outline-btn-sm">
                 Outline
               </button>
-              <!-- cart icon button -->
-              <button class="btn icon-btn-sm">
-                <i class="fas fa-shopping-cart"></i></button>
-              <!-- text btn -->
-              <button class="btn primary-text-btn-sm">
-                Text
-              </button>
-              <!-- labelled trash icon button -->
-              <button class="btn label-icon-outline-btn-sm">
-                <i class="fas fa-trash"></i>&nbsp; Delete</button>             
+
             </div>
           </div>
         </a>
@@ -187,39 +180,87 @@
           <div class="overview-container">
             <h2>Avatar</h2>
             <hr class="break-line">
-            <div class="overview-item">
-            <div class="avatar avatar-sm-round img">
-              <i class="fas fa-user-circle"></i>
-            </div>
-            <div class="avatar text-avatar-sm-round">IN</div>
+            <div class="overview-item-avatar">
+              <div class="avatar avatar-sm-round img">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="avatar text-avatar-sm-round">IN</div>
             </div>
           </div>
         </a>
         <a href="./badge.html">
           <div class="overview-container">
             <h2>Badge</h2>
+            <hr class="break-line">
+            <div class="overview-item-badge">
+              <div class="badge-container">
+                <button class="btn primary-outline-btn-sm">Hide<span class="badge-on-btn ">7</span>
+                </button>
+              </div>
+              <!-- badge on envelope/mail icon -->
+              <div class="badge-container">
+                <button class="btn badge-icon-btn-lg">
+                  <i class="fas fa-envelope"><span class="badge-on-icon">12
+                    </span></i>
+                </button>
+              </div>
+            </div>
           </div>
         </a>
         <a href="./cards.html">
           <div class="overview-container">
             <h2>Cards</h2>
+            <hr class="break-line">
+            <div class="overview-item-avatar">
+              <svg width="97" height="78" viewBox="0 0 290 233" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="112.5" width="199" height="119" rx="3.5" fill="white" stroke="#0F96DF"/>
+                <rect x="9.5" y="125.5" width="80" height="92" rx="3.5" fill="#F0F0F0" fill-opacity="0.5" stroke="#0F96DF"/>
+                <line x1="105" y1="126.5" x2="189" y2="126.5" stroke="#0F96DF"/>
+                <line x1="105" y1="145.5" x2="189" y2="145.5" stroke="#0F96DF"/>
+                <line x1="105" y1="164.5" x2="189" y2="164.5" stroke="#0F96DF"/>
+                <line x1="105" y1="183.5" x2="189" y2="183.5" stroke="#0F96DF"/>
+                <rect x="105" y="203" width="45" height="15" rx="4" fill="#0F96DF"/>
+                <rect x="155.5" y="203.5" width="14" height="14" rx="7" stroke="#0F96DF"/>
+                <rect x="175.5" y="203.5" width="14" height="14" rx="7" stroke="#0F96DF"/>
+                <path d="M197.453 3.76824L287.389 173.402C288.295 175.109 287.644 177.228 285.936 178.133L186.984 230.596C185.276 231.502 183.157 230.851 182.252 229.143L92.3156 59.51C91.4102 57.8022 92.0606 55.6838 93.7684 54.7783L192.721 2.31543C194.429 1.40998 196.547 2.06042 197.453 3.76824Z" fill="white" stroke="#0F96DF"/>
+                <rect x="109.134" y="61.3457" width="92" height="86" rx="3.5" transform="rotate(-27.9317 109.134 61.3457)" fill="#F0F0F0" fill-opacity="0.5" stroke="#0F96DF"/>
+                <line x1="153.661" y1="146.397" x2="235.827" y2="102.834" stroke="#0F96DF"/>
+                <line x1="162.561" y1="163.183" x2="244.727" y2="119.62" stroke="#0F96DF"/>
+                <line x1="171.461" y1="179.97" x2="253.627" y2="136.407" stroke="#0F96DF"/>
+                <line x1="180.361" y1="196.756" x2="262.527" y2="153.194" stroke="#0F96DF"/>
+                <rect x="185.279" y="206.033" width="45" height="15" rx="4" transform="rotate(-27.9317 185.279 206.033)" fill="#0F96DF"/>
+                <rect x="233.665" y="180.946" width="14" height="14" rx="7" transform="rotate(-27.9317 233.665 180.946)" stroke="#0F96DF"/>
+                <rect x="254.869" y="169.704" width="14" height="14" rx="7" transform="rotate(-27.9317 254.869 169.704)" stroke="#0F96DF"/>
+                </svg>
+                
+            </div>
           </div>
         </a>
         <a href="./image.html">
           <div class="overview-container">
-            <h2>Image</h2>
+            <h2>Images</h2>
+            <hr class="break-line">
+            <div class="overview-item-avatar">
+              <div class="img">
+                <i class="far fa-images"></i>
+              </div>
+            </div>
           </div>
         </a>
         <a href="./input.html">
           <div class="overview-container">
             <h2>Input</h2>
+            <hr class="break-line">
+            <div class="overview-item-input">
+              <input type="text" placeholder="enter name" />
+              <input type="range" min="0" max="100" />
+            </div>
           </div>
         </a>
 
       </div>
 
     </section>
-    <hr />
 
   </div>
 
