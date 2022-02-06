@@ -29,7 +29,7 @@ pre[class*=language-] {
 
 :not(pre)>code[class*=language-],
 pre[class*=language-] {
-    background: #1e1e1f
+    background: #1d1d1d
 }
 
 :not(pre)>code[class*=language-] {
@@ -43,7 +43,7 @@ pre[class*=language-] {
 .token.comment,
 .token.doctype,
 .token.prolog {
-    color: rgb(71, 182, 40)
+    color: rgb(74, 159, 51)
 }
 
 .token.punctuation {
@@ -91,7 +91,7 @@ pre[class*=language-] {
 .token.regex,
 .token.string,
 .token.variable {
-    color: #e69e5f
+    color: #d39865
 }
 
 .token.entity,
@@ -245,7 +245,7 @@ div.code-toolbar>.toolbar {
     color: var(--primary-color);
     outline: 1px solid var(--primary-color);
     border-radius: 4px;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 div.code-toolbar>.toolbar>.toolbar-item {
@@ -272,11 +272,11 @@ div.code-toolbar>.toolbar>.toolbar-item>button {
 div.code-toolbar>.toolbar>.toolbar-item>a,
 div.code-toolbar>.toolbar>.toolbar-item>button,
 div.code-toolbar>.toolbar>.toolbar-item>span {
-    color: #bbb;
-    font-size: 1.2rem;
+    color: rgb(238, 238, 238);
+    font-size: 1rem;
     padding: 0.3rem 0.4rem;
     background: #f5f2f0;
-    background: rgba(224, 224, 224, .2);
+    background: rgba(224, 224, 224, .4);
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, .2);
     border-radius: 4px
 }

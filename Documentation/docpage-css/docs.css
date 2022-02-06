@@ -419,7 +419,7 @@ nav h1:hover,
     }
 }
 
-@media screen and (min-width:460px) and (max-width:960px) {
+@media screen and (min-width:560px) and (max-width:960px) {
     .right-side-nav {
         display: none;
     }
@@ -430,6 +430,10 @@ nav h1:hover,
 
     .main {
         width: 100%;
+    }
+
+    #getting-started{
+        width:30rem;
     }
 
     .overview-container {
@@ -443,7 +447,7 @@ nav h1:hover,
     }
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:560px) {
     body {
         display: flex;
         flex-direction: column;
