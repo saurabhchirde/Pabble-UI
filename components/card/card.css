@@ -1,18 +1,42 @@
 .card-img-container {
     width: 100%;
-    height: 10rem;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.4rem 0.5rem;
+    margin-top: 1rem;
 }
 
 .card-vertical,
+.card-vertical-info,
 .card-text-only {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 14rem;
+    border-radius: 4px;
+    outline: 1px solid var(--medium-blue-gray);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card-vertical img,
+.card-vertical-info img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-vertical .card-img-container,
+.card-vertical-info .card-img-container {
+    height: 10rem;
+}
+
+.card-horizontal,
+.card-horizontal-info {
+    position: relative;
+    display: flex;
+    width: 26rem;
     border-radius: 4px;
     padding: 0.5rem;
     outline: 1px solid var(--medium-blue-gray);
@@ -20,31 +44,39 @@
     padding: 1rem;
 }
 
-.card-vertical img {
-    max-width: 100%;
-    height: auto;
+.card-horizontal-info{
+    width: 23rem;
 }
 
-.card-horizontal {
-    position: relative;
-    display: flex;
-    width: 26rem;
-    border-radius: 4px;
-    padding: 0.5rem;    
-    outline: 1px solid var(--medium-blue-gray);
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.card-horizontal .card-text{
+.card-horizontal .card-text,
+.card-horizontal-info .card-text {
     margin: 0.4rem auto 0.4rem;
     padding: 0 0.6rem;
 }
 
-.card-horizontal img {
+.card-horizontal-info .card-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-horizontal img,
+.card-horizontal-info img {
     max-width: 100%;
     height: auto;
     margin: auto 0.6rem;
+}
+
+.card-horizontal-info h1,
+.card-vertical-info h1 {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+}
+
+.card-horizontal-info p,
+.card-vertical-info p {
+    font-size: 0.8rem;
+    width: 100%;
 }
 
 .card-body {
@@ -54,9 +86,7 @@
     justify-content: center;
 }
 
-.card-text,
-.overlay-text-white,
-.overlay-text-dark {
+.card-text {
     display: flex;
     flex-direction: column;
     margin: 0.4rem auto 0.4rem;
@@ -104,20 +134,37 @@
     top: 0;
 }
 
-.text-overlay .card-title {
-    margin: -2.9rem 0 1.3rem;
+.text-overlay{
+   outline: none;
 }
 
 .text-overlay p {
     font-size: 0.8rem;
 }
 
-.overlay-text-white h1 {
+.text-overlay h1 {
     color: var(--text-white);
+
 }
 
-.overlay-text-dark h1 {
+.overlay-area-type-1,
+.overlay-area-type-2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(69, 69, 69, 0.7);
+}
+
+.overlay-area-type-2 .card-title{
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 0;
     color: var(--text-dark);
+    background-color: white;
 }
 
 .card-dark {
@@ -151,6 +198,6 @@
     row-gap: 1rem;
 }
 
-.card-shadow{
+.card-shadow {
     box-shadow: 0 10px 15px var(--text-light);
 }

@@ -190,7 +190,7 @@ nav h1:hover,
     -ms-overflow-style: none;
     scrollbar-width: none;
     width: 12rem;
-    height: 35rem;
+    height: 40rem;
     grid-area: nav-right;
     overflow: hidden;
 }
@@ -271,6 +271,7 @@ nav h1:hover,
 #text-only-card,
 #card-w-badge,
 #badge-card-examples,
+#card-wo-dismiss-hr-info,
 #card-w-shadow,
 #sq-img,
 #rnd-img,
