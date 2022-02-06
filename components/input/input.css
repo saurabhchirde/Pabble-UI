@@ -86,6 +86,7 @@
 .no-outline-file-input input,
 .no-outline-tel-input input{
    border: hidden;
+   padding: 0.5rem 0;
    border-radius: 0;   
    border-bottom: 1px solid var(--dark-blue-gray);
    background: none;

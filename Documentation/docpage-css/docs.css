@@ -220,6 +220,7 @@ nav h1:hover,
     margin-right: 0;
     margin-left: 0;
     max-width: 100%;
+    padding:0 2rem;
 }
 
 /* components */
@@ -375,13 +376,13 @@ nav h1:hover,
 
 /* responsive query */
 
-@media screen and (min-width:1420px) {
+@media screen and (min-width:1480px) {
     .main {
-        width: 62rem;
+        width: 70rem;
     }
 }
 
-@media screen and (min-width:1170px) and (max-width:1420px) {
+@media screen and (min-width:1170px) and (max-width:1480px) {
     .main {
         width: 52rem;
     }

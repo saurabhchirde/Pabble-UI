@@ -15,13 +15,14 @@
     width: 14rem;
     border-radius: 4px;
     padding: 0.5rem;
-    box-shadow: 0 0 15px var(--btn-hover);
+    outline: 1px solid var(--medium-blue-gray);
     margin: 1rem;
     padding: 1rem;
 }
 
 .card-vertical img {
-    max-width: 95%;
+    max-width: 100%;
+    height: auto;
 }
 
 .card-horizontal {
@@ -29,14 +30,20 @@
     display: flex;
     width: 26rem;
     border-radius: 4px;
-    padding: 0.5rem;
-    box-shadow: 0 0 15px var(--btn-hover);
+    padding: 0.5rem;    
+    outline: 1px solid var(--medium-blue-gray);
     margin: 1rem;
     padding: 1rem;
 }
 
+.card-horizontal .card-text{
+    margin: 0.4rem auto 0.4rem;
+    padding: 0 0.6rem;
+}
+
 .card-horizontal img {
-    max-width: 95%;
+    max-width: 100%;
+    height: auto;
     margin: auto 0.6rem;
 }
 
@@ -52,7 +59,8 @@
 .overlay-text-dark {
     display: flex;
     flex-direction: column;
-    margin: 0.4rem auto 0.4rem 0.4rem;
+    margin: 0.4rem auto 0.4rem;
+    padding: 0 0.6rem;
 }
 
 .card-title {

@@ -19,18 +19,18 @@
   <div class="nav-header-mobile hide">
 
     <div class="nav-header">
-      <div class="hamburger"><i class="fas fa-bars"></i></div>    
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
       <a href="/">
         <div class="logo">IndoUI</div>
       </a>
     </div>
     <div class="nav-header-right-side">
-       <a href="/">
-         <div class="nav-header-text">Documentation</div>
-       </a>
-       <div class="toggler "><i class="fas fa-moon"></i></div>
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
     </div>
-    
+
   </div>
 
 
@@ -48,14 +48,24 @@
 
   <!-- nav verticle bar -->
   <nav class="nav">
-    <a href="/docs.html"><h1 class="nav-category pd-point8-lt">Getting Started</h1></a>
+    <a href="/docs.html">
+      <h1 class="nav-category pd-point8-lt">Getting Started</h1>
+    </a>
     <hr class="nav-break-line">
-    <a href="./about.html"><h1 class="nav-category pd-point8-lt">About</h1></a>
-    <a href="./color.html"><h1 class="nav-category pd-point8-lt">Color</h1></a>
-    <a href="./typography.html"><h1 class="nav-category pd-point8-lt">Typography</h1></a>
+    <a href="./about.html">
+      <h1 class="nav-category pd-point8-lt">About</h1>
+    </a>
+    <a href="./color.html">
+      <h1 class="nav-category pd-point8-lt">Color</h1>
+    </a>
+    <a href="./typography.html">
+      <h1 class="nav-category pd-point8-lt">Typography</h1>
+    </a>
     <hr class="nav-break-line">
-    <a href="./components-overview.html"><h1 class="nav-category pd-point8-lt 
-      nav-category-active">Component Overview</h1></a>
+    <a href="./components-overview.html">
+      <h1 class="nav-category pd-point8-lt 
+      nav-category-active">Component Overview</h1>
+    </a>
     <hr class="nav-break-line">
     <div class="nav-items">
       <a href="#">
@@ -87,15 +97,15 @@
 
   <div class="right-side-nav">
     <h1>Contents</h1>
-      <a href="#basic-alert">
-        <h2>Basic Alert</h2>
-      </a>    
-      <a href="#descriptive-alert">
-        <h2>Descriptive Alerts</h2>
-      </a>
-      <a href="#alert-with-cta">
-        <h2>Alert With Button</h2>
-      </a>
+    <a href="#basic-alert">
+      <h2>Basic Alert</h2>
+    </a>
+    <a href="#descriptive-alert">
+      <h2>Descriptive Alerts</h2>
+    </a>
+    <a href="#alert-with-cta">
+      <h2>Alert With Button</h2>
+    </a>
   </div>
 
   <!-- floating up btn -->
@@ -105,7 +115,7 @@
 
   <!-- body -->
 
-  <div class="main ">
+  <div class="main cont-shadow">
 
     <!-- alerts -->
     <section id="alert">
@@ -123,7 +133,7 @@
 
         <!-- alert without close -->
 
-        <div class="cont-shadow component-container pd-point6-all mg-2-bot mg-1-top border-round-4p">
+        <div class="component-container pd-point6-all mg-2-bot mg-1-top border-round-4p">
 
           <!-- success alert -->
           <div class="alert-success">
@@ -187,18 +197,15 @@
       </p>
       <div class="mg-3-bot">
 
-        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
+        <div class="component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert -->
           <div class="alert-des-success">
             <i class="fas fa-check-circle alert-icon"></i>
             <div>
-              <p>Success</p>
-              <p class="p-md">
-                This is a success alert -
-                <a href=""><button class="btn secondary-text-btn-sm">
-                    check it out!
-                  </button></a>
+              <h2>Success</h2>
+              <p>This is a success alert -
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
@@ -207,11 +214,9 @@
           <div class="alert-des-info">
             <i class="fas fa-info-circle alert-icon"></i>
             <div>
-              <p>Info</p>
-              <p class="p-md">
-                This is a info alert -
-                <a href=""><button class="btn secondary-text-btn-sm">check it out!
-                  </button></a>
+              <h2>Info</h2>
+              <p>This is a info alert -
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
@@ -220,11 +225,9 @@
           <div class="alert-des-warning">
             <i class="fas fa-exclamation-triangle alert-icon"></i>
             <div>
-              <p>Warning</p>
-              <p class="p-md">
-                This is a warning alert -
-                <a href=""><button class="btn secondary-text-btn-sm">check it out!
-                  </button></a>
+              <h2>Warning</h2>
+              <p>This is a warning alert -
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
@@ -233,88 +236,68 @@
           <div class="alert-des-error">
             <i class="fas fa-exclamation-circle alert-icon"></i>
             <div class="alert-w-btn-text">
-              <p>Error</p>
-              <p class="p-md">
-                This is a error alert - <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
+              <h2>Error</h2>
+              <p>This is a error alert
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
 
         </div>
 
-       <script type="text/plain" class="language-html snippet-container">
-        <!-- success alert -->
-        <div class="alert-des-success">
-          <i class="fas fa-check-circle alert-icon"></i>
-          <div>
-            <p>Success</p>
-            <p class="p-md">
-              This is a success alert -
-              <a href="">
-                <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
-              </a>
-            </p>
+        <script type="text/plain" class="language-html snippet-container">
+          <!-- success alert -->
+          <div class="alert-des-success">
+            <i class="fas fa-check-circle alert-icon"></i>
+            <div>
+              <h2>Success</h2>
+              <p>This is a success alert -
+                <a href="">check it out!</a>
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- info alert -->
-        <div class="alert-des-info">
-          <i class="fas fa-info-circle alert-icon"></i>
-          <div>
-            <p>Info</p>
-            <p class="p-md">
-              This is a info alert -
-              <a href="">
-                <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
-              </a>
-            </p>
+          <!-- info alert -->
+          <div class="alert-des-info">
+            <i class="fas fa-info-circle alert-icon"></i>
+            <div>
+              <h2>Info</h2>
+              <p>This is a info alert -
+                <a href="">check it out!</a>
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- warning alert -->
-        <div class="alert-des-warning">
-          <i class="fas fa-exclamation-triangle alert-icon"></i>
-          <div>
-            <p>Warning</p>
-            <p class="p-md">
-              This is a warning alert -
-              <a href="">
-                <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
-              </a>
-            </p>
+          <!-- warning alert -->
+          <div class="alert-des-warning">
+            <i class="fas fa-exclamation-triangle alert-icon"></i>
+            <div>
+              <h2>Warning</h2>
+              <p>This is a warning alert -
+                <a href="">check it out!</a>
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- error alert -->
-        <div class="alert-des-error">
-          <i class="fas fa-exclamation-circle alert-icon"></i>
-          <div class="alert-w-btn-text">
-            <p>Error</p>
-            <p class="p-md">
-              This is a error alert - 
-              <button class="btn secondary-text-btn-sm">
-                check it out!
-              </button>
-            </p>
+          <!-- error alert -->
+          <div class="alert-des-error">
+            <i class="fas fa-exclamation-circle alert-icon"></i>
+            <div class="alert-w-btn-text">
+              <h2>Error</h2>
+              <p>This is a error alert
+                <a href="">check it out!</a>
+              </p>
+            </div>
           </div>
-        </div>
-       </script>
+        </script>
 
       </div>
 
       <!-- alert with cta -->
 
-      <div class="alert-cta-demo mg-2-top mg-1-bot mg-point6-bot">
-        <h2 id="alert-with-cta" class="mg-1-top mg-1-bot title-lg-wt-5">Alert With Button</h2>
-        <button class="btn primary-outline-btn-sm">Demo</button>
+      <div class="alert-cta-demo mg-2-top mg-1-bot mg-point6-bot flex-row flex-align-center">
+        <h2 id="alert-with-cta" class="title-lg-wt-5">Alert With Button</h2>
+        <button class="btn primary-outline-btn-md">Demo</button>
       </div>
       <p class="mg-point6-tb">
         An alert can have action, such as a close or undo button. It is
@@ -328,7 +311,7 @@
       </p>
 
       <div class="mg-3-bot">
-        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
+        <div class="component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert with dismiss button -->
           <div class="alert-success-btn">

@@ -92,9 +92,9 @@
 }
 
 .badge-on-icon {
-    font-size: 0.65em;
-    top: 0.2em;
-    right: 0.4em;
+    font-size: 0.6em;
+    top: 0.4em;
+    left: 2.2em;
     padding: 0.2em 0.3em;
     border-radius: 20px;
 }
@@ -102,8 +102,9 @@
 .badge-on-btn {
     font-size: 0.9em;
     top: 0.3em;
-    right: 0.5em;
-    border-radius: 50%;
+    left: 4.7em;
+    padding: 0.2em 0.5em;
+    border-radius: 20px;
 }
 
 .badge-on-card {
