@@ -10,6 +10,8 @@
 .color-input,
 .outline-search-input,
 .range-input,
+.radio-input,
+.checkbox-input,
 .no-outline-text-input,
 .no-outline-email-input,
 .no-outline-password-input,
@@ -24,6 +26,14 @@
     margin: 0.5rem 0.6rem;
 }
 
+.radio-input,
+.checkbox-input{
+    margin: 0rem 0.6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
 .outline-text-input label,
 .outline-email-input label,
 .outline-password-input label,
@@ -36,6 +46,8 @@
 .color-input label,
 .outline-search-input label,
 .range-input label,
+.radio-input label,
+.checkbox-input label,
 .no-outline-text-input label,
 .no-outline-email-input label,
 .no-outline-password-input label,
@@ -50,6 +62,11 @@
     color: var(--text-dark);
     font-weight: 400;
     margin-bottom: 2rem;
+}
+
+.radio-input label,
+.checkbox-input label{
+    margin-bottom: 0;
 }
 
 .wrong-password label,
@@ -70,6 +87,8 @@
 .color-input input,
 .outline-search-input input,
 .range-input input,
+.radio-input input,
+.checkbox-input input,
 .no-outline-text-input input,
 .no-outline-email-input input,
 .no-outline-password-input input,
@@ -86,6 +105,12 @@
     padding: 0.5rem 0.6rem;
     border-radius: 4px;
     border: 1px solid var(--dark-blue-gray);
+}
+
+.radio-input input,
+.checkbox-input input{
+    width: auto;
+    margin: 0.4rem 0.6rem 0.4rem 0.4rem;
 }
 
 .color-input input{
