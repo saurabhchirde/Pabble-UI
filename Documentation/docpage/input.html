@@ -19,18 +19,18 @@
   <div class="nav-header-mobile hide">
 
     <div class="nav-header">
-      <div class="hamburger"><i class="fas fa-bars"></i></div>    
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
       <a href="/">
         <div class="logo">IndoUI</div>
       </a>
     </div>
     <div class="nav-header-right-side">
-       <a href="/">
-         <div class="nav-header-text">Documentation</div>
-       </a>
-       <div class="toggler "><i class="fas fa-moon"></i></div>
+      <a href="/">
+        <div class="nav-header-text">Documentation</div>
+      </a>
+      <div class="toggler "><i class="fas fa-moon"></i></div>
     </div>
-    
+
   </div>
 
 
@@ -48,14 +48,24 @@
 
   <!-- nav verticle bar -->
   <nav class="nav">
-    <a href="/docs.html"><h1 class="nav-category pd-point8-lt">Getting Started</h1></a>
+    <a href="/docs.html">
+      <h1 class="nav-category pd-point8-lt">Getting Started</h1>
+    </a>
     <hr class="nav-break-line">
-    <a href="./about.html"><h1 class="nav-category pd-point8-lt">About</h1></a>
-    <a href="./color.html"><h1 class="nav-category pd-point8-lt">Color</h1></a>
-    <a href="./typography.html"><h1 class="nav-category pd-point8-lt">Typography</h1></a>
+    <a href="./about.html">
+      <h1 class="nav-category pd-point8-lt">About</h1>
+    </a>
+    <a href="./color.html">
+      <h1 class="nav-category pd-point8-lt">Color</h1>
+    </a>
+    <a href="./typography.html">
+      <h1 class="nav-category pd-point8-lt">Typography</h1>
+    </a>
     <hr class="nav-break-line">
-    <a href="./components-overview.html"><h1 class="nav-category pd-point8-lt 
-      nav-category-active">Component Overview</h1></a>
+    <a href="./components-overview.html">
+      <h1 class="nav-category pd-point8-lt 
+      nav-category-active">Component Overview</h1>
+    </a>
     <hr class="nav-break-line">
     <div class="nav-items">
       <a href="./alert.html">
@@ -87,29 +97,29 @@
 
   <div class="right-side-nav">
     <h1>Contents</h1>
-      <a href="#labelled-wo-placeholder">
-        <h2>Labelled Input (without placeholder)</h2>
+    <a href="#labelled-wo-placeholder">
+      <h2>Labelled Input (without placeholder)</h2>
+    </a>
+    <ul>
+      <a href="#labelled-wo-placeholder-outline">
+        <li>Outline</li>
       </a>
-      <ul>
-        <a href="#labelled-wo-placeholder-outline">
-          <li>Outline</li>
-        </a>
-        <a href="#labelled-wo-placeholder-no-outline">
-          <li>No-Outline</li>
-        </a>        
-      </ul>
-      <a href="#labelled-w-placeholder">
-        <h2>Labelled Input (with placeholder)</h2>
+      <a href="#labelled-wo-placeholder-no-outline">
+        <li>No-Outline</li>
       </a>
-      <ul>
-        <a href="#labelled-w-placeholder-outline">
-          <li>Outline</li>
-        </a>
-        <a href="#labelled-w-placeholder-no-outline">
-          <li>No-Outline</li>
-        </a>
-        
-      </ul>
+    </ul>
+    <a href="#labelled-w-placeholder">
+      <h2>Labelled Input (with placeholder)</h2>
+    </a>
+    <ul>
+      <a href="#labelled-w-placeholder-outline">
+        <li>Outline</li>
+      </a>
+      <a href="#labelled-w-placeholder-no-outline">
+        <li>No-Outline</li>
+      </a>
+
+    </ul>
   </div>
 
   <!-- floating up btn -->
@@ -175,7 +185,7 @@
 
             <!-- outline input month field without placeholder -->
             <div class="outline-month-input">
-              <label for="month">Month<input type="month" name="month" />
+              <label for="month">Month & Year<input type="month" name="month" />
               </label>
             </div>
 
@@ -188,6 +198,30 @@
             <!-- outline input telephone field without placeholder -->
             <div class="outline-tel-input">
               <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+              </label>
+            </div>
+
+            <!-- color input field  -->
+            <div class="color-input">
+              <label for="color">Color :<strong><output id="color">#0f96df</output></strong><input type="color"
+                  name="color" oninput="color.value=this.value" value="#0f96df" />
+              </label>
+            </div>
+
+            <!-- outline input search field without placeholder -->
+            <div class="outline-search-input">
+              <label for="search">Search
+                <div class="input-icon"><i class="fas fa-search icon"></i>
+                  <input type="search" name="search" />
+                </div>
+              </label>
+            </div>
+
+            <!-- range input field -->
+            <div class="range-input">
+              <label for="volume">Volume<input type="range" min="0" max="100" value="40" name="volume"
+                  class="slider-normal" step="1" oninput="vol.value = this.value" />
+                <output id="vol">40</output>
               </label>
             </div>
 
@@ -197,56 +231,81 @@
 
         <script type="text/plain" class="language-html snippet-container">
           <!-- outline input text field without placeholder -->
-            <div class="outline-text-input">
-              <label for="text">Name
-                <input type="text" name="text" autocomplete="name" />
-              </label>
-            </div>
+          <div class="outline-text-input">
+            <label for="text">Name
+              <input type="text" name="text" autocomplete="name" />
+            </label>
+          </div>
 
-            <!-- outline input email field without placeholder -->
-            <div class="outline-email-input">
-              <label for="email">Email *
-                <input type="email" name="email" required autocomplete="email" />
-              </label>
-            </div>
+          <!-- outline input email field without placeholder -->
+          <div class="outline-email-input">
+            <label for="email">Email *
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+          </div>
 
-            <!-- outline input password field without placeholder -->
-            <div class="outline-password-input wrong-password">
-              <label for="password">Password *
-                <input type="password" name="password" autocomplete="current-password" 
-                required value="..." />wrong password, try again
-              </label>
-            </div>
+          <!-- outline input password field without placeholder -->
+          <div class="outline-password-input wrong-password">
+            <label for="password">Password *
+              <input type="password" name="password" autocomplete="current-password" required value="..." />
+              wrong password, try again
+            </label>
+          </div>
 
-            <!-- outline input number field without placeholder -->
-            <div class="outline-number-input">
-              <label for="number">Number<input type="number" name="number" />
-              </label>
-            </div>
+          <!-- outline input number field without placeholder -->
+          <div class="outline-number-input">
+            <label for="number">Number<input type="number" name="number" />
+            </label>
+          </div>
 
-            <!-- outline input date field without placeholder -->
-            <div class="outline-date-input">
-              <label for="date">Date<input type="date" name="date" />
-              </label>
-            </div>
+          <!-- outline input date field without placeholder -->
+          <div class="outline-date-input">
+            <label for="date">Date<input type="date" name="date" />
+            </label>
+          </div>
 
-            <!-- outline input month field without placeholder -->
-            <div class="outline-month-input">
-              <label for="month">Month<input type="month" name="month" />
-              </label>
-            </div>
+          <!-- outline input month field without placeholder -->
+          <div class="outline-month-input">
+            <label for="month">Month & Year<input type="month" name="month" />
+            </label>
+          </div>
 
-            <!-- outline input file field without placeholder -->
-            <div class="outline-file-input">
-              <label for="file">File<input type="file" name="file" />
-              </label>
-            </div>
+          <!-- outline input file field without placeholder -->
+          <div class="outline-file-input">
+            <label for="file">File<input type="file" name="file" />
+            </label>
+          </div>
 
-            <!-- outline input telephone field without placeholder -->
-            <div class="outline-tel-input">
-              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
-              </label>
-            </div>
+          <!-- outline input telephone field without placeholder -->
+          <div class="outline-tel-input">
+            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+            </label>
+          </div>
+
+          <!-- color input field -->
+          <div class="color-input">
+            <label for="color">Color :<strong><output id="color">#0f96df</output></strong><input type="color"
+                name="color" oninput="color.value=this.value" value="#0f96df" />
+            </label>
+          </div>
+
+          <!-- outline input search field without placeholder -->
+          <div class="outline-search-input">
+            <label for="search">Search
+              <div class="input-icon"><i class="fas fa-search icon"></i>
+                <input type="search" name="search" />
+              </div>
+            </label>
+          </div>
+
+          <!-- range input field -->
+          <div class="range-input">
+            <label for="volume">Volume<input type="range" min="0" max="100" value="40" name="volume"
+                class="slider-normal" step="1" oninput="vol.value = this.value" />
+              <output id="vol">40</output>
+            </label>
+          </div>
+
         </script>
       </div>
 
@@ -310,61 +369,79 @@
               </label>
             </div>
 
+            <!-- no-outline input search field without placeholder -->
+            <div class="no-outline-search-input">
+              <label for="search">Search
+                <div class="input-icon"><i class="fas fa-search icon"></i>
+                  <input type="search" name="search" />
+                </div>
+              </label>
+            </div>
+
           </div>
         </div>
 
         <script type="text/plain" class="language-html snippet-container">
           <!-- no-outline input text field without placeholder -->
-            <div class="no-outline-text-input">
-              <label for="text">Name
-                <input type="text" name="text" autocomplete="name" />
-              </label>
-            </div>
+          <div class="no-outline-text-input">
+            <label for="text">Name
+              <input type="text" name="text" autocomplete="name" />
+            </label>
+          </div>
 
-            <!-- no-outline input email field without placeholder -->
-            <div class="no-outline-email-input">
-              <label for="email">Email *
-                <input type="email" name="email" required autocomplete="email" />
-              </label>
-            </div>
+          <!-- no-outline input email field without placeholder -->
+          <div class="no-outline-email-input">
+            <label for="email">Email *
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+          </div>
 
-            <!-- no-outline input password field without placeholder -->
-            <div class="no-outline-password-input wrong-password">
-              <label for="password">Password *
-                <input type="password" name="password" autocomplete="current-password" 
-                required value="..." />wrong password, try again
-              </label>
-            </div>
+          <!-- no-outline input password field without placeholder -->
+          <div class="no-outline-password-input wrong-password">
+            <label for="password">Password *
+              <input type="password" name="password" autocomplete="current-password" required value="..." />
+              wrong password, try again
+            </label>
+          </div>
 
-            <!-- no-outline input number field without placeholder -->
-            <div class="no-outline-number-input">
-              <label for="number">Number<input type="number" name="number" />
-              </label>
-            </div>
+          <!-- no-outline input number field without placeholder -->
+          <div class="no-outline-number-input">
+            <label for="number">Number<input type="number" name="number" />
+            </label>
+          </div>
 
-            <!-- no-outline input date field without placeholder -->
-            <div class="no-outline-date-input">
-              <label for="date">Date<input type="date" name="date" />
-              </label>
-            </div>
+          <!-- no-outline input date field without placeholder -->
+          <div class="no-outline-date-input">
+            <label for="date">Date<input type="date" name="date" />
+            </label>
+          </div>
 
-            <!-- no-outline input month field without placeholder -->
-            <div class="no-outline-month-input">
-              <label for="month">Month<input type="month" name="month" />
-              </label>
-            </div>
+          <!-- no-outline input month field without placeholder -->
+          <div class="no-outline-month-input">
+            <label for="month">Month<input type="month" name="month" />
+            </label>
+          </div>
 
-            <!-- no-outline input file field without placeholder -->
-            <div class="no-outline-file-input">
-              <label for="file">File<input type="file" name="file" />
-              </label>
-            </div>
+          <!-- no-outline input file field without placeholder -->
+          <div class="no-outline-file-input">
+            <label for="file">File<input type="file" name="file" />
+            </label>
+          </div>
 
-            <!-- no-outline input telephone field without placeholder -->
-            <div class="no-outline-tel-input">
-              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
-              </label>
-            </div>
+          <!-- no-outline input telephone field without placeholder -->
+          <div class="no-outline-tel-input">
+            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
+            </label>
+          </div>
+
+          <!-- no-outline input search field without placeholder -->
+          <div class="no-outline-search-input">
+            <label for="search">Search
+              <div class="input-icon"><i class="fas fa-search icon"></i>
+                <input type="search" name="search" />
+              </div>
+            </label>
+          </div>
         </script>
 
       </div>
@@ -432,67 +509,80 @@
               </label>
             </div>
 
+            <!-- outline input search field with placeholder -->
+            <div class="outline-search-input">
+              <label for="search">Search
+                <div class="input-icon"><i class="fas fa-search icon"></i>
+                  <input type="search" name="search" placeholder="search" />
+                </div>
+              </label>
+            </div>
+
           </div>
         </div>
 
         <script type="text/plain" class="language-html snippet-container">
           <!-- outline input text field with placeholder -->
-            <div class="outline-text-input">
-              <label for="text">Name
-                <input type="text" name="text" autocomplete="name" 
-                placeholder="enter name" />
-              </label>
-            </div>
+          <div class="outline-text-input">
+            <label for="text">Name
+              <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+            </label>
+          </div>
 
-            <!-- outline input email field with placeholder -->
-            <div class="outline-email-input">
-              <label for="email">Email *
-                <input type="email" name="email" required autocomplete="email" 
-                placeholder="enter email" />
-              </label>
-            </div>
+          <!-- outline input email field with placeholder -->
+          <div class="outline-email-input">
+            <label for="email">Email *
+              <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+            </label>
+          </div>
 
-            <!-- outline input password field with placeholder -->
-            <div class="outline-password-input wrong-password">
-              <label for="password">Password *
-                <input type="password" name="password" autocomplete="current-password" 
-                placeholder="enter password"
-                  required value="..." />
-                wrong password, try again
-              </label>
-            </div>
+          <!-- outline input password field with placeholder -->
+          <div class="outline-password-input wrong-password">
+            <label for="password">Password *
+              <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                required value="..." />
+              wrong password, try again
+            </label>
+          </div>
 
-            <!-- outline input number field with placeholder -->
-            <div class="outline-number-input">
-              <label for="number">Number<input type="number" name="number" 
-                placeholder="enter quantity" />
-              </label>
-            </div>
+          <!-- outline input number field with placeholder -->
+          <div class="outline-number-input">
+            <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+            </label>
+          </div>
 
-            <!-- outline input date field with placeholder -->
-            <div class="outline-date-input">
-              <label for="date">Date<input type="date" name="date" />
-              </label>
-            </div>
+          <!-- outline input date field with placeholder -->
+          <div class="outline-date-input">
+            <label for="date">Date<input type="date" name="date" />
+            </label>
+          </div>
 
-            <!-- outline input month field with placeholder -->
-            <div class="outline-month-input">
-              <label for="month">Month<input type="month" name="month" />
-              </label>
-            </div>
+          <!-- outline input month field with placeholder -->
+          <div class="outline-month-input">
+            <label for="month">Month<input type="month" name="month" />
+            </label>
+          </div>
 
-            <!-- outline input file field with placeholder -->
-            <div class="outline-file-input">
-              <label for="file">File<input type="file" name="file" />
-              </label>
-            </div>
+          <!-- outline input file field with placeholder -->
+          <div class="outline-file-input">
+            <label for="file">File<input type="file" name="file" />
+            </label>
+          </div>
 
-            <!-- outline input telephone field with placeholder -->
-            <div class="outline-tel-input">
-              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
-                  placeholder="enter phone number" />
-              </label>
-            </div>
+          <!-- outline input telephone field with placeholder -->
+          <div class="outline-tel-input">
+            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="enter phone number" />
+            </label>
+          </div>
+
+          <!-- outline input search field with placeholder -->
+          <div class="outline-search-input">
+            <label for="search">Search
+              <div class="input-icon"><i class="fas fa-search icon"></i>
+                <input type="search" name="search" placeholder="search" />
+              </div>
+            </label>
+          </div>
         </script>
       </div>
 
@@ -559,6 +649,15 @@
               </label>
             </div>
 
+            <!-- no-outline input search field with placeholder -->
+            <div class="no-outline-search-input">
+              <label for="search">Search
+                <div class="input-icon"><i class="fas fa-search icon"></i>
+                  <input type="search" name="search" placeholder="search" />
+                </div>
+              </label>
+            </div>
+
           </div>
 
         </div>
@@ -574,16 +673,14 @@
           <!-- no-outline input email field with placeholder -->
           <div class="no-outline-email-input">
             <label for="email">Email *
-              <input type="email" name="email" required autocomplete="email" 
-              placeholder="enter email" />
+              <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
             </label>
           </div>
 
           <!-- no-outline input password field with placeholder -->
           <div class="no-outline-password-input wrong-password">
             <label for="password">Password *
-              <input type="password" name="password" autocomplete="current-password" 
-              placeholder="enter password"
+              <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
                 required value="..." />
               wrong password, try again
             </label>
@@ -591,8 +688,7 @@
 
           <!-- no-outline input number field with placeholder -->
           <div class="no-outline-number-input">
-            <label for="number">Number<input type="number" name="number" 
-              placeholder="enter quantity" />
+            <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
             </label>
           </div>
 
@@ -616,8 +712,16 @@
 
           <!-- no-outline input telephone field with placeholder -->
           <div class="no-outline-tel-input">
-            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
-                placeholder="enter phone number" />
+            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="enter phone number" />
+            </label>
+          </div>
+
+          <!-- no-outline input search field with placeholder -->
+          <div class="no-outline-search-input">
+            <label for="search">Search
+              <div class="input-icon"><i class="fas fa-search icon"></i>
+                <input type="search" name="search" placeholder="search" />
+              </div>
             </label>
           </div>
         </script>

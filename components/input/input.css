@@ -7,6 +7,9 @@
 .outline-time-input,
 .outline-file-input,
 .outline-tel-input,
+.color-input,
+.outline-search-input,
+.range-input,
 .no-outline-text-input,
 .no-outline-email-input,
 .no-outline-password-input,
@@ -15,7 +18,8 @@
 .no-outline-month-input,
 .no-outline-time-input,
 .no-outline-file-input,
-.no-outline-tel-input{
+.no-outline-tel-input,
+.no-outline-search-input {
     width: 14.5rem;
     margin: 0.5rem 0.6rem;
 }
@@ -29,6 +33,9 @@
 .outline-time-input label,
 .outline-file-input label,
 .outline-tel-input label,
+.color-input label,
+.outline-search-input label,
+.range-input label,
 .no-outline-text-input label,
 .no-outline-email-input label,
 .no-outline-password-input label,
@@ -37,15 +44,16 @@
 .no-outline-month-input label,
 .no-outline-time-input label,
 .no-outline-file-input label,
-.no-outline-tel-input label{
+.no-outline-tel-input label,
+.no-outline-search-input label {
     font-size: 0.9rem;
     color: var(--text-dark);
-    font-weight: 400;    
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 
 .wrong-password label,
-.wrong-password input{
+.wrong-password input {
     border-color: var(--error-text);
     color: var(--error-text);
 }
@@ -59,6 +67,9 @@
 .outline-time-input input,
 .outline-file-input input,
 .outline-tel-input input,
+.color-input input,
+.outline-search-input input,
+.range-input input,
 .no-outline-text-input input,
 .no-outline-email-input input,
 .no-outline-password-input input,
@@ -67,13 +78,23 @@
 .no-outline-month-input input,
 .no-outline-time-input input,
 .no-outline-file-input input,
-.no-outline-tel-input input{
+.no-outline-tel-input input,
+.no-outline-search-input input {
     width: 100%;
     margin: 0.4rem auto 0.4rem;
     font-size: 1rem;
     padding: 0.5rem 0.6rem;
-    border-radius: 4px;    
+    border-radius: 4px;
     border: 1px solid var(--dark-blue-gray);
+}
+
+.color-input input{
+    height: 2.3rem;
+}
+
+
+.range-input input{
+    padding: 0;
 }
 
 .no-outline-text-input input,
@@ -84,12 +105,13 @@
 .no-outline-month-input input,
 .no-outline-time-input input,
 .no-outline-file-input input,
-.no-outline-tel-input input{
-   border: hidden;
-   padding: 0.5rem 0;
-   border-radius: 0;   
-   border-bottom: 1px solid var(--dark-blue-gray);
-   background: none;
+.no-outline-tel-input input,
+.no-outline-search-input input {
+    border: hidden;
+    padding: 0.5rem 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--dark-blue-gray);
+    background: none;
 }
 
 .no-outline-text-input input:focus,
@@ -100,6 +122,46 @@
 .no-outline-month-input input:focus,
 .no-outline-time-input input:focus,
 .no-outline-file-input input:focus,
-.no-outline-tel-input input:focus{
+.no-outline-tel-input input:focus,
+.no-outline-search-input input:focus {
     outline: none;
+}
+
+/* input icon */
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-icon i {
+    position: absolute;
+}
+
+.input-icon .icon{
+    left: 0.8rem;
+    font-size: 1rem;
+}
+
+.input-icon input {
+    width: 100%;
+    padding: 10px; 
+    padding-left: 2.5rem;
+}
+
+/* slider */
+
+.slider-normal{ 
+  width: 100%;
+  height: 25px; 
+  outline: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.slider-normal:hover{
+    opacity: 1;
 }
