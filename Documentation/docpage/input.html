@@ -204,14 +204,15 @@
             <!-- color input field  -->
             <div class="color-input">
               <label for="color">Color :<strong><output id="color">#0f96df</output></strong><input type="color"
-                  name="color" oninput="color.value=this.value" value="#0f96df" />
+                  name="color" class="color-pick" oninput="color.value=this.value" value="#0f96df" />
               </label>
             </div>
 
             <!-- outline input search field without placeholder -->
             <div class="outline-search-input">
               <label for="search">Search
-                <div class="input-icon"><i class="fas fa-search icon"></i>
+                <div class="input-icon">
+                  <a href=""><i class="fas fa-search"></i></a>
                   <input type="search" name="search" />
                 </div>
               </label>
@@ -219,14 +220,14 @@
 
             <!-- range input field -->
             <div class="range-input">
-              <label for="volume">Volume<input type="range" min="0" max="100" value="40" name="volume"
-                  class="slider-normal" step="1" oninput="vol.value = this.value" />
+              <label for="volume">Volume<input type="range" min="0" max="100" value="40" name="volume" step="1"
+                  oninput="vol.value = this.value" />
                 <output id="vol">40</output>
               </label>
             </div>
 
             <div class="flex-col-center">
-              
+
               <!-- radio input field -->
               <div class="radio-input">
                 <input type="radio" name="radio" /><label for="radio">Radio input field</label>
@@ -295,17 +296,18 @@
             </label>
           </div>
 
-          <!-- color input field -->
+          <!-- color input field  -->
           <div class="color-input">
-            <label for="color">Color :<strong><output id="color">#0f96df</output></strong><input type="color"
-                name="color" oninput="color.value=this.value" value="#0f96df" />
+            <label for="color">Color :<strong><output id="color">#0f96df</output></strong>
+              <input type="color" name="color" class="color-pick" oninput="color.value=this.value" value="#0f96df" />
             </label>
           </div>
 
           <!-- outline input search field without placeholder -->
           <div class="outline-search-input">
             <label for="search">Search
-              <div class="input-icon"><i class="fas fa-search icon"></i>
+              <div class="input-icon">
+                <a href=""><i class="fas fa-search"></i></a>
                 <input type="search" name="search" />
               </div>
             </label>
@@ -313,8 +315,8 @@
 
           <!-- range input field -->
           <div class="range-input">
-            <label for="volume">Volume<input type="range" min="0" max="100" value="40" name="volume"
-                class="slider-normal" step="1" oninput="vol.value = this.value" />
+            <label for="volume">Volume<input type="range" min="0" max="100" value="40" name="volume" step="1"
+                oninput="vol.value = this.value" />
               <output id="vol">40</output>
             </label>
           </div>
@@ -376,7 +378,7 @@
 
             <!-- no-outline input month field without placeholder -->
             <div class="no-outline-month-input">
-              <label for="month">Month<input type="month" name="month" />
+              <label for="month">Month & Year<input type="month" name="month" />
               </label>
             </div>
 
@@ -395,7 +397,8 @@
             <!-- no-outline input search field without placeholder -->
             <div class="no-outline-search-input">
               <label for="search">Search
-                <div class="input-icon"><i class="fas fa-search icon"></i>
+                <div class="input-icon">
+                  <a href=""><i class="fas fa-search"></i></a>
                   <input type="search" name="search" />
                 </div>
               </label>
@@ -441,7 +444,7 @@
 
           <!-- no-outline input month field without placeholder -->
           <div class="no-outline-month-input">
-            <label for="month">Month<input type="month" name="month" />
+            <label for="month">Month & Year<input type="month" name="month" />
             </label>
           </div>
 
@@ -460,7 +463,8 @@
           <!-- no-outline input search field without placeholder -->
           <div class="no-outline-search-input">
             <label for="search">Search
-              <div class="input-icon"><i class="fas fa-search icon"></i>
+              <div class="input-icon">
+                <a href=""><i class="fas fa-search"></i></a>
                 <input type="search" name="search" />
               </div>
             </label>
@@ -481,21 +485,21 @@
             <!-- outline input text field with placeholder -->
             <div class="outline-text-input">
               <label for="text">Name
-                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+                <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
               </label>
             </div>
 
             <!-- outline input email field with placeholder -->
             <div class="outline-email-input">
               <label for="email">Email *
-                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+                <input type="email" name="email" required autocomplete="email" placeholder="Enter email" />
               </label>
             </div>
 
             <!-- outline input password field with placeholder -->
             <div class="outline-password-input wrong-password">
               <label for="password">Password *
-                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                <input type="password" name="password" autocomplete="current-password" placeholder="Enter password"
                   required value="..." />
                 wrong password, try again
               </label>
@@ -503,7 +507,7 @@
 
             <!-- outline input number field with placeholder -->
             <div class="outline-number-input">
-              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              <label for="number">Number<input type="number" name="number" placeholder="Enter quantity" />
               </label>
             </div>
 
@@ -515,7 +519,7 @@
 
             <!-- outline input month field with placeholder -->
             <div class="outline-month-input">
-              <label for="month">Month<input type="month" name="month" />
+              <label for="month">Month & Year<input type="month" name="month" />
               </label>
             </div>
 
@@ -528,15 +532,16 @@
             <!-- outline input telephone field with placeholder -->
             <div class="outline-tel-input">
               <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
-                  placeholder="enter phone number" />
+                  placeholder="Enter phone number" />
               </label>
             </div>
 
-            <!-- outline input search field with placeholder -->
+            <!-- outline input search field without placeholder -->
             <div class="outline-search-input">
               <label for="search">Search
-                <div class="input-icon"><i class="fas fa-search icon"></i>
-                  <input type="search" name="search" placeholder="search" />
+                <div class="input-icon">
+                  <a href=""><i class="fas fa-search"></i></a>
+                  <input type="search" name="search" placeholder="Search"/>
                 </div>
               </label>
             </div>
@@ -548,21 +553,21 @@
           <!-- outline input text field with placeholder -->
           <div class="outline-text-input">
             <label for="text">Name
-              <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
             </label>
           </div>
 
           <!-- outline input email field with placeholder -->
           <div class="outline-email-input">
             <label for="email">Email *
-              <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              <input type="email" name="email" required autocomplete="email" placeholder="Enter email" />
             </label>
           </div>
 
           <!-- outline input password field with placeholder -->
           <div class="outline-password-input wrong-password">
             <label for="password">Password *
-              <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+              <input type="password" name="password" autocomplete="current-password" placeholder="Enter password"
                 required value="..." />
               wrong password, try again
             </label>
@@ -570,7 +575,7 @@
 
           <!-- outline input number field with placeholder -->
           <div class="outline-number-input">
-            <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+            <label for="number">Number<input type="number" name="number" placeholder="Enter quantity" />
             </label>
           </div>
 
@@ -582,7 +587,7 @@
 
           <!-- outline input month field with placeholder -->
           <div class="outline-month-input">
-            <label for="month">Month<input type="month" name="month" />
+            <label for="month">Month & Year<input type="month" name="month" />
             </label>
           </div>
 
@@ -594,15 +599,16 @@
 
           <!-- outline input telephone field with placeholder -->
           <div class="outline-tel-input">
-            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="enter phone number" />
+            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="Enter phone number" />
             </label>
           </div>
 
-          <!-- outline input search field with placeholder -->
+          <!-- outline input search field without placeholder -->
           <div class="outline-search-input">
             <label for="search">Search
-              <div class="input-icon"><i class="fas fa-search icon"></i>
-                <input type="search" name="search" placeholder="search" />
+              <div class="input-icon">
+                <a href=""><i class="fas fa-search"></i></a>
+                <input type="search" name="search" placeholder="Search"/>
               </div>
             </label>
           </div>
@@ -621,21 +627,21 @@
             <!-- no-outline input text field with placeholder -->
             <div class="no-outline-text-input">
               <label for="text">Name
-                <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+                <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
               </label>
             </div>
 
             <!-- no-outline input email field with placeholder -->
             <div class="no-outline-email-input">
               <label for="email">Email *
-                <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+                <input type="email" name="email" required autocomplete="email" placeholder="Enter email" />
               </label>
             </div>
 
             <!-- no-outline input password field with placeholder -->
             <div class="no-outline-password-input wrong-password">
               <label for="password">Password *
-                <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+                <input type="password" name="password" autocomplete="current-password" placeholder="Enter password"
                   required value="..." />
                 wrong password, try again
               </label>
@@ -643,7 +649,7 @@
 
             <!-- no-outline input number field with placeholder -->
             <div class="no-outline-number-input">
-              <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+              <label for="number">Number<input type="number" name="number" placeholder="Enter quantity" />
               </label>
             </div>
 
@@ -655,7 +661,7 @@
 
             <!-- no-outline input month field with placeholder -->
             <div class="no-outline-month-input">
-              <label for="month">Month<input type="month" name="month" />
+              <label for="month">Month & Year<input type="month" name="month" />
               </label>
             </div>
 
@@ -668,15 +674,16 @@
             <!-- no-outline input telephone field with placeholder -->
             <div class="no-outline-tel-input">
               <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
-                  placeholder="enter phone number" />
+                  placeholder="Enter phone number" />
               </label>
             </div>
 
             <!-- no-outline input search field with placeholder -->
             <div class="no-outline-search-input">
               <label for="search">Search
-                <div class="input-icon"><i class="fas fa-search icon"></i>
-                  <input type="search" name="search" placeholder="search" />
+                <div class="input-icon">
+                  <a href=""><i class="fas fa-search"></i></a>
+                  <input type="search" name="search" placeholder="Search"/>
                 </div>
               </label>
             </div>
@@ -689,21 +696,21 @@
           <!-- no-outline input text field with placeholder -->
           <div class="no-outline-text-input">
             <label for="text">Name
-              <input type="text" name="text" autocomplete="name" placeholder="enter name" />
+              <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
             </label>
           </div>
 
           <!-- no-outline input email field with placeholder -->
           <div class="no-outline-email-input">
             <label for="email">Email *
-              <input type="email" name="email" required autocomplete="email" placeholder="enter email" />
+              <input type="email" name="email" required autocomplete="email" placeholder="Enter email" />
             </label>
           </div>
 
           <!-- no-outline input password field with placeholder -->
           <div class="no-outline-password-input wrong-password">
             <label for="password">Password *
-              <input type="password" name="password" autocomplete="current-password" placeholder="enter password"
+              <input type="password" name="password" autocomplete="current-password" placeholder="Enter password"
                 required value="..." />
               wrong password, try again
             </label>
@@ -711,7 +718,7 @@
 
           <!-- no-outline input number field with placeholder -->
           <div class="no-outline-number-input">
-            <label for="number">Number<input type="number" name="number" placeholder="enter quantity" />
+            <label for="number">Number<input type="number" name="number" placeholder="Enter quantity" />
             </label>
           </div>
 
@@ -735,15 +742,16 @@
 
           <!-- no-outline input telephone field with placeholder -->
           <div class="no-outline-tel-input">
-            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="enter phone number" />
+            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="Enter phone number" />
             </label>
           </div>
 
           <!-- no-outline input search field with placeholder -->
           <div class="no-outline-search-input">
             <label for="search">Search
-              <div class="input-icon"><i class="fas fa-search icon"></i>
-                <input type="search" name="search" placeholder="search" />
+              <div class="input-icon">
+                <a href=""><i class="fas fa-search"></i></a>
+                <input type="search" name="search" placeholder="Search"/>
               </div>
             </label>
           </div>
