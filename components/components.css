@@ -12,8 +12,9 @@
 @import "/Documentation/utilities/margins.css";
 @import "/Documentation/utilities/paddings.css";
 @import "/Documentation/utilities/flex.css";
-@import "/Documentation/utilities/text.css";
+@import "/Documentation/utilities/typography.css";
 @import "/Documentation/utilities/icons.css";
+@import "/Documentation/utilities/grid.css";
 
 * {
     margin: 0;
