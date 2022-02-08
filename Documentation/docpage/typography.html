@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/Components/components.css" />
   <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+  <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <title>Indo UI | Documentation</title>
+  <title>Pabble UI | Documentation</title>
 </head>
 
 <body>
@@ -20,14 +21,14 @@
     <div class="nav-header">
       <div class="hamburger"><i class="fas fa-bars"></i></div>
       <a href="/">
-        <div class="logo">IndoUI</div>
+        <div class="logo">PabbleUI</div>
       </a>
     </div>
     <div class="nav-header-right-side">
       <a href="/">
         <div class="nav-header-text">Documentation</div>
       </a>
-      <div class="toggler "><i class="fas fa-moon"></i></div>
+      <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
     </div>
 
   </div>
@@ -35,71 +36,121 @@
 
   <div class="nav-header nav-header-desktop hide">
     <a href="/">
-      <div class="logo">IndoUI</div>
+      <div class="logo">PabbleUI</div>
     </a>
     <div class="nav-header-right-side">
       <a href="/">
         <div class="nav-header-text">Documentation</div>
       </a>
-      <div class="toggler "><i class="fas fa-moon"></i></div>
+      <a href="https://github.com/saurabhchirde/Pabble-UI" target="_blank">
+        <div class="header-icon"><i class="fab fa-github"></i></div>
+      </a>
+      <a href="https://twitter.com/SaurabhChirde" target="_blank">
+        <div class="header-icon"><i class="fab fa-twitter"></i></div>
+      </a>
+      <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
     </div>
   </div>
 
-  <!-- nav verticle bar -->
-  <nav class="nav">
+  <!-- nav verticle bar desktop -->
+  <nav class="nav-desktop">
     <a href="/docs.html">
-      <h1 class="nav-category pd-point8-lt">Getting Started</h1>
+      <h1>Getting Started</h1>
     </a>
     <hr class="nav-break-line">
     <a href="./about.html">
-      <h1 class="nav-category pd-point8-lt">About</h1>
+      <h1>About</h1>
     </a>
     <a href="./color.html">
-      <h1 class="nav-category pd-point8-lt">Color</h1>
+      <h1>Color</h1>
     </a>
-    <a href="#">
-      <h1 class="nav-category pd-point8-lt">Typography</h1>
+    <a href="#" class="nav-active">
+      <h1>Typography</h1>
     </a>
     <hr class="nav-break-line">
     <a href="./components-overview.html">
-      <h1 class="nav-category pd-point8-lt 
-      nav-category-active">Component Overview</h1>
+      <h1>Component Overview</h1>
     </a>
     <hr class="nav-break-line">
-    <div class="nav-items">
-      <a href="./alert.html">
-        <h2 class="nav-alert nav-btn">Alerts</h2>
-      </a>
-      <a href="./buttons.html">
-        <h2 class="nav-button nav-btn">Buttons</h2>
-      </a>
-      <a href="./avatar.html">
-        <h2 class="nav-avatar nav-btn">Avatar</h2>
-      </a>
-      <a href="./badge.html">
-        <h2 class="nav-badge nav-btn">Badge</h2>
-      </a>
-      <a href="./cards.html">
-        <h2 class="nav-card nav-btn">Cards</h2>
-      </a>
-      <a href="./image.html">
-        <h2 class="nav-img nav-btn">Image</h2>
-      </a>
-      <a href="./input.html">
-        <h2 class="nav-input nav-btn">Input</h2>
-      </a>
+    <a href="./alert.html">
+      <h1>Alerts</h1>
+    </a>
+    <a href="./buttons.html">
+      <h1>Buttons</h1>
+    </a>
+    <a href="./avatar.html">
+      <h1>Avatar</h1>
+    </a>
+    <a href="./badge.html">
+      <h1>Badge</h1>
+    </a>
+    <a href="./cards.html">
+      <h1>Cards</h1>
+    </a>
+    <a href="./image.html">
+      <h1>Image</h1>
+    </a>
+    <a href="./input.html">
+      <h1>Input</h1>
+    </a>
+  </nav>
+
+  <!-- nav verticle bar mobile -->
+  <nav class="nav-mobile">
+    <a href="/docs.html">
+      <h1>Getting Started</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="./about.html">
+      <h1>About</h1>
+    </a>
+    <a href="./color.html">
+      <h1>Color</h1>
+    </a>
+    <a href="#" class="nav-active">
+      <h1>Typography</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="./components-overview.html">
+      <h1>Component Overview</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="./alert.html">
+      <h1>Alerts</h1>
+    </a>
+    <a href="./buttons.html">
+      <h1>Buttons</h1>
+    </a>
+    <a href="./avatar.html">
+      <h1>Avatar</h1>
+    </a>
+    <a href="./badge.html">
+      <h1>Badge</h1>
+    </a>
+    <a href="./cards.html">
+      <h1>Cards</h1>
+    </a>
+    <a href="./image.html">
+      <h1>Image</h1>
+    </a>
+    <a href="./input.html">
+      <h1>Input</h1>
+    </a>
+    <div class="connect-mobile-view">
+      <hr class="nav-break-line">
+      <div class="flex-row">
+        <a href="https://github.com/saurabhchirde/Pabble-UI" target="_blank">
+          <div class="header-icon"><i class="fab fa-github"></i></div>
+        </a>
+        <a href="https://twitter.com/SaurabhChirde" target="_blank">
+          <div class="header-icon"><i class="fab fa-twitter"></i></div>
+        </a>
+      </div>
     </div>
     <div class="nav-close-btn">
       <i class="far fa-times-circle"></i>
     </div>
   </nav>
-
-  <div class="right-side-nav" style="visibility:hidden;">
-    <h1>Contents</h1>
-    <a href="#">
-      <h2 class="nav-alert nav-btn">Alerts</h2>
-    </a>
-  </div>
 
   <!-- floating up btn -->
   <a href="#"><button class="btn floating-btn-md">
@@ -108,16 +159,151 @@
 
   <!-- body -->
 
-  <div class="main ">
+  <div class="main cont-shadow">
 
-    <!-- typography -->
     <section id="typography">
+      <h1 class="mg-point8-tb">Typography</h1>
+      <p>
+        Use typography to present your design and content as clearly and efficiently as possible.
+      </p>
+      <!-- heading -->
+      <h2 class="mg-4-top mg-1-bot title-xl-wt-5">Headings</h2>
+      <p class="mg-1-tb">
+        For headings you can use h1, h2, h3, h4, h5, h6 elements.
+      </p>
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- h1 heading -->
+          <h1>h1. Pabble UI</h1>
+
+          <!-- h2 heading -->
+          <h2>h2. Pabble UI</h2>
+
+          <!-- h3 heading -->
+          <h3>h3. Pabble UI</h3>
+
+          <!-- h4 heading -->
+          <h4>h4. Pabble UI</h4>
+
+          <!-- h5 heading -->
+          <h5>h5. Pabble UI</h5>
+
+          <!-- h6 heading -->
+          <h6>h6. Pabble UI</h6>
+
+        </div>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- h1 heading -->
+          <h1>h1. Pabble UI</h1>
+
+          <!-- h2 heading -->
+          <h2>h2. Pabble UI</h2>
+
+          <!-- h3 heading -->
+          <h3>h3. Pabble UI</h3>
+
+          <!-- h4 heading -->
+          <h4>h4. Pabble UI</h4>
+
+          <!-- h5 heading -->
+          <h5>h5. Pabble UI</h5>
+
+          <!-- h6 heading -->
+          <h6>h6. Pabble UI</h6>
+        </script>
+
+      </div>
+
+      <!-- paragraph -->
+      <h2 id="paragraph" class="mg-4-top mg-1-bot title-xl-wt-5">Paragraphs</h2>
+      <p class="mg-1-tb">
+        For your paragraph text you can use 'p' elements along with any of the size <span>'p-sm'</span>,
+        <span>'p-md'</span>, <span>'p-lg'</span>, <span>'p-xl'</span> or <span>'p-xxl'</span>.
+      </p>
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- paragraph small size font -->
+          <p class="p-sm">Small font size paragraph </p>
+
+          <!-- paragraph medium size font -->
+          <p class="p-md">Medium font size paragraph </p>
+
+          <!-- paragraph large size font -->
+          <p class="p-lg">Large font size paragraph </p>
+
+          <!-- paragraph extra large size font -->
+          <p class="p-xl">Extra large font size paragraph </p>
+
+          <!-- paragraph extra extra large size font -->
+          <p class="p-xxl">Extra extra large font size paragraph </p>
+
+        </div>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- paragraph small size font -->
+          <p class="p-sm">Small font size paragraph </p>
+
+          <!-- paragraph medium size font -->
+          <p class="p-md">Medium font size paragraph </p>
+
+          <!-- paragraph large size font -->
+          <p class="p-lg">Large font size paragraph </p>
+
+          <!-- paragraph extra large size font -->
+          <p class="p-xl">Extra large font size paragraph </p>
+
+          <!-- paragraph extra extra large size font -->
+          <p class="p-xxl">Extra extra large font size paragraph </p>
+        </script>
+
+      </div>
+
+      <!-- text align -->
+      <h2 id="text-align" class="mg-4-top mg-1-bot title-xl-wt-5">Text Align</h2>
+      <p class="mg-1-tb">
+        For aligning position of your any headings or paragraphs, you have to specify alignment class as
+        <span>'text-left'</span> or <span>'text-center'</span> or <span>'text-right'</span> in your code to align the
+        text.
+      </p>
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- Left aligned, heading-3 -->
+          <h3 class="text-left">Left aligned, heading-3</h3>
+
+          <!-- Center aligned large size paragraph -->
+          <p class="p-lg text-center">Center aligned large size paragraph</p>
+
+          <!-- Right aligned, heading-4 -->
+          <h4 class="text-right">Right aligned, heading-4</h4>
+
+        </div>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- Left aligned, h3-heading -->
+          <h3 class="text-left">Left aligned, h3-heading</h3>
+
+          <!-- Center aligned large size paragraph -->
+          <p class="p-lg text-center">Center aligned large size paragraph</p>
+
+          <!-- Right aligned, h4-heading -->
+          <h4 class="text-right">Right aligned, h4-heading</h4>
+        </script>
+
+      </div>
 
     </section>
 
   </div>
 
   <script src="/Documentation/docpage-js/docs.js"></script>
+  <script src="/Documentation/utilities/prismjs/prism.js"></script>
 </body>
 
 </html>

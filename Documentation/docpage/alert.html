@@ -10,75 +10,140 @@
   <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <title>Indo UI | Documentation</title>
+  <title>Pabble UI | Documentation</title>
 </head>
 
 <body>
 
-  <!-- nav horizontal bar -->
-  <div class="nav-header-mobile hide">
+ <!-- nav horizontal bar -->
+ <div class="nav-header-mobile hide">
 
-    <div class="nav-header">
-      <div class="hamburger"><i class="fas fa-bars"></i></div>    
-      <a href="/">
-        <div class="logo">IndoUI</div>
-      </a>
-    </div>
-    <div class="nav-header-right-side">
-       <a href="/">
-         <div class="nav-header-text">Documentation</div>
-       </a>
-       <div class="toggler "><i class="fas fa-moon"></i></div>
-    </div>
-    
-  </div>
-
-
-  <div class="nav-header nav-header-desktop hide">
+  <div class="nav-header">
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
     <a href="/">
-      <div class="logo">IndoUI</div>
+      <div class="logo">PabbleUI</div>
     </a>
-    <div class="nav-header-right-side">
-      <a href="/">
-        <div class="nav-header-text">Documentation</div>
-      </a>
-      <div class="toggler "><i class="fas fa-moon"></i></div>
-    </div>
   </div>
+  <div class="nav-header-right-side">
+    <a href="/">
+      <div class="nav-header-text">Documentation</div>
+    </a>
+    <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+  </div>
+</div>
 
-  <!-- nav verticle bar -->
-  <nav class="nav">
-    <a href="/docs.html"><h1 class="nav-category pd-point8-lt">Getting Started</h1></a>
+<div class="nav-header nav-header-desktop hide">
+  <a href="/">
+    <div class="logo">PabbleUI</div>
+  </a>
+  <div class="nav-header-right-side">
+    <a href="/">
+      <div class="nav-header-text">Documentation</div>
+    </a>
+    <a href="https://github.com/saurabhchirde/Pabble-UI" target="_blank">
+      <div class="header-icon"><i class="fab fa-github"></i></div>
+    </a>
+    <a href="https://twitter.com/SaurabhChirde" target="_blank">
+      <div class="header-icon"><i class="fab fa-twitter"></i></div>
+    </a>
+    <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+  </div>
+</div>
+
+  <!-- nav verticle bar desktop -->
+  <nav class="nav-desktop">
+    <a href="/docs.html">
+      <h1 >Getting Started</h1>
+    </a>
     <hr class="nav-break-line">
-    <a href="./about.html"><h1 class="nav-category pd-point8-lt">About</h1></a>
-    <a href="./color.html"><h1 class="nav-category pd-point8-lt">Color</h1></a>
-    <a href="./typography.html"><h1 class="nav-category pd-point8-lt">Typography</h1></a>
+    <a href="./about.html">
+      <h1 >About</h1>
+    </a>
+    <a href="./color.html">
+      <h1 >Color</h1>
+    </a>
+    <a href="./typography.html">
+      <h1 >Typography</h1>
+    </a>
     <hr class="nav-break-line">
-    <a href="./components-overview.html"><h1 class="nav-category pd-point8-lt 
-      nav-category-active">Component Overview</h1></a>
+    <a href="./components-overview.html">
+      <h1>Component Overview</h1>
+    </a>
     <hr class="nav-break-line">
-    <div class="nav-items">
-      <a href="#">
-        <h2 class="nav-alert nav-btn">Alerts</h2>
-      </a>
-      <a href="./buttons.html">
-        <h2 class="nav-button nav-btn">Buttons</h2>
-      </a>
-      <a href="./avatar.html">
-        <h2 class="nav-avatar nav-btn">Avatar</h2>
-      </a>
-      <a href="./badge.html">
-        <h2 class="nav-badge nav-btn">Badge</h2>
-      </a>
-      <a href="./cards.html">
-        <h2 class="nav-card nav-btn">Cards</h2>
-      </a>
-      <a href="./image.html">
-        <h2 class="nav-img nav-btn">Image</h2>
-      </a>
-      <a href="./input.html">
-        <h2 class="nav-input nav-btn">Input</h2>
-      </a>
+    <a href="#" class="nav-active">
+      <h1>Alerts</h1>
+    </a>
+    <a href="./buttons.html">
+      <h1>Buttons</h1>
+    </a>
+    <a href="./avatar.html">
+      <h1>Avatar</h1>
+    </a>
+    <a href="./badge.html">
+      <h1>Badge</h1>
+    </a>
+    <a href="./cards.html">
+      <h1>Cards</h1>
+    </a>
+    <a href="./image.html">
+      <h1>Image</h1>
+    </a>
+    <a href="./input.html">
+      <h1>Input</h1>
+    </a>
+  </nav>
+
+  <!-- nav verticle bar mobile -->
+  <nav class="nav-mobile">
+    <a href="/docs.html">
+      <h1 >Getting Started</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="./about.html">
+      <h1 >About</h1>
+    </a>
+    <a href="./color.html">
+      <h1 >Color</h1>
+    </a>
+    <a href="./typography.html">
+      <h1 >Typography</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="./components-overview.html">
+      <h1>Component Overview</h1>
+    </a>
+    <hr class="nav-break-line">
+    <a href="#" class="nav-active">
+      <h1>Alerts</h1>
+    </a>
+    <a href="./buttons.html">
+      <h1>Buttons</h1>
+    </a>
+    <a href="./avatar.html">
+      <h1>Avatar</h1>
+    </a>
+    <a href="./badge.html">
+      <h1>Badge</h1>
+    </a>
+    <a href="./cards.html">
+      <h1>Cards</h1>
+    </a>
+    <a href="./image.html">
+      <h1>Image</h1>
+    </a>
+    <a href="./input.html">
+      <h1>Input</h1>
+    </a>
+    <div class="connect-mobile-view">
+      <hr class="nav-break-line">
+      <div class="flex-row">
+        <a href="https://github.com/saurabhchirde/Pabble-UI" target="_blank">
+          <div class="header-icon"><i class="fab fa-github"></i></div>
+        </a>
+        <a href="https://twitter.com/SaurabhChirde" target="_blank">
+          <div class="header-icon"><i class="fab fa-twitter"></i></div>
+        </a>
+      </div>
     </div>
     <div class="nav-close-btn">
       <i class="far fa-times-circle"></i>
@@ -86,16 +151,16 @@
   </nav>
 
   <div class="right-side-nav">
-    <h1>Contents</h1>
-      <a href="#basic-alert">
-        <h2>Basic Alert</h2>
-      </a>    
-      <a href="#descriptive-alert">
-        <h2>Descriptive Alerts</h2>
-      </a>
-      <a href="#alert-with-cta">
-        <h2>Alert With Button</h2>
-      </a>
+    <h1>On This Page</h1>
+    <a href="#basic-alert">
+      <h2>Basic Alert</h2>
+    </a>
+    <a href="#descriptive-alert">
+      <h2>Descriptive Alerts</h2>
+    </a>
+    <a href="#alert-with-cta">
+      <h2>Alert With Button</h2>
+    </a>
   </div>
 
   <!-- floating up btn -->
@@ -105,7 +170,7 @@
 
   <!-- body -->
 
-  <div class="main ">
+  <div class="main cont-shadow">
 
     <!-- alerts -->
     <section id="alert">
@@ -123,28 +188,28 @@
 
         <!-- alert without close -->
 
-        <div class="cont-shadow component-container pd-point6-all mg-2-bot mg-1-top border-round-4p">
+        <div class="component-container pd-point6-all mg-2-bot mg-1-top border-round-4p">
 
           <!-- success alert -->
-          <div class="alert-success">
+          <div class="alert-success alert-for-docs">
             <i class="fas fa-check-circle alert-icon"></i>
             <span class="p-md">Success alert.</span>
           </div>
 
           <!-- info alert -->
-          <div class="alert-info">
+          <div class="alert-info alert-for-docs">
             <i class="fas fa-info-circle alert-icon"></i>
             <span class="p-md">Info alert.</span>
           </div>
 
           <!-- warning alert -->
-          <div class="alert-warning">
+          <div class="alert-warning alert-for-docs">
             <i class="fas fa-exclamation-triangle alert-icon"></i>
             <span class="p-md">Warning alert.</span>
           </div>
 
           <!-- error alert -->
-          <div class="alert-error">
+          <div class="alert-error alert-for-docs">
             <i class="fas fa-exclamation-circle alert-icon"></i>
             <span class="p-md">Error alert.</span>
           </div>
@@ -180,25 +245,69 @@
       </div>
       <!--descriptive alert without close -->
 
-      <h2 id="descriptive-alert" class="mg-2-topdiv-1-bot title-lg-wt-5">Descriptive alerts</h2>
+      <h2 id="descriptive-alert" class="mg-2-top mg-1-bot title-lg-wt-5">Descriptive alerts</h2>
       <p class="mg-point6-top">
         The alert offers four severity levels that set a distinctive icon
         and color.
       </p>
       <div class="mg-3-bot">
 
-        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
+        <div class="component-container pd-point6-all mg-point8-tb border-round-4p">
 
+          <!-- success alert -->
+          <div class="alert-des-success alert-for-docs">
+            <i class="fas fa-check-circle alert-icon"></i>
+            <div>
+              <h2>Success</h2>
+              <p>This is a success alert -
+                <a href="">check it out!</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- info alert -->
+          <div class="alert-des-info alert-for-docs">
+            <i class="fas fa-info-circle alert-icon"></i>
+            <div>
+              <h2>Info</h2>
+              <p>This is a info alert -
+                <a href="">check it out!</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- warning alert -->
+          <div class="alert-des-warning alert-for-docs">
+            <i class="fas fa-exclamation-triangle alert-icon"></i>
+            <div>
+              <h2>Warning</h2>
+              <p>This is a warning alert -
+                <a href="">check it out!</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- error alert -->
+          <div class="alert-des-error alert-for-docs">
+            <i class="fas fa-exclamation-circle alert-icon"></i>
+            <div class="alert-w-btn-text">
+              <h2>Error</h2>
+              <p>This is a error alert
+                <a href="">check it out!</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <script type="text/plain" class="language-html snippet-container">
           <!-- success alert -->
           <div class="alert-des-success">
             <i class="fas fa-check-circle alert-icon"></i>
             <div>
-              <p>Success</p>
-              <p class="p-md">
-                This is a success alert -
-                <a href=""><button class="btn secondary-text-btn-sm">
-                    check it out!
-                  </button></a>
+              <h2>Success</h2>
+              <p>This is a success alert -
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
@@ -207,11 +316,9 @@
           <div class="alert-des-info">
             <i class="fas fa-info-circle alert-icon"></i>
             <div>
-              <p>Info</p>
-              <p class="p-md">
-                This is a info alert -
-                <a href=""><button class="btn secondary-text-btn-sm">check it out!
-                  </button></a>
+              <h2>Info</h2>
+              <p>This is a info alert -
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
@@ -220,11 +327,9 @@
           <div class="alert-des-warning">
             <i class="fas fa-exclamation-triangle alert-icon"></i>
             <div>
-              <p>Warning</p>
-              <p class="p-md">
-                This is a warning alert -
-                <a href=""><button class="btn secondary-text-btn-sm">check it out!
-                  </button></a>
+              <h2>Warning</h2>
+              <p>This is a warning alert -
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
@@ -233,94 +338,27 @@
           <div class="alert-des-error">
             <i class="fas fa-exclamation-circle alert-icon"></i>
             <div class="alert-w-btn-text">
-              <p>Error</p>
-              <p class="p-md">
-                This is a error alert - <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
+              <h2>Error</h2>
+              <p>This is a error alert
+                <a href="">check it out!</a>
               </p>
             </div>
           </div>
-
-        </div>
-
-       <script type="text/plain" class="language-html snippet-container">
-        <!-- success alert -->
-        <div class="alert-des-success">
-          <i class="fas fa-check-circle alert-icon"></i>
-          <div>
-            <p>Success</p>
-            <p class="p-md">
-              This is a success alert -
-              <a href="">
-                <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- info alert -->
-        <div class="alert-des-info">
-          <i class="fas fa-info-circle alert-icon"></i>
-          <div>
-            <p>Info</p>
-            <p class="p-md">
-              This is a info alert -
-              <a href="">
-                <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- warning alert -->
-        <div class="alert-des-warning">
-          <i class="fas fa-exclamation-triangle alert-icon"></i>
-          <div>
-            <p>Warning</p>
-            <p class="p-md">
-              This is a warning alert -
-              <a href="">
-                <button class="btn secondary-text-btn-sm">
-                  check it out!
-                </button>
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <!-- error alert -->
-        <div class="alert-des-error">
-          <i class="fas fa-exclamation-circle alert-icon"></i>
-          <div class="alert-w-btn-text">
-            <p>Error</p>
-            <p class="p-md">
-              This is a error alert - 
-              <button class="btn secondary-text-btn-sm">
-                check it out!
-              </button>
-            </p>
-          </div>
-        </div>
-       </script>
+        </script>
 
       </div>
 
       <!-- alert with cta -->
 
-      <div class="alert-cta-demo mg-2-top mg-1-bot mg-point6-bot">
-        <h2 id="alert-with-cta" class="mg-1-top mg-1-bot title-lg-wt-5">Alert With Button</h2>
-        <button class="btn primary-outline-btn-sm">Demo</button>
+      <div class="alert-cta-demo mg-2-top mg-1-bot mg-point6-bot flex-row flex-align-center">
+        <h2 id="alert-with-cta" class="title-lg-wt-5">Alert With Button</h2>
+        <button class="btn primary-outline-btn-md">Demo</button>
       </div>
-      <p class="mg-point6-tb">
+      <p class="mg-point8-tb">
         An alert can have action, such as a close or undo button. It is
         rendered after the message, at the end of the alert.
       </p>
-      <p class="mg-point6-tb">
+      <p class="mg-point8-tb">
         If on 'Click' callback is provided and no action prop is set, a
         close icon is displayed. <br />The action prop can be used to
         provide an alternative action, for example using a button or
@@ -328,10 +366,10 @@
       </p>
 
       <div class="mg-3-bot">
-        <div class="cont-shadow component-container pd-point6-all mg-point8-tb border-round-4p">
+        <div class="component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert with dismiss button -->
-          <div class="alert-success-btn">
+          <div class="alert-success-btn alert-for-docs">
             <div class="alert-text">
               <i class="fas fa-check-circle alert-icon"></i>
               <span class="p-md">Success alert.</span>
@@ -342,7 +380,7 @@
           </div>
 
           <!-- success alert with undo button -->
-          <div class="alert-success-btn">
+          <div class="alert-success-btn alert-for-docs">
             <div class="alert-text">
               <i class="fas fa-check-circle alert-icon"></i>
               <span class="p-md">Success alert.</span>
@@ -353,7 +391,7 @@
           </div>
 
           <!-- error alert with undo button -->
-          <div class="alert-error-btn">
+          <div class="alert-error-btn alert-for-docs">
             <div class="alert-text">
               <i class="fas fa-exclamation-circle alert-icon"></i>
               <span class="p-md">Wrong input!</span>
