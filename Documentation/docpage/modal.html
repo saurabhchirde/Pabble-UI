@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Components/components.css" />
+    <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+    <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>Pebble UI | Documentation</title>
+</head>
+
+<body>
+
+    <!-- nav horizontal bar -->
+    <div class="nav-header-mobile hide">
+
+        <div class="nav-header">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <a href="/">
+                <div class="logo">PebbleUI</div>
+            </a>
+        </div>
+        <div class="nav-header-right-side">
+            <a href="/">
+                <div class="nav-header-text">Documentation</div>
+            </a>
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <div class="nav-header nav-header-desktop hide">
+        <a href="/">
+            <div class="logo">PebbleUI</div>
+        </a>
+        <div class="nav-header-right-side">
+            <a href="/">
+                <div class="nav-header-text">Documentation</div>
+            </a>
+            <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                <div class="header-icon"><i class="fab fa-github"></i></div>
+            </a>
+            <a href="https://twitter.com/SaurabhChirde" target="_blank">
+                <div class="header-icon"><i class="fab fa-twitter"></i></div>
+            </a>
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <!-- nav verticle bar desktop -->
+    <nav class="nav-desktop">
+        <a href="/docs.html">
+            <h1>Getting Started</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./about.html">
+            <h1>About</h1>
+        </a>
+        <a href="./color.html">
+            <h1>Color</h1>
+        </a>
+        <a href="./typography.html">
+            <h1>Typography</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./components-overview.html">
+            <h1>Component Overview</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./alert.html">
+            <h1>Alerts</h1>
+        </a>
+        <a href="./buttons.html">
+            <h1>Buttons</h1>
+        </a>
+        <a href="./avatar.html">
+            <h1>Avatar</h1>
+        </a>
+        <a href="./badge.html">
+            <h1>Badge</h1>
+        </a>
+        <a href="./cards.html">
+            <h1>Cards</h1>
+        </a>
+        <a href="./image.html">
+            <h1>Image</h1>
+        </a>
+        <a href="./input.html">
+            <h1>Input</h1>
+        </a>
+        <a href="#" class="nav-active">
+            <h1>Modal</h1>
+        </a>
+    </nav>
+
+    <!-- nav verticle bar mobile -->
+    <nav class="nav-mobile">
+        <a href="/docs.html">
+            <h1>Getting Started</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./about.html">
+            <h1>About</h1>
+        </a>
+        <a href="./color.html">
+            <h1>Color</h1>
+        </a>
+        <a href="./typography.html">
+            <h1>Typography</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./components-overview.html">
+            <h1>Component Overview</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./alert.html">
+            <h1>Alerts</h1>
+        </a>
+        <a href="./buttons.html">
+            <h1>Buttons</h1>
+        </a>
+        <a href="./avatar.html">
+            <h1>Avatar</h1>
+        </a>
+        <a href="./badge.html">
+            <h1>Badge</h1>
+        </a>
+        <a href="./cards.html">
+            <h1>Cards</h1>
+        </a>
+        <a href="./image.html">
+            <h1>Image</h1>
+        </a>
+        <a href="./input.html">
+            <h1>Input</h1>
+        </a>
+        <a href="#" class="nav-active">
+            <h1>Modal</h1>
+        </a>
+        <div class="connect-mobile-view">
+            <hr class="nav-break-line">
+            <div class="flex-row">
+                <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                    <div class="header-icon"><i class="fab fa-github"></i></div>
+                </a>
+                <a href="https://twitter.com/SaurabhChirde" target="_blank">
+                    <div class="header-icon"><i class="fab fa-twitter"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="nav-close-btn">
+            <i class="far fa-times-circle"></i>
+        </div>
+    </nav>
+
+    <div class="right-side-nav">
+        <h1>On This Page</h1>
+        <a href="#modal-discard">
+            <h2>Modal - Discard</h2>
+        </a>
+        <a href="#modal-login">
+            <h2>Modal - Login</h2>
+        </a>
+    </div>
+
+    <!-- floating up btn -->
+    <a href="#"><button class="btn floating-btn-md">
+            <i class="fas fa-arrow-up"></i></button>
+    </a>
+
+    <!-- body -->
+
+    <div class="main cont-shadow">
+
+        <!-- input field -->
+
+        <section id="modal">
+            <h1 class="mg-point8-tb">Modal</h1>
+            <p>
+            </p>
+
+            <h2 id="modal-discard" class="mg-2-top mg-1-bot title-lg-wt-5">Modal - Discard</h2>
+            <div class="mg-3-bot">
+                <div class="mg-1-tb">
+
+                    <!-- discard -->
+                    <p class="mg-1-bot title-md-wt-bold"> </p><br>
+
+                    <!-- discard modal -->
+                    <div class="discard-modal-md modal-for-docs">
+                        <p>Discard draft?</p>
+                        <div class="discard-modal-btn">
+                            <a href="">CANCEL</a>
+                            <a href="">DISCARD</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script type="text/plain" class="language-html snippet-container">
+                    <!-- discard modal -->
+                    <div class="discard-modal-md">
+                        <p>Discard draft?</p>
+                        <div class="discard-modal-btn">
+                            <a href="">CANCEL</a>
+                            <a href="">DISCARD</a>
+                        </div>
+                    </div>
+
+                </script>
+            </div>
+
+
+            <!-- login modal -->
+            <h2 id="modal-login" class="mg-2-top mg-1-bot title-lg-wt-5">Modal - Login </h2>
+            <div class="mg-3-bot">
+                <div class="mg-1-tb">
+
+                    <!-- login -->
+                    <p class="mg-1-bot mg-1-top title-md-wt-bold"></p><br>
+
+                    <!-- login modal -->
+                    <div class="login-modal">
+                        <h1>Welcome Back</h1>
+                        <p>Enter your credentials to access your account</p>
+                        <form action="" method="get">
+                            <div class="outline-email-input">
+                                <label for="email">
+                                    <input type="email" name="email" required autocomplete="email"
+                                        placeholder="Enter your email *" />
+                                </label>
+                            </div>
+                            <div class="outline-password-input">
+                                <label for="password">
+                                    <input type="password" name="password" autocomplete="current-password"
+                                        placeholder="Enter your password *" required value="" />
+                                </label>
+                            </div>
+                            <div class="login-btn">
+                                <button type="submit" class="btn primary-btn-md">login</button>
+                            </div>
+                            <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
+                        </form>
+                    </div>
+
+                </div>
+
+                <script type="text/plain" class="language-html snippet-container">
+                    <!-- login modal -->
+                    <div class="login-modal">
+                        <h1>Welcome Back</h1>
+                        <p>Enter your credentials to access your account</p>
+                        <form action="" method="get">
+                            <div class="outline-email-input">
+                                <label for="email">
+                                    <input type="email" name="email" required autocomplete="email"
+                                        placeholder="Enter email *" />
+                                </label>
+                            </div>
+                            <div class="outline-password-input wrong-password">
+                                <label for="password">
+                                    <input type="password" name="password" autocomplete="current-password"
+                                        placeholder="Enter password *" required value="..." />
+                                    wrong password, try again
+                                </label>
+                            </div>
+                            <div class="login-btn">
+                                <button type="submit" class="btn primary-btn-md">login</button>
+                            </div>
+                            <p>Forgot your password? <span> Reset Password</span></p>
+                        </form>
+                    </div>
+                </script>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="/Documentation/docpage-js/docs.js"></script>
+    <script src="/Documentation/utilities/prismjs/prism.js"></script>
+</body>
+
+</html>

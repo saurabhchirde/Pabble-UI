@@ -1,0 +1,90 @@
+.discard-modal-md {
+    width: 18rem;
+    height: 6rem;
+    border-radius: 4px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.3rem 1.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg);
+    box-shadow: 0px 3px 8px var(--modal-shadow);
+}
+
+.modal-for-docs {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: translate(0.1%, 0.1%);
+}
+
+.discard-modal-md p {
+    align-self: flex-start;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    color: var(--text-dark);
+}
+
+.discard-modal-btn {
+    align-self: flex-end;
+    width: 9rem;
+    font-size: 0.9rem;
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discard-modal-btn a {
+    color: var(--text-dark);
+}
+
+.login-modal {
+    width: 27rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 8px var(--modal-shadow);
+}
+
+.login-modal h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--primary-dark-color);
+}
+
+.login-modal > p,
+.login-modal> form> p {
+    margin: 1rem 0 1.2rem;
+    font-size: 0.7rem;
+    color: var(--text-light);text-align: center;
+}
+
+.login-modal > form >div {
+    width: 100%;
+}
+
+.login-modal > form input,
+.login-modal > form label {
+    font-size: 0.8rem;
+    width: 22rem;
+    margin: 0.1rem 0;
+}
+
+.login-modal>form>.login-btn {
+    display: grid;
+    margin: 1.5rem auto 1rem;
+    width: 100%;
+}
+
+.login-modal> form> p> span > a{
+    color: var(--primary-dark-color);
+    cursor: pointer;
+    font-weight: 500;
+}

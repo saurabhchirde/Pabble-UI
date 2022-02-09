@@ -63,7 +63,8 @@ li {
 #about,
 #color,
 #typography,
-#comp-overview {
+#comp-overview,
+#modal {
     padding: 1rem;
     margin-bottom: 3rem;
 }

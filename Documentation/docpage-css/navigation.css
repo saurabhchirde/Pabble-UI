@@ -335,6 +335,9 @@
 #card-w-dismiss-hr-lt,
 #card-w-dismiss-hr-dk,
 #card-w-text-overlay,
+#text-overlay-card,
+#text-overlay-one,
+#text-overlay-two,
 #text-only-card,
 #card-w-badge,
 #badge-card-examples,
@@ -348,6 +351,8 @@
 #labelled-wo-placeholder-no-outline,
 #labelled-w-placeholder,
 #labelled-w-placeholder-outline,
-#labelled-w-placeholder-no-outline {
+#labelled-w-placeholder-no-outline,
+#modal-discard,
+#modal-login {
     scroll-margin-block: 6rem;
 }
