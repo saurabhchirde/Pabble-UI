@@ -36,7 +36,8 @@
 }
 
 .signin-modal-one,
-.signin-modal-two {
+.signin-modal-two,
+.signup-modal-one {
     position: fixed;
     z-index: 1;
     left: 50%;
@@ -62,21 +63,49 @@
 }
 
 .signin-modal-one h1,
-.signin-modal-two h1 {
+.signin-modal-two h1,
+.signup-modal-one h1 {
     font-size: 1.2rem;
     text-align: center;
     margin: 0;
     color: var(--primary-color);
 }
 
+.signup-modal-one h1 {
+    margin: 1rem 0 1rem;
+}
+
+.signup-modal-one > div{
+    position: relative;
+}
+
+.signup-modal-one > div > i {
+    position: absolute;
+    right: -1.5rem;
+    font-size: 1.2rem;
+    bottom: 0;
+    color: var(--primary-color);
+}
+
 .signin-modal-one>p,
 .signin-modal-two>p,
+.signup-modal-one > p,
 .signin-modal-one>form>p,
-.signin-modal-two>form> p, a > h2 {
+.signin-modal-two>form> p, a > h2,
+.signup-modal-one > form>p {
     margin: 0.4rem 0 0.5rem;
     font-size: 0.7rem;
     color: var(--text-light);
     text-align: center;
+}
+
+.signup-modal-one > p,
+.signup-modal-one > form>p {
+    text-align: left;
+}
+
+.signup-modal-one > p {
+    margin: 1.5rem 0 0;
 }
 
 .signin-modal-two > form > a > h2 {
@@ -90,7 +119,8 @@
 }
 
 .signin-modal-one>form,
-.signin-modal-two>form {
+.signin-modal-two>form,
+.signup-modal-one>form {
     width: 22rem;
 }
 
@@ -102,7 +132,9 @@
 .signin-modal-one>form input,
 .signin-modal-two>form input,
 .signin-modal-one>form label,
-.signin-modal-two>form label {
+.signin-modal-two>form label,
+.signup-modal-one > form input,
+.signup-modal-one > form label {
     font-size: 0.8rem;
     width: 100%;
     margin: 0.1rem 0;
@@ -110,6 +142,7 @@
 
 .signin-modal-one>form>div,
 .signin-modal-two>form>div,
+.signup-modal-one >form>div,
 .signin-modal-one>form>.signin-btn,
 .signin-modal-two>form>.signin-btn {
     display: grid;
@@ -119,25 +152,29 @@
 
 .signin-modal-one>form .signin-btn>button[class*="primary-btn-"],
 .signin-modal-two>form .signin-btn>button [class*="primary-btn-"] {
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
 }
 
-.signin-modal-two>form>.signin-btn {
+.signin-modal-two>form>.signin-btn,
+.signup-modal-one >form>.signup-btn {
     grid-template-columns: 1fr;
     justify-content: space-between;
 }
 
 .signin-modal-one>form>.signin-btn {
     grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
 }
 
 .signin-modal-one>form>.signin-btn>button,
-.signin-modal-two>form>.signin-btn>button {
+.signin-modal-two>form>.signin-btn>button,
+.signup-modal-one >form>.signup-btn>button {
     margin: 0.4rem 0 0.5rem;
 }
 
 .signin-modal-one>form>p>span>a,
-.signin-modal-two>form>p>span>a {
+.signin-modal-two>form>p>span>a,
+.signup-modal-one > form>p>span>a {
     color: var(--primary-color);
     cursor: pointer;
     font-weight: 500;
@@ -157,7 +194,8 @@
 }
 
 .signin-modal-one>i,
-.signin-modal-two>i {
+.signin-modal-two>i,
+.signup-modal-one > i {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -171,6 +209,7 @@
 }
 
 .signin-modal-one>i:hover,
-.signin-modal-two>i:hover {
+.signin-modal-two>i:hover,
+.signup-modal-one > i:hover {
     background-color: var(--btn-hover);
 }

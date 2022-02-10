@@ -167,7 +167,7 @@
         <a href="#modal-signin">
             <h2>Signin</h2>
         </a>
-        <a href="#modal-signin">
+        <a href="#modal-signup">
             <h2>Signup</h2>
         </a>
     </div>
@@ -180,8 +180,6 @@
     <!-- body -->
 
     <div class="main cont-shadow">
-
-        <!-- input field -->
 
         <section id="modal">
             <h1 class="mg-point8-tb">Modal</h1>
@@ -221,11 +219,10 @@
 
 
             <!-- signin modal -1 -->
-            <h2 id="modal-signin-1" class="mg-2-top mg-1-bot title-lg-wt-5">Sign In - 1</h2>
+            <h2 id="modal-signin" class="mg-2-top mg-1-bot title-lg-wt-5">Sign In - 1</h2>
             <div class="mg-3-bot">
                 <div class="mg-1-tb">
 
-                    <!-- signin -->
                     <p class="mg-1-bot mg-1-top title-md-wt-bold"></p><br>
 
                     <!-- signin modal - 1 -->
@@ -233,7 +230,7 @@
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
                         <i class="fas fa-times"></i>
-                        <form action="" method="get">
+                        <form action="" method="post">
                             <div class="outline-email-input">
                                 <label for="email">
                                     <div class="input-icon"><i class="far fa-envelope"></i>
@@ -252,7 +249,7 @@
                             </div>
                             <div class="signin-btn">
                                 <button type="submit" class="btn primary-btn-md">Sign In</button>
-                                <a href="" class="btn primary-outline-btn-md">Sign Up</a>
+                                <a href="" class="btn primary-text-btn-md">Sign Up</a>
                             </div>
                             <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
                         </form>
@@ -266,7 +263,7 @@
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
                         <i class="fas fa-times"></i>
-                        <form action="" method="get">
+                        <form action="" method="post">
                             <div class="outline-email-input">
                                 <label for="email">
                                     <div class="input-icon"><i class="far fa-envelope"></i>
@@ -285,11 +282,12 @@
                             </div>
                             <div class="signin-btn">
                                 <button type="submit" class="btn primary-btn-md">Sign In</button>
-                                <a href="" class="btn primary-outline-btn-md">Sign Up</a>
+                                <a href="" class="btn primary-text-btn-md">Sign Up</a>
                             </div>
                             <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
                         </form>
                     </div>
+
                 </script>
 
             </div>
@@ -307,7 +305,7 @@
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
                         <i class="fas fa-times"></i>
-                        <form action="" method="get">
+                        <form action="" method="post">
                             <div class="outline-email-input">
                                 <label for="email">
                                     <div class="input-icon"><i class="far fa-envelope"></i>
@@ -328,7 +326,9 @@
                             <div class="signin-btn">
                                 <button type="submit" class="btn primary-btn-md">Sign In</button>
                             </div>
-                            <a href=""><h2>Create New Account <i class="fas fa-angle-right"></i></h2></a>
+                            <a href="">
+                                <h2>Create New Account <i class="fas fa-angle-right"></i></h2>
+                            </a>
                         </form>
                     </div>
 
@@ -340,7 +340,7 @@
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
                         <i class="fas fa-times"></i>
-                        <form action="" method="get">
+                        <form action="" method="post">
                             <div class="outline-email-input">
                                 <label for="email">
                                     <div class="input-icon"><i class="far fa-envelope"></i>
@@ -361,9 +361,122 @@
                             <div class="signin-btn">
                                 <button type="submit" class="btn primary-btn-md">Sign In</button>
                             </div>
-                            <a href=""><h2>Create New Account <i class="fas fa-angle-right"></i></h2></a>
+                            <a href="">
+                                <h2>Create New Account <i class="fas fa-angle-right"></i></h2>
+                            </a>
                         </form>
                     </div>
+                </script>
+
+            </div>
+
+            <!-- signup-->
+            <h2 id="modal-signup" class="mg-2-top mg-1-bot title-lg-wt-5">Sign Up</h2>
+            <div class="mg-3-bot">
+                <div class="mg-1-tb">
+
+
+                    <p class="mg-1-bot mg-1-top title-md-wt-bold"></p><br>
+
+                    <!-- signup modal - 1 -->
+                    <div class="signup-modal-one modal-for-docs">
+                        <h1>Sign Up</h1>
+                        <div class="avatar avatar-md-round">
+                            <img loading="lazy" src="/Documentation/docpage-assets/avatar/avatar1.jpeg"
+                                alt="avatar-image" class="img-responsive" />
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <p>Please provide your details.</p>
+                        <i class="fas fa-times"></i>
+                        <form action="" method="post">
+                            <div class="outline-text-input">
+                                <label for="text">Full Name
+                                    <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
+                                </label>
+                            </div>
+                            <div class="outline-email-input">
+                                <label for="email">Email *
+                                    <input type="email" name="email" required autocomplete="email"
+                                        placeholder="Enter your email" />
+                                </label>
+                            </div>
+                            <div class="outline-tel-input">
+                                <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                                        placeholder="Enter phone number" />
+                                </label>
+                            </div>
+                            <div class="outline-password-input">
+                                <label for="password">Password *
+                                    <input type="password" name="password" required autocomplete="current-password"
+                                        placeholder="Enter your password" value="" />
+                                </label>
+                            </div>
+                            <div class="outline-password-input">
+                                <label for="password">Re-enter Password *
+                                    <input type="password" name="password" required autocomplete="current-password"
+                                        placeholder="Re-enter your password" value="" />
+                                </label>
+                            </div>
+                            <p>By continuing you agree to our Terms of Service and
+                                <span><a href=""> Privacy Policy</a></span>
+                            </p>
+                            <div class="signup-btn">
+                                <button type="submit" class="btn primary-btn-md">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <script type="text/plain" class="language-html snippet-container">
+                    <!-- signup modal - 1 -->
+                    <div class="signup-modal-one">
+                        <h1>Sign Up</h1>
+                        <div class="avatar avatar-md-round">
+                            <img loading="lazy" src="..."
+                                alt="avatar-image" class="img-responsive" />
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <p>Please provide your details.</p>
+                        <i class="fas fa-times"></i>
+                        <form action="" method="post">
+                            <div class="outline-text-input">
+                                <label for="text">Full Name
+                                    <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
+                                </label>
+                            </div>
+                            <div class="outline-email-input">
+                                <label for="email">Email *
+                                    <input type="email" name="email" required autocomplete="email"
+                                        placeholder="Enter your email" />
+                                </label>
+                            </div>
+                            <div class="outline-tel-input">
+                                <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
+                                        placeholder="Enter phone number" />
+                                </label>
+                            </div>
+                            <div class="outline-password-input">
+                                <label for="password">Password *
+                                    <input type="password" name="password" required autocomplete="current-password"
+                                        placeholder="Enter your password" value="" />
+                                </label>
+                            </div>
+                            <div class="outline-password-input">
+                                <label for="password">Re-enter Password *
+                                    <input type="password" name="password" required autocomplete="current-password"
+                                        placeholder="Re-enter your password" value="" />
+                                </label>
+                            </div>
+                            <p>By continuing you agree to our Terms of Service and
+                                <span><a href=""> Privacy Policy</a></span>
+                            </p>
+                            <div class="signup-btn">
+                                <button type="submit" class="btn primary-btn-md">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+
 
                 </script>
 
