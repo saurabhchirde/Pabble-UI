@@ -37,8 +37,11 @@
             <div class="logo">PebbleUI</div>
         </a>
         <div class="nav-header-right-side">
+            <a href="/docs.html">
+                <h2 class="nav-header-text">Installation</h2>
+            </a>
             <a href="/">
-                <div class="nav-header-text">Documentation</div>
+                <h2 class="nav-header-text">Documentation</h2>
             </a>
             <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
                 <div class="header-icon"><i class="fab fa-github"></i></div>
@@ -56,9 +59,6 @@
             <h1>Getting Started</h1>
         </a>
         <hr class="nav-break-line">
-        <a href="./about.html">
-            <h1>About</h1>
-        </a>
         <a href="./color.html">
             <h1>Color</h1>
         </a>
@@ -93,6 +93,9 @@
         </a>
         <a href="#" class="nav-active">
             <h1>Modal</h1>
+        </a>
+        <a href="./navigation.html">
+            <h1>Navigation</h1>
         </a>
     </nav>
 
@@ -102,9 +105,6 @@
             <h1>Getting Started</h1>
         </a>
         <hr class="nav-break-line">
-        <a href="./about.html">
-            <h1>About</h1>
-        </a>
         <a href="./color.html">
             <h1>Color</h1>
         </a>
@@ -139,6 +139,9 @@
         </a>
         <a href="#" class="nav-active">
             <h1>Modal</h1>
+        </a>
+        <a href="./navigation.html">
+            <h1>Navigation</h1>
         </a>
         <div class="connect-mobile-view">
             <hr class="nav-break-line">
@@ -159,10 +162,13 @@
     <div class="right-side-nav">
         <h1>On This Page</h1>
         <a href="#modal-discard">
-            <h2>Modal - Discard</h2>
+            <h2>Discard</h2>
         </a>
-        <a href="#modal-login">
-            <h2>Modal - Login</h2>
+        <a href="#modal-signin">
+            <h2>Signin</h2>
+        </a>
+        <a href="#modal-signin">
+            <h2>Signup</h2>
         </a>
     </div>
 
@@ -182,7 +188,7 @@
             <p>
             </p>
 
-            <h2 id="modal-discard" class="mg-2-top mg-1-bot title-lg-wt-5">Modal - Discard</h2>
+            <h2 id="modal-discard" class="mg-2-top mg-1-bot title-lg-wt-5">Discard</h2>
             <div class="mg-3-bot">
                 <div class="mg-1-tb">
 
@@ -214,33 +220,39 @@
             </div>
 
 
-            <!-- login modal -->
-            <h2 id="modal-login" class="mg-2-top mg-1-bot title-lg-wt-5">Modal - Login </h2>
+            <!-- signin modal -1 -->
+            <h2 id="modal-signin" class="mg-2-top mg-1-bot title-lg-wt-5">Sign In - 1</h2>
             <div class="mg-3-bot">
                 <div class="mg-1-tb">
 
-                    <!-- login -->
+                    <!-- signin -->
                     <p class="mg-1-bot mg-1-top title-md-wt-bold"></p><br>
 
-                    <!-- login modal -->
-                    <div class="login-modal">
+                    <!-- signin modal - 1 -->
+                    <div class="signin-modal modal-for-docs">
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
+                        <i class="fas fa-times"></i>
                         <form action="" method="get">
                             <div class="outline-email-input">
                                 <label for="email">
-                                    <input type="email" name="email" required autocomplete="email"
-                                        placeholder="Enter your email *" />
+                                    <div class="input-icon"><i class="far fa-envelope"></i>
+                                        <input type="email" name="email" required autocomplete="email"
+                                            placeholder="Enter your email *" />
+                                    </div>
                                 </label>
                             </div>
                             <div class="outline-password-input">
                                 <label for="password">
-                                    <input type="password" name="password" autocomplete="current-password"
-                                        placeholder="Enter your password *" required value="" />
+                                    <div class="input-icon"><i class="fas fa-key"></i>
+                                        <input type="password" name="password" autocomplete="current-password"
+                                            placeholder="Enter your password *" required value="" />
+                                    </div>
                                 </label>
                             </div>
-                            <div class="login-btn">
-                                <button type="submit" class="btn primary-btn-md">login</button>
+                            <div class="signin-btn">
+                                <button type="submit" class="btn primary-btn-md">Sign In</button>
+                                <a href="" class="btn primary-outline-btn-md">Sign Up</a>
                             </div>
                             <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
                         </form>
@@ -249,33 +261,113 @@
                 </div>
 
                 <script type="text/plain" class="language-html snippet-container">
-                    <!-- login modal -->
-                    <div class="login-modal">
+                    <!-- signin modal - 1 -->
+                    <div class="signin-modal">
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
+                        <i class="fas fa-times"></i>
                         <form action="" method="get">
                             <div class="outline-email-input">
                                 <label for="email">
-                                    <input type="email" name="email" required autocomplete="email"
-                                        placeholder="Enter email *" />
+                                    <div class="input-icon"><i class="far fa-envelope"></i>
+                                        <input type="email" name="email" required autocomplete="email"
+                                            placeholder="Enter your email *" />
+                                    </div>
                                 </label>
                             </div>
-                            <div class="outline-password-input wrong-password">
+                            <div class="outline-password-input">
                                 <label for="password">
-                                    <input type="password" name="password" autocomplete="current-password"
-                                        placeholder="Enter password *" required value="..." />
-                                    wrong password, try again
+                                    <div class="input-icon"><i class="fas fa-key"></i>
+                                        <input type="password" name="password" autocomplete="current-password"
+                                            placeholder="Enter your password *" required value="" />
+                                    </div>
                                 </label>
                             </div>
-                            <div class="login-btn">
-                                <button type="submit" class="btn primary-btn-md">login</button>
+                            <div class="signin-btn">
+                                <button type="submit" class="btn primary-btn-md">Sign In</button>
+                                <a href="" class="btn primary-outline-btn-md">Sign Up</a>
                             </div>
-                            <p>Forgot your password? <span> Reset Password</span></p>
+                            <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
                         </form>
                     </div>
                 </script>
 
             </div>
+
+            <!-- signin modal - 2 -->
+            <h2 id="modal-signin" class="mg-2-top mg-1-bot title-lg-wt-5">Sign In - 2</h2>
+            <div class="mg-3-bot">
+                <div class="mg-1-tb">
+
+                    <!-- signin -->
+                    <p class="mg-1-bot mg-1-top title-md-wt-bold"></p><br>
+
+                    <!-- signin modal - 1 -->
+                    <div class="signin-modal modal-for-docs">
+                        <h1>Welcome Back</h1>
+                        <p>Enter your credentials to access your account</p>
+                        <i class="fas fa-times"></i>
+                        <form action="" method="get">
+                            <div class="outline-email-input">
+                                <label for="email">
+                                    <div class="input-icon"><i class="far fa-envelope"></i>
+                                        <input type="email" name="email" required autocomplete="email"
+                                            placeholder="Enter your email *" />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="outline-password-input">
+                                <label for="password">
+                                    <div class="input-icon"><i class="fas fa-key"></i>
+                                        <input type="password" name="password" autocomplete="current-password"
+                                            placeholder="Enter your password *" required value="" />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="signin-btn">
+                                <button type="submit" class="btn primary-btn-md">Sign In</button>
+                                <a href="" class="btn primary-text-btn-md">Sign Up</a>
+                            </div>
+                            <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
+                        </form>
+                    </div>
+
+                </div>
+
+                <script type="text/plain" class="language-html snippet-container">
+                    <!-- signin modal - 1 -->
+                    <div class="signin-modal">
+                        <h1>Welcome Back</h1>
+                        <p>Enter your credentials to access your account</p>
+                        <i class="fas fa-times"></i>
+                        <form action="" method="get">
+                            <div class="outline-email-input">
+                                <label for="email">
+                                    <div class="input-icon"><i class="far fa-envelope"></i>
+                                        <input type="email" name="email" required autocomplete="email"
+                                            placeholder="Enter your email *" />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="outline-password-input">
+                                <label for="password">
+                                    <div class="input-icon"><i class="fas fa-key"></i>
+                                        <input type="password" name="password" autocomplete="current-password"
+                                            placeholder="Enter your password *" required value="" />
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="signin-btn">
+                                <button type="submit" class="btn primary-btn-md">Sign In</button>
+                                <a href="" class="btn primary-outline-btn-md">Sign Up</a>
+                            </div>
+                            <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
+                        </form>
+                    </div>
+                </script>
+
+            </div>
+
         </section>
     </div>
 

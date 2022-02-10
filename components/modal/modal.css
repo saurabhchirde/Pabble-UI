@@ -14,13 +14,6 @@
     box-shadow: 0px 3px 8px var(--modal-shadow);
 }
 
-.modal-for-docs {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: translate(0.1%, 0.1%);
-}
-
 .discard-modal-md p {
     align-self: flex-start;
     font-size: 1rem;
@@ -42,49 +35,111 @@
     color: var(--text-dark);
 }
 
-.login-modal {
-    width: 27rem;
-    height: auto;
+.signin-modal {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 27rem;
+    height: 21rem;
     padding: 2rem;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bg);
     box-shadow: 0px 3px 8px var(--modal-shadow);
 }
 
-.login-modal h1 {
-    font-size: 1.2rem;
-    text-align: center;
-    color: var(--primary-dark-color);
+.modal-for-docs {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: translate(0.1%, 0.1%);
 }
 
-.login-modal > p,
-.login-modal> form> p {
-    margin: 1rem 0 1.2rem;
+.signin-modal h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.signin-modal > p,
+.signin-modal> form> p {
+    margin: 0.4rem 0 0.5rem;
     font-size: 0.7rem;
     color: var(--text-light);text-align: center;
 }
 
-.login-modal > form >div {
-    width: 100%;
+.signin-modal > form {
+    width: 22rem;
 }
 
-.login-modal > form input,
-.login-modal > form label {
+.signin-modal > form input{
+    padding-left: 2.4rem;
+}
+
+.signin-modal > form input,
+.signin-modal > form label {
     font-size: 0.8rem;
-    width: 22rem;
+    width: 100%;
     margin: 0.1rem 0;
 }
 
-.login-modal>form>.login-btn {
+.signin-modal > form > div,
+.signin-modal>form>.signin-btn {
     display: grid;
-    margin: 1.5rem auto 1rem;
+    margin: 1rem 0;
     width: 100%;
 }
 
-.login-modal> form> p> span > a{
-    color: var(--primary-dark-color);
+.signin-modal > form .signin-btn > button[class*="primary-btn-"] {
+margin-right: 0.5rem;
+}
+
+.signin-modal>form>.signin-btn {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.signin-modal>form>.signin-btn>button{
+    margin: 0.4rem 0 0.5rem;
+}
+
+.signin-modal> form> p> span > a{
+    color: var(--primary-color);
     cursor: pointer;
     font-weight: 500;
+}
+
+.signin-modal div > i {
+    position: absolute;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 1.5%;
+    font-size: 1rem;
+    padding: 0.7rem;
+    color: var(--primary-color);
+}
+
+.signin-modal > i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.signin-modal > i:hover{
+    background-color: var(--btn-hover);
 }

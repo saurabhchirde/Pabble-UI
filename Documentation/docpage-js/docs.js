@@ -9,10 +9,6 @@ document.querySelector(".nav-close-btn").addEventListener("click", () => {
     document.querySelector(".nav-mobile").style.display="none";
 })
 
-// media query
-
-const mediaQueryMobile = window.matchMedia('(max-width: 560px)');
-
-if (mediaQueryMobile.matches) {
+if (window.outerHeight > 560) {
     document.querySelector(".nav-mobile").style.display="none";
 }
