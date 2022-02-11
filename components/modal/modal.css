@@ -35,8 +35,7 @@
     color: var(--text-dark);
 }
 
-.signin-modal-one,
-.signin-modal-two,
+.signin-modal,
 .signup-modal-one {
     position: fixed;
     z-index: 1;
@@ -62,12 +61,11 @@
     transform: translate(0.1%, 0.1%);
 }
 
-.signin-modal-one h1,
-.signin-modal-two h1,
+.signin-modal h1,
 .signup-modal-one h1 {
     font-size: 1.2rem;
     text-align: center;
-    margin: 0;
+    margin: 0 0 0.3rem;
     color: var(--primary-color);
 }
 
@@ -87,16 +85,19 @@
     color: var(--primary-color);
 }
 
-.signin-modal-one>p,
-.signin-modal-two>p,
+.signin-modal>p,
 .signup-modal-one > p,
-.signin-modal-one>form>p,
-.signin-modal-two>form> p, a > h2,
+.signin-modal>form> p,
+.signin-modal>form> a > h2,
 .signup-modal-one > form>p {
     margin: 0.4rem 0 0.5rem;
     font-size: 0.7rem;
     color: var(--text-light);
     text-align: center;
+}
+
+.signin-modal>form> p { 
+    margin: 0.8rem 0;
 }
 
 .signup-modal-one > p,
@@ -108,31 +109,27 @@
     margin: 1.5rem 0 0;
 }
 
-.signin-modal-two > form > a > h2 {
+.signin-modal > form > a > h2 {
     color: var(--primary-color)
     ;
     font-size: 0.9rem;
 }
 
-.signin-modal-two > form > a > h2 > i {
+.signin-modal > form > a > h2 > i {
     margin-left: 0.5rem;
 }
 
-.signin-modal-one>form,
-.signin-modal-two>form,
+.signin-modal>form,
 .signup-modal-one>form {
     width: 22rem;
 }
 
-.signin-modal-one>form input,
-.signin-modal-two>form input {
+.signin-modal>form input {
     padding-left: 2.4rem;
 }
 
-.signin-modal-one>form input,
-.signin-modal-two>form input,
-.signin-modal-one>form label,
-.signin-modal-two>form label,
+.signin-modal>form input,
+.signin-modal>form label,
 .signup-modal-one > form input,
 .signup-modal-one > form label {
     font-size: 0.8rem;
@@ -140,48 +137,33 @@
     margin: 0.1rem 0;
 }
 
-.signin-modal-one>form>div,
-.signin-modal-two>form>div,
+.signin-modal>form>div,
 .signup-modal-one >form>div,
-.signin-modal-one>form>.signin-btn,
-.signin-modal-two>form>.signin-btn {
+.signin-modal>form>.signin-btn {
     display: grid;
-    margin: 1rem 0;
+    margin: 0.3rem 0;
     width: 100%;
 }
 
-.signin-modal-one>form .signin-btn>button[class*="primary-btn-"],
-.signin-modal-two>form .signin-btn>button [class*="primary-btn-"] {
-    /* margin-right: 0.5rem; */
-}
-
-.signin-modal-two>form>.signin-btn,
+.signin-modal>form>.signin-btn,
 .signup-modal-one >form>.signup-btn {
     grid-template-columns: 1fr;
     justify-content: space-between;
 }
 
-.signin-modal-one>form>.signin-btn {
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-}
-
-.signin-modal-one>form>.signin-btn>button,
-.signin-modal-two>form>.signin-btn>button,
+.signin-modal>form>.signin-btn>button,
 .signup-modal-one >form>.signup-btn>button {
     margin: 0.4rem 0 0.5rem;
 }
 
-.signin-modal-one>form>p>span>a,
-.signin-modal-two>form>p>span>a,
+.signin-modal>form>p>span>a,
 .signup-modal-one > form>p>span>a {
     color: var(--primary-color);
     cursor: pointer;
     font-weight: 500;
 }
 
-.signin-modal-one div>i,
-.signin-modal-two div>i {
+.signin-modal div>i {
     position: absolute;
     width: 2rem;
     display: flex;
@@ -193,8 +175,7 @@
     color: var(--primary-color);
 }
 
-.signin-modal-one>i,
-.signin-modal-two>i,
+.signin-modal>i,
 .signup-modal-one > i {
     position: absolute;
     top: 1rem;
@@ -208,8 +189,7 @@
     border-radius: 50%;
 }
 
-.signin-modal-one>i:hover,
-.signin-modal-two>i:hover,
+.signin-modal>i:hover,
 .signup-modal-one > i:hover {
     background-color: var(--btn-hover);
 }

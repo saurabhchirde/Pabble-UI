@@ -5,17 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Documentation/docpage-css/docs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <title>Pebble UI</title>
+    <title>Home | Pebble UI</title>
 </head>
 
 <body>
-    <h1 style="text-align: center; margin: 2rem auto; font-weight: 400;">Landing Page</h1>
-    <div style="position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); display: flex; flex-direction: column;align-items: center;justify-content: center;" >
-        <h1 style="text-align: center; margin: 0 auto 1rem; font-weight: 500;">go to</h1>
-        <a href="./docs.html"><button class="btn primary-outline-btn-lg">Documentation</button></a>
+    <!-- nav horizontal bar -->
+    <div class="nav-header-mobile hide">
+
+        <div class="nav-header">
+            <a href="/">
+                <img class="logo" src="./Documentation/docpage-assets/logo/logo.svg" alt="logo">
+            </a>
+        </div>
+        <div class="nav-header-right-side">
+            <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                <div class="header-icon"><i class="fab fa-github"></i></div>
+            </a>
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <div class="nav-header nav-header-desktop hide">
+        <a href="/">
+            <img class="logo" src="./Documentation/docpage-assets/logo/logo.svg" alt="logo">
+        </a>
+        <div class="nav-header-right-side">
+            <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                <div class="header-icon"><i class="fab fa-github"></i></div>
+            </a>
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="wrapper-landing-page">
+
+        <h1>Minimal UI Component Library</h2>
+            <p class="pd-1-tb">an open-source styling framework to help you build web pages or applications</p>
+            <div class="flex-row-center mg-1-top">
+                <a href="./docs.html"><button class="btn primary-btn-lg">Installation</button></a>
+                <a href="./Documentation/docpage/color.html"><button
+                        class="btn primary-outline-btn-md">Documentation</button></a>
+            </div>
     </div>
 </body>
 

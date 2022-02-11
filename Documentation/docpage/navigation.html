@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <title>Pebble UI | Documentation</title>
+    <title>Navigation | Pebble UI</title>
 </head>
 
 <body>
@@ -21,28 +21,19 @@
         <div class="nav-header">
             <div class="hamburger"><i class="fas fa-bars"></i></div>
             <a href="/">
-                <div class="logo">PebbleUI</div>
+                <img class="logo-icon" src="/Documentation/docpage-assets/logo/logo-icon.svg" alt="logo">
             </a>
         </div>
         <div class="nav-header-right-side">
-            <a href="/">
-                <div class="nav-header-text">Documentation</div>
-            </a>
             <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
         </div>
     </div>
 
     <div class="nav-header nav-header-desktop hide">
         <a href="/">
-            <div class="logo">PebbleUI</div>
+            <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
         </a>
         <div class="nav-header-right-side">
-            <a href="/docs.html">
-                <h2 class="nav-header-text">Installation</h2>
-            </a>
-            <a href="/">
-                <h2 class="nav-header-text">Documentation</h2>
-            </a>
             <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
                 <div class="header-icon"><i class="fab fa-github"></i></div>
             </a>
@@ -161,11 +152,8 @@
 
     <div class="right-side-nav">
         <h1>On This Page</h1>
-        <a href="#modal-discard">
-            <h2>Modal - Discard</h2>
-        </a>
-        <a href="#modal-login">
-            <h2>Modal - Login</h2>
+        <a href="#desktop-navigation-bar">
+            <h2>Desktop Navigation Bar</h2>
         </a>
     </div>
 
@@ -178,9 +166,9 @@
 
     <div class="main cont-shadow">
 
-        <section id="modal">
+        <section id="navigation">
             <h1 class="mg-point8-tb">Navigation</h1>
-            <p>
+            <p class="mg-1point4-tb title-md-wt-4">Navigation bar is use to navigate between different pages.
             </p>
 
             <h2 id="desktop-navigation-bar" class="mg-2-top mg-1-bot title-lg-wt-5">Desktop Navigation Bar</h2>
@@ -193,7 +181,7 @@
                     <!-- desktop navigation bar -->
                     <div class="desktop-navigation-bar">
                         <a href="/">
-                            <div class="logo">PebbleUI</div>
+                            <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
                         </a>
                         <div class="outline-search-input">
                             <label for="search">
@@ -204,7 +192,7 @@
                             </label>
                         </div>
                         <div class="nav-bar-btns">
-                            <button class="btn primary-outline-btn-md">Login</button>
+                            <button class="btn primary-btn-md">Login</button>
                             <div class="badge-container">
                                 <button class="btn badge-icon-btn-md">
                                     <i class="far fa-heart">
@@ -224,11 +212,13 @@
 
                 </div>
 
+                <p class="mg-2-tb">You can directly use below code, by providing the location of you logo in <strong>'src'</strong>.</p>
+
                 <script type="text/plain" class="language-html snippet-container">
                     <!-- desktop navigation bar -->
                     <div class="desktop-navigation-bar">
                         <a href="/">
-                            <div class="logo">...your logo file location...</div>
+                            <img class="logo" src="..." alt="logo">
                         </a>
                         <div class="outline-search-input">
                             <label for="search">
@@ -239,7 +229,7 @@
                             </label>
                         </div>
                         <div class="nav-bar-btns">
-                            <button class="btn primary-outline-btn-md">Login</button>
+                            <button class="btn primary-btn-md">Login</button>
                             <div class="badge-container">
                                 <button class="btn badge-icon-btn-md">
                                     <i class="far fa-heart">
@@ -256,7 +246,6 @@
                             </div>
                         </div>
                     </div>
-
                 </script>
             </div>
 

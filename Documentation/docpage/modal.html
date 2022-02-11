@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <title>Pebble UI | Documentation</title>
+    <title>Modal | Pebble UI</title>
 </head>
 
 <body>
@@ -21,28 +21,19 @@
         <div class="nav-header">
             <div class="hamburger"><i class="fas fa-bars"></i></div>
             <a href="/">
-                <div class="logo">PebbleUI</div>
+                <img class="logo-icon" src="/Documentation/docpage-assets/logo/logo-icon.svg" alt="logo">
             </a>
         </div>
         <div class="nav-header-right-side">
-            <a href="/">
-                <div class="nav-header-text">Documentation</div>
-            </a>
             <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
         </div>
     </div>
 
     <div class="nav-header nav-header-desktop hide">
         <a href="/">
-            <div class="logo">PebbleUI</div>
+            <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
         </a>
         <div class="nav-header-right-side">
-            <a href="/docs.html">
-                <h2 class="nav-header-text">Installation</h2>
-            </a>
-            <a href="/">
-                <h2 class="nav-header-text">Documentation</h2>
-            </a>
             <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
                 <div class="header-icon"><i class="fab fa-github"></i></div>
             </a>
@@ -218,90 +209,16 @@
             </div>
 
 
-            <!-- signin modal -1 -->
-            <h2 id="modal-signin" class="mg-2-top mg-1-bot title-lg-wt-5">Sign In - 1</h2>
-            <div class="mg-3-bot">
-                <div class="mg-1-tb">
-
-                    <p class="mg-1-bot mg-1-top title-md-wt-bold"></p><br>
-
-                    <!-- signin modal - 1 -->
-                    <div class="signin-modal-one modal-for-docs">
-                        <h1>Welcome Back</h1>
-                        <p>Enter your credentials to access your account</p>
-                        <i class="fas fa-times"></i>
-                        <form action="" method="post">
-                            <div class="outline-email-input">
-                                <label for="email">
-                                    <div class="input-icon"><i class="far fa-envelope"></i>
-                                        <input type="email" name="email" required autocomplete="email"
-                                            placeholder="Enter your email *" />
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="outline-password-input">
-                                <label for="password">
-                                    <div class="input-icon"><i class="fas fa-key"></i>
-                                        <input type="password" name="password" autocomplete="current-password"
-                                            placeholder="Enter your password *" required value="" />
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="signin-btn">
-                                <button type="submit" class="btn primary-btn-md">Sign In</button>
-                                <a href="" class="btn primary-text-btn-md">Sign Up</a>
-                            </div>
-                            <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
-                        </form>
-                    </div>
-
-                </div>
-
-                <script type="text/plain" class="language-html snippet-container">
-                    <!-- signin modal - 1 -->
-                    <div class="signin-modal-one">
-                        <h1>Welcome Back</h1>
-                        <p>Enter your credentials to access your account</p>
-                        <i class="fas fa-times"></i>
-                        <form action="" method="post">
-                            <div class="outline-email-input">
-                                <label for="email">
-                                    <div class="input-icon"><i class="far fa-envelope"></i>
-                                        <input type="email" name="email" required autocomplete="email"
-                                            placeholder="Enter your email *" />
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="outline-password-input">
-                                <label for="password">
-                                    <div class="input-icon"><i class="fas fa-key"></i>
-                                        <input type="password" name="password" autocomplete="current-password"
-                                            placeholder="Enter your password *" required value="" />
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="signin-btn">
-                                <button type="submit" class="btn primary-btn-md">Sign In</button>
-                                <a href="" class="btn primary-text-btn-md">Sign Up</a>
-                            </div>
-                            <p>Forgot your password? <span><a href=""> Reset Password </a></span></p>
-                        </form>
-                    </div>
-
-                </script>
-
-            </div>
-
-            <!-- signin modal - 2 -->
-            <h2 id="modal-signin-2" class="mg-2-top mg-1-bot title-lg-wt-5">Sign In - 2</h2>
+            <!-- signin modal -->
+            <h2 id="modal-signin" class="mg-2-top mg-1-bot title-lg-wt-5">Sign In</h2>
             <div class="mg-3-bot">
                 <div class="mg-1-tb">
 
                     <!-- signin -->
                     <p class="mg-1-bot mg-1-top title-md-wt-bold"></p><br>
 
-                    <!-- signin modal - 2 -->
-                    <div class="signin-modal-two modal-for-docs">
+                    <!-- signin modal -->
+                    <div class="signin-modal modal-for-docs">
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
                         <i class="fas fa-times"></i>
@@ -314,7 +231,7 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="outline-password-input">
+                            <div class="outline-password-input wrong-password">
                                 <label for="password">
                                     <div class="input-icon"><i class="fas fa-key"></i>
                                         <input type="password" name="password" autocomplete="current-password"
@@ -335,8 +252,8 @@
                 </div>
 
                 <script type="text/plain" class="language-html snippet-container">
-                    <!-- signin modal - 2 -->
-                    <div class="signin-modal-two">
+                    <!-- signin modal -->
+                    <div class="signin-modal">
                         <h1>Welcome Back</h1>
                         <p>Enter your credentials to access your account</p>
                         <i class="fas fa-times"></i>
@@ -349,7 +266,7 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="outline-password-input">
+                            <div class="outline-password-input wrong-password">
                                 <label for="password">
                                     <div class="input-icon"><i class="fas fa-key"></i>
                                         <input type="password" name="password" autocomplete="current-password"
@@ -405,16 +322,17 @@
                                         placeholder="Enter phone number" />
                                 </label>
                             </div>
-                            <div class="outline-password-input">
+                            <div class="outline-password-input ">
                                 <label for="password">Password *
                                     <input type="password" name="password" required autocomplete="current-password"
-                                        placeholder="Enter your password" value="" />
+                                        placeholder="Enter your password" value="....." />
                                 </label>
                             </div>
-                            <div class="outline-password-input">
+                            <div class="outline-password-input wrong-password">
                                 <label for="password">Re-enter Password *
                                     <input type="password" name="password" required autocomplete="current-password"
-                                        placeholder="Re-enter your password" value="" />
+                                        placeholder="Re-enter your password" value="..." />Password not matched, please
+                                    re-enter
                                 </label>
                             </div>
                             <p>By continuing you agree to our Terms of Service and
@@ -433,8 +351,7 @@
                     <div class="signup-modal-one">
                         <h1>Sign Up</h1>
                         <div class="avatar avatar-md-round">
-                            <img loading="lazy" src="..."
-                                alt="avatar-image" class="img-responsive" />
+                            <img loading="lazy" src="..." alt="avatar-image" class="img-responsive" />
                             <i class="fas fa-camera"></i>
                         </div>
                         <p>Please provide your details.</p>
