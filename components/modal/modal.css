@@ -85,10 +85,10 @@
     color: var(--primary-color);
 }
 
-.signin-modal>p,
+.signin-modal > p,
 .signup-modal-one > p,
-.signin-modal>form> p,
-.signin-modal>form> a > h2,
+.signin-modal > form > p,
+.signin-modal > form > a > h2,
 .signup-modal-one > form>p {
     margin: 0.4rem 0 0.5rem;
     font-size: 0.7rem;
@@ -96,12 +96,12 @@
     text-align: center;
 }
 
-.signin-modal>form> p { 
+.signin-modal > form > p { 
     margin: 0.8rem 0;
 }
 
 .signup-modal-one > p,
-.signup-modal-one > form>p {
+.signup-modal-one > form > p {
     text-align: left;
 }
 
@@ -119,17 +119,17 @@
     margin-left: 0.5rem;
 }
 
-.signin-modal>form,
-.signup-modal-one>form {
+.signin-modal > form,
+.signup-modal-one > form {
     width: 22rem;
 }
 
-.signin-modal>form input {
+.signin-modal > form input {
     padding-left: 2.4rem;
 }
 
-.signin-modal>form input,
-.signin-modal>form label,
+.signin-modal > form input,
+.signin-modal > form label,
 .signup-modal-one > form input,
 .signup-modal-one > form label {
     font-size: 0.8rem;
@@ -137,33 +137,33 @@
     margin: 0.1rem 0;
 }
 
-.signin-modal>form>div,
-.signup-modal-one >form>div,
-.signin-modal>form>.signin-btn {
+.signin-modal > form > div,
+.signup-modal-one > form > div,
+.signin-modal > form > .signin-btn {
     display: grid;
     margin: 0.3rem 0;
     width: 100%;
 }
 
-.signin-modal>form>.signin-btn,
-.signup-modal-one >form>.signup-btn {
+.signin-modal > form > .signin-btn,
+.signup-modal-one > form > .signup-btn {
     grid-template-columns: 1fr;
     justify-content: space-between;
 }
 
-.signin-modal>form>.signin-btn>button,
-.signup-modal-one >form>.signup-btn>button {
+.signin-modal > form > .signin-btn > button,
+.signup-modal-one > form > .signup-btn > button {
     margin: 0.4rem 0 0.5rem;
 }
 
-.signin-modal>form>p>span>a,
-.signup-modal-one > form>p>span>a {
+.signin-modal > form > p > span > a,
+.signup-modal-one > form > p > span > a {
     color: var(--primary-color);
     cursor: pointer;
     font-weight: 500;
 }
 
-.signin-modal div>i {
+.signin-modal div > i {
     position: absolute;
     width: 2rem;
     display: flex;
@@ -175,7 +175,7 @@
     color: var(--primary-color);
 }
 
-.signin-modal>i,
+.signin-modal > i,
 .signup-modal-one > i {
     position: absolute;
     top: 1rem;
@@ -189,7 +189,7 @@
     border-radius: 50%;
 }
 
-.signin-modal>i:hover,
+.signin-modal > i:hover,
 .signup-modal-one > i:hover {
     background-color: var(--btn-hover);
 }

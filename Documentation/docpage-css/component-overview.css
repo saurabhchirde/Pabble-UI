@@ -17,7 +17,7 @@
     border: 1px solid var(--medium-blue-gray);
 }
 
-.overview-container>h2 {
+.overview-container > h2 {
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0 auto 0.1rem 0;

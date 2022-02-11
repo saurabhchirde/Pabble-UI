@@ -59,6 +59,8 @@ html {
     --nav-btn-hover: rgba(174, 174, 174, 0.1);
     --modal-shadow: rgba(0, 0, 0, 0.239);
     --ham-menu-bg: rgba(19, 19, 19, 0.95);
+    --card-shadow-one:var(--text-light);
+    --card-shadow-two:rgba(0, 0, 0, 0.24);
 }
 
 /* hide all */
