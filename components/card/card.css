@@ -16,7 +16,7 @@
     flex-direction: column;
     width: 14rem;
     border-radius: 4px;
-    outline: 1px solid var(--medium-blue-gray);
+    border: 1px solid var(--medium-blue-gray);
     margin: 1rem;
     padding: 1rem;
 }
@@ -39,7 +39,7 @@
     width: 26rem;
     border-radius: 4px;
     padding: 0.5rem;
-    outline: 1px solid var(--medium-blue-gray);
+    border: 1px solid var(--medium-blue-gray);
     margin: 1rem;
     padding: 1rem;
 }
@@ -198,6 +198,14 @@
     row-gap: 1rem;
 }
 
-.card-shadow {
-    box-shadow: 0 10px 15px var(--text-light);
+.card-shadow-one {
+    box-shadow: 0 10px 15px var(--card-shadow-one);
+}
+
+.card-shadow-two {
+    box-shadow:  0px 3px 8px var(--card-shadow-two);
+}
+
+.card-shadow-three {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

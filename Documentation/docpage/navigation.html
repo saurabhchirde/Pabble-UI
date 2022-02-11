@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Components/components.css" />
+    <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+    <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>Navigation | Pebble UI</title>
+</head>
+
+<body>
+
+    <!-- nav horizontal bar -->
+    <div class="nav-header-mobile hide">
+
+        <div class="nav-header">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <a href="/">
+                <img class="logo-icon" src="/Documentation/docpage-assets/logo/logo-icon.svg" alt="logo">
+            </a>
+        </div>
+        <div class="nav-header-right-side">
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <div class="nav-header nav-header-desktop hide">
+        <a href="/">
+            <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
+        </a>
+        <div class="nav-header-right-side">
+            <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                <div class="header-icon"><i class="fab fa-github"></i></div>
+            </a>
+            <a href="https://twitter.com/SaurabhChirde" target="_blank">
+                <div class="header-icon"><i class="fab fa-twitter"></i></div>
+            </a>
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <!-- nav verticle bar desktop -->
+    <nav class="nav-desktop">
+        <a href="/docs.html">
+            <h1>Getting Started</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./color.html">
+            <h1>Color</h1>
+        </a>
+        <a href="./typography.html">
+            <h1>Typography</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./components-overview.html">
+            <h1>Component Overview</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./alert.html">
+            <h1>Alerts</h1>
+        </a>
+        <a href="./buttons.html">
+            <h1>Buttons</h1>
+        </a>
+        <a href="./avatar.html">
+            <h1>Avatar</h1>
+        </a>
+        <a href="./badge.html">
+            <h1>Badge</h1>
+        </a>
+        <a href="./cards.html">
+            <h1>Cards</h1>
+        </a>
+        <a href="./image.html">
+            <h1>Image</h1>
+        </a>
+        <a href="./input.html">
+            <h1>Input</h1>
+        </a>
+        <a href="./modal.html">
+            <h1>Modal</h1>
+        </a>
+        <a href="#" class="nav-active">
+            <h1>Navigation</h1>
+        </a>
+    </nav>
+
+    <!-- nav verticle bar mobile -->
+    <nav class="nav-mobile">
+        <a href="/docs.html">
+            <h1>Getting Started</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./color.html">
+            <h1>Color</h1>
+        </a>
+        <a href="./typography.html">
+            <h1>Typography</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./components-overview.html">
+            <h1>Component Overview</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./alert.html">
+            <h1>Alerts</h1>
+        </a>
+        <a href="./buttons.html">
+            <h1>Buttons</h1>
+        </a>
+        <a href="./avatar.html">
+            <h1>Avatar</h1>
+        </a>
+        <a href="./badge.html">
+            <h1>Badge</h1>
+        </a>
+        <a href="./cards.html">
+            <h1>Cards</h1>
+        </a>
+        <a href="./image.html">
+            <h1>Image</h1>
+        </a>
+        <a href="./input.html">
+            <h1>Input</h1>
+        </a>
+        <a href="./modal.html">
+            <h1>Modal</h1>
+        </a>
+        <a href="#" class="nav-active">
+            <h1>Navigation</h1>
+        </a>
+        <div class="connect-mobile-view">
+            <hr class="nav-break-line">
+            <div class="flex-row">
+                <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                    <div class="header-icon"><i class="fab fa-github"></i></div>
+                </a>
+                <a href="https://twitter.com/SaurabhChirde" target="_blank">
+                    <div class="header-icon"><i class="fab fa-twitter"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="nav-close-btn">
+            <i class="far fa-times-circle"></i>
+        </div>
+    </nav>
+
+    <div class="right-side-nav">
+        <h1>On This Page</h1>
+        <a href="#desktop-navigation-bar">
+            <h2>Desktop Navigation Bar</h2>
+        </a>
+    </div>
+
+    <!-- floating up btn -->
+    <a href="#"><button class="btn floating-btn-md">
+            <i class="fas fa-arrow-up"></i></button>
+    </a>
+
+    <!-- body -->
+
+    <div class="main cont-shadow">
+
+        <section id="navigation">
+            <h1 class="mg-point8-tb">Navigation</h1>
+            <p class="mg-1point4-tb title-md-wt-4">Navigation bar is use to navigate between different pages.
+            </p>
+
+            <h2 id="desktop-navigation-bar" class="mg-2-top mg-1-bot title-lg-wt-5">Desktop Navigation Bar</h2>
+            <div class="mg-3-bot">
+                <div class="mg-1-tb">
+
+                    <!-- desktop navigation bar -->
+                    <p class="mg-1-bot title-md-wt-bold"> </p><br>
+
+                    <!-- desktop navigation bar -->
+                    <div class="desktop-navigation-bar">
+                        <a href="/">
+                            <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
+                        </a>
+                        <div class="outline-search-input">
+                            <label for="search">
+                                <div class="input-icon">
+                                    <a href=""><i class="fas fa-search"></i></a>
+                                    <input type="search" name="search" placeholder="Search" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="nav-bar-btns">
+                            <button class="btn primary-btn-md">Login</button>
+                            <div class="badge-container">
+                                <button class="btn badge-icon-btn-md">
+                                    <i class="far fa-heart">
+                                        <span class="badge-on-icon">3</span>
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="badge-container">
+                                <button class="btn badge-icon-btn-md">
+                                    <i class="fas fa-shopping-cart">
+                                        <span class="badge-on-icon">12</span>
+                                    </i>Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="mg-2-tb">You can directly use below code, by providing the location of you logo in <strong>'src'</strong>.</p>
+
+                <script type="text/plain" class="language-html snippet-container">
+                    <!-- desktop navigation bar -->
+                    <div class="desktop-navigation-bar">
+                        <a href="/">
+                            <img class="logo" src="..." alt="logo">
+                        </a>
+                        <div class="outline-search-input">
+                            <label for="search">
+                                <div class="input-icon">
+                                    <a href=""><i class="fas fa-search"></i></a>
+                                    <input type="search" name="search" placeholder="Search" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="nav-bar-btns">
+                            <button class="btn primary-btn-md">Login</button>
+                            <div class="badge-container">
+                                <button class="btn badge-icon-btn-md">
+                                    <i class="far fa-heart">
+                                        <span class="badge-on-icon">3</span>
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="badge-container">
+                                <button class="btn badge-icon-btn-md">
+                                    <i class="fas fa-shopping-cart">
+                                        <span class="badge-on-icon">12</span>
+                                    </i>Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </script>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="/Documentation/docpage-js/docs.js"></script>
+    <script src="/Documentation/utilities/prismjs/prism.js"></script>
+</body>
+
+</html>

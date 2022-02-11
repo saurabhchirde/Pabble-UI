@@ -1,0 +1,195 @@
+.discard-modal-md {
+    width: 18rem;
+    height: 6rem;
+    border-radius: 4px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.3rem 1.3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg);
+    box-shadow: 0px 3px 8px var(--modal-shadow);
+}
+
+.discard-modal-md p {
+    align-self: flex-start;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    color: var(--text-dark);
+}
+
+.discard-modal-btn {
+    align-self: flex-end;
+    width: 9rem;
+    font-size: 0.9rem;
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discard-modal-btn a {
+    color: var(--text-dark);
+}
+
+.signin-modal,
+.signup-modal-one {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 27rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bg);
+    box-shadow: 0px 3px 8px var(--modal-shadow);
+}
+
+.modal-for-docs {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: translate(0.1%, 0.1%);
+}
+
+.signin-modal h1,
+.signup-modal-one h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 0.3rem;
+    color: var(--primary-color);
+}
+
+.signup-modal-one h1 {
+    margin: 1rem 0 1rem;
+}
+
+.signup-modal-one > div{
+    position: relative;
+}
+
+.signup-modal-one > div > i {
+    position: absolute;
+    right: -1.5rem;
+    font-size: 1.2rem;
+    bottom: 0;
+    color: var(--primary-color);
+}
+
+.signin-modal > p,
+.signup-modal-one > p,
+.signin-modal > form > p,
+.signin-modal > form > a > h2,
+.signup-modal-one > form>p {
+    margin: 0.4rem 0 0.5rem;
+    font-size: 0.7rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.signin-modal > form > p { 
+    margin: 0.8rem 0;
+}
+
+.signup-modal-one > p,
+.signup-modal-one > form > p {
+    text-align: left;
+}
+
+.signup-modal-one > p {
+    margin: 1.5rem 0 0;
+}
+
+.signin-modal > form > a > h2 {
+    color: var(--primary-color)
+    ;
+    font-size: 0.9rem;
+}
+
+.signin-modal > form > a > h2 > i {
+    margin-left: 0.5rem;
+}
+
+.signin-modal > form,
+.signup-modal-one > form {
+    width: 22rem;
+}
+
+.signin-modal > form input {
+    padding-left: 2.4rem;
+}
+
+.signin-modal > form input,
+.signin-modal > form label,
+.signup-modal-one > form input,
+.signup-modal-one > form label {
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0.1rem 0;
+}
+
+.signin-modal > form > div,
+.signup-modal-one > form > div,
+.signin-modal > form > .signin-btn {
+    display: grid;
+    margin: 0.3rem 0;
+    width: 100%;
+}
+
+.signin-modal > form > .signin-btn,
+.signup-modal-one > form > .signup-btn {
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+}
+
+.signin-modal > form > .signin-btn > button,
+.signup-modal-one > form > .signup-btn > button {
+    margin: 0.4rem 0 0.5rem;
+}
+
+.signin-modal > form > p > span > a,
+.signup-modal-one > form > p > span > a {
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signin-modal div > i {
+    position: absolute;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0.3rem;
+    font-size: 1rem;
+    padding: 0.7rem;
+    color: var(--primary-color);
+}
+
+.signin-modal > i,
+.signup-modal-one > i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.signin-modal > i:hover,
+.signup-modal-one > i:hover {
+    background-color: var(--btn-hover);
+}

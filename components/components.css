@@ -7,6 +7,7 @@
 @import "./image/image.css";
 @import "./card/card.css";
 @import "./input/input.css";
+@import "./modal/modal.css";
 
 @import "/Documentation/utilities/containers.css";
 @import "/Documentation/utilities/margins.css";
@@ -56,7 +57,10 @@ html {
 
     --btn-hover: #99999933;
     --nav-btn-hover: rgba(174, 174, 174, 0.1);
+    --modal-shadow: rgba(0, 0, 0, 0.239);
     --ham-menu-bg: rgba(19, 19, 19, 0.95);
+    --card-shadow-one:var(--text-light);
+    --card-shadow-two:rgba(0, 0, 0, 0.24);
 }
 
 /* hide all */

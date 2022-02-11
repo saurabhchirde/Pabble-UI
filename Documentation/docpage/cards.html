@@ -10,55 +10,46 @@
   <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <title>Pabble UI | Documentation</title>
+  <title>Cards | Pebble UI</title>
 </head>
 
 <body>
 
- <!-- nav horizontal bar -->
- <div class="nav-header-mobile hide">
+  <!-- nav horizontal bar -->
+  <div class="nav-header-mobile hide">
 
-  <div class="nav-header">
-    <div class="hamburger"><i class="fas fa-bars"></i></div>
-    <a href="/">
-      <div class="logo">PabbleUI</div>
-    </a>
+    <div class="nav-header">
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+      <a href="/">
+        <img class="logo-icon" src="/Documentation/docpage-assets/logo/logo-icon.svg" alt="logo">
+      </a>
+    </div>
+    <div class="nav-header-right-side">
+      <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+    </div>
   </div>
-  <div class="nav-header-right-side">
-    <a href="/">
-      <div class="nav-header-text">Documentation</div>
-    </a>
-    <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
-  </div>
-</div>
 
-<div class="nav-header nav-header-desktop hide">
-  <a href="/">
-    <div class="logo">PabbleUI</div>
-  </a>
-  <div class="nav-header-right-side">
+  <div class="nav-header nav-header-desktop hide">
     <a href="/">
-      <div class="nav-header-text">Documentation</div>
+      <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
     </a>
-    <a href="https://github.com/saurabhchirde/Pabble-UI" target="_blank">
-      <div class="header-icon"><i class="fab fa-github"></i></div>
-    </a>
-    <a href="https://twitter.com/SaurabhChirde" target="_blank">
-      <div class="header-icon"><i class="fab fa-twitter"></i></div>
-    </a>
-    <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+    <div class="nav-header-right-side">
+      <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+        <div class="header-icon"><i class="fab fa-github"></i></div>
+      </a>
+      <a href="https://twitter.com/SaurabhChirde" target="_blank">
+        <div class="header-icon"><i class="fab fa-twitter"></i></div>
+      </a>
+      <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+    </div>
   </div>
-</div>
 
- <!-- nav verticle bar desktop -->
+  <!-- nav verticle bar desktop -->
   <nav class="nav-desktop">
     <a href="/docs.html">
       <h1>Getting Started</h1>
     </a>
     <hr class="nav-break-line">
-    <a href="./about.html">
-      <h1>About</h1>
-    </a>
     <a href="./color.html">
       <h1>Color</h1>
     </a>
@@ -90,6 +81,12 @@
     </a>
     <a href="./input.html">
       <h1>Input</h1>
+    </a>
+    <a href="./modal.html">
+      <h1>Modal</h1>
+    </a>
+    <a href="./navigation.html">
+      <h1>Navigation</h1>
     </a>
   </nav>
 
@@ -99,9 +96,6 @@
       <h1>Getting Started</h1>
     </a>
     <hr class="nav-break-line">
-    <a href="./about.html">
-      <h1>About</h1>
-    </a>
     <a href="./color.html">
       <h1>Color</h1>
     </a>
@@ -134,10 +128,16 @@
     <a href="./input.html">
       <h1>Input</h1>
     </a>
+    <a href="./modal.html">
+      <h1>Modal</h1>
+    </a>
+    <a href="./navigation.html">
+      <h1>Navigation</h1>
+    </a>
     <div class="connect-mobile-view">
       <hr class="nav-break-line">
       <div class="flex-row">
-        <a href="https://github.com/saurabhchirde/Pabble-UI" target="_blank">
+        <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
           <div class="header-icon"><i class="fab fa-github"></i></div>
         </a>
         <a href="https://twitter.com/SaurabhChirde" target="_blank">
@@ -747,13 +747,13 @@
       </div>
 
       <!-- with text overlay -->
-      <h2 id="#text-overlay-card" class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
+      <h2 id="text-overlay-card" class="mg-2-top mg-1-bot title-lg-wt-5">Cards with Text Overlay</h2>
 
       <p>For light cards we use <strong>'card-light'</strong> and for dark cards use <strong>'card-dark'</strong>.
         The remaining code will be the same.</p>
 
       <div class="mg-4-bot">
-        <h3 id="#text-overlay-one" class="mg-2-top mg-1-bot title-md-wt-bold">Text Overlay Type - 1 </h3>
+        <h3 id="text-overlay-one" class="mg-2-top mg-1-bot title-md-wt-bold">Text Overlay Type - 1 </h3>
 
         <div class="component-container mg-1-top">
 
@@ -821,7 +821,7 @@
           </div>
         </script>
 
-        <h3 id="#text-overlay-two" class="mg-2-top mg-1-bot title-md-wt-bold">Text Overlay Type - 2 </h3>
+        <h3 id="text-overlay-two" class="mg-2-top mg-1-bot title-md-wt-bold">Text Overlay Type - 2 </h3>
         <p>With just chaning the <strong>'overlay-area-type-1'</strong> to <strong>'overlay-area-type-2'</strong> we can
           create second type of overlay card as shown below.</p>
         <div class="component-container mg-1-top">
@@ -1161,14 +1161,58 @@
 
       <!-- card with shadow -->
       <h2 id="card-w-shadow" class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
-      <p>For adding a shadow to any card, add <strong>'card-shadow'</strong> as shown in the code.</p>
+      <p>We have three types of shadows for cards. Which can be added by adding any of the class <strong>"card-shadow-one"</strong> , <strong>"card-shadow-two"</strong> , <strong>"card-shadow-three"</strong> in your code, as shown in the code example below.</p>
 
       <!-- vertical card -->
 
       <div class="component-container mg-1-tb">
 
-        <!-- vertical light card -->
-        <div class="card-vertical card-light card-shadow">
+        <!-- vertical light card with card-shadow-one -->
+        <div class="card-vertical card-light card-shadow-one">
+          <div class="card-img-container">
+            <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- vertical light card with card-shadow-two -->
+        <div class="card-vertical card-light card-shadow-two">
+          <div class="card-img-container">
+            <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- vertical light card with card-shadow-three -->
+        <div class="card-vertical card-light card-shadow-three">
           <div class="card-img-container">
             <img src="/Documentation/docpage-assets/cards/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
           </div>
@@ -1195,8 +1239,54 @@
       <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
 
       <script type="text/plain" class="language-html snippet-container">
-        <!-- vertical light card -->
-        <div class="card-vertical card-light card-shadow">
+        <!-- vertical light card with card-shadow-one -->
+        <div class="card-vertical card-light card-shadow-one">
+          <div class="card-img-container">
+            <img src="..." alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- vertical light card with card-shadow-two -->
+        <div class="card-vertical card-light card-shadow-two">
+          <div class="card-img-container">
+            <img src="..." alt="product-image" />
+          </div>
+          <div class="card-text">
+            <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+              Shoot Camera (Black) with 8X Optical Zoom</h1>
+            <h2 class="card-price">10,999/-</h2>
+          </div>
+          <div class="card-nav">
+            <div class="card-cta-btn">
+              <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+              <div class="card-nav-icon">
+                <button class="btn primary-text-btn-sm icon-md"><i class="far fa-heart"></i>
+                </button>
+                <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- vertical light card with card-shadow-three -->
+        <div class="card-vertical card-light card-shadow-three">
           <div class="card-img-container">
             <img src="..." alt="product-image" />
           </div>

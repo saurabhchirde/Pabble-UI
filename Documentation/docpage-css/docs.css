@@ -47,12 +47,17 @@ body.darkTheme {
     padding: 0 2rem;
 }
 
+.main > section > h1 {
+     font-size: 1.5rem;
+}
+
 li {
     list-style: none;
 }
 
 /* components */
 
+#getting-started,
 #alert,
 #buttons,
 #badge,
@@ -63,7 +68,9 @@ li {
 #about,
 #color,
 #typography,
-#comp-overview {
+#comp-overview,
+#modal,
+#navigation {
     padding: 1rem;
     margin-bottom: 3rem;
 }
@@ -84,12 +91,12 @@ li {
     margin: 0.5rem;
 }
 
-#typography>h2 {
+#typography > h2 {
     font-weight: 500;
     margin: 2rem 0 1rem;
 }
 
-#paragraph~p>span {
+#paragraph ~p > span {
     font-weight: 500;
     color: var(--primary-color);
 }
@@ -114,7 +121,7 @@ li {
     }
 }
 
-@media screen and (min-width:560px) and (max-width:960px) {
+@media screen and (min-width:760px) and (max-width:960px) {
     .main {
         width: 100%;
     }
@@ -124,7 +131,7 @@ li {
     }
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:760px) {
     body {
         display: flex;
         flex-direction: column;
