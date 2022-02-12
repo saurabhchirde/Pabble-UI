@@ -38,7 +38,7 @@
 .signin-modal,
 .signup-modal-one {
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -175,8 +175,8 @@
     color: var(--primary-color);
 }
 
-.signin-modal > i,
-.signup-modal-one > i {
+.signin-modal > a > i,
+.signup-modal-one > a > i {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -189,7 +189,18 @@
     border-radius: 50%;
 }
 
-.signin-modal > i:hover,
-.signup-modal-one > i:hover {
+.signin-modal > a > i:hover,
+.signup-modal-one > a > i:hover {
     background-color: var(--btn-hover);
+}
+
+.modal-active {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(69, 69, 69, 0.7);
 }
