@@ -16,6 +16,7 @@
 @import "/Documentation/utilities/typography.css";
 @import "/Documentation/utilities/icons.css";
 @import "/Documentation/utilities/grid.css";
+@import "/Documentation/docpage-css/navigation.css";
 
 * {
     margin: 0;
