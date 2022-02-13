@@ -59,6 +59,7 @@
     left: auto;
     top: auto;
     transform: translate(0.1%, 0.1%);
+    z-index: 1;
 }
 
 .signin-modal h1,
@@ -73,11 +74,15 @@
     margin: 1rem 0 1rem;
 }
 
-.signup-modal-one > div{
+.signup-modal-one>div {
     position: relative;
 }
 
-.signup-modal-one > div > i {
+.signup-modal-one>div>img {
+    background-color: var(--text-light);border-radius: 50%;
+}
+
+.signup-modal-one>div>i {
     position: absolute;
     right: -1.5rem;
     font-size: 1.2rem;
@@ -85,85 +90,84 @@
     color: var(--primary-color);
 }
 
-.signin-modal > p,
-.signup-modal-one > p,
-.signin-modal > form > p,
-.signin-modal > form > a > h2,
-.signup-modal-one > form>p {
+.signin-modal>p,
+.signup-modal-one>p,
+.signin-modal>form>p,
+.signin-modal>form>a>h2,
+.signup-modal-one>form>p {
     margin: 0.4rem 0 0.5rem;
     font-size: 0.7rem;
     color: var(--text-light);
     text-align: center;
 }
 
-.signin-modal > form > p { 
+.signin-modal>form>p {
     margin: 0.8rem 0;
 }
 
-.signup-modal-one > p,
-.signup-modal-one > form > p {
+.signup-modal-one>p,
+.signup-modal-one>form>p {
     text-align: left;
 }
 
-.signup-modal-one > p {
+.signup-modal-one>p {
     margin: 1.5rem 0 0;
 }
 
-.signin-modal > form > a > h2 {
-    color: var(--primary-color)
-    ;
+.signin-modal>form>a>h2 {
+    color: var(--primary-color);
     font-size: 0.9rem;
 }
 
-.signin-modal > form > a > h2 > i {
+.signin-modal>form>a>h2>i {
     margin-left: 0.5rem;
 }
 
-.signin-modal > form,
-.signup-modal-one > form {
+.signin-modal>form,
+.signup-modal-one>form {
     width: 22rem;
 }
 
-.signin-modal > form input {
+.signin-modal>form input {
     padding-left: 2.4rem;
 }
 
-.signin-modal > form input,
-.signin-modal > form label,
-.signup-modal-one > form input,
-.signup-modal-one > form label {
+.signin-modal>form input,
+.signin-modal>form label,
+.signup-modal-one>form input,
+.signup-modal-one>form label {
     font-size: 0.8rem;
     width: 100%;
     margin: 0.1rem 0;
 }
 
-.signin-modal > form > div,
-.signup-modal-one > form > div,
-.signin-modal > form > .signin-btn {
+.signin-modal>form>div,
+.signup-modal-one>form>div,
+.signin-modal>form>.signin-btn {
     display: grid;
     margin: 0.3rem 0;
     width: 100%;
 }
 
-.signin-modal > form > .signin-btn,
-.signup-modal-one > form > .signup-btn {
+.signin-modal>form>.signin-btn,
+.signup-modal-one>form>.signup-btn {
     grid-template-columns: 1fr;
     justify-content: space-between;
 }
 
-.signin-modal > form > .signin-btn > button,
-.signup-modal-one > form > .signup-btn > button {
+.signin-modal>form>.signin-btn>button,
+.signup-modal-one>form>.signup-btn>button {
     margin: 0.4rem 0 0.5rem;
 }
 
-.signin-modal > form > p > span > a,
-.signup-modal-one > form > p > span > a {
+.signin-modal>form>p>span>a,
+.signup-modal-one>form>p>span>a {
     color: var(--primary-color);
     cursor: pointer;
     font-weight: 500;
 }
 
-.signin-modal div > i {
+.signin-modal div>i {
     position: absolute;
     width: 2rem;
     display: flex;
@@ -175,8 +179,8 @@
     color: var(--primary-color);
 }
 
-.signin-modal > a > i,
-.signup-modal-one > a > i {
+.signin-modal>a>i,
+.signup-modal-one>a>i {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -189,8 +193,8 @@
     border-radius: 50%;
 }
 
-.signin-modal > a > i:hover,
-.signup-modal-one > a > i:hover {
+.signin-modal>a>i:hover,
+.signup-modal-one>a>i:hover {
     background-color: var(--btn-hover);
 }
 

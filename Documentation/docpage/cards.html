@@ -31,7 +31,7 @@
 
   <div class="nav-header nav-header-desktop hide">
     <a href="/">
-      <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
+      <img class="logo" src="/Documentation/docpage-assets/logo/logo-dark.svg" alt="logo">
     </a>
     <div class="nav-header-right-side">
       <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
@@ -213,6 +213,9 @@
     </a>
     <a href="#card-w-shadow">
       <h2>Card With Shadow</h2>
+    </a>
+    <a href="#cart-card">
+      <h2>Card for Cart</h2>
     </a>
   </div>
 
@@ -1093,7 +1096,7 @@
         <strong>'card-dark'</strong> in the code.</p>
 
       <div class="component-container">
-        <!-- horizontal dark card -->
+        <!-- horizontal light card -->
         <div class="card-horizontal-info card-light">
           <div class="badge-on-card top-right">
             <h2>New Arrival</h2>
@@ -1128,7 +1131,7 @@
       <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
 
       <script type="text/plain" class="language-html snippet-container">
-        <!-- horizontal dark card -->
+        <!-- horizontal light card -->
         <div class="card-horizontal-info card-light">
           <div class="badge-on-card top-right">
             <h2>New Arrival</h2>
@@ -1161,7 +1164,9 @@
 
       <!-- card with shadow -->
       <h2 id="card-w-shadow" class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
-      <p>We have three types of shadows for cards. Which can be added by adding any of the class <strong>"card-shadow-one"</strong> , <strong>"card-shadow-two"</strong> , <strong>"card-shadow-three"</strong> in your code, as shown in the code example below.</p>
+      <p>We have three types of shadows for cards. Which can be added by adding any of the class
+        <strong>"card-shadow-one"</strong> , <strong>"card-shadow-two"</strong> , <strong>"card-shadow-three"</strong>
+        in your code, as shown in the code example below.</p>
 
       <!-- vertical card -->
 
@@ -1303,6 +1308,70 @@
                 </button>
                 <button class="btn primary-text-btn-sm icon-md"><i class="fas fa-share-alt"></i>
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+
+      <!-- cart cards -->
+      <h2 id="cart-card" class="mg-3-top mg-1-bot title-lg-wt-5">Card for Cart</h2>
+      <p></p>
+
+      <div class="component-container mg-1-bot mg-1-top">
+
+        <!-- horizontal light card for cart -->
+        <div class="card-for-cart card-light">
+          <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon"><i class="far fa-heart">
+          </i></button>
+          <div class="card-img-container">
+            <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h1 class="card-title title-md">Canon EOS 1500D 24.1 Digital SLR Camera
+                (Black) with EF S18-55 is II Lens</h1>
+              <h2 class="card-price">35,999/-</h2>
+            </div>
+            <div class="card-nav">
+                <button class="btn secondary-outline-btn-sm">Remove</button>
+                <div class="card-nav-icon">
+                  <div class="cart-qty">
+                    <button onclick="qty.value--">-</button>
+                    <input type="number" name="" min="1" value="qty.value" oninput="qty.value=this.value" disabled hidden/><output id="qty">1</output>
+                    <button onclick="qty.value++">+</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+      <script type="text/plain" class="language-html snippet-container">
+        <!-- horizontal light card for cart -->
+        <div class="card-for-cart card-light">
+          <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon">
+            <i class="far fa-heart"></i></button>
+          <div class="card-img-container">
+            <img src="..." alt="product-image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h1 class="card-title title-md">Canon EOS 1500D 24.1 Digital SLR Camera
+                (Black) with EF S18-55 is II Lens</h1>
+              <h2 class="card-price">35,999/-</h2>
+            </div>
+            <div class="card-nav">
+                <button class="btn secondary-outline-btn-sm">Remove</button>
+                <div class="card-nav-icon">
+                  <div class="cart-qty">
+                    <button onclick="qty.value--">-</button>
+                    <input type="number" name="" min="1" value="qty.value" oninput="qty.value=this.value" disabled hidden/><output id="qty">1</output>
+                    <button onclick="qty.value++">+</button>
+                  </div>
               </div>
             </div>
           </div>
