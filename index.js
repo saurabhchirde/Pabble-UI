@@ -1,18 +1,3 @@
-// hamburger menu
-document.querySelector(".hamburger").addEventListener("click", () => {
-    document.querySelector(".nav-mobile").style.display = "flex";
-})
-
-document.querySelector(".nav-close-btn").addEventListener("click", () => {
-    document.querySelector(".nav-mobile").style.display = "none";
-})
-
-if (window.outerHeight > 560) {
-    document.querySelector(".nav-mobile").style.display = "none";
-}
-
-// dark mode
-
 const btnToggler = document.querySelectorAll(".toggler");
 const logo = document.querySelectorAll(".logo");
 const navItem = document.querySelectorAll(".nav-item");

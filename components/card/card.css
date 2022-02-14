@@ -48,16 +48,17 @@
 .card-for-cart{
     width: 97%;
     height: 13rem;
-    padding: 0;
+    padding: 0.3rem 0.8rem;
 }
 
 .card-for-cart .card-img-container {
-    width: 10rem;
+    width: 15rem;
+    height: auto;
     margin-top: 0;
 }
 
 .card-for-cart .card-img-container > img {
-    width: 8rem;
+    width: 14rem;
 }
 
 .card-horizontal-info{
@@ -165,6 +166,10 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.cart-wishlist-icon {
+    right: 0.4rem;
 }
 
 .text-overlay{

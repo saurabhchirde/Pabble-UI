@@ -9,11 +9,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    
 }
 
 .avatar {
-    border: 2px solid white;
+    outline: 2px solid white;
     color: var(--text-white);
 }
 

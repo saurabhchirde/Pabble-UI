@@ -25,22 +25,22 @@
 
 .badge-container .text-avatar-md-round ~ .status-badge,
 .avatar-md-round ~ .status-badge {
-    right: 1em;
-    bottom: 0.8em;
+    right: 1.3em;
+    bottom: 0.35em;
 }
 
 .badge-container .avatar-sm-round ~ .status-badge,
 .text-avatar-sm-round ~ .status-badge {
-    right: 0.5em;
-    bottom: 0.2em;
+    right: 0.4em;
+    bottom: 0.35em;
     height: 1rem;
     min-width: 1rem;
 }
 
 .badge-container .avatar-xsm-round ~ .status-badge,
 .text-avatar-xsm-round ~ .status-badge {
-    right: 0.3em;
-    bottom: 0.3em;
+    right: 0.4em;
+    bottom: 0.35em;
     height: 0.7rem;
     min-width: 0.7rem;
 }
