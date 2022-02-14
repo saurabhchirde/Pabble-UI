@@ -10,10 +10,11 @@
 }
 
 :root {
-    --light-theme-background-color: #f2f2f24c;
+    --light-theme-background-color: var(--primary-bg);
     --light-theme-primary-color: #282828;
-    --dark-theme-background-color: #262626;
+    --dark-theme-background-color: #1A1C1D;
     --dark-theme-primary-color: #dadada;
+    --dark-theme--text-primary-color: #dadada;
 }
 
 html {
@@ -29,12 +30,16 @@ body {
         "... body ...";
     width: 100%;
     margin: auto;
-    background-color: var(--primary-bg);
+    background-color: var(--light-theme-background-color);
 }
 
-body.darkTheme {
+body.darkTheme,
+.nav-header-mobile.darkTheme,
+.nav-header-desktop.darkTheme,
+.header-icon.darkTheme,
+.nav-item.darkTheme {
     background-color: var(--dark-theme-background-color);
-    color: var(--dark-theme-primary-color);
+    color: var(--dark-theme--text-primary-color);
 }
 
 /* body */

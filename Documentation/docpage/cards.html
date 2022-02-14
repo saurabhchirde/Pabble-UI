@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/Documentation/docpage-assets/logo/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Documentation/docpage-assets/logo/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Documentation/docpage-assets/logo/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/Documentation/docpage-assets/logo/favicon/site.webmanifest">
   <title>Cards | Pebble UI</title>
 </head>
 
@@ -31,7 +35,7 @@
 
   <div class="nav-header nav-header-desktop hide">
     <a href="/">
-      <img class="logo" src="/Documentation/docpage-assets/logo/logo.svg" alt="logo">
+      <img class="logo" src="/Documentation/docpage-assets/logo/logo-dark.svg" alt="logo">
     </a>
     <div class="nav-header-right-side">
       <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
@@ -47,46 +51,46 @@
   <!-- nav verticle bar desktop -->
   <nav class="nav-desktop">
     <a href="/docs.html">
-      <h1>Getting Started</h1>
+      <h1 class="nav-item">Getting Started</h1>
     </a>
     <hr class="nav-break-line">
     <a href="./color.html">
-      <h1>Color</h1>
+      <h1 class="nav-item">Color</h1>
     </a>
     <a href="./typography.html">
-      <h1>Typography</h1>
+      <h1 class="nav-item">Typography</h1>
     </a>
     <hr class="nav-break-line">
     <a href="./components-overview.html">
-      <h1>Component Overview</h1>
+      <h1 class="nav-item">Component Overview</h1>
     </a>
     <hr class="nav-break-line">
     <a href="./alert.html">
-      <h1>Alerts</h1>
+      <h1 class="nav-item">Alerts</h1>
     </a>
     <a href="./buttons.html">
-      <h1>Buttons</h1>
+      <h1 class="nav-item">Buttons</h1>
     </a>
     <a href="./avatar.html">
-      <h1>Avatar</h1>
+      <h1 class="nav-item">Avatar</h1>
     </a>
     <a href="./badge.html">
-      <h1>Badge</h1>
+      <h1 class="nav-item">Badge</h1>
     </a>
     <a href="#" class="nav-active">
-      <h1>Cards</h1>
+      <h1 class="nav-item">Cards</h1>
     </a>
     <a href="./image.html">
-      <h1>Image</h1>
+      <h1 class="nav-item">Image</h1>
     </a>
     <a href="./input.html">
-      <h1>Input</h1>
+      <h1 class="nav-item">Input</h1>
     </a>
     <a href="./modal.html">
-      <h1>Modal</h1>
+      <h1 class="nav-item">Modal</h1>
     </a>
     <a href="./navigation.html">
-      <h1>Navigation</h1>
+      <h1 class="nav-item">Navigation</h1>
     </a>
   </nav>
 
@@ -151,9 +155,9 @@
   </nav>
 
   <div class="right-side-nav">
-    <h1>On This Page</h1>
+    <h1 class="nav-item">On This Page</h1>
     <a href="#card-wo-dismiss">
-      <h2>Card Without dismiss</h2>
+      <h2 class="nav-item">Card Without dismiss</h2>
     </a>
     <ul>
       <a href="#card-wo-dismiss-vr-lt">
@@ -170,7 +174,7 @@
       </a>
     </ul>
     <a href="#card-w-dismiss">
-      <h2>Card With Dismiss</h2>
+      <h2 class="nav-item">Card With Dismiss</h2>
     </a>
     <ul>
       <a href="#card-w-dismiss-vr-lt">
@@ -187,7 +191,7 @@
       </a>
     </ul>
     <a href="#text-overlay-card">
-      <h2>Cards With Text Overlay</h2>
+      <h2 class="nav-item">Cards With Text Overlay</h2>
     </a>
     <ul>
       <a href="#text-overlay-one">
@@ -198,10 +202,10 @@
       </a>
     </ul>
     <a href="#text-only-card">
-      <h2>Text Only Card</h2>
+      <h2 class="nav-item">Text Only Card</h2>
     </a>
     <a href="#card-w-badge">
-      <h2>Card With Badge</h2>
+      <h2 class="nav-item">Card With Badge</h2>
     </a>
     <ul>
       <a href="#badge-card-examples">
@@ -209,13 +213,18 @@
       </a>
     </ul>
     <a href="#card-wo-dismiss-hr-info">
-      <h2>Information Card </h2>
+      <h2 class="nav-item">Information Card </h2>
     </a>
     <a href="#card-w-shadow">
-      <h2>Card With Shadow</h2>
+      <h2 class="nav-item">Card With Shadow</h2>
+    </a>
+    <a href="#cart-item-card">
+      <h2 class="nav-item">Cart Item Card</h2>
+    </a>
+    <a href="#cart-price-card">
+      <h2 class="nav-item">Price Card</h2>
     </a>
   </div>
-
   <!-- floating up btn -->
   <a href="#"><button class="btn floating-btn-md">
       <i class="fas fa-arrow-up"></i></button>
@@ -1093,7 +1102,7 @@
         <strong>'card-dark'</strong> in the code.</p>
 
       <div class="component-container">
-        <!-- horizontal dark card -->
+        <!-- horizontal light card -->
         <div class="card-horizontal-info card-light">
           <div class="badge-on-card top-right">
             <h2>New Arrival</h2>
@@ -1128,7 +1137,7 @@
       <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
 
       <script type="text/plain" class="language-html snippet-container">
-        <!-- horizontal dark card -->
+        <!-- horizontal light card -->
         <div class="card-horizontal-info card-light">
           <div class="badge-on-card top-right">
             <h2>New Arrival</h2>
@@ -1161,7 +1170,9 @@
 
       <!-- card with shadow -->
       <h2 id="card-w-shadow" class="mg-2-top mg-1-bot title-lg-wt-5">Card with Shadow</h2>
-      <p>We have three types of shadows for cards. Which can be added by adding any of the class <strong>"card-shadow-one"</strong> , <strong>"card-shadow-two"</strong> , <strong>"card-shadow-three"</strong> in your code, as shown in the code example below.</p>
+      <p>We have three types of shadows for cards. Which can be added by adding any of the class
+        <strong>"card-shadow-one"</strong> , <strong>"card-shadow-two"</strong> , <strong>"card-shadow-three"</strong>
+        in your code, as shown in the code example below.</p>
 
       <!-- vertical card -->
 
@@ -1305,6 +1316,153 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </script>
+
+      <!-- cart cards -->
+      <h2 id="cart-item-card" class="mg-3-top mg-1-bot title-lg-wt-5">Cart Item Card</h2>
+      <p></p>
+
+      <div id="cart-item-card" class="component-container mg-1-bot mg-1-top">
+
+        <!-- horizontal light card for cart -->
+        <div class="card-for-cart card-light">
+          <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon"><i class="far fa-heart">
+            </i></button>
+          <div class="card-img-container">
+            <img src="/Documentation/docpage-assets/cards/914hFeTU2-L._AC_UY218_.png" alt="product-image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h1 class="card-title title-md">Canon EOS 1500D 24.1 Digital SLR Camera
+                (Black) with EF S18-55 is II Lens</h1>
+              <h2 class="card-price">35,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <button class="btn secondary-outline-btn-sm">Remove</button>
+              <div class="card-nav-icon">Qty
+                <div class="cart-qty">
+                  <button onclick="qty.value--"><i class="fas fa-minus"></i></button>
+                  <input type="number" name="" min="1" value="qty.value" oninput="qty.value=this.value" disabled
+                    hidden /><output id="qty">1</output>
+                  <button onclick="qty.value++"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="mg-1-tb">You can directly use below code, by providing your image location in 'src'.</p>
+
+      <script type="text/plain" class="language-html snippet-container">
+        <!-- horizontal light card for cart -->
+        <div class="card-for-cart card-light">
+          <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon">
+            <i class="far fa-heart"></i></button>
+          <div class="card-img-container">
+            <img src="..." alt="product-image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h1 class="card-title title-md">Canon EOS 1500D 24.1 Digital SLR Camera
+                (Black) with EF S18-55 is II Lens</h1>
+              <h2 class="card-price">35,999/-</h2>
+            </div>
+            <div class="card-nav">
+              <button class="btn secondary-outline-btn-sm">Remove</button>
+              <div class="card-nav-icon">Qty
+                <div class="cart-qty">
+                  <button onclick="qty.value--"><i class="fas fa-minus"></i></button>
+                  <input type="number" name="" min="1" value="qty.value" oninput="qty.value=this.value" disabled
+                    hidden /><output id="qty">1</output>
+                  <button onclick="qty.value++"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+
+      <!-- price breakup card for cart -->
+      <h2 id="cart-price-card" class="mg-3-top mg-1-bot title-lg-wt-5">Price Card </h2>
+      <p></p>
+      <div class="component-container mg-2-bot mg-1-top">
+
+        <!-- price-card-for-cart -->
+        <div class="cart-price-table">
+          <h2>Price Details</h2>
+          <hr class="break-line">
+          <div class="cart-price">
+            <h3>Price</h3>
+            <h3>25,000/-</h3>
+          </div>
+          <div class="cart-product-qty">
+            <h3>Total Qty</h3>
+            <h3>1</h3>
+          </div>
+          <div class="cart-discount">
+            <h3>Discount</h3>
+            <h3>1000/-</h3>
+          </div>
+          <hr class="break-line">
+          <div class="cart-total">
+            <h3>Total</h3>
+            <h3>24,000/-</h3>
+          </div>
+          <hr class="break-line">
+          <div class="cart-coupon">
+            <h3>Coupun code (if any)</h3>
+            <div class="cart-coupon-apply">
+              <input type="text" name="" id="" value="" placeholder="code">
+              <button class="btn secondary-outline-btn-md">APPLY</button>
+            </div>
+          </div>
+          <hr class="break-line">
+          <div class="cart-btns">
+            <button class="btn primary-outline-btn-md">Edit Cart</button>
+            <button class="btn primary-btn-md">Place Order</button>
+          </div>
+        </div>
+
+      </div>
+
+      <script type="text/plain" class="language-html snippet-container">
+        <!-- price-card-for-cart -->
+        <div class="cart-price-table">
+          <h2>Price Details</h2>
+          <hr class="break-line">
+          <div class="cart-price">
+            <h3>Price</h3>
+            <h3>25,000/-</h3>
+          </div>
+          <div class="cart-product-qty">
+            <h3>Total Qty</h3>
+            <h3>1</h3>
+          </div>
+          <div class="cart-discount">
+            <h3>Discount</h3>
+            <h3>1000/-</h3>
+          </div>
+          <hr class="break-line">
+          <div class="cart-total">
+            <h3>Total</h3>
+            <h3>24,000/-</h3>
+          </div>
+          <hr class="break-line">
+          <div class="cart-coupon">
+            <h3>Coupun code (if any)</h3>
+            <div class="cart-coupon-apply">
+              <input type="text" name="" id="" value="" placeholder="code">
+              <button class="btn secondary-outline-btn-md">APPLY</button>
+            </div>
+          </div>
+          <hr class="break-line">
+          <div class="cart-btns">
+            <button class="btn primary-outline-btn-md">Edit Cart</button>
+            <button class="btn primary-btn-md">Place Order</button>
           </div>
         </div>
       </script>
