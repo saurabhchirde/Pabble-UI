@@ -75,8 +75,10 @@ li {
 #typography,
 #comp-overview,
 #modal,
-#navigation {
-    padding: 1rem;
+#navigation,
+#grid,
+#snackbar {
+    padding:0.5rem 1rem 1rem;
     margin-bottom: 3rem;
 }
 
@@ -104,6 +106,28 @@ li {
 #paragraph ~p > span {
     font-weight: 500;
     color: var(--primary-color);
+}
+
+/* all scrollbar */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--dark-bg-color);
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--dark-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 4px solid var(--primary-color);
 }
 
 /* responsive query */

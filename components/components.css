@@ -8,6 +8,7 @@
 @import "./card/card.css";
 @import "./input/input.css";
 @import "./modal/modal.css";
+@import "./snackbar/snackbar.css";
 
 @import "/Documentation/utilities/containers.css";
 @import "/Documentation/utilities/margins.css";
@@ -55,6 +56,8 @@ html {
     --warning-text: #956506;
     --error-bg: #fef2f1;
     --error-text: #ca3535;
+
+    --snackbar-bg: #333;
 
     --btn-hover: #99999933;
     --nav-btn-hover: rgba(174, 174, 174, 0.1);

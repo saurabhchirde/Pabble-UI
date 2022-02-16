@@ -9,6 +9,7 @@
 }
 
 .card-vertical,
+.card-vertical-overlay,
 .card-vertical-info,
 .card-text-only {
     position: relative;
@@ -21,13 +22,24 @@
     padding: 1rem;
 }
 
+.card-vertical {
+    height: 22.5rem;
+}
+
+.card-vertical-overlay {
+    height: 14rem;
+    border: none;
+}
+
 .card-vertical img,
+.card-vertical-overlay img,
 .card-vertical-info img {
     max-width: 100%;
     height: auto;
 }
 
 .card-vertical .card-img-container,
+.card-vertical-overlay .card-img-container,
 .card-vertical-info .card-img-container {
     height: 10rem;
 }
@@ -43,6 +55,18 @@
     border: 1px solid var(--medium-blue-gray);
     margin: 0.2rem 0;
     padding: 1rem;
+}
+
+.card-horizontal .card-img-container {
+    width: 24rem;
+}
+
+.card-horizontal-info .card-img-container {
+    width: 20rem;
+}
+
+.card-dark {
+    border: none;
 }
 
 .card-for-cart{
@@ -384,4 +408,78 @@
 
 .cart-btns>button {
     margin: 0.5rem 0;
+}
+
+/* vertical card for cart */
+
+.card-for-cart-vertical {
+    width: 16rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.8rem;
+}
+
+.card-for-cart-vertical .card-img-container {
+    width: 12rem ;
+    height: 12rem ;
+    margin: 1rem auto 0.5rem;
+}
+
+.card-for-cart-vertical .card-img-container > img {
+    width: 100%;
+    height: auto;
+}
+
+.card-for-cart-vertical .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-for-cart-vertical .card-text h1 {
+    width: 100%;
+    margin: 0;
+}
+
+.card-for-cart-vertical .card-text h2 {
+    margin: 1rem 0 0;
+    align-self: flex-end;
+}
+
+.card-for-cart-vertical .cart-qty button {
+    font-size: 0.6rem;
+    padding: 0.6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.card-dark .card-price {
+    color: var(--text-white);
+}
+
+.card-dark .card-nav button[class*=-outline-btn-] {
+    background:none ;
+}
+
+/* cart price table */
+
+#cart-price-card ~div >div {
+    margin: 0.3rem;
+}
+
+.price-table-dark {
+    border: none;
+    color: var(--text-white);
+}
+
+.price-table-dark h3 {
+    color: var(--text-white);
+}
+
+.price-table-dark,
+.price-table-dark .cart-btns button:nth-child(1),
+.price-table-dark input,
+.price-table-dark .cart-coupon button {
+    background-color: var(--text-dark);
 }

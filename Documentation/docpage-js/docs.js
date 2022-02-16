@@ -11,6 +11,40 @@ if (window.outerHeight > 560) {
     document.querySelector(".nav-mobile").style.display = "none";
 }
 
+const baseline = document.querySelector(".baseline-demo");
+const leading = document.querySelector(".leading-demo");
+const stacked = document.querySelector(".stacked-demo");
+const baselineClose = document.querySelector(".baseline-close");
+const leadingClose = document.querySelector(".leading-close");
+const stackedClose = document.querySelector(".stacked-close");
+
+baseline.addEventListener("click", () => {
+    document.querySelector(".snackbar-baseline").classList.remove("hide");
+    setTimeout(() => document.querySelector(".snackbar-baseline").classList.add("hide"), 5000);
+})
+
+leading.addEventListener("click", () => {
+    document.querySelector(".snackbar-leading").classList.remove("hide");
+    setTimeout(() => document.querySelector(".snackbar-leading").classList.add("hide"), 5000);
+})
+
+stacked.addEventListener("click", () => {
+    document.querySelector(".snackbar-stacked").classList.remove("hide");
+    setTimeout(() => document.querySelector(".snackbar-stacked").classList.add("hide"), 5000);
+})
+
+baselineClose.addEventListener("click", () => {
+    document.querySelector(".snackbar-baseline").classList.add("hide")
+});
+
+leadingClose.addEventListener("click", () => {
+    document.querySelector(".snackbar-leading").classList.add("hide")
+});
+
+stackedClose.addEventListener("click", () => {
+    document.querySelector(".snackbar-stacked").classList.add("hide")
+});
+
 // dark mode
 
 const btnToggler = document.querySelectorAll(".toggler");
@@ -21,9 +55,9 @@ let btnMode = localStorage.getItem("pebbleui-website-mode");
 let logoMode = localStorage.getItem("pebbleui-logo-mode");
 
 if (btnMode === null) {
-    btnToggler.forEach(btn=>btn.innerHTML = '<i class="fas fa-moon"></i>');
+    btnToggler.forEach(btn => btn.innerHTML = '<i class="fas fa-moon"></i>');
 } else {
-    btnToggler.forEach(btn=>btn.innerHTML = btnMode);
+    btnToggler.forEach(btn => btn.innerHTML = btnMode);
 }
 
 if (logoMode === null) {
@@ -69,7 +103,7 @@ btnToggler.forEach(btn => btn.addEventListener("click", () => {
 
         logo.forEach(logoImg => logoImg.src = "/Documentation/docpage-assets/logo/logo-light.svg");
 
-        btnToggler.forEach(btn=>btn.innerHTML = '<i class="fas fa-sun"></i>');
+        btnToggler.forEach(btn => btn.innerHTML = '<i class="fas fa-sun"></i>');
 
         btnMode = '<i class="fas fa-sun"></i>';
         logoMode = "/Documentation/docpage-assets/logo/logo-light.svg"
@@ -83,7 +117,7 @@ btnToggler.forEach(btn => btn.addEventListener("click", () => {
 
         logo.forEach(logoImg => logoImg.src = "/Documentation/docpage-assets/logo/logo-dark.svg");
 
-        btnToggler.forEach(btn=>btn.innerHTML = '<i class="fas fa-moon"></i>');
+        btnToggler.forEach(btn => btn.innerHTML = '<i class="fas fa-moon"></i>');
 
         btnMode = '<i class="fas fa-moon"></i>';
         logoMode = "/Documentation/docpage-assets/logo/logo-dark.svg"
