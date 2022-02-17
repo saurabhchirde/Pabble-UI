@@ -448,9 +448,12 @@
 #grid-col-8020,
 #grid-col-3070,
 #grid-col-7030,
+#grid-col-4,
 #baseline,
 #leading,
-#stacked {
+#stacked,
+#rating-bar,
+#rating-badge {
     scroll-margin-block: 6rem;
 }
 

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
+@import "./typography/typography.css";
 @import "./alerts/alert.css";
 @import "./buttons/button.css";
 @import "./avatar/avatar.css";
@@ -8,15 +9,16 @@
 @import "./card/card.css";
 @import "./input/input.css";
 @import "./modal/modal.css";
+@import "./navigation/navbar.css";
+@import "./grids/grid.css";
 @import "./snackbar/snackbar.css";
+@import "./ratings/rating.css";
 
 @import "/Documentation/utilities/containers.css";
 @import "/Documentation/utilities/margins.css";
 @import "/Documentation/utilities/paddings.css";
 @import "/Documentation/utilities/flex.css";
-@import "/Documentation/utilities/typography.css";
 @import "/Documentation/utilities/icons.css";
-@import "/Documentation/utilities/grid.css";
 @import "/Documentation/docpage-css/navigation.css";
 
 * {
@@ -58,6 +60,7 @@ html {
     --error-text: #ca3535;
 
     --snackbar-bg: #333;
+    --rating-star:#ffbc1e;
 
     --btn-hover: #99999933;
     --nav-btn-hover: rgba(174, 174, 174, 0.1);

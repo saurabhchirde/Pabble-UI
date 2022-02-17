@@ -65,3 +65,11 @@
 .snippet-container{
     height: 15rem;
 }
+
+/* class example */
+
+.class-example-container > div {
+    padding:0.5rem 1rem;
+    margin: 0.2rem;
+    border: 1px solid var(--medium-blue-gray);
+}

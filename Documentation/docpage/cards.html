@@ -93,10 +93,13 @@
       <h1 class="nav-item">Navigation</h1>
     </a>
     <a href="./grid.html">
-        <h1 class="nav-item">Grid</h1>
+      <h1 class="nav-item">Grid</h1>
     </a>
     <a href="./snackbar.html">
       <h1 class="nav-item">Snackbar</h1>
+    </a>
+    <a href="./rating.html">
+      <h1 class="nav-item">Ratings</h1>
     </a>
   </nav>
 
@@ -145,10 +148,13 @@
       <h1>Navigation</h1>
     </a>
     <a href="./grid.html">
-        <h1 class="nav-item">Grid</h1>
+      <h1 class="nav-item">Grid</h1>
     </a>
     <a href="./snackbar.html">
       <h1 class="nav-item">Snackbar</h1>
+    </a>
+    <a href="./rating.html">
+      <h1 class="nav-item">Ratings</h1>
     </a>
     <div class="connect-mobile-view">
       <hr class="nav-break-line">
@@ -251,7 +257,8 @@
     <section id="cards">
       <h1 class="mg-point8-tb">Cards</h1>
       <p>
-        cards are used to display content and action on a particular topic. .
+        Cards are used to display content and action on a particular topic.
+        It provides a flexible and extensible content container with multiple variants and options.
       </p>
 
       <!-- without dismiss -->
@@ -1339,7 +1346,7 @@
       <div id="cart-item-card" class="component-container mg-1-bot mg-1-top">
 
         <!-- horizontal light card for cart -->
-        <div class="card-for-cart card-light">
+        <div class="cart-item-card card-light">
           <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon"><i class="far fa-heart">
             </i></button>
           <div class="card-img-container">
@@ -1370,7 +1377,7 @@
       <div id="cart-item-card" class="component-container mg-1-bot mg-1-top">
 
         <!-- vertical light card for cart -->
-        <div class="card-for-cart card-dark card-for-cart-vertical">
+        <div class="cart-item-card card-dark cart-item-card-vertical">
           <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon"><i class="far fa-heart">
             </i></button>
           <div class="card-img-container">
@@ -1398,11 +1405,11 @@
 
       </div>
 
-      <p class="mg-1-tb">By just adding <strong> 'card-for-cart-vertical'</strong> class, you can change the card orientation to vertical as shown in the code below. <br> You can also directly use below code, by providing your image location in 'src'.</p>
+      <p class="mg-1-tb">By just adding <strong> 'cart-item-card-vertical'</strong> class, you can change the card orientation to vertical as shown in the code below. <br> You can also directly use below code, by providing your image location in 'src'.</p>
 
       <script type="text/plain" class="language-html snippet-container">
         <!-- horizontal light card for cart -->
-        <div class="card-for-cart card-light">
+        <div class="cart-item-card card-light">
           <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon">
             <i class="far fa-heart"></i></button>
           <div class="card-img-container">
@@ -1429,7 +1436,7 @@
         </div>
 
         <!-- vertical light card for cart -->
-        <div class="card-for-cart card-dark card-for-cart-vertical">
+        <div class="cart-item-card card-dark cart-item-card-vertical">
           <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon"><i class="far fa-heart">
             </i></button>
           <div class="card-img-container">
@@ -1461,7 +1468,7 @@
       <p></p>
       <div class="component-container mg-2-bot mg-1-top">
 
-        <!-- price-card-for-cart light -->
+        <!-- price-cart-item-card light -->
         <div class="cart-price-table">
           <h2>Price Details</h2>
           <hr class="break-line">
@@ -1497,7 +1504,7 @@
           </div>
         </div>
 
-        <!-- price-card-for-cart dark -->
+        <!-- price-cart-item-card dark -->
         <div class="cart-price-table price-table-dark">
           <h2>Price Details</h2>
           <hr class="break-line">
@@ -1538,7 +1545,7 @@
       <p class="mg-1-tb">If you want to use dark card for prices breakup in cart section, just add <strong> 'price-table-dark'</strong> as shown in the code below, and you are ready to use it. </p>
 
       <script type="text/plain" class="language-html snippet-container">
-        <!-- price-card-for-cart light -->
+        <!-- price-cart-item-card light -->
         <div class="cart-price-table">
           <h2>Price Details</h2>
           <hr class="break-line">
@@ -1574,7 +1581,7 @@
           </div>
         </div>
 
-        <!-- price-card-for-cart dark -->
+        <!-- price-cart-item-card dark -->
         <div class="cart-price-table price-table-dark">
           <h2>Price Details</h2>
           <hr class="break-line">

@@ -185,3 +185,37 @@ h6{
 .text-right{
     text-align: right;
 }
+
+/* text color */
+
+.text-white {
+    color: var(--text-white);
+}
+
+.text-lighter {
+    color: var(--text-lighter);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-success {
+    color: var(--success-text);
+}
+
+.text-info {
+    color: var(--info-text);
+}
+
+.text-warning {
+    color: var(--warning-text);
+}
+
+.text-error {
+    color: var(--error-text);
+}

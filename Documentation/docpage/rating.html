@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/Documentation/docpage-assets/logo/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Documentation/docpage-assets/logo/favicon/favicon-16x16.png">
     <link rel="manifest" href="/Documentation/docpage-assets/logo/favicon/site.webmanifest">
-    <title>Snackbar | Pebble UI</title>
+    <title>Rating | Pebble UI</title>
 </head>
 
 <body>
@@ -95,11 +95,11 @@
         <a href="./grid.html">
             <h1 class="nav-item">Grid</h1>
         </a>
-        <a href="#" class="nav-active">
+        <a href="./snackbar.html">
             <h1 class="nav-item">Snackbar</h1>
         </a>
-        <a href="./rating.html">
-          <h1 class="nav-item">Ratings</h1>
+        <a href="#" class="nav-active">
+            <h1 class="nav-item">Ratings</h1>
         </a>
     </nav>
 
@@ -150,11 +150,11 @@
         <a href="./grid.html">
             <h1 class="nav-item">Grid</h1>
         </a>
-        <a href="#" class="nav-active">
+        <a href="./snackbar.html">
             <h1 class="nav-item">Snackbar</h1>
         </a>
-        <a href="./rating.html">
-          <h1 class="nav-item">Ratings</h1>
+        <a href="#" class="nav-active">
+            <h1 class="nav-item">Ratings</h1>
         </a>
         <div class="connect-mobile-view">
             <hr class="nav-break-line">
@@ -174,15 +174,14 @@
 
     <div class="right-side-nav">
         <h1 class="nav-item">On This Page</h1>
-        <a href="#baseline">
-            <h2 class="nav-item">Baseline</h2>
+        <a href="#rating-bar">
+            <h2 class="nav-item">Rating Bar</h2>
         </a>
-        <a href="#leading">
-            <h2 class="nav-item">Leading</h2>
+        <a href="#rating-badge">
+            <h2 class="nav-item">Rating Badge</h2>
         </a>
-        <a href="#stacked">
-            <h2 class="nav-item">Stacked</h2>
-        </a>
+        
+        
     </div>
 
     <!-- floating up btn -->
@@ -194,88 +193,91 @@
 
     <div class="main cont-shadow">
 
-        <section id="snackbar">
-            <h1 class="mg-point8-tb">Snackbar/Toast</h1>
-            <p>Snackbars provide brief notifications. The component is also known as a toast.</p>
+        <section id="rating">
+            <h1 class="mg-point8-tb">Ratings</h1>
+            <p>Rating components can be used as read-only badge or in reviews section. <br>
+            </p>
 
-            <!-- Snackbar -->
+            <!-- rating read-only -->
 
-            <h2 id="baseline" class="mg-2-top mg-2-bot title-lg-wt-5">Baseline Snackbar
-                <button class="btn primary-outline-btn-md baseline-demo">Demo</button></h2>
+            <h2 id="rating-bar" class="mg-2-top mg-2-bot title-lg-wt-5">Rating Bar - read only</h2>
 
-            <!-- baseline snackbar -->
-            <div class="snackbar-baseline hide">
-                <h1 class="snackbar-text">Can't send photo. Retry in 5 seconds.</h1>
-                <a href="">
-                    <h2 class="snackbar-retry">RETRY</h2>
-                </a>
-                <div class="baseline-close"><i class="fas fa-times"></i></div>
+            <!-- rating bar - read-only -->
+            <div class="rating-star-container">
+                <label>
+                    <input class="rating-star-input" type="checkbox" checked disabled>
+                    <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-star-input" type="checkbox" checked disabled>
+                    <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-star-input" type="checkbox" disabled>
+                    <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-star-input" type="checkbox" disabled>
+                    <i class="fas fa-star rating-star-icon"></i>
+                </label>
+                <label>
+                    <input class="rating-star-input" type="checkbox" disabled>
+                    <i class="fas fa-star rating-star-icon"></i>
+                </label>
             </div>
 
+            <p class="mg-2-tb"> </p>
+
             <script type="text/plain" class="language-html snippet-container">
-                <!-- baseline snackbar -->
-                <div class="snackbar-baseline">
-                    <h1 class="snackbar-text">Can't send photo. Retry in 5 seconds.</h1>
-                    <a href="">
-                        <h2 class="snackbar-retry">RETRY</h2>
-                    </a>
-                    <div class="baseline-close"><i class="fas fa-times"></i></div>
+                <!-- rating bar - read-only -->
+                <div class="rating-star-container">
+                    <label>
+                        <input class="rating-star-input" type="checkbox" checked disabled>
+                        <i class="fas fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" checked disabled>
+                        <i class="fas fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" disabled>
+                        <i class="fas fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" disabled>
+                        <i class="fas fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" disabled>
+                        <i class="fas fa-star rating-star-icon"></i>
+                    </label>
                 </div>
             </script>
 
-            <h2 id="leading" class="mg-2-top mg-2-bot title-lg-wt-5">Leading Snackbar
-                <button class="btn primary-outline-btn-md leading-demo">Demo</button></h2>
+            <h2 id="rating-badge" class="mg-3-top mg-2-bot title-lg-wt-5">Rating badge - read only</h2>
 
-            <!-- leading snackbar -->
-            <div class="snackbar-leading hide">
-                <h1 class="snackbar-text">Your photo has been archived.</h1>
-                <a href="">
-                    <h2 class="snackbar-retry">UNDO</h2>
-                </a>
-                <div class="leading-close"><i class="fas fa-times"></i></div>
+            <!-- rating badge, read only -->
+            <div class="rating-badge">
+                <span class="rating-badge-number">4 </span>
+                <span class="rating-badge-star"><i class="fas fa-star"></i></span>
+                <span class="rating-badge-number">|</span>
+                <span class="rating-badge-number"> 13</span>
             </div>
 
-            <script type="text/plain" class="language-html snippet-container">
-                <!-- leading snackbar -->
-                <div class="snackbar-leading">
-                    <h1 class="snackbar-text">Your photo has been archived.</h1>
-                    <a href="">
-                        <h2 class="snackbar-retry">UNDO</h2>
-                    </a>
-                    <div class="leading-close"><i class="fas fa-times"></i></div>
-                </div>
-
-            </script>
-
-            <h2 id="stacked" class="mg-2-top mg-2-bot title-lg-wt-5">Stacked Snackbar
-                <button class="btn primary-outline-btn-md stacked-demo">Demo</button></h2>
-
-            <!-- stacked snackbar -->
-            <div class="snackbar-stacked hide">
-                <h1 class="snackbar-text">This item already has the label "travel". You can add a new label.</h1>
-                <div class="stacked-btn">
-                    <a href="">
-                        <h2 class="snackbar-retry">ADD A NEW LABEL</h2>
-                    </a>
-                    <div class="stacked-close"><i class="fas fa-times"></i></div>
-                </div>
-            </div>
+            <p class="mg-2-tb"> </p>
 
             <script type="text/plain" class="language-html snippet-container">
-                <!-- stacked snackbar -->
-                <div class="snackbar-stacked">
-                    <h1 class="snackbar-text">This item already has the label "travel". You can add a new label.</h1>
-                    <div class="stacked-btn">
-                        <a href="">
-                            <h2 class="snackbar-retry">ADD A NEW LABEL</h2>
-                        </a>
-                        <div class="stacked-close"><i class="fas fa-times"></i></div>
-                    </div>
+                <!-- Rating badge, read only -->
+                <div class="rating-badge">
+                    <span class="rating-badge-number">4</span>
+                    <span class="rating-badge-star"><i class="fas fa-star"></i></span>
+                    <span class="rating-badge-number">|</span>
+                    <span class="rating-badge-number">13</span>
                 </div>
-
             </script>
 
         </section>
+
     </div>
 
     <script src="/Documentation/docpage-js/docs.js"></script>

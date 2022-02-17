@@ -77,7 +77,8 @@ li {
 #modal,
 #navigation,
 #grid,
-#snackbar {
+#snackbar,
+#rating {
     padding:0.5rem 1rem 1rem;
     margin-bottom: 3rem;
 }
