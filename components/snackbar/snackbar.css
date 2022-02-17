@@ -1,0 +1,74 @@
+.snackbar-baseline,
+.snackbar-leading,
+.snackbar-stacked {
+    position: fixed;
+    bottom: 1rem;
+    z-index: 100;
+    min-width: 20rem;
+    padding: 0.1rem 0.8rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-white);
+    background-color: var(--snackbar-bg);
+}
+
+.snackbar-baseline {
+    min-width: 24.3rem;
+}
+
+.snackbar-baseline,
+.snackbar-stacked {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.snackbar-stacked {
+    align-items: flex-end;
+    flex-direction: column;
+    max-width: 25rem;
+}
+
+.snackbar-text {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    font-weight: 400;
+}
+
+.snackbar-retry {
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+.baseline-close,
+.leading-close,
+.stacked-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1rem;
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.baseline-close:hover,
+.leading-close:hover,
+.stacked-close:hover {
+    border-radius: 50%;
+    background-color: var(--btn-hover);
+}
+
+.snackbar-leading {
+    left: 1rem;
+    margin: auto;
+}
+
+.stacked-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

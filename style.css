@@ -1,4 +1,5 @@
 @import "./Components/components.css";
+@import "./Documentation/docpage-css/docs.css";
 
 .wrapper-landing-page {
     position: fixed;

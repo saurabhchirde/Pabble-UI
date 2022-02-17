@@ -1,7 +1,8 @@
 /* horizontal nav bar */
 
 .nav-header,
-.desktop-navigation-bar {
+.desktop-navigation-bar,
+.mobile-navigation-bar {
     grid-area: nav-header;
     position: sticky;
     top: 0;
@@ -55,6 +56,20 @@
 
 .desktop-navigation-bar > div > div:nth-child(3) > button > i {
     margin-right: 0.5rem;
+}
+
+.mobile-navigation-bar {
+    padding: 0.4rem 0.6rem;
+    box-shadow: 0px 3px 8px var(--modal-shadow);
+}
+
+.mobile-navigation-bar a > img {
+    width: 2rem;
+    margin-left: 0.5rem;
+}
+
+.mobile-navigation-bar .nav-header {
+    padding-left: 0.3rem;
 }
 
 .nav-header-mobile,
@@ -140,9 +155,10 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     width: 14rem;
-    height: 35rem;
+    height: 95vh;
     margin-right: 0.6rem;
     padding-left: 1rem;
+    margin-top: 1rem;
 }
 
 .nav-desktop > a:nth-child(1),
@@ -315,13 +331,12 @@
         position: fixed;
         display: flex;
         width: 60%;
-        height: 40rem;
+        height: 100%;
         top: 0;
         z-index: 100;
         padding-top: 2rem;
         margin-top: 0;
         background-color: var(--ham-menu-bg);
-        border-radius: 0 0 20px 0;
     }
 
     .nav-desktop,
@@ -424,7 +439,24 @@
 #modal-signin,
 #modal-signup,
 #desktop-navigation-bar,
+#mobile-navigation-bar,
 #cart-item-card,
-#cart-price-card {
+#cart-price-card,
+#grid-col-5050,
+#grid-col-2080,
+#grid-col-8020,
+#grid-col-3070,
+#grid-col-7030,
+#grid-col-4,
+#baseline,
+#leading,
+#stacked,
+#rating-bar,
+#rating-badge {
     scroll-margin-block: 6rem;
+}
+
+.navigation-for-doc {
+    position: relative;
+    z-index: 0;
 }

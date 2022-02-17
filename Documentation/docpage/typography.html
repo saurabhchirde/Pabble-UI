@@ -92,6 +92,15 @@
     <a href="./navigation.html">
       <h1 class="nav-item">Navigation</h1>
     </a>
+    <a href="./grid.html">
+      <h1 class="nav-item">Grid</h1>
+    </a>
+    <a href="./snackbar.html">
+      <h1 class="nav-item">Snackbar</h1>
+    </a>
+    <a href="./rating.html">
+      <h1 class="nav-item">Ratings</h1>
+    </a>
   </nav>
 
   <!-- nav verticle bar mobile -->
@@ -138,6 +147,15 @@
     <a href="./navigation.html">
       <h1>Navigation</h1>
     </a>
+    <a href="./grid.html">
+      <h1 class="nav-item">Grid</h1>
+    </a>
+    <a href="./snackbar.html">
+      <h1 class="nav-item">Snackbar</h1>
+    </a>
+    <a href="./rating.html">
+      <h1 class="nav-item">Ratings</h1>
+    </a>
     <div class="connect-mobile-view">
       <hr class="nav-break-line">
       <div class="flex-row">
@@ -167,13 +185,15 @@
       <h1 class="mg-point8-tb">Typography</h1>
       <p>
         Use typography to present your design and content as clearly and efficiently as possible.
+        <br><br><strong>'Inter'</strong> is the default font for all of our components. If you want to use any other
+        font check <strong><a href="/docs.html#font">how to use another font</a></strong>.
       </p>
       <!-- heading -->
       <h2 class="mg-4-top mg-1-bot title-xl-wt-5">Headings</h2>
-      <p class="mg-1-tb">
-        For headings you can use h1, h2, h3, h4, h5, h6 elements.
+      <p class="mg-1-top">
+        For headings you can use any of the heading tag h1, h2, h3, h4, h5, h6 elements.
       </p>
-      <div class="mg-4-bot">
+      <div class="mg-4-bot mg-1-top">
 
         <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
 
@@ -221,10 +241,21 @@
 
       <!-- paragraph -->
       <h2 id="paragraph" class="mg-4-top mg-1-bot title-xl-wt-5">Paragraphs</h2>
-      <p class="mg-1-tb">
-        For your paragraph text you can use 'p' elements along with any of the size <span>'p-sm'</span>,
-        <span>'p-md'</span>, <span>'p-lg'</span>, <span>'p-xl'</span> or <span>'p-xxl'</span>.
+      <p class="mg-1-top">
+        For your paragraph text size you can use 'p' elements along with any of the size class given below.
       </p>
+      <div class="pd-1-tb mg-1-bot ">
+        <div class="component-container">
+          <div class="flex-row-center class-example-container mg-point6-tb">
+            <div>'p-sm'</div>
+            <div>'p-md'</div>
+            <div>'p-lg'</div>
+            <div>'p-xl'</div>
+            <div>'p-xxl'</div>
+          </div>
+        </div>
+      </div>
+
       <div class="mg-4-bot">
 
         <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
@@ -267,11 +298,23 @@
 
       <!-- text align -->
       <h2 id="text-align" class="mg-4-top mg-1-bot title-xl-wt-5">Text Align</h2>
-      <p class="mg-1-tb">
-        For aligning position of your any headings or paragraphs, you have to specify alignment class as
-        <span>'text-left'</span> or <span>'text-center'</span> or <span>'text-right'</span> in your code to align the
+      <p class="mg-1-top">
+        For aligning position of your any headings or paragraphs, you have to specify alignment class in your code to
+        align the
         text.
       </p>
+
+      <div class="pd-1-tb mg-1-bot ">
+
+        <div class="component-container">
+          <div class="flex-row-center class-example-container mg-point6-tb">
+            <div>'text-left'</div>
+            <div>'text-center'</div>
+            <div>'text-right'</div>
+          </div>
+        </div>
+      </div>
+
       <div class="mg-4-bot">
 
         <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
@@ -296,6 +339,423 @@
 
           <!-- Right aligned, h4-heading -->
           <h4 class="text-right">Right aligned, h4-heading</h4>
+        </script>
+
+      </div>
+
+      <!-- font size and weight -->
+      <h2 id="font-weight" class="mg-4-top mg-1-bot title-xl-wt-5">Font Sizes With and Without Weights</h2>
+      <p class="mg-1-tb">
+        To change the font size and weight of your text, you can simply add any of the class given below.</p>
+      <div>
+        <h2 class="mg-3-top title-lg-wt-bold">Font size without weight</h2>
+        <div class="pd-1-top">
+
+          <div class="component-container">
+            <div class="flex-row-center class-example-container mg-point6-tb">
+              <div>'title-xsm'</div>
+              <div>'title-sm'</div>
+              <div>'title-md'</div>
+              <div>'title-lg'</div>
+              <div>'title-xl'</div>
+              <div>'title-xxl'</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- title-lg -->
+          <h2 class="title-xsm">Title extra small</h2>
+
+          <!-- title-sm -->
+          <h2 class="title-sm">Title small</h2>
+
+          <!-- title-md -->
+          <h2 class="title-md">Title medium</h2>
+
+          <!-- title-lg -->
+          <h2 class="title-lg">Title large</h2>
+
+          <!-- title-xl -->
+          <h2 class="title-xl">Title extra large</h2>
+
+          <!-- title-xxl -->
+          <h2 class="title-xxl">Title extra extra large</h2>
+
+        </div>
+
+        <p class="mg-1-bot">
+          You can use any text element (p, or h1 to h6)</p>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- title-lg -->
+          <h2 class="title-xsm">Title extra small</h2>
+
+          <!-- title-sm -->
+          <h2 class="title-sm">Title small</h2>
+
+          <!-- title-md -->
+          <h2 class="title-md">Title medium</h2>
+
+          <!-- title-lg -->
+          <h2 class="title-lg">Title large</h2>
+
+          <!-- title-xl -->
+          <h2 class="title-xl">Title extra large</h2>
+
+          <!-- title-xxl -->
+          <h2 class="title-xxl">Title extra extra large</h2>
+        </script>
+
+      </div>
+
+      <div>
+        <h2 class="mg-3-top title-lg-wt-bold">Font size with weight - 300</h2>
+        <div class="pd-1-top ">
+
+          <div class="component-container">
+            <div class="flex-row-center class-example-container mg-point6-tb">
+              <div>'title-xsm-wt-3'</div>
+              <div>'title-sm-wt-3'</div>
+              <div>'title-md-wt-3'</div>
+              <div>'title-lg-wt-3'</div>
+              <div>'title-xl-wt-3'</div>
+              <div>'title-xxl-wt-3'</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- title-lg-wt-3 -->
+          <h2 class="title-xsm-wt-3">Title extra small weight 300</h2>
+
+          <!-- title-sm-wt-3 -->
+          <h2 class="title-sm-wt-3">Title small weight 300</h2>
+
+          <!-- title-md-wt-3 -->
+          <h2 class="title-md-wt-3">Title medium weight 300</h2>
+
+          <!-- title-lg-wt-3 -->
+          <h2 class="title-lg-wt-3">Title large weight 300</h2>
+
+          <!-- title-xl-wt-3 -->
+          <h2 class="title-xl-wt-3">Title extra large weight 300</h2>
+
+          <!-- title-xxl-wt-3 -->
+          <h2 class="title-xxl-wt-3">Title extra extra large weight 300</h2>
+
+        </div>
+
+        <p class="mg-1-bot">
+          You can use any text element (p, or h1 to h6)</p>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- title-lg-wt-3 -->
+          <h2 class="title-xsm-wt-3">Title extra small weight 300</h2>
+
+          <!-- title-sm-wt-3 -->
+          <h2 class="title-sm-wt-3">Title small weight 300</h2>
+
+          <!-- title-md-wt-3 -->
+          <h2 class="title-md-wt-3">Title medium weight 300</h2>
+
+          <!-- title-lg-wt-3 -->
+          <h2 class="title-lg-wt-3">Title large weight 300</h2>
+
+          <!-- title-xl-wt-3 -->
+          <h2 class="title-xl-wt-3">Title extra large weight 300</h2>
+
+          <!-- title-xxl-wt-3 -->
+          <h2 class="title-xxl-wt-3">Title extra extra large weight 300</h2>
+        </script>
+
+      </div>
+
+      <div>
+        <h2 class="mg-3-top title-lg-wt-bold">Font size with weight - 400</h2>
+        <div class="pd-1-top ">
+
+          <div class="component-container">
+            <div class="flex-row-center class-example-container mg-point6-tb">
+              <div>'title-xsm-wt-4'</div>
+              <div>'title-sm-wt-4'</div>
+              <div>'title-md-wt-4'</div>
+              <div>'title-lg-wt-4'</div>
+              <div>'title-xl-wt-4'</div>
+              <div>'title-xxl-wt-4'</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- title-lg-wt-4 -->
+          <h2 class="title-xsm-wt-4">Title extra small weight 400</h2>
+
+          <!-- title-sm-wt-4 -->
+          <h2 class="title-sm-wt-4">Title small weight 400</h2>
+
+          <!-- title-md-wt-4 -->
+          <h2 class="title-md-wt-4">Title medium weight 400</h2>
+
+          <!-- title-lg-wt-4 -->
+          <h2 class="title-lg-wt-4">Title large weight 400</h2>
+
+          <!-- title-xl-wt-4 -->
+          <h2 class="title-xl-wt-4">Title extra large weight 400</h2>
+
+          <!-- title-xxl-wt-4 -->
+          <h2 class="title-xxl-wt-4">Title extra extra large weight 400</h2>
+
+        </div>
+
+        <p class="mg-1-bot">
+          You can use any text element (p, or h1 to h6)</p>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- title-lg-wt-4 -->
+          <h2 class="title-xsm-wt-4">Title extra small weight 400</h2>
+
+          <!-- title-sm-wt-4 -->
+          <h2 class="title-sm-wt-4">Title small weight 400</h2>
+
+          <!-- title-md-wt-4 -->
+          <h2 class="title-md-wt-4">Title medium weight 400</h2>
+
+          <!-- title-lg-wt-4 -->
+          <h2 class="title-lg-wt-4">Title large weight 400</h2>
+
+          <!-- title-xl-wt-4 -->
+          <h2 class="title-xl-wt-4">Title extra large weight 400</h2>
+
+          <!-- title-xxl-wt-4 -->
+          <h2 class="title-xxl-wt-4">Title extra extra large weight 400</h2>
+        </script>
+
+      </div>
+
+      <div>
+        <h2 class="mg-3-top title-lg-wt-bold">Font size with weight - 500</h2>
+        <div class="pd-1-top ">
+
+          <div class="component-container">
+            <div class="flex-row-center class-example-container mg-point6-tb">
+              <div>'title-xsm-wt-5'</div>
+              <div>'title-sm-wt-5'</div>
+              <div>'title-md-wt-5'</div>
+              <div>'title-lg-wt-5'</div>
+              <div>'title-xl-wt-5'</div>
+              <div>'title-xxl-wt-5'</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- title-lg-wt-5 -->
+          <h2 class="title-xsm-wt-5">Title extra small weight 500</h2>
+
+          <!-- title-sm-wt-5 -->
+          <h2 class="title-sm-wt-5">Title small weight 500</h2>
+
+          <!-- title-md-wt-5 -->
+          <h2 class="title-md-wt-5">Title medium weight 500</h2>
+
+          <!-- title-lg-wt-5 -->
+          <h2 class="title-lg-wt-5">Title large weight 500</h2>
+
+          <!-- title-xl-wt-5 -->
+          <h2 class="title-xl-wt-5">Title extra large weight 500</h2>
+
+          <!-- title-xxl-wt-5 -->
+          <h2 class="title-xxl-wt-5">Title extra extra large weight 500</h2>
+
+        </div>
+
+        <p class="mg-1-bot">
+          You can use any text element (p, or h1 to h6)</p>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- title-lg-wt-5 -->
+          <h2 class="title-xsm-wt-5">Title extra small weight 500</h2>
+
+          <!-- title-sm-wt-5 -->
+          <h2 class="title-sm-wt-5">Title small weight 500</h2>
+
+          <!-- title-md-wt-5 -->
+          <h2 class="title-md-wt-5">Title medium weight 500</h2>
+
+          <!-- title-lg-wt-5 -->
+          <h2 class="title-lg-wt-5">Title large weight 500</h2>
+
+          <!-- title-xl-wt-5 -->
+          <h2 class="title-xl-wt-5">Title extra large weight 500</h2>
+
+          <!-- title-xxl-wt-5 -->
+          <h2 class="title-xxl-wt-5">Title extra extra large weight 500</h2>
+        </script>
+
+      </div>
+
+      <div>
+        <h2 class="mg-3-top title-lg-wt-bold">Font size with weight - Bold</h2>
+        <div class="pd-1-top">
+
+          <div class="component-container">
+            <div class="flex-row-center class-example-container mg-point6-tb">
+              <div>'title-xsm-wt-bold'</div>
+              <div>'title-sm-wt-bold'</div>
+              <div>'title-md-wt-bold'</div>
+              <div>'title-lg-wt-bold'</div>
+              <div>'title-xl-wt-bold'</div>
+              <div>'title-xxl-wt-bold'</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- title-lg-wt-bold -->
+          <h2 class="title-xsm-wt-bold">Title extra small weight bold</h2>
+
+          <!-- title-sm-wt-bold -->
+          <h2 class="title-sm-wt-bold">Title small weight bold</h2>
+
+          <!-- title-md-wt-bold -->
+          <h2 class="title-md-wt-bold">Title medium weight bold</h2>
+
+          <!-- title-lg-wt-bold -->
+          <h2 class="title-lg-wt-bold">Title large weight bold</h2>
+
+          <!-- title-xl-wt-bold -->
+          <h2 class="title-xl-wt-bold">Title extra large weight bold</h2>
+
+          <!-- title-xxl-wt-bold -->
+          <h2 class="title-xxl-wt-bold">Title extra extra large weight bold</h2>
+
+        </div>
+
+        <p class="mg-1-bot">
+          You can use any text element (p, or h1 to h6)</p>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- title-lg-wt-bold -->
+          <h2 class="title-xsm-wt-bold">Title extra small weight bold</h2>
+
+          <!-- title-sm-wt-bold -->
+          <h2 class="title-sm-wt-bold">Title small weight bold</h2>
+
+          <!-- title-md-wt-bold -->
+          <h2 class="title-md-wt-bold">Title medium weight bold</h2>
+
+          <!-- title-lg-wt-bold -->
+          <h2 class="title-lg-wt-bold">Title large weight bold</h2>
+
+          <!-- title-xl-wt-bold -->
+          <h2 class="title-xl-wt-bold">Title extra large weight bold</h2>
+
+          <!-- title-xxl-wt-bold -->
+          <h2 class="title-xxl-wt-bold">Title extra extra large weight bold</h2>
+        </script>
+
+      </div>
+
+      <!-- text size and weight -->
+      <h2 id="text-color" class="mg-4-top mg-1-bot title-xl-wt-5">Text Colors</h2>
+      <p class="mg-1-tb">
+        To change the text color, you can simply add any of the class given below.</p>
+      <div>
+        <div class="pd-1-top">
+
+          <div class="component-container">
+            <div class="flex-row-center class-example-container mg-point6-tb">
+              <div>'text-white'</div>
+              <div>'text-lighter'</div>
+              <div>'text-light'</div>
+              <div>'text-dark'</div>
+              <div>'success-text'</div>
+              <div>'info-text'</div>
+              <div>'warning-text'</div>
+              <div>'error-text'</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mg-4-bot">
+
+        <div class="typo flex-col mg-2-bot mg-1-top border-round-4p">
+
+          <!-- text-white -->
+          <h2 class="text-white">White Text</h2>
+
+          <!-- text-lighter -->
+          <h2 class="text-lighter">Lighter Text</h2>
+
+          <!-- text-light -->
+          <h2 class="text-light">Light Text</h2>
+
+          <!-- text-dark -->
+          <h2 class="text-dark">Dark Text</h2>
+
+          <!-- text-success -->
+          <h2 class="text-success">Success Text</h2>
+
+          <!-- text-info -->
+          <h2 class="text-info">Info Text</h2>
+
+          <!-- text-warning -->
+          <h2 class="text-warning">Warning Text</h2>
+
+          <!-- text-error -->
+          <h2 class="text-error">Error Text</h2>
+
+        </div>
+
+        <p class="mg-1-bot">
+          You can use any text element (p, or h1 to h6)</p>
+
+        <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+          <!-- text-white -->
+          <h2 class="text-white">White Text</h2>
+
+          <!-- text-lighter -->
+          <h2 class="text-lighter">Lighter Text</h2>
+
+          <!-- text-light -->
+          <h2 class="text-light">Light Text</h2>
+
+          <!-- text-dark -->
+          <h2 class="text-dark">Dark Text</h2>
+
+          <!-- text-success -->
+          <h2 class="text-success">Success Text</h2>
+
+          <!-- text-info -->
+          <h2 class="text-info">Info Text</h2>
+
+          <!-- text-warning -->
+          <h2 class="text-warning">Warning Text</h2>
+
+          <!-- text-error -->
+          <h2 class="text-error">Error Text</h2>
         </script>
 
       </div>

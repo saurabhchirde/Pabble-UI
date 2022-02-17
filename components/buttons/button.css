@@ -348,3 +348,6 @@
     font-size: 1.8rem;
 }
 
+button[class*=label-icon-] i {
+    margin-right: 0.5rem;
+}

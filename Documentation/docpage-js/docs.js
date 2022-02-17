@@ -21,9 +21,9 @@ let btnMode = localStorage.getItem("pebbleui-website-mode");
 let logoMode = localStorage.getItem("pebbleui-logo-mode");
 
 if (btnMode === null) {
-    btnToggler.forEach(btn=>btn.innerHTML = '<i class="fas fa-moon"></i>');
+    btnToggler.forEach(btn => btn.innerHTML = '<i class="fas fa-moon"></i>');
 } else {
-    btnToggler.forEach(btn=>btn.innerHTML = btnMode);
+    btnToggler.forEach(btn => btn.innerHTML = btnMode);
 }
 
 if (logoMode === null) {
@@ -69,7 +69,7 @@ btnToggler.forEach(btn => btn.addEventListener("click", () => {
 
         logo.forEach(logoImg => logoImg.src = "/Documentation/docpage-assets/logo/logo-light.svg");
 
-        btnToggler.forEach(btn=>btn.innerHTML = '<i class="fas fa-sun"></i>');
+        btnToggler.forEach(btn => btn.innerHTML = '<i class="fas fa-sun"></i>');
 
         btnMode = '<i class="fas fa-sun"></i>';
         logoMode = "/Documentation/docpage-assets/logo/logo-light.svg"
@@ -83,7 +83,7 @@ btnToggler.forEach(btn => btn.addEventListener("click", () => {
 
         logo.forEach(logoImg => logoImg.src = "/Documentation/docpage-assets/logo/logo-dark.svg");
 
-        btnToggler.forEach(btn=>btn.innerHTML = '<i class="fas fa-moon"></i>');
+        btnToggler.forEach(btn => btn.innerHTML = '<i class="fas fa-moon"></i>');
 
         btnMode = '<i class="fas fa-moon"></i>';
         logoMode = "/Documentation/docpage-assets/logo/logo-dark.svg"

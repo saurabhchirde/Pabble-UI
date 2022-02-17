@@ -1,0 +1,94 @@
+.nav-header,
+.desktop-navigation-bar,
+.mobile-navigation-bar {
+    grid-area: nav-header;
+    position: sticky;
+    top: 0;
+    padding: 0 1rem 0rem;
+    z-index: 2;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.desktop-navigation-bar {
+    box-shadow: 0px 3px 8px var(--modal-shadow);
+    min-width: 32.5rem;
+    background-color: var(--primary-bg);
+}
+
+.desktop-navigation-bar > [class*="-search-input"] {
+    flex-grow: 1;
+    margin: 0 1rem 0 2rem;
+}
+
+.desktop-navigation-bar > div > div:nth-child(3) > button {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.desktop-navigation-bar > div > div:nth-child(3) > button > i {
+    margin-right: 0.5rem;
+}
+
+.mobile-navigation-bar {
+    padding: 0.4rem 0.6rem;
+    box-shadow: 0px 3px 8px var(--modal-shadow);
+    background-color: var(--primary-bg);
+}
+
+.mobile-navigation-bar a > img {
+    width: 2rem;
+    margin-left: 0.5rem;
+}
+
+.mobile-navigation-bar .nav-header {
+    padding-left: 0.3rem;
+}
+
+.hamburger {
+    grid-area: ham;
+    position: sticky;
+    top: 0.7rem;
+    left: 0.5rem;
+    display: none;
+}
+
+.logo,
+.company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+}
+
+.company-logo-icon {
+    width: 1.6rem;
+}
+
+.nav-bar-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-right: 0;
+}
+
+@media screen and (max-width:760px) {
+    .hamburger {
+        padding: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .hamburger:hover {
+        background-color: var(--btn-hover);
+        color: var(--primary-color);
+    }
+}
