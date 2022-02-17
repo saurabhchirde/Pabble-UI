@@ -1,3 +1,4 @@
+@import "/components/components.css";
 @import "./navigation.css";
 @import "./component-overview.css";
 @import "./color.css";
@@ -102,11 +103,6 @@ li {
 #typography > h2 {
     font-weight: 500;
     margin: 2rem 0 1rem;
-}
-
-#paragraph ~p > span {
-    font-weight: 500;
-    color: var(--primary-color);
 }
 
 /* all scrollbar */

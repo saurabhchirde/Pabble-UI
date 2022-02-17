@@ -444,7 +444,7 @@
 
 .cart-item-card-vertical .card-text h2 {
     margin: 1rem 0 0;
-    align-self: flex-end;
+    align-self: flex-start;
     justify-content: space-between;
 }
 

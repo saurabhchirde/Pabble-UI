@@ -37,6 +37,7 @@
 .mobile-navigation-bar {
     padding: 0.4rem 0.6rem;
     box-shadow: 0px 3px 8px var(--modal-shadow);
+    background-color: var(--primary-bg);
 }
 
 .mobile-navigation-bar a > img {
@@ -56,11 +57,16 @@
     display: none;
 }
 
-.logo {
+.logo,
+.company-logo {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 10rem;
+}
+
+.company-logo-icon {
+    width: 1.6rem;
 }
 
 .nav-bar-btns {

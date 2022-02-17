@@ -1,5 +1,7 @@
 .rating-star-icon{
     color: var(--text-lighter);
+    font-size: 0.8rem;
+    margin-right: -0.4rem;
 }
 
 .rating-star-input:enabled .rating-star-icon{
@@ -21,19 +23,23 @@
     color: var(--rating-star);
 }
 
+.rating-star-separator {
+    margin-left: 0.6rem;
+}
+
+.rating-star-number,
+.rating-badge span:nth-child(4) {
+    margin-left: 3px;
+}
+
+.rating-star-container,
 .rating-badge{
-    display: flex;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     line-height: 0.5rem;
-    color: var(--text-dark);
     padding: 0.3rem;
-}
-
-.rating-badge-number:not(:last-child){
-    margin-right: 0.3rem;
 }
 
 .rating-badge-star{  
