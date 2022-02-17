@@ -331,13 +331,12 @@
         position: fixed;
         display: flex;
         width: 60%;
-        height: 43rem;
+        height: 100%;
         top: 0;
         z-index: 100;
         padding-top: 2rem;
         margin-top: 0;
         background-color: var(--ham-menu-bg);
-        border-radius: 0 0 20px 0;
     }
 
     .nav-desktop,
