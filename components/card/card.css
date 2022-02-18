@@ -314,7 +314,6 @@
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
-    max-width: 21rem;
     align-self: flex-start;
     background-color: var(--primary-bg);
     border-radius: 4px;
@@ -338,6 +337,10 @@
     color: var(--text-light);
     font-weight: 500;
     margin: 0.25rem 0;
+}
+
+.cart-price-table-for-doc {
+    max-width: 21rem;
 }
 
 .cart-price,
