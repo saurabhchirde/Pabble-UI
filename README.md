@@ -16,7 +16,7 @@ Build rapid modern websites without ever leaving your HTML with Pebble UI.
 ---
 ## Live Documentation
 
-Live Demo Link : https://pebbleui.netlify.app
+Live Demo Link : https://pebbleui.com
 
 ---
 
@@ -25,10 +25,10 @@ Live Demo Link : https://pebbleui.netlify.app
 To start using the components in your project, you can refer the following code in your  `<link>` tags or directly use in your css files. Dark Theme has been enabled in Component Library, do check it!!
 
 ```html
-<link rel="stylesheet" href="https://pebbleui.netlify.app/Components/components.css"/>
+<link rel="stylesheet" href="https://pebbleui.com/components/v1.0.0/components.css"/>
 ```
 ```css
-@import url("https://pebbleui.netlify.app/Components/components.css");
+@import url("https://pebbleui.com/components/v1.0.0/components.css");
 ```
 
 ### Pebble UI contains the following Components
@@ -52,7 +52,7 @@ To start using the components in your project, you can refer the following code 
 
 Use Typography to format text content on your web site.
 
-You will find the following types of _Typography_ on https://pebbleui.netlify.app/documentation/docpage/typography.html
+You will find the following types of _Typography_ on https://pebbleui.com/documentation/docpage/typography.html
 
 > Headings
 
@@ -70,7 +70,7 @@ You will find the following types of _Typography_ on https://pebbleui.netlify.ap
 
 An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
 
-You will find the following types of _Alert_ on https://pebbleui.netlify.app/documentation/docpage/alert.html
+You will find the following types of _Alert_ on https://pebbleui.com/documentation/docpage/alert.html
 
 > Basic and Descriptive Alert
     
@@ -85,7 +85,7 @@ You will find the following types of _Alert_ on https://pebbleui.netlify.app/doc
 
 Buttons allow users to take actions, and make choices, with a single tap..
 
-You will find the following types of _Button_ on https://pebbleui.netlify.app/documentation/docpage/buttons.html
+You will find the following types of _Button_ on https://pebbleui.com/documentation/docpage/buttons.html
 
 > Solid Button
 - Primary Button
@@ -111,7 +111,7 @@ You will find the following types of _Button_ on https://pebbleui.netlify.app/do
 
 Avatars can be used to represent people or objects. It supports images or letters.
 
-You will find the following types of _Avatar_ on https://pebbleui.netlify.app/documentation/docpage/avatar.html
+You will find the following types of _Avatar_ on https://pebbleui.com/documentation/docpage/avatar.html
 
 > Image Avatar
 
@@ -123,7 +123,7 @@ You will find the following types of _Avatar_ on https://pebbleui.netlify.app/do
 
 Badges are used to display a notification count or status information (online, offline, or away).
 
-You will find the following types of _Badge_ on https://pebbleui.netlify.app/documentation/docpage/badge.html
+You will find the following types of _Badge_ on https://pebbleui.com/documentation/docpage/badge.html
 
 > Badge on Avatars
 
@@ -140,7 +140,7 @@ You will find the following types of _Badge_ on https://pebbleui.netlify.app/doc
 Cards are used to display content and action on a particular topic.
 It provides a flexible and extensible content container with multiple variants and options.
 
-You will find the following types of _Card_ on https://pebbleui.netlify.app/documentation/docpage/cards.html
+You will find the following types of _Card_ on https://pebbleui.com/documentation/docpage/cards.html
 
 All type of cards are mentioned below:-
 
@@ -181,7 +181,7 @@ All type of cards are mentioned below:-
 
 Image components are used, when you need to display pictures.
 
-You will find the following types of _Image_ on https://pebbleui.netlify.app/documentation/docpage/image.html
+You will find the following types of _Image_ on https://pebbleui.com/documentation/docpage/image.html
 
 > Square Image
 
@@ -195,7 +195,7 @@ You will find the following types of _Image_ on https://pebbleui.netlify.app/doc
 
 Inputs are used to take information from the user to authenticate or save their information to the server.
 
-You will find the following types of _Input_ on https://pebbleui.netlify.app/documentation/docpage/input.html
+You will find the following types of _Input_ on https://pebbleui.com/documentation/docpage/input.html
 
 > Outline Labelled Input (with & without placeholders)
 - Text Input
@@ -229,7 +229,7 @@ You will find the following types of _Input_ on https://pebbleui.netlify.app/doc
 
 Modals are positioned over everything else in the document. It gets closed only with a close button on the modal pop-up.
 
-You will find the following types of _Modal_ on https://pebbleui.netlify.app/documentation/docpage/modal.html
+You will find the following types of _Modal_ on https://pebbleui.com/documentation/docpage/modal.html
 
 > Discard Modal
 
@@ -243,7 +243,7 @@ You will find the following types of _Modal_ on https://pebbleui.netlify.app/doc
 
 Navigation bar is used to navigate through the web apps or websites. This component is responsive with screen sizes.
 
-You will find the following types of _Navigation_ on https://pebbleui.netlify.app/documentation/docpage/navigation.html
+You will find the following types of _Navigation_ on https://pebbleui.com/documentation/docpage/navigation.html
 
 > Desktop Navigation Bar
 
@@ -255,7 +255,7 @@ You will find the following types of _Navigation_ on https://pebbleui.netlify.ap
 
 Grids are used set the layout of a web page or any content on a page.
 
-You will find the following types of _Grid_ on https://pebbleui.netlify.app/documentation/docpage/grid.html
+You will find the following types of _Grid_ on https://pebbleui.com/documentation/docpage/grid.html
 
 > Two Columns Grid (50:50)
 
@@ -275,7 +275,7 @@ You will find the following types of _Grid_ on https://pebbleui.netlify.app/docu
 
 Snackbars/Toast provide brief notifications. The component is also known as a toast.
 
-You will find the following types of _Toast_ on https://pebbleui.netlify.app/documentation/docpage/snackbar.html
+You will find the following types of _Toast_ on https://pebbleui.com/documentation/docpage/snackbar.html
 
 > Baseline Snackbar
 
@@ -289,7 +289,7 @@ You will find the following types of _Toast_ on https://pebbleui.netlify.app/doc
 
 Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.
 
-You will find the following types of _Rating_ on https://pebbleui.netlify.app/documentation/docpage/rating.html
+You will find the following types of _Rating_ on https://pebbleui.com/documentation/docpage/rating.html
 
 > Rating Bar
 
@@ -298,7 +298,7 @@ You will find the following types of _Rating_ on https://pebbleui.netlify.app/do
 ---
 <br>
 
-#### 👨‍💻 Connect!!
+#### 👨‍💻 lets connect !
 
 <br>
 
