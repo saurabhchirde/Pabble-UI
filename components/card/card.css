@@ -160,7 +160,6 @@
     font-size: 0.8rem;
     margin: 0.3rem 0;
     font-weight: 500;
-    color: var(--error-text);
 }
 
 .card-nav {
@@ -206,7 +205,6 @@
 
 .text-overlay h1 {
     color: var(--text-white);
-
 }
 
 .overlay-area-type-1,
@@ -273,8 +271,6 @@
 
 .cart-item-card .card-price{
     font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--text-dark);
 }
 
 .cart-item-card .cart-qty {
@@ -302,7 +298,6 @@
 
 .cart-item-card .card-nav {
     width: 100%;
-    
 }
 
 .cart-item-card .card-nav > button {
@@ -444,6 +439,7 @@
 
 .cart-item-card-vertical .card-text h2 {
     margin: 1rem 0 0;
+    font-weight: 500;
     align-self: flex-start;
     justify-content: space-between;
 }
@@ -453,10 +449,6 @@
     padding: 0.6rem;
     margin-left: 0.5rem;
     margin-right: 0.2rem;
-}
-
-.card-dark .card-price {
-    color: var(--text-white);
 }
 
 .card-dark .card-nav button[class*=-outline-btn-] {
