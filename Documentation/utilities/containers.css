@@ -64,6 +64,7 @@
 
 .snippet-container{
     height: 15rem;
+    border-radius: 5px;
 }
 
 /* class example */
