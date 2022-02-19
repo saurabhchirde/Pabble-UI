@@ -1,0 +1,100 @@
+li {
+    list-style: none;
+}
+
+.list-basic {
+    margin: 0.6rem 1rem;
+    font-size: 1rem;
+}
+
+.list-basic li {
+    list-style: disc;
+}
+
+.list-style-circle li {
+    list-style: circle;
+}
+
+.list-style-square li {
+    list-style: square;
+}
+
+.list-style-number li {
+    list-style: decimal;
+}
+
+.list-style-upper-roman li {
+    list-style: upper-roman;
+}
+
+.list-style-lower-roman li {
+    list-style: lower-roman;
+}
+
+.list-style-lower-alpha li {
+    list-style: lower-alpha;
+}
+
+.list-style-upper-alpha li {
+    list-style: upper-alpha;
+}
+
+.list-stacked {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border: 1px solid var(--medium-blue-gray);
+    border-radius: 4px;
+    margin: 0.2rem 0;
+    width: 100%;
+    background-color: var(--primary-bg);
+}
+
+.list-stacked .list-body {
+    display: flex;
+    align-items: center;
+}
+
+.list-stacked .avatar {
+    margin: auto 1rem auto 0.4rem;
+}
+
+.list-stacked h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.list-option-btn h1 {
+    font-weight: 400;
+}
+
+.list-option-btn span {
+    font-weight: bold;
+}
+
+.list-read-btn .list-body {
+    width: 80%;
+}
+
+.list-close-btn .list-body,
+.list-option-btn .list-body {
+    width: 90%;
+}
+
+.list-stacked p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+    overflow: hidden;
+    max-width: auto;
+    max-height: 2.2rem;
+    padding-right: 1rem;
+}
+
+#unordered-list~div .component-container {
+    padding: 1rem;
+    border: 1px solid var(--medium-blue-gray);
+    gap: 1.5rem;
+}

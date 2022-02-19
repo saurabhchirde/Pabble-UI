@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Components/components.css" />
+    <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
+    <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Documentation/docpage-assets/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Documentation/docpage-assets/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Documentation/docpage-assets/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Documentation/docpage-assets/logo/favicon/site.webmanifest">
+    <title>List | Pebble UI</title>
+</head>
+
+<body>
+
+    <!-- nav horizontal bar -->
+    <div class="nav-header-mobile hide">
+
+        <div class="nav-header">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <a href="/">
+                <img class="logo-icon" src="/Documentation/docpage-assets/logo/logo-icon.svg" alt="logo">
+            </a>
+        </div>
+        <div class="nav-header-right-side">
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <div class="nav-header nav-header-desktop hide">
+        <a href="/">
+            <img class="logo" src="/Documentation/docpage-assets/logo/logo-dark.svg" alt="logo">
+        </a>
+        <div class="nav-header-right-side">
+            <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                <div class="header-icon"><i class="fab fa-github"></i></div>
+            </a>
+            <a href="https://twitter.com/SaurabhChirde" target="_blank">
+                <div class="header-icon"><i class="fab fa-twitter"></i></div>
+            </a>
+            <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+        </div>
+    </div>
+
+    <!-- nav verticle bar desktop -->
+    <nav class="nav-desktop">
+        <a href="/docs.html">
+            <h1 class="nav-item">Getting Started</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./color.html">
+            <h1 class="nav-item">Color</h1>
+        </a>
+        <a href="./typography.html">
+            <h1 class="nav-item">Typography</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./components-overview.html">
+            <h1 class="nav-item">Component Overview</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./alert.html">
+            <h1 class="nav-item">Alerts</h1>
+        </a>
+        <a href="./buttons.html">
+            <h1 class="nav-item">Buttons</h1>
+        </a>
+        <a href="./avatar.html">
+            <h1 class="nav-item">Avatar</h1>
+        </a>
+        <a href="./badge.html">
+            <h1 class="nav-item">Badge</h1>
+        </a>
+        <a href="./cards.html">
+            <h1 class="nav-item">Cards</h1>
+        </a>
+        <a href="./image.html">
+            <h1 class="nav-item">Image</h1>
+        </a>
+        <a href="./input.html">
+            <h1 class="nav-item">Input</h1>
+        </a>
+        <a href="./modal.html">
+            <h1 class="nav-item">Modal</h1>
+        </a>
+        <a href="./navigation.html">
+            <h1 class="nav-item">Navigation</h1>
+        </a>
+        <a href="./grid.html">
+            <h1 class="nav-item">Grid</h1>
+        </a>
+        <a href="./snackbar.html">
+            <h1 class="nav-item">Snackbar</h1>
+        </a>
+        <a href="./rating.html">
+            <h1 class="nav-item">Ratings</h1>
+        </a>
+        <a href="./list.html" class="nav-active">
+            <h1 class="nav-item">List</h1>
+        </a>
+    </nav>
+
+    <!-- nav verticle bar mobile -->
+    <nav class="nav-mobile">
+        <a href="/docs.html">
+            <h1>Getting Started</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./color.html">
+            <h1>Color</h1>
+        </a>
+        <a href="./typography.html">
+            <h1>Typography</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./components-overview.html">
+            <h1>Component Overview</h1>
+        </a>
+        <hr class="nav-break-line">
+        <a href="./alert.html">
+            <h1>Alerts</h1>
+        </a>
+        <a href="./buttons.html">
+            <h1>Buttons</h1>
+        </a>
+        <a href="./avatar.html">
+            <h1>Avatar</h1>
+        </a>
+        <a href="./badge.html">
+            <h1>Badge</h1>
+        </a>
+        <a href="./cards.html">
+            <h1>Cards</h1>
+        </a>
+        <a href="./image.html">
+            <h1>Image</h1>
+        </a>
+        <a href="./input.html">
+            <h1>Input</h1>
+        </a>
+        <a href="./modal.html">
+            <h1>Modal</h1>
+        </a>
+        <a href="./navigation.html">
+            <h1>Navigation</h1>
+        </a>
+        <a href="./grid.html">
+            <h1 class="nav-item">Grid</h1>
+        </a>
+        <a href="./snackbar.html">
+            <h1 class="nav-item">Snackbar</h1>
+        </a>
+        <a href="./rating.html">
+            <h1 class="nav-item">Ratings</h1>
+        </a>
+        <a href="./list.html" class="nav-active">
+            <h1 class="nav-item">List</h1>
+        </a>
+        <div class="connect-mobile-view">
+            <hr class="nav-break-line">
+            <div class="flex-row">
+                <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+                    <div class="header-icon"><i class="fab fa-github"></i></div>
+                </a>
+                <a href="https://twitter.com/SaurabhChirde" target="_blank">
+                    <div class="header-icon"><i class="fab fa-twitter"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="nav-close-btn">
+            <i class="far fa-times-circle"></i>
+        </div>
+    </nav>
+
+    <div class="right-side-nav">
+        <h1 class="nav-item">On This Page</h1>
+        <a href="#unordered-list">
+            <h2 class="nav-item">Unordered list styles</h2>
+        </a>
+        <a href="#ordered-list">
+            <h2 class="nav-item">Ordered list styles</h2>
+        </a>
+        <a href="#stack-list">
+            <h2 class="nav-item">Stacked List styles</h2>
+        </a>
+    </div>
+
+    <!-- floating up btn -->
+    <a href="#"><button class="btn floating-btn-md">
+            <i class="fas fa-arrow-up"></i></button>
+    </a>
+
+    <!-- body -->
+
+    <div class="main cont-shadow">
+
+        <section id="list">
+            <h1 class="mg-point8-tb">List</h1>
+            <p>
+                Lists are continuous, vertical indexes of text or images.
+            </p>
+            <!-- basic unordered list -->
+            <h2 id="unordered-list" class="mg-3-top title-lg-wt-5">Unordered list styles</h2>
+            <div class="mg-1-bot mg-1-top">
+
+                <div class="component-container flex-justify-space-between mg-2-bot mg-1-top border-round-4p">
+
+                    <!-- list style basic -->
+                    <ul class="list-basic">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ul>
+
+                    <!-- list style square -->
+                    <ul class="list-basic list-style-square">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ul>
+
+                    <!-- list style circle -->
+                    <ul class="list-basic list-style-circle">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ul>
+
+                </div>
+
+                <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+                    <!-- list style basic -->
+                    <ul class="list-basic">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ul>
+
+                    <!-- list style square -->
+                    <ul class="list-basic list-style-square">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ul>
+
+                    <!-- list style circle -->
+                    <ul class="list-basic list-style-circle">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ul>
+                </script>
+
+            </div>
+
+            <!-- basic ordered list -->
+            <h2 id="ordered-list" class="mg-3-top title-lg-wt-5">Ordered list styles</h2>
+            <div class="mg-4-bot">
+
+                <div class="component-container flex-justify-space-between mg-2-bot mg-1-top border-round-4p">
+
+                    <!-- ordered list style number -->
+                    <ol class="list-basic list-style-number">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style upper-roman -->
+                    <ol class="list-basic list-style-upper-roman">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style lower-roman -->
+                    <ol class="list-basic list-style-lower-roman">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style upper-alphabet -->
+                    <ol class="list-basic list-style-upper-alpha">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style lower-alphabet -->
+                    <ol class="list-basic list-style-lower-alpha">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                </div>
+
+                <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+                    <!-- ordered list style number -->
+                    <ol class="list-basic list-style-number">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style upper-roman -->
+                    <ol class="list-basic list-style-upper-roman">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style lower-roman -->
+                    <ol class="list-basic list-style-lower-roman">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style upper-alphabet -->
+                    <ol class="list-basic list-style-upper-alpha">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+
+                    <!-- ordered list style lower-alphabet -->
+                    <ol class="list-basic list-style-lower-alpha">
+                        <li>Camera</li>
+                        <li>Lens</li>
+                        <li>Tripod</li>
+                        <li>Accessories</li>
+                    </ol>
+                </script>
+
+            </div>
+
+            <!-- stacked-list -->
+            <h2 id="stack-list" class="mg-3-top mg-1-bot title-lg-wt-5">Stacked List Style</h2>
+
+            <div class="mg-4-bot">
+
+                <div class="flex-col mg-2-bot mg-1-top border-round-4p">
+
+                    <!-- stacked list with read button -->
+                    <ul class="list-stacked list-read-btn">
+                        <div class="list-body">
+                            <div class="avatar avatar-sm-round">
+                                <img loading="lazy" src="/Documentation/docpage-assets/avatar/avatar1.jpeg"
+                                    alt="avatar-image" />
+                            </div>
+                            <li>
+                                <h1>Pebble Ui Title 1</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </li>
+                        </div>
+                        <a href="">
+                            <button class="btn primary-text-btn-sm">
+                                Read more
+                            </button>
+                        </a>
+                    </ul>
+
+                    <!-- stacked list with close button -->
+                    <ul class="list-stacked list-close-btn">
+                        <div class="list-body">
+                            <div class="avatar avatar-sm-round">
+                                <img loading="lazy" src="/Documentation/docpage-assets/avatar/avatar1.jpeg"
+                                    alt="avatar-image" />
+                            </div>
+                            <li>
+                                <h1>You have a new notification </h1>
+                            </li>
+                        </div>
+                        <button class="btn icon-btn-xsm">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </ul>
+
+                    <!-- stacked list with option button -->
+                    <ul class="list-stacked list-option-btn">
+                        <div class="list-body">
+                            <div class="avatar avatar-sm-round">
+                                <img loading="lazy" src="/Documentation/docpage-assets/avatar/avatar1.jpeg"
+                                    alt="avatar-image" />
+                            </div>
+                            <li>
+                                <h1><span>Pebble UI </span>posted in <span>UI design group</span>. Check now </h1>
+                            </li>
+                        </div>
+                        <button class="btn icon-btn-xsm">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </ul>
+
+                </div>
+
+                <script style="height: auto;" type="text/plain" class="language-html snippet-container">
+                    <!-- stacked list with read button -->
+                    <ul class="list-stacked list-read-btn">
+                        <div class="list-body">
+                            <div class="avatar avatar-sm-round">
+                                <img loading="lazy" src="..." alt="avatar-image" />
+                            </div>
+                            <li>
+                                <h1>...</h1>
+                                <p>...</p>
+                            </li>
+                        </div>
+                        <a href="">
+                            <button class="btn primary-text-btn-sm">
+                                Read more
+                            </button>
+                        </a>
+                    </ul>
+
+                    <!-- stacked list with close button -->
+                    <ul class="list-stacked list-close-btn">
+                        <div class="list-body">
+                            <div class="avatar avatar-sm-round">
+                                <img loading="lazy" src="..." alt="avatar-image" />
+                            </div>
+                            <li>
+                                <h1>...</h1>
+                            </li>
+                        </div>
+                        <button class="btn icon-btn-xsm">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </ul>
+
+                    <!-- stacked list with option button -->
+                    <ul class="list-stacked list-option-btn">
+                        <div class="list-body">
+                            <div class="avatar avatar-sm-round">
+                                <img loading="lazy" src="..." alt="avatar-image" />
+                            </div>
+                            <li>
+                                <h1><span>Pebble UI </span>posted in <span>UI design group</span>. Check now </h1>
+                            </li>
+                        </div>
+                        <button class="btn icon-btn-xsm">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </ul>
+                </script>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/Documentation/docpage-js/docs.js"></script>
+    <script src="/Documentation/utilities/prismjs/prism.js"></script>
+</body>
+
+</html>

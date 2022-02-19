@@ -53,12 +53,8 @@ body.darkTheme,
     padding: 0 2rem;
 }
 
-.main > section > h1 {
-     font-size: 1.5rem;
-}
-
-li {
-    list-style: none;
+.main>section>h1 {
+    font-size: 1.5rem;
 }
 
 /* components */
@@ -79,8 +75,9 @@ li {
 #navigation,
 #grid,
 #snackbar,
-#rating {
-    padding:0.5rem 1rem 1rem;
+#rating,
+#list {
+    padding: 0.5rem 1rem 1rem;
     margin-bottom: 3rem;
 }
 
@@ -100,7 +97,7 @@ li {
     margin: 0.5rem;
 }
 
-#typography > h2 {
+#typography>h2 {
     font-weight: 500;
     margin: 2rem 0 1rem;
 }
