@@ -118,6 +118,6 @@
 .info-color-block p,
 .warning-color-block p,
 .error-color-block p {
-    max-width: 23.5rem;
+    max-width: 23rem;
     margin: 0.8rem 0 0.4rem;
 }
