@@ -155,10 +155,11 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     width: 14rem;
-    height: 95vh;
+    height: 90vh;
+    overflow-y: scroll;
     margin-right: 0.6rem;
     padding-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .nav-desktop>a:nth-child(1),
