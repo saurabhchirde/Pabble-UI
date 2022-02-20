@@ -46,6 +46,7 @@ To start using the components in your project, you can refer the following code 
 - [Grid](#grid)
 - [Snackbar](#snackbar)
 - [Rating](#rating)
+- [List](#list)
 
 ---
 ### Typography
@@ -294,6 +295,20 @@ You will find the following types of _Rating_ on https://pebbleui.com/documentat
 > Rating Bar
 
 > Rating Badge
+
+---
+
+### List
+
+Lists are continuous, vertical indexes of text or images..
+
+You will find the following types of _Rating_ on https://pebbleui.com/documentation/docpage/list.html
+
+> Unordered list styles
+
+> Ordered list styles
+
+> Stacked List Style
 
 ---
 <br>
