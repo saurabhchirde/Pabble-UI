@@ -200,18 +200,18 @@
 }
 
 .card-vertical-overlay,
-.text-overlay {
+.card-square-overlay {
     outline: none;
     border: none;
 }
 
 .card-vertical-overlay p,
-.text-overlay p {
+.card-square-overlay p {
     font-size: 0.8rem;
 }
 
 .card-vertical-overlay .overlay-area-type-1 h1,
-.text-overlay .overlay-area-type-1 h1 {
+.card-square-overlay .overlay-area-type-1 h1 {
     color: var(--text-white);
 }
 
