@@ -208,7 +208,10 @@
         An alert displays a short, important message in a way that attracts
         the user's attention without interrupting the user's task.
       </p>
-      <h2 id="basic-alert" class="mg-2-top mg-1-bot title-lg-wt-5">Basic alerts</h2>
+      <div class="mg-2-top mg-1-bot mg-point6-bot flex-row flex-align-center">
+        <h2 id="basic-alert" class="title-lg-wt-5">Basic alerts</h2>
+        <button class="btn primary-outline-btn-md alert-demo-btn">Demo</button>
+      </div>
       <p>
         The alert offers four severity levels that set a distinctive icon and
         color.
@@ -221,6 +224,12 @@
 
           <!-- success alert -->
           <div class="alert-success alert-for-docs">
+            <i class="fas fa-check-circle alert-icon"></i>
+            <span class="p-md">Success alert.</span>
+          </div>
+
+          <!-- success alert demo -->
+          <div class="alert-success alert-demo hide">
             <i class="fas fa-check-circle alert-icon"></i>
             <span class="p-md">Success alert.</span>
           </div>
@@ -381,7 +390,7 @@
 
       <div class="alert-cta-demo mg-2-top mg-1-bot mg-point6-bot flex-row flex-align-center">
         <h2 id="alert-with-cta" class="title-lg-wt-5">Alert With Button</h2>
-        <button class="btn primary-outline-btn-md">Demo</button>
+        <button class="btn primary-outline-btn-md alert-cta-demo-btn">Demo</button>
       </div>
       <p class="mg-point8-tb">
         An alert can have action, such as a close or undo button. It is
@@ -398,7 +407,7 @@
         <div class="component-container pd-point6-all mg-point8-tb border-round-4p">
 
           <!-- success alert with dismiss button -->
-          <div class="alert-success-btn alert-for-docs">
+          <div class="alert-success-btn hide">
             <div class="alert-text">
               <i class="fas fa-check-circle alert-icon"></i>
               <span class="p-md">Success alert.</span>
@@ -478,6 +487,7 @@
   </div>
 
   <script src="/Documentation/docpage-js/docs.js"></script>
+  <script src="./alert.js"></script>
   <script src="/Documentation/utilities/prismjs/prism.js"></script>
 </body>
 

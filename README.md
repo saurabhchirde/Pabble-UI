@@ -16,7 +16,7 @@ Build rapid modern websites without ever leaving your HTML with Pebble UI.
 ---
 ## Live Documentation
 
-Live Demo Link : https://pebbleui.com
+Live Link : https://pebbleui.com
 
 ![PebbleUI](https://user-images.githubusercontent.com/92800463/154902355-26d86c71-514d-43f3-bc99-542cbddd2caf.gif)
 

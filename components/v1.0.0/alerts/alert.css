@@ -17,13 +17,17 @@
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 1;
-  bottom: 1rem;
-  left: 1rem;
+  z-index: 100;
+  top: 0.2rem;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-.alert-for-docs{
+.alert-for-docs {
   position: relative;
+  z-index: 1;
+  left: 0;
+  transform: translate(0%);
 }
 
 .alert-success,
@@ -100,33 +104,33 @@
 .alert-des-success p a,
 .alert-des-info p a,
 .alert-des-warning p a,
-.alert-des-error p a{
+.alert-des-error p a {
   font-weight: 500;
   margin: 0 0.6rem;
   padding: 0.5rem;
   border-radius: 4px;
 }
 
-.alert-des-success p a{
+.alert-des-success p a {
   color: var(--success-text);
 }
 
-.alert-des-info p a{
+.alert-des-info p a {
   color: var(--info-text);
 }
 
-.alert-des-warning p a{
+.alert-des-warning p a {
   color: var(--warning-text);
 }
 
 .alert-des-success p a:hover,
 .alert-des-info p a:hover,
 .alert-des-warning p a:hover,
-.alert-des-error p a:hover{
+.alert-des-error p a:hover {
   background-color: var(--btn-hover);
 }
 
-.alert-des-error p a{
+.alert-des-error p a {
   color: var(--error-text);
 }
 
