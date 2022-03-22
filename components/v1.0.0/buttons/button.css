@@ -188,8 +188,8 @@
 .label-icon-outline-btn-sm:hover,
 .label-icon-outline-btn-xsm:hover,
 .label-icon-outline-btn-lg:hover {
-  background-color: var(--faint-gray);
-  color: var(--primary-dark-color);
+  background-color: var(--primary-color);
+  color: var(--text-white);
   outline: 1px solid var(--primary-dark-color);
 }
 
