@@ -21,6 +21,7 @@
   top: 0.2rem;
   left: 50%;
   transform: translate(-50%);
+  margin-left: 0;
 }
 
 .alert-for-docs {
@@ -173,7 +174,6 @@
 .undo:hover {
   color: var(--primary-color);
   background-color: var(--btn-hover);
-
 }
 
 .alert-icon {
