@@ -22,16 +22,16 @@
 .no-outline-file-input,
 .no-outline-tel-input,
 .no-outline-search-input {
-    width: 14.5rem;
-    margin: 0.5rem 0.6rem;
+  width: 14.5rem;
+  margin: 0.5rem 0.6rem;
 }
 
 .radio-input,
 .checkbox-input {
-    margin: 0rem 0.6rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
+  margin: 0rem 0.6rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .outline-text-input label,
@@ -58,21 +58,31 @@
 .no-outline-file-input label,
 .no-outline-tel-input label,
 .no-outline-search-input label {
-    font-size: 0.9rem;
-    color: var(--text-dark);
-    font-weight: 400;
-    margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .radio-input label,
 .checkbox-input label {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
+.wrong-input label,
+.wrong-input input,
 .wrong-password label,
 .wrong-password input {
-    border-color: var(--error-text);
-    color: var(--error-text);
+  border-color: var(--error-text);
+  color: var(--error-text);
+}
+
+.success-input label,
+.success-input input,
+.success-password label,
+.success-password input {
+  border-color: var(--success-text);
+  color: var(--success-text);
 }
 
 .outline-text-input input,
@@ -99,28 +109,27 @@
 .no-outline-file-input input,
 .no-outline-tel-input input,
 .no-outline-search-input input {
-    width: 100%;
-    height: 2.3rem;
-    margin: 0.4rem auto 0.4rem;
-    font-size: 1rem;
-    padding: 0.5rem 0.6rem;
-    border-radius: 4px;
-    border: 1px solid var(--dark-blue-gray);
+  width: 100%;
+  height: 2.3rem;
+  margin: 0.4rem auto 0.4rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid var(--dark-blue-gray);
 }
 
 .radio-input input,
 .checkbox-input input {
-    width: 1rem;
-    margin: 0.4rem 0.6rem 0.4rem 0;
+  width: 1rem;
+  margin: 0.4rem 0.6rem 0.4rem 0;
 }
 
 .color-input input {
-    height: 2.3rem;
+  height: 2.3rem;
 }
 
-
 .range-input input {
-    padding: 0;
+  padding: 0;
 }
 
 .no-outline-text-input input,
@@ -133,11 +142,11 @@
 .no-outline-file-input input,
 .no-outline-tel-input input,
 .no-outline-search-input input {
-    border: hidden;
-    padding: 0.5rem 0;
-    border-radius: 0;
-    border-bottom: 1px solid var(--dark-blue-gray);
-    background: none;
+  border: hidden;
+  padding: 0.5rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--dark-blue-gray);
+  background: none;
 }
 
 .no-outline-text-input input:focus,
@@ -150,65 +159,65 @@
 .no-outline-file-input input:focus,
 .no-outline-tel-input input:focus,
 .no-outline-search-input input:focus {
-    outline: none;
+  outline: none;
 }
 
 /* input icon */
 
 .input-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .input-icon a {
-    position: absolute;
-    right: 0;
-    font-size: 1rem;
-    padding: 0.5rem;
-    color: var(--text-dark);
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--text-dark);
 }
 
-.input-icon a:hover{
-    background-color: var(--btn-hover);
+.input-icon a:hover {
+  background-color: var(--btn-hover);
 }
 
 .input-icon input {
-    width: 100%;
-    padding: 10px;
-    padding-right: 2.5rem;
+  width: 100%;
+  padding: 10px;
+  padding-right: 2.5rem;
 }
 
 /* slider */
 
 input[type="range"] {
-    width: 100%;
-    height: 25px;
-    outline: none;
-    opacity: 0.7;
-    cursor: pointer;
+  width: 100%;
+  height: 1.5rem;
+  outline: none;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 input[type="range"]:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* color */
 
 input[type="color"] {
-    -webkit-appearance: none;
-    position: relative;
+  -webkit-appearance: none;
+  position: relative;
 }
 
 input[type="color"]::-webkit-color-swatch {
-    position: absolute;
-    border-radius: 4px;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    box-sizing: border-box;
-    border: 1px solid transparent;
+  position: absolute;
+  border-radius: 4px;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
 }
