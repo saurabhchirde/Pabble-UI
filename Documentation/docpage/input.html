@@ -259,85 +259,111 @@
         </h2>
         <div class="mg-3-bot">
           <div class="mg-1-tb">
-            <br />
-            <!-- input validation -->
-            <div class="signin-modal modal-for-docs">
-              <form>
-                <div class="outline-email-input">
-                  <label for="email">
-                    <div class="input-icon">
-                      <i class="far fa-envelope"></i>
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        autocomplete="email"
-                        placeholder="Enter your email *"
-                      />
-                    </div>
+            <div class="input-validation">
+              <!-- error validation -->
+              <h2 class="title-md-wt-5 pd-2-top pd-1-bot">
+                Wrong Input Validation
+              </h2>
+              <div class="wrong-input-validation flex-row">
+                <!-- outline wrong input email validation -->
+                <div class="outline-email-input wrong-input">
+                  <label for="email"
+                    >Email *
+                    <input
+                      type="email"
+                      name="email"
+                      value="abc.com"
+                      required
+                      autocomplete="email"
+                    />
+                    entered email is invalid
                   </label>
                 </div>
-                <div class="outline-password-input">
-                  <label for="password">
-                    <div class="input-icon">
-                      <i class="fas fa-key"></i>
-                      <input
-                        type="password"
-                        name="password"
-                        autocomplete="current-password"
-                        placeholder="Enter your password *"
-                        required
-                      />
-                    </div>
+
+                <!-- outline wrong password validation -->
+                <div class="outline-password-input wrong-password">
+                  <label for="password"
+                    >Password *
+                    <input
+                      type="password"
+                      name="password"
+                      autocomplete="current-password"
+                      required
+                      value="..."
+                    />
+                    wrong password, try again
                   </label>
                 </div>
-                <div class="signin-btn">
-                  <button type="submit" class="btn primary-btn-md">
-                    Submit
-                  </button>
+              </div>
+              <script type="text/plain" class="language-html snippet-container">
+                <!-- outline wrong input email validation -->
+                <div class="outline-email-input wrong-input">
+                  <label for="email">Email *
+                    <input type="email" name="email" value="abc.com" required autocomplete="email" />
+                    entered email is invalid
+                  </label>
                 </div>
-              </form>
+
+                <!-- outline wrong password validation -->
+                <div class="outline-password-input wrong-password">
+                  <label for="password">Password *
+                    <input type="password" name="password" autocomplete="current-password" required value="..." />
+                    wrong password, try again
+                  </label>
+                </div>
+              </script>
+
+              <!-- success validation -->
+              <h2 class="title-md-wt-5 pd-2-top pd-1-bot">
+                Success Input Validation
+              </h2>
+              <div class="wrong-input-validation flex-row">
+                <!-- outline input email field without placeholder -->
+                <div class="outline-email-input success-input">
+                  <label for="email"
+                    >Email *
+                    <input
+                      type="email"
+                      name="email"
+                      value="abc@pebbleui.com"
+                      required
+                      autocomplete="email"
+                    /><br /><br />
+                  </label>
+                </div>
+
+                <!-- outline input password field without placeholder -->
+                <div class="outline-password-input success-password">
+                  <label for="password"
+                    >Password *
+                    <input
+                      type="password"
+                      name="password"
+                      autocomplete="current-password"
+                      required
+                      value=".........."
+                    />
+                    Password Matched!
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
 
           <script type="text/plain" class="language-html snippet-container">
-            <!-- input validation -->
-            <div class="signin-modal modal-for-docs">
-              <form>
-                <div class="outline-email-input">
-                  <label for="email">
-                    <div class="input-icon">
-                      <i class="far fa-envelope"></i>
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        autocomplete="email"
-                        placeholder="Enter your email *"
-                      />
-                    </div>
-                  </label>
-                </div>
-                <div class="outline-password-input">
-                  <label for="password">
-                    <div class="input-icon">
-                      <i class="fas fa-key"></i>
-                      <input
-                        type="password"
-                        name="password"
-                        autocomplete="current-password"
-                        placeholder="Enter your password *"
-                        required
-                      />
-                    </div>
-                  </label>
-                </div>
-                <div class="signin-btn">
-                  <button type="submit" class="btn primary-btn-md">
-                    Submit
-                  </button>
-                </div>
-              </form>
+            <!-- outline input email field without placeholder -->
+            <div class="outline-email-input success-input">
+              <label for="email">Email *
+                <input type="email" name="email" value="abc@pebbleui.com" required autocomplete="email" />
+              </label>
+            </div>
+
+            <!-- outline input password field without placeholder -->
+            <div class="outline-password-input success-password">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value=".........." />
+                Password Matched!
+              </label>
             </div>
           </script>
         </div>
