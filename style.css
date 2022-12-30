@@ -2,35 +2,54 @@
 @import "./Documentation/docpage-css/docs.css";
 
 .wrapper-landing-page {
-    position: fixed;
-    width: 100%;
-    padding: 2rem;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -40%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.wrapper-landing-page>h1 {
-    font-size: 3rem;
+.wrapper-landing-page > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.wrapper-landing-page > p {
+  font-size: 1.17rem;
+}
+
+footer {
+  font-size: 0.8rem;
+  list-style: none;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100vw;
+  position: fixed;
+  bottom: 2rem;
+}
+
+footer a {
+  font-size: 0.8rem;
+  list-style: none;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper-landing-page > h1 {
+    font-size: 1.9rem;
     font-weight: 500;
-}
+  }
 
-.wrapper-landing-page>p {
-    font-size: 1.17rem;
-}
-
-@media screen and (max-width:760px) {
-    .wrapper-landing-page>h1 {
-        font-size: 1.9rem;
-        font-weight: 500;
-    }
-    
-    .wrapper-landing-page>p {
-        font-size: 1rem;
-    }
+  .wrapper-landing-page > p {
+    font-size: 1rem;
+  }
 }
