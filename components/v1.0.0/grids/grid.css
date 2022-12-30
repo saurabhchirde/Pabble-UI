@@ -3,42 +3,47 @@
 .grid-col-7030,
 .grid-col-2080,
 .grid-col-8020,
-.grid-col-4 {
-    display: grid;
+.grid-col-4,
+.grid-col-3 {
+  display: grid;
 }
 
 .grid-col-5050 {
-    grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
 
 .grid-col-2080 {
-    grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 80%;
 }
 
 .grid-col-8020 {
-    grid-template-columns: 80% 20%;
+  grid-template-columns: 80% 20%;
 }
 
 .grid-col-3070 {
-    grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 70%;
 }
 
 .grid-col-7030 {
-    grid-template-columns: 70% 30%;
+  grid-template-columns: 70% 30%;
 }
 
 .grid-col-4 {
-    grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
-.grid-col-5050 img~p,
-.grid-col-3070 img~p,
-.grid-col-7030 img~p,
-.grid-col-2080 img~p,
-.grid-col-8020 img~p,
-.grid-col-4 img~p
-{
-    padding: 0rem 1rem;
+.grid-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-col-5050 img ~ p,
+.grid-col-3070 img ~ p,
+.grid-col-7030 img ~ p,
+.grid-col-2080 img ~ p,
+.grid-col-8020 img ~ p,
+.grid-col-4 img ~ p,
+.grid-col-3 img ~ p {
+  padding: 0rem 1rem;
 }
 
 .grid-col-5050 img,
@@ -46,8 +51,9 @@
 .grid-col-7030 img,
 .grid-col-2080 img,
 .grid-col-8020 img,
-.grid-col-4 img {
-    padding: 0rem 0.3rem;
+.grid-col-4 img,
+.grid-col-3 img {
+  padding: 0rem 0.3rem;
 }
 
 .grid-col-5050 p,
@@ -55,8 +61,9 @@
 .grid-col-7030 p,
 .grid-col-2080 p,
 .grid-col-8020 p,
-.grid-col-4 p {
-    font-size: 1.1rem;
-    display: flex;
-    align-items: flex-start;
+.grid-col-4 p,
+.grid-col-3 p {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: flex-start;
 }

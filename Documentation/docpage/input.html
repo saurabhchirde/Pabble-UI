@@ -1,236 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Components/v1.0.0/components.css" />
+    <link rel="stylesheet" href="/Documentation/docpage-css/docs.css" />
+    <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Documentation/docpage-assets/logo/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Documentation/docpage-assets/logo/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Documentation/docpage-assets/logo/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="/Documentation/docpage-assets/logo/favicon/site.webmanifest"
+    />
+    <title>Inputs | Pebble UI</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/Components/v1.0.0/components.css" />
-  <link rel="stylesheet" href="/Documentation/docpage-css/docs.css">
-  <link rel="stylesheet" href="/Documentation/utilities/prismjs/prism.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/Documentation/docpage-assets/logo/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/Documentation/docpage-assets/logo/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/Documentation/docpage-assets/logo/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/Documentation/docpage-assets/logo/favicon/site.webmanifest">
-  <title>Inputs | Pebble UI</title>
-</head>
+  <body>
+    <!-- nav horizontal bar -->
+    <div class="nav-header-mobile hide">
+      <div class="nav-header">
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <a href="/">
+          <img
+            class="logo-icon"
+            src="/Documentation/docpage-assets/logo/logo-icon.svg"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div class="nav-header-right-side">
+        <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
+      </div>
+    </div>
 
-<body>
-  <!-- nav horizontal bar -->
-  <div class="nav-header-mobile hide">
-
-    <div class="nav-header">
-      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <div class="nav-header nav-header-desktop hide">
       <a href="/">
-        <img class="logo-icon" src="/Documentation/docpage-assets/logo/logo-icon.svg" alt="logo">
+        <img
+          class="logo"
+          src="/Documentation/docpage-assets/logo/logo-dark.svg"
+          alt="logo"
+        />
       </a>
-    </div>
-    <div class="nav-header-right-side">
-      <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
-    </div>
-  </div>
-
-  <div class="nav-header nav-header-desktop hide">
-    <a href="/">
-      <img class="logo" src="/Documentation/docpage-assets/logo/logo-dark.svg" alt="logo">
-    </a>
-    <div class="nav-header-right-side">
-      <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
-        <div class="header-icon"><i class="fab fa-github"></i></div>
-      </a>
-      <a href="https://twitter.com/SaurabhChirde" target="_blank">
-        <div class="header-icon"><i class="fab fa-twitter"></i></div>
-      </a>
-      <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
-    </div>
-  </div>
-
-  <!-- nav verticle bar desktop -->
-  <nav class="nav-desktop">
-    <a href="/docs.html">
-      <h1 class="nav-item">Getting Started</h1>
-    </a>
-    <hr class="nav-break-line">
-    <a href="./color.html">
-      <h1 class="nav-item">Color</h1>
-    </a>
-    <a href="./typography.html">
-      <h1 class="nav-item">Typography</h1>
-    </a>
-    <hr class="nav-break-line">
-    <a href="./components-overview.html">
-      <h1 class="nav-item">Component Overview</h1>
-    </a>
-    <hr class="nav-break-line">
-    <a href="./alert.html">
-      <h1 class="nav-item">Alerts</h1>
-    </a>
-    <a href="./buttons.html">
-      <h1 class="nav-item">Buttons</h1>
-    </a>
-    <a href="./avatar.html">
-      <h1 class="nav-item">Avatar</h1>
-    </a>
-    <a href="./badge.html">
-      <h1 class="nav-item">Badge</h1>
-    </a>
-    <a href="./cards.html">
-      <h1 class="nav-item">Cards</h1>
-    </a>
-    <a href="./image.html">
-      <h1 class="nav-item">Image</h1>
-    </a>
-    <a href="#" class="nav-active">
-      <h1 class="nav-item">Input</h1>
-    </a>
-    <a href="./modal.html">
-      <h1 class="nav-item">Modal</h1>
-    </a>
-    <a href="./navigation.html">
-      <h1 class="nav-item">Navigation</h1>
-    </a>
-    <a href="./grid.html">
-      <h1 class="nav-item">Grid</h1>
-    </a>
-    <a href="./snackbar.html">
-      <h1 class="nav-item">Snackbar</h1>
-    </a>
-    <a href="./rating.html">
-      <h1 class="nav-item">Ratings</h1>
-    </a>
-    <a href="./list.html">
-      <h1 class="nav-item">List</h1>
-    </a>
-  </nav>
-
-  <!-- nav verticle bar mobile -->
-  <nav class="nav-mobile">
-    <a href="/docs.html">
-      <h1>Getting Started</h1>
-    </a>
-    <hr class="nav-break-line">
-    <a href="./color.html">
-      <h1>Color</h1>
-    </a>
-    <a href="./typography.html">
-      <h1>Typography</h1>
-    </a>
-    <hr class="nav-break-line">
-    <a href="./components-overview.html">
-      <h1>Component Overview</h1>
-    </a>
-    <hr class="nav-break-line">
-    <a href="./alert.html">
-      <h1>Alerts</h1>
-    </a>
-    <a href="./buttons.html">
-      <h1>Buttons</h1>
-    </a>
-    <a href="./avatar.html">
-      <h1>Avatar</h1>
-    </a>
-    <a href="./badge.html">
-      <h1>Badge</h1>
-    </a>
-    <a href="./cards.html">
-      <h1>Cards</h1>
-    </a>
-    <a href="./image.html">
-      <h1>Image</h1>
-    </a>
-    <a href="#" class="nav-active">
-      <h1>Input</h1>
-    </a>
-    <a href="./modal.html">
-      <h1>Modal</h1>
-    </a>
-    <a href="./navigation.html">
-      <h1>Navigation</h1>
-    </a>
-    <a href="./grid.html">
-      <h1>Grid</h1>
-    </a>
-    <a href="./snackbar.html">
-      <h1>Snackbar</h1>
-    </a>
-    <a href="./rating.html">
-      <h1>Ratings</h1>
-    </a>
-    <a href="./list.html">
-      <h1>List</h1>
-    </a>
-    <div class="connect-mobile-view">
-      <hr class="nav-break-line">
-      <div class="flex-row">
+      <div class="nav-header-right-side">
         <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
           <div class="header-icon"><i class="fab fa-github"></i></div>
         </a>
         <a href="https://twitter.com/SaurabhChirde" target="_blank">
           <div class="header-icon"><i class="fab fa-twitter"></i></div>
         </a>
+        <div class="toggler header-icon"><i class="fas fa-moon"></i></div>
       </div>
     </div>
-    <div class="nav-close-btn">
-      <i class="far fa-times-circle"></i>
+
+    <!-- nav verticle bar desktop -->
+    <nav class="nav-desktop">
+      <a href="/docs.html">
+        <h1 class="nav-item">Getting Started</h1>
+      </a>
+      <hr class="nav-break-line" />
+      <a href="./color.html">
+        <h1 class="nav-item">Color</h1>
+      </a>
+      <a href="./typography.html">
+        <h1 class="nav-item">Typography</h1>
+      </a>
+      <hr class="nav-break-line" />
+      <a href="./components-overview.html">
+        <h1 class="nav-item">Component Overview</h1>
+      </a>
+      <hr class="nav-break-line" />
+      <a href="./alert.html">
+        <h1 class="nav-item">Alerts</h1>
+      </a>
+      <a href="./buttons.html">
+        <h1 class="nav-item">Buttons</h1>
+      </a>
+      <a href="./avatar.html">
+        <h1 class="nav-item">Avatar</h1>
+      </a>
+      <a href="./badge.html">
+        <h1 class="nav-item">Badge</h1>
+      </a>
+      <a href="./cards.html">
+        <h1 class="nav-item">Cards</h1>
+      </a>
+      <a href="./image.html">
+        <h1 class="nav-item">Image</h1>
+      </a>
+      <a href="#" class="nav-active">
+        <h1 class="nav-item">Input</h1>
+      </a>
+      <a href="./modal.html">
+        <h1 class="nav-item">Modal</h1>
+      </a>
+      <a href="./navigation.html">
+        <h1 class="nav-item">Navigation</h1>
+      </a>
+      <a href="./grid.html">
+        <h1 class="nav-item">Grid</h1>
+      </a>
+      <a href="./snackbar.html">
+        <h1 class="nav-item">Snackbar</h1>
+      </a>
+      <a href="./rating.html">
+        <h1 class="nav-item">Ratings</h1>
+      </a>
+      <a href="./list.html">
+        <h1 class="nav-item">List</h1>
+      </a>
+    </nav>
+
+    <!-- nav verticle bar mobile -->
+    <nav class="nav-mobile">
+      <a href="/docs.html">
+        <h1>Getting Started</h1>
+      </a>
+      <hr class="nav-break-line" />
+      <a href="./color.html">
+        <h1>Color</h1>
+      </a>
+      <a href="./typography.html">
+        <h1>Typography</h1>
+      </a>
+      <hr class="nav-break-line" />
+      <a href="./components-overview.html">
+        <h1>Component Overview</h1>
+      </a>
+      <hr class="nav-break-line" />
+      <a href="./alert.html">
+        <h1>Alerts</h1>
+      </a>
+      <a href="./buttons.html">
+        <h1>Buttons</h1>
+      </a>
+      <a href="./avatar.html">
+        <h1>Avatar</h1>
+      </a>
+      <a href="./badge.html">
+        <h1>Badge</h1>
+      </a>
+      <a href="./cards.html">
+        <h1>Cards</h1>
+      </a>
+      <a href="./image.html">
+        <h1>Image</h1>
+      </a>
+      <a href="#" class="nav-active">
+        <h1>Input</h1>
+      </a>
+      <a href="./modal.html">
+        <h1>Modal</h1>
+      </a>
+      <a href="./navigation.html">
+        <h1>Navigation</h1>
+      </a>
+      <a href="./grid.html">
+        <h1>Grid</h1>
+      </a>
+      <a href="./snackbar.html">
+        <h1>Snackbar</h1>
+      </a>
+      <a href="./rating.html">
+        <h1>Ratings</h1>
+      </a>
+      <a href="./list.html">
+        <h1>List</h1>
+      </a>
+      <div class="connect-mobile-view">
+        <hr class="nav-break-line" />
+        <div class="flex-row">
+          <a href="https://github.com/saurabhchirde/Pebble-UI" target="_blank">
+            <div class="header-icon"><i class="fab fa-github"></i></div>
+          </a>
+          <a href="https://twitter.com/SaurabhChirde" target="_blank">
+            <div class="header-icon"><i class="fab fa-twitter"></i></div>
+          </a>
+        </div>
+      </div>
+      <div class="nav-close-btn">
+        <i class="far fa-times-circle"></i>
+      </div>
+    </nav>
+
+    <div class="right-side-nav">
+      <h1 class="nav-item">On This Page</h1>
+      <a href="#input-validation">
+        <h2 class="nav-item">Input Validation</h2>
+      </a>
+      <a href="#labelled-wo-placeholder">
+        <h2 class="nav-item">Labelled Input (without placeholder)</h2>
+      </a>
+      <ul>
+        <a href="#labelled-wo-placeholder-outline">
+          <li>Outline</li>
+        </a>
+        <a href="#labelled-wo-placeholder-no-outline">
+          <li>No-Outline</li>
+        </a>
+      </ul>
+      <a href="#labelled-w-placeholder">
+        <h2 class="nav-item">Labelled Input (with placeholder)</h2>
+      </a>
+      <ul>
+        <a href="#labelled-w-placeholder-outline">
+          <li>Outline</li>
+        </a>
+        <a href="#labelled-w-placeholder-no-outline">
+          <li>No-Outline</li>
+        </a>
+      </ul>
     </div>
-  </nav>
 
-  <div class="right-side-nav">
-    <h1 class="nav-item">On This Page</h1>
-    <a href="#labelled-wo-placeholder">
-      <h2 class="nav-item">Labelled Input (without placeholder)</h2>
+    <!-- floating up btn -->
+    <a href="#"
+      ><button class="btn floating-btn-md">
+        <i class="fas fa-arrow-up"></i>
+      </button>
     </a>
-    <ul>
-      <a href="#labelled-wo-placeholder-outline">
-        <li>Outline</li>
-      </a>
-      <a href="#labelled-wo-placeholder-no-outline">
-        <li>No-Outline</li>
-      </a>
-    </ul>
-    <a href="#labelled-w-placeholder">
-      <h2 class="nav-item">Labelled Input (with placeholder)</h2>
-    </a>
-    <ul>
-      <a href="#labelled-w-placeholder-outline">
-        <li>Outline</li>
-      </a>
-      <a href="#labelled-w-placeholder-no-outline">
-        <li>No-Outline</li>
-      </a>
 
-    </ul>
-  </div>
+    <!-- body -->
 
-  <!-- floating up btn -->
-  <a href="#"><button class="btn floating-btn-md">
-      <i class="fas fa-arrow-up"></i></button>
-  </a>
+    <div class="main cont-shadow">
+      <!-- input field -->
 
-  <!-- body -->
+      <section id="input">
+        <h1 class="mg-point8-tb">Input-Fields</h1>
+        <p>
+          Inputs are used to take information from the user to authenticate or
+          save their information to the server.
+        </p>
 
-  <div class="main cont-shadow">
+        <!-- Input Validation -->
 
-    <!-- input field -->
+        <h2 id="input-validation" class="mg-2-top mg-1-bot title-lg-wt-5">
+          Input Validation
+        </h2>
+        <div class="mg-3-bot">
+          <div class="mg-1-tb">
+            <div class="input-validation">
+              <!-- error validation -->
+              <h2 class="title-md-wt-5 pd-2-top pd-1-bot">
+                Wrong Input Validation
+              </h2>
+              <div class="wrong-input-validation flex-row">
+                <!-- outline wrong input email validation -->
+                <div class="outline-email-input wrong-input">
+                  <label for="email"
+                    >Email *
+                    <input
+                      type="email"
+                      name="email"
+                      value="abc.com"
+                      required
+                      autocomplete="email"
+                    />
+                    entered email is invalid
+                  </label>
+                </div>
 
-    <section id="input">
-      <h1 class="mg-point8-tb">Input-Fields</h1>
-      <p>
-        Inputs are used to take information from the user to authenticate or save their information to the server.
-      </p>
+                <!-- outline wrong password validation -->
+                <div class="outline-password-input wrong-password">
+                  <label for="password"
+                    >Password *
+                    <input
+                      type="password"
+                      name="password"
+                      autocomplete="current-password"
+                      required
+                      value="..."
+                    />
+                    wrong password, try again
+                  </label>
+                </div>
+              </div>
+              <script type="text/plain" class="language-html snippet-container">
+                <!-- outline wrong input email validation -->
+                <div class="outline-email-input wrong-input">
+                  <label for="email">Email *
+                    <input type="email" name="email" value="abc.com" required autocomplete="email" />
+                    entered email is invalid
+                  </label>
+                </div>
 
-      <!-- Labelled Input -->
+                <!-- outline wrong password validation -->
+                <div class="outline-password-input wrong-password">
+                  <label for="password">Password *
+                    <input type="password" name="password" autocomplete="current-password" required value="..." />
+                    wrong password, try again
+                  </label>
+                </div>
+              </script>
 
-      <h2 id="labelled-wo-placeholder" class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (without placeholder)</h2>
-      <div class="mg-3-bot">
-        <div class="pd-1-all mg-1-top">
+              <!-- success validation -->
+              <h2 class="title-md-wt-5 pd-2-top pd-1-bot">
+                Success Input Validation
+              </h2>
+              <div class="wrong-input-validation flex-row">
+                <!-- outline input email field without placeholder -->
+                <div class="outline-email-input success-input">
+                  <label for="email"
+                    >Email *
+                    <input
+                      type="email"
+                      name="email"
+                      value="abc@pebbleui.com"
+                      required
+                      autocomplete="email"
+                    /><br /><br />
+                  </label>
+                </div>
 
-          <p id="labelled-wo-placeholder-outline" class="mg-2-bot title-md-wt-bold">Outline </p>
+                <!-- outline input password field without placeholder -->
+                <div class="outline-password-input success-password">
+                  <label for="password"
+                    >Password *
+                    <input
+                      type="password"
+                      name="password"
+                      autocomplete="current-password"
+                      required
+                      value=".........."
+                    />
+                    Password Matched!
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div class="flex-row flex-wrap">
+          <script type="text/plain" class="language-html snippet-container">
+            <!-- outline input email field without placeholder -->
+            <div class="outline-email-input success-input">
+              <label for="email">Email *
+                <input type="email" name="email" value="abc@pebbleui.com" required autocomplete="email" />
+              </label>
+            </div>
 
+            <!-- outline input password field without placeholder -->
+            <div class="outline-password-input success-password">
+              <label for="password">Password *
+                <input type="password" name="password" autocomplete="current-password" required value=".........." />
+                Password Matched!
+              </label>
+            </div>
+          </script>
+        </div>
+
+        <!-- Labelled Input -->
+
+        <h2
+          id="labelled-wo-placeholder"
+          class="mg-2-top mg-1-bot title-lg-wt-5"
+        >
+          Labelled Input (without placeholder)
+        </h2>
+        <div class="mg-3-bot">
+          <div class="pd-1-all mg-1-top">
+            <p
+              id="labelled-wo-placeholder-outline"
+              class="mg-2-bot title-md-wt-bold"
+            >
+              Outline
+            </p>
+
+            <div class="flex-row flex-wrap">
+              <!-- outline input text field without placeholder -->
+              <div class="outline-text-input">
+                <label for="text"
+                  >Full Name
+                  <input type="text" name="text" autocomplete="name" />
+                </label>
+              </div>
+
+              <!-- outline input email field without placeholder -->
+              <div class="outline-email-input">
+                <label for="email"
+                  >Email *
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                  />
+                </label>
+              </div>
+
+              <!-- outline input password field without placeholder -->
+              <div class="outline-password-input wrong-password">
+                <label for="password"
+                  >Password *
+                  <input
+                    type="password"
+                    name="password"
+                    autocomplete="current-password"
+                    required
+                    value="..."
+                  />
+                  wrong password, try again
+                </label>
+              </div>
+
+              <!-- outline input number field without placeholder -->
+              <div class="outline-number-input">
+                <label for="number"
+                  >Number<input type="number" name="number" />
+                </label>
+              </div>
+
+              <!-- outline input date field without placeholder -->
+              <div class="outline-date-input">
+                <label for="date">Date<input type="date" name="date" /> </label>
+              </div>
+
+              <!-- outline input month field without placeholder -->
+              <div class="outline-month-input">
+                <label for="month"
+                  >Month & Year<input type="month" name="month" />
+                </label>
+              </div>
+
+              <!-- outline input file field without placeholder -->
+              <div class="outline-file-input">
+                <label for="file">File<input type="file" name="file" /> </label>
+              </div>
+
+              <!-- outline input telephone field without placeholder -->
+              <div class="outline-tel-input">
+                <label for="tel"
+                  >Phone no<input type="tel" autocomplete="tel" name="tel" />
+                </label>
+              </div>
+
+              <!-- color input field  -->
+              <div class="color-input">
+                <label for="color"
+                  >Color :<strong><output id="color">#0f96df</output></strong
+                  ><input
+                    type="color"
+                    name="color"
+                    class="color-pick"
+                    oninput="color.value=this.value"
+                    value="#0f96df"
+                  />
+                </label>
+              </div>
+
+              <!-- outline input search field without placeholder -->
+              <div class="outline-search-input">
+                <label for="search"
+                  >Search
+                  <div class="input-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                    <input type="search" name="search" />
+                  </div>
+                </label>
+              </div>
+
+              <!-- range input field -->
+              <div class="range-input">
+                <label for="volume"
+                  >Volume<input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="40"
+                    name="volume"
+                    step="1"
+                    oninput="vol.value = this.value"
+                  />
+                  <output id="vol">40</output>
+                </label>
+              </div>
+
+              <div class="flex-col-center">
+                <!-- radio input field -->
+                <div class="radio-input">
+                  <input type="radio" name="radio" /><label for="radio"
+                    >Radio input field</label
+                  >
+                </div>
+
+                <!-- checkbox input field -->
+                <div class="checkbox-input">
+                  <input type="checkbox" name="check" /><label for="check"
+                    >Check input field</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script type="text/plain" class="language-html snippet-container">
             <!-- outline input text field without placeholder -->
             <div class="outline-text-input">
               <label for="text">Full Name
@@ -285,8 +567,8 @@
 
             <!-- color input field  -->
             <div class="color-input">
-              <label for="color">Color :<strong><output id="color">#0f96df</output></strong><input type="color"
-                  name="color" class="color-pick" oninput="color.value=this.value" value="#0f96df" />
+              <label for="color">Color :<strong><output id="color">#0f96df</output></strong>
+                <input type="color" name="color" class="color-pick" oninput="color.value=this.value" value="#0f96df" />
               </label>
             </div>
 
@@ -308,122 +590,110 @@
               </label>
             </div>
 
-            <div class="flex-col-center">
+            <!-- radio input field -->
+            <div class="radio-input">
+              <input type="radio" name="radio" /><label for="radio">Radio input field</label>
+            </div>
 
-              <!-- radio input field -->
-              <div class="radio-input">
-                <input type="radio" name="radio" /><label for="radio">Radio input field</label>
+            <!-- checkbox input field -->
+            <div class="checkbox-input">
+              <input type="checkbox" name="check" /><label for="check">Check input field</label>
+            </div>
+          </script>
+        </div>
+
+        <!-- no outline/standard -->
+        <div class="mg-3-bot">
+          <div class="pd-2-all mg-1-top">
+            <p
+              id="labelled-wo-placeholder-no-outline"
+              class="mg-2-bot title-md-wt-bold"
+            >
+              No outline
+            </p>
+
+            <div class="flex-row flex-wrap">
+              <!-- no-outline input text field without placeholder -->
+              <div class="no-outline-text-input">
+                <label for="text"
+                  >Full Name
+                  <input type="text" name="text" autocomplete="name" />
+                </label>
               </div>
 
-              <!-- checkbox input field -->
-              <div class="checkbox-input">
-                <input type="checkbox" name="check" /><label for="check">Check input field</label>
+              <!-- no-outline input email field without placeholder -->
+              <div class="no-outline-email-input">
+                <label for="email"
+                  >Email *
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                  />
+                </label>
               </div>
 
+              <!-- no-outline input password field without placeholder -->
+              <div class="no-outline-password-input wrong-password">
+                <label for="password"
+                  >Password *
+                  <input
+                    type="password"
+                    name="password"
+                    autocomplete="current-password"
+                    required
+                    value="..."
+                  />
+                  wrong password, try again
+                </label>
+              </div>
+
+              <!-- no-outline input number field without placeholder -->
+              <div class="no-outline-number-input">
+                <label for="number"
+                  >Number<input type="number" name="number" />
+                </label>
+              </div>
+
+              <!-- no-outline input date field without placeholder -->
+              <div class="no-outline-date-input">
+                <label for="date">Date<input type="date" name="date" /> </label>
+              </div>
+
+              <!-- no-outline input month field without placeholder -->
+              <div class="no-outline-month-input">
+                <label for="month"
+                  >Month & Year<input type="month" name="month" />
+                </label>
+              </div>
+
+              <!-- no-outline input file field without placeholder -->
+              <div class="no-outline-file-input">
+                <label for="file">File<input type="file" name="file" /> </label>
+              </div>
+
+              <!-- no-outline input telephone field without placeholder -->
+              <div class="no-outline-tel-input">
+                <label for="tel"
+                  >Phone no<input type="tel" autocomplete="tel" name="tel" />
+                </label>
+              </div>
+
+              <!-- no-outline input search field without placeholder -->
+              <div class="no-outline-search-input">
+                <label for="search"
+                  >Search
+                  <div class="input-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                    <input type="search" name="search" />
+                  </div>
+                </label>
+              </div>
             </div>
           </div>
 
-        </div>
-
-        <script type="text/plain" class="language-html snippet-container">
-          <!-- outline input text field without placeholder -->
-          <div class="outline-text-input">
-            <label for="text">Full Name
-              <input type="text" name="text" autocomplete="name" />
-            </label>
-          </div>
-
-          <!-- outline input email field without placeholder -->
-          <div class="outline-email-input">
-            <label for="email">Email *
-              <input type="email" name="email" required autocomplete="email" />
-            </label>
-          </div>
-
-          <!-- outline input password field without placeholder -->
-          <div class="outline-password-input wrong-password">
-            <label for="password">Password *
-              <input type="password" name="password" autocomplete="current-password" required value="..." />
-              wrong password, try again
-            </label>
-          </div>
-
-          <!-- outline input number field without placeholder -->
-          <div class="outline-number-input">
-            <label for="number">Number<input type="number" name="number" />
-            </label>
-          </div>
-
-          <!-- outline input date field without placeholder -->
-          <div class="outline-date-input">
-            <label for="date">Date<input type="date" name="date" />
-            </label>
-          </div>
-
-          <!-- outline input month field without placeholder -->
-          <div class="outline-month-input">
-            <label for="month">Month & Year<input type="month" name="month" />
-            </label>
-          </div>
-
-          <!-- outline input file field without placeholder -->
-          <div class="outline-file-input">
-            <label for="file">File<input type="file" name="file" />
-            </label>
-          </div>
-
-          <!-- outline input telephone field without placeholder -->
-          <div class="outline-tel-input">
-            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
-            </label>
-          </div>
-
-          <!-- color input field  -->
-          <div class="color-input">
-            <label for="color">Color :<strong><output id="color">#0f96df</output></strong>
-              <input type="color" name="color" class="color-pick" oninput="color.value=this.value" value="#0f96df" />
-            </label>
-          </div>
-
-          <!-- outline input search field without placeholder -->
-          <div class="outline-search-input">
-            <label for="search">Search
-              <div class="input-icon">
-                <a href=""><i class="fas fa-search"></i></a>
-                <input type="search" name="search" />
-              </div>
-            </label>
-          </div>
-
-          <!-- range input field -->
-          <div class="range-input">
-            <label for="volume">Volume<input type="range" min="0" max="100" value="40" name="volume" step="1"
-                oninput="vol.value = this.value" />
-              <output id="vol">40</output>
-            </label>
-          </div>
-
-          <!-- radio input field -->
-          <div class="radio-input">
-            <input type="radio" name="radio" /><label for="radio">Radio input field</label>
-          </div>
-
-          <!-- checkbox input field -->
-          <div class="checkbox-input">
-            <input type="checkbox" name="check" /><label for="check">Check input field</label>
-          </div>
-
-        </script>
-      </div>
-
-      <!-- no outline/standard -->
-      <div class="mg-3-bot">
-        <div class="pd-2-all mg-1-top">
-
-          <p id="labelled-wo-placeholder-no-outline" class="mg-2-bot title-md-wt-bold">No outline</p>
-
-          <div class="flex-row flex-wrap">
-
+          <script type="text/plain" class="language-html snippet-container">
             <!-- no-outline input text field without placeholder -->
             <div class="no-outline-text-input">
               <label for="text">Full Name
@@ -485,85 +755,121 @@
                 </div>
               </label>
             </div>
-
-          </div>
+          </script>
         </div>
 
-        <script type="text/plain" class="language-html snippet-container">
-          <!-- no-outline input text field without placeholder -->
-          <div class="no-outline-text-input">
-            <label for="text">Full Name
-              <input type="text" name="text" autocomplete="name" />
-            </label>
-          </div>
+        <!-- Label with placeholder Input -->
 
-          <!-- no-outline input email field without placeholder -->
-          <div class="no-outline-email-input">
-            <label for="email">Email *
-              <input type="email" name="email" required autocomplete="email" />
-            </label>
-          </div>
+        <h2 id="labelled-w-placeholder" class="mg-2-top mg-1-bot title-lg-wt-5">
+          Labelled Input (with placeholder)
+        </h2>
+        <div class="mg-3-bot">
+          <div class="pd-2-all mg-1-top">
+            <p
+              id="labelled-w-placeholder-outline"
+              class="mg-2-bot title-md-wt-bold"
+            >
+              Outline
+            </p>
 
-          <!-- no-outline input password field without placeholder -->
-          <div class="no-outline-password-input wrong-password">
-            <label for="password">Password *
-              <input type="password" name="password" autocomplete="current-password" required value="..." />
-              wrong password, try again
-            </label>
-          </div>
-
-          <!-- no-outline input number field without placeholder -->
-          <div class="no-outline-number-input">
-            <label for="number">Number<input type="number" name="number" />
-            </label>
-          </div>
-
-          <!-- no-outline input date field without placeholder -->
-          <div class="no-outline-date-input">
-            <label for="date">Date<input type="date" name="date" />
-            </label>
-          </div>
-
-          <!-- no-outline input month field without placeholder -->
-          <div class="no-outline-month-input">
-            <label for="month">Month & Year<input type="month" name="month" />
-            </label>
-          </div>
-
-          <!-- no-outline input file field without placeholder -->
-          <div class="no-outline-file-input">
-            <label for="file">File<input type="file" name="file" />
-            </label>
-          </div>
-
-          <!-- no-outline input telephone field without placeholder -->
-          <div class="no-outline-tel-input">
-            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" />
-            </label>
-          </div>
-
-          <!-- no-outline input search field without placeholder -->
-          <div class="no-outline-search-input">
-            <label for="search">Search
-              <div class="input-icon">
-                <a href=""><i class="fas fa-search"></i></a>
-                <input type="search" name="search" />
+            <div class="flex-row flex-wrap">
+              <!-- outline input text field with placeholder -->
+              <div class="outline-text-input">
+                <label for="text"
+                  >Full Name
+                  <input
+                    type="text"
+                    name="text"
+                    autocomplete="name"
+                    placeholder="Enter name"
+                  />
+                </label>
               </div>
-            </label>
+
+              <!-- outline input email field with placeholder -->
+              <div class="outline-email-input">
+                <label for="email"
+                  >Email *
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="Enter email"
+                  />
+                </label>
+              </div>
+
+              <!-- outline input password field with placeholder -->
+              <div class="outline-password-input wrong-password">
+                <label for="password"
+                  >Password *
+                  <input
+                    type="password"
+                    name="password"
+                    autocomplete="current-password"
+                    placeholder="Enter password"
+                    required
+                    value="..."
+                  />
+                  wrong password, try again
+                </label>
+              </div>
+
+              <!-- outline input number field with placeholder -->
+              <div class="outline-number-input">
+                <label for="number"
+                  >Number<input
+                    type="number"
+                    name="number"
+                    placeholder="Enter quantity"
+                  />
+                </label>
+              </div>
+
+              <!-- outline input date field with placeholder -->
+              <div class="outline-date-input">
+                <label for="date">Date<input type="date" name="date" /> </label>
+              </div>
+
+              <!-- outline input month field with placeholder -->
+              <div class="outline-month-input">
+                <label for="month"
+                  >Month & Year<input type="month" name="month" />
+                </label>
+              </div>
+
+              <!-- outline input file field with placeholder -->
+              <div class="outline-file-input">
+                <label for="file">File<input type="file" name="file" /> </label>
+              </div>
+
+              <!-- outline input telephone field with placeholder -->
+              <div class="outline-tel-input">
+                <label for="tel"
+                  >Phone no<input
+                    type="tel"
+                    autocomplete="tel"
+                    name="tel"
+                    placeholder="Enter phone number"
+                  />
+                </label>
+              </div>
+
+              <!-- outline input search field without placeholder -->
+              <div class="outline-search-input">
+                <label for="search"
+                  >Search
+                  <div class="input-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                    <input type="search" name="search" placeholder="Search" />
+                  </div>
+                </label>
+              </div>
+            </div>
           </div>
-        </script>
 
-      </div>
-
-      <!-- Label with placeholder Input -->
-
-      <h2 id="labelled-w-placeholder" class="mg-2-top mg-1-bot title-lg-wt-5">Labelled Input (with placeholder)</h2>
-      <div class=" mg-3-bot">
-        <div class="pd-2-all mg-1-top">
-          <p id="labelled-w-placeholder-outline" class="mg-2-bot title-md-wt-bold">Outline </p>
-
-          <div class="flex-row flex-wrap">
-
+          <script type="text/plain" class="language-html snippet-container">
             <!-- outline input text field with placeholder -->
             <div class="outline-text-input">
               <label for="text">Full Name
@@ -613,8 +919,7 @@
 
             <!-- outline input telephone field with placeholder -->
             <div class="outline-tel-input">
-              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
-                  placeholder="Enter phone number" />
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="Enter phone number" />
               </label>
             </div>
 
@@ -627,85 +932,118 @@
                 </div>
               </label>
             </div>
-
-          </div>
+          </script>
         </div>
 
-        <script type="text/plain" class="language-html snippet-container">
-          <!-- outline input text field with placeholder -->
-          <div class="outline-text-input">
-            <label for="text">Full Name
-              <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
-            </label>
-          </div>
+        <!-- no outline/standard with place holderwith placeholder -->
 
-          <!-- outline input email field with placeholder -->
-          <div class="outline-email-input">
-            <label for="email">Email *
-              <input type="email" name="email" required autocomplete="email" placeholder="Enter email" />
-            </label>
-          </div>
+        <div class="mg-3-bot">
+          <div class="pd-2-all mg-1-top">
+            <p
+              id="labelled-w-placeholder-no-outline"
+              class="mg-2-bot title-md-wt-bold"
+            >
+              No outline
+            </p>
 
-          <!-- outline input password field with placeholder -->
-          <div class="outline-password-input wrong-password">
-            <label for="password">Password *
-              <input type="password" name="password" autocomplete="current-password" placeholder="Enter password"
-                required value="..." />
-              wrong password, try again
-            </label>
-          </div>
-
-          <!-- outline input number field with placeholder -->
-          <div class="outline-number-input">
-            <label for="number">Number<input type="number" name="number" placeholder="Enter quantity" />
-            </label>
-          </div>
-
-          <!-- outline input date field with placeholder -->
-          <div class="outline-date-input">
-            <label for="date">Date<input type="date" name="date" />
-            </label>
-          </div>
-
-          <!-- outline input month field with placeholder -->
-          <div class="outline-month-input">
-            <label for="month">Month & Year<input type="month" name="month" />
-            </label>
-          </div>
-
-          <!-- outline input file field with placeholder -->
-          <div class="outline-file-input">
-            <label for="file">File<input type="file" name="file" />
-            </label>
-          </div>
-
-          <!-- outline input telephone field with placeholder -->
-          <div class="outline-tel-input">
-            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="Enter phone number" />
-            </label>
-          </div>
-
-          <!-- outline input search field without placeholder -->
-          <div class="outline-search-input">
-            <label for="search">Search
-              <div class="input-icon">
-                <a href=""><i class="fas fa-search"></i></a>
-                <input type="search" name="search" placeholder="Search" />
+            <div class="flex-row flex-wrap">
+              <!-- no-outline input text field with placeholder -->
+              <div class="no-outline-text-input">
+                <label for="text"
+                  >Full Name
+                  <input
+                    type="text"
+                    name="text"
+                    autocomplete="name"
+                    placeholder="Enter name"
+                  />
+                </label>
               </div>
-            </label>
+
+              <!-- no-outline input email field with placeholder -->
+              <div class="no-outline-email-input">
+                <label for="email"
+                  >Email *
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="Enter email"
+                  />
+                </label>
+              </div>
+
+              <!-- no-outline input password field with placeholder -->
+              <div class="no-outline-password-input wrong-password">
+                <label for="password"
+                  >Password *
+                  <input
+                    type="password"
+                    name="password"
+                    autocomplete="current-password"
+                    placeholder="Enter password"
+                    required
+                    value="..."
+                  />
+                  wrong password, try again
+                </label>
+              </div>
+
+              <!-- no-outline input number field with placeholder -->
+              <div class="no-outline-number-input">
+                <label for="number"
+                  >Number<input
+                    type="number"
+                    name="number"
+                    placeholder="Enter quantity"
+                  />
+                </label>
+              </div>
+
+              <!-- no-outline input date field with placeholder -->
+              <div class="no-outline-date-input">
+                <label for="date">Date<input type="date" name="date" /> </label>
+              </div>
+
+              <!-- no-outline input month field with placeholder -->
+              <div class="no-outline-month-input">
+                <label for="month"
+                  >Month & Year<input type="month" name="month" />
+                </label>
+              </div>
+
+              <!-- no-outline input file field with placeholder -->
+              <div class="no-outline-file-input">
+                <label for="file">File<input type="file" name="file" /> </label>
+              </div>
+
+              <!-- no-outline input telephone field with placeholder -->
+              <div class="no-outline-tel-input">
+                <label for="tel"
+                  >Phone no<input
+                    type="tel"
+                    autocomplete="tel"
+                    name="tel"
+                    placeholder="Enter phone number"
+                  />
+                </label>
+              </div>
+
+              <!-- no-outline input search field with placeholder -->
+              <div class="no-outline-search-input">
+                <label for="search"
+                  >Search
+                  <div class="input-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                    <input type="search" name="search" placeholder="Search" />
+                  </div>
+                </label>
+              </div>
+            </div>
           </div>
-        </script>
-      </div>
 
-      <!-- no outline/standard with place holderwith placeholder -->
-
-      <div class="mg-3-bot">
-        <div class="pd-2-all mg-1-top">
-
-          <p id="labelled-w-placeholder-no-outline" class="mg-2-bot title-md-wt-bold">No outline</p>
-
-          <div class="flex-row flex-wrap">
-
+          <script type="text/plain" class="language-html snippet-container">
             <!-- no-outline input text field with placeholder -->
             <div class="no-outline-text-input">
               <label for="text">Full Name
@@ -743,7 +1081,7 @@
 
             <!-- no-outline input month field with placeholder -->
             <div class="no-outline-month-input">
-              <label for="month">Month & Year<input type="month" name="month" />
+              <label for="month">Month<input type="month" name="month" />
               </label>
             </div>
 
@@ -755,8 +1093,7 @@
 
             <!-- no-outline input telephone field with placeholder -->
             <div class="no-outline-tel-input">
-              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel"
-                  placeholder="Enter phone number" />
+              <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="Enter phone number" />
               </label>
             </div>
 
@@ -769,83 +1106,12 @@
                 </div>
               </label>
             </div>
-
-          </div>
-
+          </script>
         </div>
+      </section>
+    </div>
 
-        <script type="text/plain" class="language-html snippet-container">
-          <!-- no-outline input text field with placeholder -->
-          <div class="no-outline-text-input">
-            <label for="text">Full Name
-              <input type="text" name="text" autocomplete="name" placeholder="Enter name" />
-            </label>
-          </div>
-
-          <!-- no-outline input email field with placeholder -->
-          <div class="no-outline-email-input">
-            <label for="email">Email *
-              <input type="email" name="email" required autocomplete="email" placeholder="Enter email" />
-            </label>
-          </div>
-
-          <!-- no-outline input password field with placeholder -->
-          <div class="no-outline-password-input wrong-password">
-            <label for="password">Password *
-              <input type="password" name="password" autocomplete="current-password" placeholder="Enter password"
-                required value="..." />
-              wrong password, try again
-            </label>
-          </div>
-
-          <!-- no-outline input number field with placeholder -->
-          <div class="no-outline-number-input">
-            <label for="number">Number<input type="number" name="number" placeholder="Enter quantity" />
-            </label>
-          </div>
-
-          <!-- no-outline input date field with placeholder -->
-          <div class="no-outline-date-input">
-            <label for="date">Date<input type="date" name="date" />
-            </label>
-          </div>
-
-          <!-- no-outline input month field with placeholder -->
-          <div class="no-outline-month-input">
-            <label for="month">Month<input type="month" name="month" />
-            </label>
-          </div>
-
-          <!-- no-outline input file field with placeholder -->
-          <div class="no-outline-file-input">
-            <label for="file">File<input type="file" name="file" />
-            </label>
-          </div>
-
-          <!-- no-outline input telephone field with placeholder -->
-          <div class="no-outline-tel-input">
-            <label for="tel">Phone no<input type="tel" autocomplete="tel" name="tel" placeholder="Enter phone number" />
-            </label>
-          </div>
-
-          <!-- no-outline input search field with placeholder -->
-          <div class="no-outline-search-input">
-            <label for="search">Search
-              <div class="input-icon">
-                <a href=""><i class="fas fa-search"></i></a>
-                <input type="search" name="search" placeholder="Search" />
-              </div>
-            </label>
-          </div>
-        </script>
-
-      </div>
-
-    </section>
-  </div>
-
-  <script src="/Documentation/docpage-js/docs.js"></script>
-  <script src="/Documentation/utilities/prismjs/prism.js"></script>
-</body>
-
+    <script src="/Documentation/docpage-js/docs.js"></script>
+    <script src="/Documentation/utilities/prismjs/prism.js"></script>
+  </body>
 </html>
