@@ -1,7 +1,9 @@
 # Pebble UI
-## Minimal UI Component Library 
+
+## Minimal UI Component Library
+
 #### - by Saurabh Chirde
- 
+
  <br>
 <div>
 
@@ -14,9 +16,10 @@ Build rapid modern websites without ever leaving your HTML with Pebble UI.
 </div>
 
 ---
+
 ## Live Documentation
 
-Live Link : https://pebbleui.com
+Live Link : https://ui.saurabhchirde.com
 
 ![PebbleUI](https://user-images.githubusercontent.com/92800463/154902355-26d86c71-514d-43f3-bc99-542cbddd2caf.gif)
 
@@ -24,13 +27,17 @@ Live Link : https://pebbleui.com
 
 ## Quick Start
 
-To start using the components in your project, you can refer the following code in your  `<link>` tags or directly use in your css files. Dark Theme has been enabled in Component Library, do check it!!
+To start using the components in your project, you can refer the following code in your `<link>` tags or directly use in your css files. Dark Theme has been enabled in Component Library, do check it!!
 
 ```html
-<link rel="stylesheet" href="https://pebbleui.com/components/v1.0.0/components.css"/>
+<link
+  rel="stylesheet"
+  href="https://ui.saurabhchirde.com/components/v1.0.0/components.css"
+/>
 ```
+
 ```css
-@import url("https://pebbleui.com/components/v1.0.0/components.css");
+@import url("https://ui.saurabhchirde.com/components/v1.0.0/components.css");
 ```
 
 ### Pebble UI contains the following Components
@@ -51,11 +58,12 @@ To start using the components in your project, you can refer the following code 
 - [List](#list)
 
 ---
+
 ### Typography
 
 Use Typography to format text content on your web site.
 
-You will find the following types of _Typography_ on https://pebbleui.com/documentation/docpage/typography.html
+You will find the following types of _Typography_ on https://ui.saurabhchirde.com/documentation/docpage/typography.html
 
 > Headings
 
@@ -73,10 +81,10 @@ You will find the following types of _Typography_ on https://pebbleui.com/docume
 
 An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.
 
-You will find the following types of _Alert_ on https://pebbleui.com/documentation/docpage/alert.html
+You will find the following types of _Alert_ on https://ui.saurabhchirde.com/documentation/docpage/alert.html
 
 > Basic and Descriptive Alert
-    
+
 - Info Alert
 - Success Alert
 - Warning Alert
@@ -88,18 +96,21 @@ You will find the following types of _Alert_ on https://pebbleui.com/documentati
 
 Buttons allow users to take actions, and make choices, with a single tap..
 
-You will find the following types of _Button_ on https://pebbleui.com/documentation/docpage/buttons.html
+You will find the following types of _Button_ on https://ui.saurabhchirde.com/documentation/docpage/buttons.html
 
 > Solid Button
+
 - Primary Button
 - Secondary Button
 - Disabled Button
 
 > Outlined Buttons
+
 - Primary Outline Button
 - Secondary Outline Button
 
 > Link/Text Buttons
+
 - Primary Text Button
 - Secondary Text Button
 
@@ -110,11 +121,12 @@ You will find the following types of _Button_ on https://pebbleui.com/documentat
 > Floating Buttons
 
 ---
+
 ### Avatar
 
 Avatars can be used to represent people or objects. It supports images or letters.
 
-You will find the following types of _Avatar_ on https://pebbleui.com/documentation/docpage/avatar.html
+You will find the following types of _Avatar_ on https://ui.saurabhchirde.com/documentation/docpage/avatar.html
 
 > Image Avatar
 
@@ -126,7 +138,7 @@ You will find the following types of _Avatar_ on https://pebbleui.com/documentat
 
 Badges are used to display a notification count or status information (online, offline, or away).
 
-You will find the following types of _Badge_ on https://pebbleui.com/documentation/docpage/badge.html
+You will find the following types of _Badge_ on https://ui.saurabhchirde.com/documentation/docpage/badge.html
 
 > Badge on Avatars
 
@@ -143,23 +155,26 @@ You will find the following types of _Badge_ on https://pebbleui.com/documentati
 Cards are used to display content and action on a particular topic.
 It provides a flexible and extensible content container with multiple variants and options.
 
-You will find the following types of _Card_ on https://pebbleui.com/documentation/docpage/cards.html
+You will find the following types of _Card_ on https://ui.saurabhchirde.com/documentation/docpage/cards.html
 
 All type of cards are mentioned below:-
 
 > Card Without dismiss
+
 - Vertical Light Card
 - Vertical Dark Card
 - Horizontal Light Cards
 - Horizontal Dark Cards
 
 > Card With dismiss
+
 - Vertical Light Card
 - Vertical Dark Card
 - Horizontal Light Cards
 - Horizontal Dark Cards
 
 > Cards With Text Overlay
+
 - Overlay Type 1
 - Overlay Type 2
 
@@ -172,19 +187,22 @@ All type of cards are mentioned below:-
 > Card With Shadow
 
 > Cart Item Card
+
 - Horizontal Light Cards
 - Horizontal Dark Cards
 
 > Price Card
+
 - Vertical Light Card
 - Vertical Dark Card
+
 ---
 
 ### Image
 
 Image components are used, when you need to display pictures.
 
-You will find the following types of _Image_ on https://pebbleui.com/documentation/docpage/image.html
+You will find the following types of _Image_ on https://ui.saurabhchirde.com/documentation/docpage/image.html
 
 > Square Image
 
@@ -198,9 +216,10 @@ You will find the following types of _Image_ on https://pebbleui.com/documentati
 
 Inputs are used to take information from the user to authenticate or save their information to the server.
 
-You will find the following types of _Input_ on https://pebbleui.com/documentation/docpage/input.html
+You will find the following types of _Input_ on https://ui.saurabhchirde.com/documentation/docpage/input.html
 
 > Outline Labelled Input (with & without placeholders)
+
 - Text Input
 - Email Input (required field)
 - Password Input (required field)
@@ -216,6 +235,7 @@ You will find the following types of _Input_ on https://pebbleui.com/documentati
 - Checkbox Input
 
 > No-Outline Labelled Input (with and without placeholders)
+
 - Text Input
 - Email Input (required field)
 - Password Input (required field)
@@ -232,7 +252,7 @@ You will find the following types of _Input_ on https://pebbleui.com/documentati
 
 Modals are positioned over everything else in the document. It gets closed only with a close button on the modal pop-up.
 
-You will find the following types of _Modal_ on https://pebbleui.com/documentation/docpage/modal.html
+You will find the following types of _Modal_ on https://ui.saurabhchirde.com/documentation/docpage/modal.html
 
 > Discard Modal
 
@@ -246,19 +266,19 @@ You will find the following types of _Modal_ on https://pebbleui.com/documentati
 
 Navigation bar is used to navigate through the web apps or websites. This component is responsive with screen sizes.
 
-You will find the following types of _Navigation_ on https://pebbleui.com/documentation/docpage/navigation.html
+You will find the following types of _Navigation_ on https://ui.saurabhchirde.com/documentation/docpage/navigation.html
 
 > Desktop Navigation Bar
 
 > Mobile Navigation Bar
 
-
 ---
+
 ### Grid
 
 Grids are used set the layout of a web page or any content on a page.
 
-You will find the following types of _Grid_ on https://pebbleui.com/documentation/docpage/grid.html
+You will find the following types of _Grid_ on https://ui.saurabhchirde.com/documentation/docpage/grid.html
 
 > Two Columns Grid (50:50)
 
@@ -278,7 +298,7 @@ You will find the following types of _Grid_ on https://pebbleui.com/documentatio
 
 Snackbars/Toast provide brief notifications. The component is also known as a toast.
 
-You will find the following types of _Toast_ on https://pebbleui.com/documentation/docpage/snackbar.html
+You will find the following types of _Toast_ on https://ui.saurabhchirde.com/documentation/docpage/snackbar.html
 
 > Baseline Snackbar
 
@@ -292,7 +312,7 @@ You will find the following types of _Toast_ on https://pebbleui.com/documentati
 
 Rating components can be used as read-only badge or in reviews section. Can be used in reviews section as form too.
 
-You will find the following types of _Rating_ on https://pebbleui.com/documentation/docpage/rating.html
+You will find the following types of _Rating_ on https://ui.saurabhchirde.com/documentation/docpage/rating.html
 
 > Rating Bar
 
@@ -304,7 +324,7 @@ You will find the following types of _Rating_ on https://pebbleui.com/documentat
 
 Lists are continuous, vertical indexes of text or images..
 
-You will find the following types of _Rating_ on https://pebbleui.com/documentation/docpage/list.html
+You will find the following types of _Rating_ on https://ui.saurabhchirde.com/documentation/docpage/list.html
 
 > Unordered list styles
 
@@ -313,6 +333,7 @@ You will find the following types of _Rating_ on https://pebbleui.com/documentat
 > Stacked List Style
 
 ---
+
 <br>
 
 #### 👨‍💻 lets connect !
